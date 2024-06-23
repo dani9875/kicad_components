@@ -65,7 +65,7 @@ source "tools/unifier.sh"
 
 # Copy the .kicad_sym file to pepy_sym_lib.pretty
 NEW_NAME=$2
-cp "$DEST_DIR/$NEW_NAME.kicad_sym" "pepy_sym_lib.pretty/"
+cp "$DEST_DIR/$NEW_NAME.kicad_mod" "pepy_sym_lib.pretty/"
 
 echo "Files moved to $DEST_DIR and cleanup done."
 COUNTER=0
@@ -77,25 +77,25 @@ if [ -f "$DEST_DIR/$NEW_NAME.kicad_sym" ]; then
     # Read the new kicad_sym file and update symbol names and footprint properties
     new_content=$(awk '/\(symbol/ {flag=1} flag {print}' "$DEST_DIR/$NEW_NAME.kicad_sym" | sed '$d')
 
-new_content=$(echo "$new_content" | awk -v symbol_name="$NEW_NAME" -v counter="$COUNTER" '
-    {
-        if ($1 == "(symbol") {
-            if(counter % 2 == 0) {
-                $2 = "\"" symbol_name "\""
-            } else {
-                $2 = "\"" symbol_name "_0_1\""
+    new_content=$(echo "$new_content" | awk -v symbol_name="$NEW_NAME" -v counter="$COUNTER" '
+        {
+            if ($1 == "(symbol") {
+                if(counter % 2 == 0) {
+                    $2 = "\"" symbol_name "\""
+                } else {
+                    $2 = "\"" symbol_name "_0_1\""
+                }
+                counter++
             }
-            counter++
+            if ($1 == "\"Footprint\"") {
+                print $1
+                print "\"pepy_sym_lib:" symbol_name "\""
+                getline
+                next
+            }
+            print
         }
-        if ($1 == "\"Footprint\"") {
-            print $1
-            print "\"pepy_sym_lib:" symbol_name "\""
-            getline
-            next
-        }
-        print
-    }
-')
+    ')
 
     # Append the updated content to pepy_sym_lib.kicad_sym before the last parenthesis
     sed -i '$d' "pepy_sym_lib.kicad_sym"  # Remove the last parenthesis
