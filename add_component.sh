@@ -102,3 +102,44 @@ if [ -f "$DEST_DIR/$NEW_NAME.kicad_sym" ]; then
     echo "$new_content" >> "pepy_sym_lib.kicad_sym"
     echo ")" >> "pepy_sym_lib.kicad_sym"  # Add the last parenthesis back
 fi
+
+# Modify the path of 3D models for the newly added component's footprint
+footprint_directory="pepy_sym_lib.pretty"
+footprint_file="$footprint_directory/$NEW_NAME.kicad_mod"
+
+if [ -f "$footprint_file" ]; then
+  # Get the footprint name and directory
+  footprint_name=$(basename "$footprint_file" .kicad_mod)
+  footprint_dir=$(dirname "$footprint_file")
+
+  echo "footprint_file: $footprint_file"
+
+  # Get the original 3D model path
+  original_model_path=$(grep -oP '(?<=\(model ").*?(?=")' "$footprint_file")
+
+  echo "original_model_path: $original_model_path"
+
+  # Determine the new 3D model path
+  new_model_path="original_components/$NEW_NAME/${footprint_name}.step"
+  new_model_path_abs=$(readlink -f "$new_model_path")
+
+  echo "new_model_path: $new_model_path_abs"
+
+  # Read the file content
+  content=$(cat "$footprint_file")
+
+  # Update the 3D model path in the file content using awk
+  content=$(echo "$content" | awk -v new="$new_model_path_abs" '{
+    if ($1 == "(model") {
+      sub(/".*"/, "\"" new "\"")
+    }
+    print
+  }')
+
+  # Write the modified content back to the file
+  echo "$content" > "$footprint_file"
+
+  echo "3D model path updated successfully for $footprint_name."
+else
+  echo "Footprint file $footprint_file not found."
+fi
