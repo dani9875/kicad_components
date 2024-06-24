@@ -22,7 +22,7 @@ find "$directory" -type f -name "*.kicad_sym" | while read -r file; do
   # Get the folder name
   folder_name=$(basename "$(dirname "$file")")
 
-  # Modify the symbol names to use the folder name and preserve postfix in second occurrence
+  #Modify the symbol names to use the folder name and preserve postfix in second occurrence
   content=$(echo "$content" | awk -v folder="$folder_name" -v counter="$symbol_counter" '{
     if ($1 == "(symbol") {
       symbol_name = $2
@@ -59,3 +59,35 @@ echo ")" >> "$output_file"
 
 # Print the result to the terminal
 cat "$output_file"
+
+
+# Modify the path of 3D models for footprints
+footprint_directory="../pepy_sym_lib.pretty"
+find "$footprint_directory" -type f -name "*.kicad_mod" | while read -r footprint_file; do
+  # Get the footprint name and directory
+  footprint_name=$(basename "$footprint_file" .kicad_mod)
+  footprint_dir=$(dirname "$footprint_file")
+
+  # Get the original 3D model path
+  original_model_path=$(grep -oP '(?<=\(model ").*?(?=")' "$footprint_file")
+
+  # Determine the new 3D model path
+  new_model_path="../$directory/$footprint_name/${footprint_name}.step"
+  new_model_path_abs=$(readlink -f "$new_model_path")
+
+  # Read the file content
+  content=$(cat "$footprint_file")
+
+  # Update the 3D model path in the file content using awk
+  content=$(echo "$content" | awk -v new="$new_model_path_abs" '{
+    if ($1 == "(model") {
+      sub(/".*"/, "\"" new "\"")
+    }
+    print
+  }')
+
+  # Write the modified content back to the file
+  echo "$content" > "$footprint_file"
+
+  cat "$footprint_file"
+done

@@ -99,7 +99,7 @@
   (pad "8" thru_hole circle (at 2.54 -1.27) (size 1.6 1.6) (drill 0.999998) (layers "*.Cu" "*.Mask") (tstamp aa595a2d-c69b-45c5-9aeb-4b2dd1627936))
   (pad "9" thru_hole circle (at 5.08 1.27) (size 1.6 1.6) (drill 0.999998) (layers "*.Cu" "*.Mask") (tstamp 0ce1c445-5025-4cbd-be46-1bf593a8a336))
   (pad "10" thru_hole circle (at 5.08 -1.27) (size 1.6 1.6) (drill 0.999998) (layers "*.Cu" "*.Mask") (tstamp 8d751132-f997-4a38-a711-3301499b936f))
-  (model "/home/perseluspy/Documents/kicad/symbols/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1/easyeda2kicad/easyeda2kicad.3dshapes/IDC-TH_5103308-1.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1.step"
     (offset (xyz 10.2 4.4 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

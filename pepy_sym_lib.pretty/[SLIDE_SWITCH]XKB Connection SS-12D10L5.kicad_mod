@@ -32,7 +32,7 @@
   (pad "1" thru_hole circle (at -4.7 0) (size 2.5 2.5) (drill 1.799996) (layers "*.Cu" "*.Mask") (tstamp e555114e-a74c-4903-98f2-fe8b8a4420ab))
   (pad "2" thru_hole circle (at 0 0) (size 2.5 2.5) (drill 1.799996) (layers "*.Cu" "*.Mask") (tstamp 3ccadeed-7c6a-45b0-af90-9fe101197463))
   (pad "3" thru_hole circle (at 4.7 0) (size 2.5 2.5) (drill 1.799996) (layers "*.Cu" "*.Mask") (tstamp d03f9978-91fc-4704-93a4-7d2d96b7d06c))
-  (model "/home/perseluspy/Documents/kicad/symbols/[SLIDE_SWITCH]XKB Connection SS-12D10L5/easyeda2kicad/easyeda2kicad.3dshapes/SW-TH_L13.0-W6.8-H6.4-P4.7.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[SLIDE_SWITCH]XKB Connection SS-12D10L5/[SLIDE_SWITCH]XKB Connection SS-12D10L5.step"
     (offset (xyz 0 -0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

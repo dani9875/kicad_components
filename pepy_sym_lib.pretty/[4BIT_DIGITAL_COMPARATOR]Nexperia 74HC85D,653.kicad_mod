@@ -45,7 +45,7 @@
   (pad "14" smd oval (at -1.91 -2.74) (size 0.6 1.97) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5c6b245a-1902-4f49-95ee-f6a12b832305))
   (pad "15" smd oval (at -3.18 -2.74) (size 0.6 1.97) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5b44f69d-39ca-4419-ab39-4c07d7afc001))
   (pad "16" smd oval (at -4.45 -2.74) (size 0.6 1.97) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp cde8674b-8c19-41bf-94ee-32ba86245727))
-  (model "/home/perseluspy/Documents/kicad/symbols/[4BIT_DIGITAL_COMPARATOR]Nexperia 74HC85D,653/easyeda2kicad/easyeda2kicad.3dshapes/SOIC-16_L9.9-W3.9-H1.8-LS6.0-P1.27.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[4BIT_DIGITAL_COMPARATOR]Nexperia 74HC85D,653/[4BIT_DIGITAL_COMPARATOR]Nexperia 74HC85D,653.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

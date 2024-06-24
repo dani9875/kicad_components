@@ -42,7 +42,7 @@
   (pad "3" smd rect (at 1.3 -0.95) (size 1.1 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 52ac219d-747d-49cb-888e-e4b7fb9fe6fd))
   (pad "4" smd rect (at -1.3 -0.95) (size 1.1 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp eccd7895-c4ba-4731-96d4-55a960aedbe1))
   (pad "5" smd rect (at -1.3 0.95) (size 1.1 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e626bf14-4c6d-42bb-8ed6-634f4381da83))
-  (model "/home/perseluspy/Documents/kicad/symbols/[LDO]Torex Semicon XC6210B332MR-G/easyeda2kicad/easyeda2kicad.3dshapes/SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[LDO]Torex Semicon XC6210B332MR-G/[LDO]Torex Semicon XC6210B332MR-G.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

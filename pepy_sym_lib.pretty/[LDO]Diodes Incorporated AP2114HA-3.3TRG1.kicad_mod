@@ -29,7 +29,7 @@
   (pad "2" smd rect (at 2.97 0) (size 2.5 1.1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4010f106-e146-4a9d-a0ea-f7a24b3b198e))
   (pad "3" smd rect (at 2.97 -2.3) (size 2.5 1.1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 61e43b66-20a6-4a39-9bc0-e0951c452dde))
   (pad "4" smd rect (at -2.97 0) (size 2.34 3.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 08d17c16-3496-47cd-abf2-45237a7844f4))
-  (model "/home/perseluspy/Documents/kicad/symbols/[LDO]Diodes Incorporated AP2114HA-3.3TRG1/easyeda2kicad/easyeda2kicad.3dshapes/SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[LDO]Diodes Incorporated AP2114HA-3.3TRG1/[LDO]Diodes Incorporated AP2114HA-3.3TRG1.step"
     (offset (xyz 0.01 -0.08 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

@@ -45,7 +45,7 @@
   (pad "14" smd oval (at -1.91 -2.74) (size 0.6 1.97) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 930c5d47-e269-4f1f-82e9-2a081a585d2e))
   (pad "15" smd oval (at -3.18 -2.74) (size 0.6 1.97) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 78bd9342-b4f8-4b4a-bfc0-2a95bf560723))
   (pad "16" smd oval (at -4.45 -2.74) (size 0.6 1.97) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 991210d3-ca26-4f71-bea3-1be2b513d17e))
-  (model "/home/perseluspy/Documents/kicad/symbols/[14BIT_FULL_ADDER]Texas Instruments CD74HC283M96/easyeda2kicad/easyeda2kicad.3dshapes/SOIC-16_L9.9-W3.9-H1.8-LS6.0-P1.27.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[14BIT_FULL_ADDER]Texas Instruments CD74HC283M96/[14BIT_FULL_ADDER]Texas Instruments CD74HC283M96.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

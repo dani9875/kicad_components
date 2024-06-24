@@ -76,7 +76,7 @@
       )
     )
   )
-  (model "/home/perseluspy/Documents/kicad/symbols/[PLUG_OF_NAILS_10P]TC2050_IDC_NL/TC2050-IDC-NL.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[PLUG_OF_NAILS_10P]TC2050_IDC_NL/[PLUG_OF_NAILS_10P]TC2050_IDC_NL.step"
     (offset (xyz 0.75 -2.5 4.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 180 -90))

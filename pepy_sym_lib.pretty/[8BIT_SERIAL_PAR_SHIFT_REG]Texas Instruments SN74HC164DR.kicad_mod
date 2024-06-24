@@ -43,7 +43,7 @@
   (pad "12" smd oval (at -1.27 -2.77) (size 0.57 2.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 472966e9-acd2-474a-ac5a-5e6d158efb00))
   (pad "13" smd oval (at -2.54 -2.77) (size 0.57 2.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d8e3ca89-d857-4dc4-8c8a-ec6902737712))
   (pad "14" smd oval (at -3.81 -2.77) (size 0.57 2.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 38249ce4-7dda-423d-ac04-1ed8cfad9a28))
-  (model "/home/perseluspy/Documents/kicad/symbols/[8BIT_SERIAL_PAR_SHIFT_REG]Texas Instruments SN74HC164DR/easyeda2kicad/easyeda2kicad.3dshapes/SOIC-14_L8.6-W3.9-H1.8-LS6.0-P1.27.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[8BIT_SERIAL_PAR_SHIFT_REG]Texas Instruments SN74HC164DR/[8BIT_SERIAL_PAR_SHIFT_REG]Texas Instruments SN74HC164DR.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

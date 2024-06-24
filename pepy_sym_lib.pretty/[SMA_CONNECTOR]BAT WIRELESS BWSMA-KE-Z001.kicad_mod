@@ -30,7 +30,7 @@
   (pad "3" thru_hole circle (at 2.55 -2.55) (size 2.2 2.2) (drill 1.500022) (layers "*.Cu" "*.Mask") (tstamp 2be62ee1-8451-4b13-b4b5-8112fd5e717a))
   (pad "4" thru_hole circle (at 2.55 2.55) (size 2.2 2.2) (drill 1.500022) (layers "*.Cu" "*.Mask") (tstamp cbb24a1b-2ead-41d6-b50f-76310b91bb07))
   (pad "5" thru_hole circle (at 0 0) (size 2 2) (drill 1.35001) (layers "*.Cu" "*.Mask") (tstamp c646bd95-4c79-41d6-9757-2fbcc6d6a24b))
-  (model "/home/perseluspy/Documents/kicad/symbols/[SMA_CONNECTOR]BAT WIRELESS BWSMA-KE-Z001/easyeda2kicad/easyeda2kicad.3dshapes/SMA-TH_5P-L6.5-W6.5-H9.8_BWSMA-KE-Z001.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[SMA_CONNECTOR]BAT WIRELESS BWSMA-KE-Z001/[SMA_CONNECTOR]BAT WIRELESS BWSMA-KE-Z001.step"
     (offset (xyz 0 -0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -48,7 +48,7 @@
   (pad "15" smd rect (at -1 -0.6) (size 0.2 0.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 6d18fe1f-52e5-4398-a4a3-2deee3b3b57a))
   (pad "16" smd rect (at -1.4 -0.6) (size 0.2 0.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d55f997d-9bfe-4ad9-9579-fae881c2f937))
   (pad "17" smd rect (at 0 0) (size 2.8 0.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4ed727d0-1027-4473-9201-96ef2b003082))
-  (model "/home/perseluspy/Documents/kicad/symbols/[EMI_FILTER_W_ESD_PROT]STMicroelectronics EMIF08-LCD04M16/easyeda2kicad/easyeda2kicad.3dshapes/UDFN-16_L3.3-W1.4-H0.5-P0.40-BL-EP.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[EMI_FILTER_W_ESD_PROT]STMicroelectronics EMIF08-LCD04M16/[EMI_FILTER_W_ESD_PROT]STMicroelectronics EMIF08-LCD04M16.step"
     (offset (xyz -0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

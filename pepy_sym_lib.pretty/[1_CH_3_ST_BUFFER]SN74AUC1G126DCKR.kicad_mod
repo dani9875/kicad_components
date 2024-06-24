@@ -36,7 +36,7 @@
   (pad "3" smd rect (at 0.65 1.1) (size 0.35 0.85) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ff4f1247-153a-4ffb-a7cc-522db1527bc7))
   (pad "4" smd rect (at 0.65 -1.1) (size 0.35 0.85) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d7bdbf47-2a5e-4bc3-b2cd-7a705de8bb63))
   (pad "5" smd rect (at -0.65 -1.1) (size 0.35 0.85) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 38562f25-c68d-4764-8eca-7fa4e389a2af))
-  (model "/home/perseluspy/Documents/kicad/symbols/[1_CH_3_ST_BUFFER]SN74AUC1G126DCKR/easyeda2kicad/easyeda2kicad.3dshapes/SC-70-5_L2.0-W1.3-P0.65-LS2.1-BL.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[1_CH_3_ST_BUFFER]SN74AUC1G126DCKR/[1_CH_3_ST_BUFFER]SN74AUC1G126DCKR.step"
     (offset (xyz -0 0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

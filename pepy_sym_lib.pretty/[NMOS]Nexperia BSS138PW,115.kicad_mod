@@ -30,7 +30,7 @@
   (pad "1" smd rect (at 0.9 0.65) (size 0.94 0.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8e605907-8d3b-466d-9bf3-b86ef240c7d9))
   (pad "2" smd rect (at 0.9 -0.65) (size 0.94 0.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b8f59367-6737-4385-9ddf-4bd1a1aafe6a))
   (pad "3" smd rect (at -0.9 0) (size 0.94 0.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 1f1be575-7471-45f8-ba1f-323d11539231))
-  (model "/home/perseluspy/Documents/kicad/symbols/[NMOS]Nexperia BSS138PW,115/easyeda2kicad/easyeda2kicad.3dshapes/SOT-323-3_L2.0-W1.3-H1.0-LS2.1-P1.30.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[NMOS]Nexperia BSS138PW,115/[NMOS]Nexperia BSS138PW,115.step"
     (offset (xyz -914.4 685.93 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 270))

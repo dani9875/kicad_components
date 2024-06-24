@@ -43,7 +43,7 @@
   (pad "8" thru_hole circle (at 2.54 -1.27) (size 1.52 1.52) (drill 0.999998) (layers "*.Cu" "*.Mask") (tstamp 192c7453-2794-4ce4-bee8-0229023b765c))
   (pad "9" thru_hole circle (at 5.08 1.27) (size 1.52 1.52) (drill 0.999998) (layers "*.Cu" "*.Mask") (tstamp 19bc6619-0897-4d5f-bfec-333018ff71b3))
   (pad "10" thru_hole circle (at 5.08 -1.27) (size 1.52 1.52) (drill 0.999998) (layers "*.Cu" "*.Mask") (tstamp bc1988f2-402f-45b5-84a4-5c83e700796a))
-  (model "/home/perseluspy/Documents/kicad/symbols/[10P_2X5_IDC_MALE]BOOMELE(Boom Precision Elec) 2_54_2X5P/easyeda2kicad.3dshapes/HDR-IDC-2.54-2X5P.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[10P_2X5_IDC_MALE]BOOMELE(Boom Precision Elec) 2_54_2X5P/[10P_2X5_IDC_MALE]BOOMELE(Boom Precision Elec) 2_54_2X5P.step"
     (offset (xyz -5.1 -1.1 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

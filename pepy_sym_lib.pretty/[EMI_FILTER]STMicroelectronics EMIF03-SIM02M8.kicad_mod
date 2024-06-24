@@ -40,7 +40,7 @@
   (pad "7" smd rect (at -0.2 -0.75) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp aeb48f5d-a8e1-446c-a3fc-1c3e3f2f2e73))
   (pad "8" smd rect (at -0.6 -0.75) (size 0.2 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 10644eb6-88a6-4b8c-9d3b-0662943d728b))
   (pad "9" smd rect (at 0 0) (size 1 0.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7e554be7-7d37-486d-ae60-84b0ae14d257))
-  (model "/home/perseluspy/Documents/kicad/symbols/[EMI_FILTER]STMicroelectronics EMIF03-SIM02M8/easyeda2kicad/easyeda2kicad.3dshapes/UFDFN-8_L1.7-W1.50-P0.40-BL-EP.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[EMI_FILTER]STMicroelectronics EMIF03-SIM02M8/[EMI_FILTER]STMicroelectronics EMIF03-SIM02M8.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

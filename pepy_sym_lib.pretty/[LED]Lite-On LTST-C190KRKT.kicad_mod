@@ -49,7 +49,7 @@
     (stroke (width 0.06) (type solid)) (fill none) (layer "F.Fab") (tstamp 2124519c-4d5b-442d-a62b-3ae589c4c70f))
   (pad "1" smd rect (at -0.8 0 90) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a2e29276-a70e-4fa9-a110-44134d9629f1))
   (pad "2" smd rect (at 0.8 0 90) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4912c7ab-b204-4b98-9f6c-bfe0a0a8ce28))
-  (model "/home/perseluspy/Documents/kicad/symbols/[LED]Lite-On LTST-C190KRKT/easyeda2kicad/easyeda2kicad.3dshapes/LED0603-RD_RED.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[LED]Lite-On LTST-C190KRKT/[LED]Lite-On LTST-C190KRKT.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

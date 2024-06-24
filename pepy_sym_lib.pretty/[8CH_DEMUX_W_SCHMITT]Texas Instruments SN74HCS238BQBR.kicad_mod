@@ -52,7 +52,7 @@
   (pad "15" smd rect (at -1.25 -1.16) (size 0.28 0.66) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2117539a-3d8f-4c37-b529-375816c54279))
   (pad "16" smd rect (at -1.66 -0.25) (size 0.66 0.28) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 09584816-a7f0-4125-9029-18b7b35e70df))
   (pad "17" smd rect (at 0 0) (size 2 1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8492adad-4f1d-47dc-b4f1-4a19604b34cb))
-  (model "/home/perseluspy/Documents/kicad/symbols/[8CH_DEMUX_W_SCHMITT]Texas Instruments SN74HCS238BQBR/easyeda2kicad/easyeda2kicad.3dshapes/DHVQFN-16_L3.5-W2.5-H1.0-P0.50.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[8CH_DEMUX_W_SCHMITT]Texas Instruments SN74HCS238BQBR/[8CH_DEMUX_W_SCHMITT]Texas Instruments SN74HCS238BQBR.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

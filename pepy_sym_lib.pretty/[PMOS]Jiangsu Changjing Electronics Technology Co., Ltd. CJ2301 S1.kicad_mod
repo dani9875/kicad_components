@@ -30,7 +30,7 @@
   (pad "1" smd rect (at 1.1 0.95) (size 1.04 0.53) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 29e3b6c6-ac14-4d5f-a59a-c61e8c195b67))
   (pad "2" smd rect (at 1.1 -0.95) (size 1.04 0.53) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 78037572-01a7-4388-9936-ed9caa2fc7d3))
   (pad "3" smd rect (at -1.1 0) (size 1.04 0.53) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 36756043-d407-4827-a66a-8af03840fa2e))
-  (model "/home/perseluspy/Documents/kicad/symbols/[PMOS]Jiangsu Changjing Electronics Technology Co., Ltd. CJ2301 S1/easyeda2kicad/easyeda2kicad.3dshapes/SOT-23-3L_L2.9-W1.6-H1.1-LS2.8-P0.95.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[PMOS]Jiangsu Changjing Electronics Technology Co., Ltd. CJ2301 S1/[PMOS]Jiangsu Changjing Electronics Technology Co., Ltd. CJ2301 S1.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 270))

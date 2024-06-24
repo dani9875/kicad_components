@@ -25,7 +25,7 @@
     (stroke (width 0.06) (type solid)) (fill none) (layer "F.Fab") (tstamp 69a49f98-162b-457f-a14d-73a59c77ddcb))
   (pad "1" smd rect (at -0.85 0) (size 0.9 1.3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 6c82a4ea-7b21-43f7-bfbc-bd0b4272e859))
   (pad "2" smd rect (at 0.85 0) (size 0.9 1.3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp db43ab0c-f390-45cb-8c8d-f31baabbb37b))
-  (model "/home/perseluspy/Documents/kicad/symbols/[Crystal_32_768_kHZ]Seiko SC-20S,32.768kHz,20PPM,9pF/easyeda2kicad/easyeda2kicad.3dshapes/OSC-SMD_L2.0-W1.2-H0.5.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[Crystal_32_768_kHZ]Seiko SC-20S,32.768kHz,20PPM,9pF/[Crystal_32_768_kHZ]Seiko SC-20S,32.768kHz,20PPM,9pF.step"
     (offset (xyz 0 0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

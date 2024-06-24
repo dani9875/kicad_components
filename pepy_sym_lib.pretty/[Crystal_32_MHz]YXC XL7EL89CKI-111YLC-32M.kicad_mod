@@ -33,7 +33,7 @@
   (pad "2" smd rect (at 0.7 0.55) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5ea76760-4638-40b2-9395-11e3799c2d40))
   (pad "3" smd rect (at 0.7 -0.55) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8e3d00af-61b3-4a8b-a6ec-b78601ec0ba5))
   (pad "4" smd rect (at -0.7 -0.55) (size 0.9 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b30abcc5-b078-4f89-b5e6-b305a6430802))
-  (model "/home/perseluspy/Documents/kicad/symbols/[Crystal_32_MHz]YXC XL7EL89CKI-111YLC-32M/easyeda2kicad/easyeda2kicad.3dshapes/CRYSTAL-SMD_4P-L2.0-W1.6-BL.step"
+  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[Crystal_32_MHz]YXC XL7EL89CKI-111YLC-32M/[Crystal_32_MHz]YXC XL7EL89CKI-111YLC-32M.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
