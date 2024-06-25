@@ -58,7 +58,7 @@
     )
   )
   (model "/home/perseluspy/Documents/source/kicad_components/original_components/[RES_SMD]0805_2012Metric/[RES_SMD]0805_2012Metric.step"
-    (offset (xyz 0.09 -0 -0))
+    (offset (xyz -0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
