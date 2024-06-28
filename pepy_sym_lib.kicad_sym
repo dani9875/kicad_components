@@ -10870,6 +10870,108 @@
 			)
 		)
 	)
+	(symbol "[MOUNTING_HOLE]MountingHole_Pad"
+		(pin_numbers hide)
+		(pin_names
+			(offset 1.016) hide)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "H"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 4.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[MOUNTING_HOLE]MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 0 -8.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0.508 -9.906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "mounting hole"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "MountingHole*Pad*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[MOUNTING_HOLE]MountingHole_Pad_0_1"
+			(circle
+				(center 0 1.27)
+				(radius 1.27)
+				(stroke
+					(width 1.27)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[MOUNTING_HOLE]MountingHole_Pad_1_1"
+			(pin input line
+				(at 0 -2.54 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "[NMOS]Nexperia BSS138PW,115"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12116,12 +12218,11 @@
 		)
 	)
 	(symbol "[RES_SMD]0805_2012Metric"
-		(pin_numbers hide)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "R"
-			(at 0 2.54 0)
+			(at 0 4.572 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12129,7 +12230,7 @@
 			)
 		)
 		(property "Value" "0805W8F1002T5E"
-			(at 0 -2.54 0)
+			(at 0 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12137,7 +12238,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[RES_SMD]0805_2012Metric"
-			(at 0 -5.08 0)
+			(at 0.254 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12146,7 +12247,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_10KR-1002-1_C17414.html"
-			(at 0 -7.62 0)
+			(at 0.254 -5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12164,7 +12265,7 @@
 			)
 		)
 		(property "LCSC Part" "C17414"
-			(at 0 -10.16 0)
+			(at 0.254 -7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12174,8 +12275,8 @@
 		)
 		(symbol "[RES_SMD]0805_2012Metric_1_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start 2.54 -1.02)
+				(end -2.54 1.02)
 				(stroke
 					(width 0)
 					(type default)
@@ -13879,6 +13980,7 @@
 		)
 	)
 	(symbol "[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z"
+		(pin_numbers hide)
 		(pin_names
 			(offset 0)
 		)
@@ -14727,6 +14829,108 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "[TEST_POINT]TestPoint"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0.762) hide)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[TEST_POINT]TestPoint_Pad_D1.0mm"
+			(at 4.826 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 2.032 -0.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 5.842 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Test point"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[TEST_POINT]TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[TEST_POINT]TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
