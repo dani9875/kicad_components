@@ -1,0 +1,220 @@
+(footprint "[ESD_PROT]Nexperia IP4283CZ10-TBR,115"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "fe27188f-7611-41c7-b91d-5d2ce27b0aeb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DFN2510A-10_L2.5-W1.0-P0.50-BL"
+		(at 0 4.8 0)
+		(layer "F.Fab")
+		(uuid "1e75fc36-74e5-48fc-82aa-40c8e3d7145d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "[ESD_PROT]Nexperia IP4283CZ10-TBR,115"
+		(at 0 6.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aff1dd05-de77-4eaf-bfca-06543908679a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0003b408-5ab6-4d2d-9f58-e7ed652dcc18")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dbae1574-84e4-42c3-b787-4ab229ec1c44")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.36 -1.02)
+		(end -1.36 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6789055-907f-4e45-ad9d-af91a7b9d1e0")
+	)
+	(fp_line
+		(start -1.36 -1.02)
+		(end 1.36 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6484c190-eadf-475b-9613-d6b52b8cfc61")
+	)
+	(fp_line
+		(start -1.36 1.02)
+		(end 1.36 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd08c13d-4ee4-4801-b076-b938a8f721ae")
+	)
+	(fp_line
+		(start 1.36 -1.02)
+		(end 1.36 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "36883c25-d048-4171-a1c9-d2f74c0c0611")
+	)
+	(fp_circle
+		(center -1.02 1.4)
+		(end -0.96 1.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "50a9f31e-633c-4e6e-9e1c-32df52096ac8")
+	)
+	(fp_circle
+		(center -1.02 0.51)
+		(end -0.92 0.51)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "Cmts.User")
+		(uuid "87bba413-5b03-4422-9cf5-2f0639a3fd1d")
+	)
+	(fp_circle
+		(center -1.25 0.5)
+		(end -1.22 0.5)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "404a28b4-6f07-4848-b6ed-a87683a04ce9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.2 2.6 0)
+		(layer "F.Fab")
+		(uuid "8af82530-802f-41c2-9b2a-dc8dd1118d75")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1 0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "1446303f-7adc-48dc-a97b-d2ccb853adff")
+	)
+	(pad "2" smd rect
+		(at -0.5 0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dafafa3c-198d-400e-bd18-457eb82c8d7b")
+	)
+	(pad "3" smd rect
+		(at 0 0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dd09e037-14f3-4a9d-b204-093cfc3ce8c3")
+	)
+	(pad "4" smd rect
+		(at 0.5 0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f719dcb0-68a3-4c90-b34e-0d627d76adca")
+	)
+	(pad "5" smd rect
+		(at 1 0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0d71e0d3-d4d8-4b41-87d9-c90b8fcca107")
+	)
+	(pad "6" smd rect
+		(at 1 -0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e080c175-c994-469e-88e3-381d2155a670")
+	)
+	(pad "7" smd rect
+		(at 0.5 -0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "998268aa-a781-4b8d-8392-91fceb5f9bc8")
+	)
+	(pad "8" smd rect
+		(at 0 -0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "9e758d8f-4b6a-4e3e-a4bf-a68ac464356a")
+	)
+	(pad "9" smd rect
+		(at -0.5 -0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "78a3148c-7dd5-4851-bdbb-97b0940be989")
+	)
+	(pad "10" smd rect
+		(at -1 -0.43)
+		(size 0.25 0.68)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "875b03fe-2658-4a9f-a670-a27d25128936")
+	)
+	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[ESD_PROT]Nexperia IP4283CZ10-TBR,115/[ESD_PROT]Nexperia IP4283CZ10-TBR,115.step"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)
