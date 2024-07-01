@@ -1,34 +1,356 @@
-(module easyeda2kicad:SOD-123_L2.8-W1.8-LS3.7-RD (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.007092 -1.755319 0)
+		(layer "F.SilkS")
+		(uuid "19a26fba-a427-4d78-9bc0-80554aade59c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOD-123_L2.8-W1.8-LS3.7-RD"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "9d3556cf-3a84-4ba7-9c56-cd97fa65e4af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z"
+		(at 0 6.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c854a087-a84f-4c9a-b04b-88b9955d25b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0.000885 -0.063513 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24d82744-b0a1-4c3c-aa1d-63777115b55c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0.000885 -0.063513 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e9f90390-a954-46a8-97be-aadef0b6eb33")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
 	(attr smd)
-	(fp_text reference REF** (at 0 -4.0) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.58 -0.87)
+		(end -1.41 -0.87)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9131433a-4d1e-43e2-ac21-c1f3d3ab3256")
 	)
-	(fp_text value SOD-123_L2.8-W1.8-LS3.7-RD (at 0 4.0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.58 -0.76)
+		(end -1.58 -0.87)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8165f709-b67d-403c-8b70-52540691d6b0")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.58 -0.76)
+		(end -1.41 -0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "32bbc94b-b3bf-452b-933f-a1a6938527ad")
 	)
-	(fp_line (start -1.58 0.76) (end -1.41 0.76) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.58 -0.76) (end -1.41 -0.76) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.58 -0.76) (end -1.58 -0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.58 -0.87) (end -1.41 -0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.41 0.87) (end -1.58 0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.58 0.87) (end -1.58 0.76) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.41 0.76) (end -1.41 0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.41 -0.87) (end -1.41 -0.76) (layer F.SilkS) (width 0.15))
-	(fp_line (start -0.83 -0.87) (end -0.83 0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start -0.97 -0.87) (end -0.97 0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.41 -0.87) (end 1.41 -0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start 1.41 -0.87) (end 1.41 -0.70) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.41 0.87) (end 1.41 0.87) (layer F.SilkS) (width 0.15))
-	(fp_line (start 1.41 0.87) (end 1.41 0.70) (layer F.SilkS) (width 0.15))
-	(pad 2 smd rect (at 1.69 0.00 0.00) (size 0.95 1.15) (layers F.Cu F.Paste F.Mask))
-	(pad 1 smd rect (at -1.69 0.00 0.00) (size 0.95 1.15) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center -1.85 0.90) (end -1.82 0.90) (layer F.Fab) (width 0.06))
+	(fp_line
+		(start -1.58 0.76)
+		(end -1.41 0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "675e7243-fa27-43e0-933a-4aaf5c1df8c6")
+	)
+	(fp_line
+		(start -1.58 0.87)
+		(end -1.58 0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cd385497-d1b8-4079-95cc-ec1a0f56bd6f")
+	)
+	(fp_line
+		(start -1.41 -0.87)
+		(end -1.41 -0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ee023125-b3ae-4c13-b1dd-aa8cb010966d")
+	)
+	(fp_line
+		(start -1.41 -0.87)
+		(end 1.41 -0.87)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "146ac2da-c51c-49b1-a968-9a12c50d2fdd")
+	)
+	(fp_line
+		(start -1.41 0.76)
+		(end -1.41 0.87)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7cdc1f9d-1499-4274-8e67-fa8c63a4c4b1")
+	)
+	(fp_line
+		(start -1.41 0.87)
+		(end -1.58 0.87)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "27b8759b-0023-477c-a5c5-7a3dfb77bacd")
+	)
+	(fp_line
+		(start -1.41 0.87)
+		(end 1.41 0.87)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "76aa8004-43c1-4d31-af93-10cd6a8c5f4f")
+	)
+	(fp_line
+		(start -0.369036 0.369303)
+		(end -0.369036 0.245103)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "82a6a4a6-be12-4162-859e-3a5b33a19a61")
+	)
+	(fp_line
+		(start -0.219443 -0.391913)
+		(end -0.069437 -0.391913)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "afc15216-aa5c-4f62-a157-78b62b1aa7fe")
+	)
+	(fp_line
+		(start -0.219115 -0.383513)
+		(end -0.21903 0.369303)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a214ab6b-1ab5-4c05-a8be-e77cc2822480")
+	)
+	(fp_line
+		(start -0.219073 -0.007105)
+		(end -1.096779 -0.007742)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e8e802ce-eb0c-4eb4-a883-7a5f5c1e2ead")
+	)
+	(fp_line
+		(start -0.21903 0.369303)
+		(end -0.369036 0.369303)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "438f3d64-8b28-4df8-b127-a0a1e83d8eb6")
+	)
+	(fp_line
+		(start -0.069437 -0.391913)
+		(end -0.069437 -0.267713)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4c55a764-8ded-4be4-8ff9-8093e862949a")
+	)
+	(fp_line
+		(start 0.190885 0.336487)
+		(end -0.139115 0.006487)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "67d6cb8e-4fbf-4cda-965d-46ed9a785805")
+	)
+	(fp_line
+		(start 0.200885 -0.343513)
+		(end 0.200885 -0.333513)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec7cf0cf-5d7c-4aea-b3a7-73a387777a40")
+	)
+	(fp_line
+		(start 0.200885 -0.343513)
+		(end 0.200885 0.336487)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6e4ae68d-7b99-4652-b5e9-27987eabf2a8")
+	)
+	(fp_line
+		(start 0.200885 -0.333513)
+		(end -0.139115 0.006487)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c3fd8a64-8017-4841-889f-900f644127a9")
+	)
+	(fp_line
+		(start 0.200885 -0.003513)
+		(end 1.078978 -0.003333)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3accc18b-dc9e-4783-b8ba-fa5460f3e52b")
+	)
+	(fp_line
+		(start 0.200885 0.336487)
+		(end 0.190885 0.336487)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "14279042-777d-4fb8-8289-ab8a8dc48e41")
+	)
+	(fp_line
+		(start 1.41 -0.87)
+		(end 1.41 -0.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1618a38d-7452-4859-a904-99d8349b6396")
+	)
+	(fp_line
+		(start 1.41 0.87)
+		(end 1.41 0.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7c8f08ea-580d-495e-bd35-374b812250ba")
+	)
+	(fp_circle
+		(center -1.85 0.9)
+		(end -1.82 0.9)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "790f6db6-c787-43c3-9ae9-32b72d214931")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.2 2.2 0)
+		(layer "F.Fab")
+		(uuid "67e242e5-3423-4adf-9c1d-763294e7abdf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.69 0)
+		(size 0.95 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "64be6b8c-3dff-44d2-a8df-dce12bacd40f")
+	)
+	(pad "2" smd rect
+		(at 1.69 0)
+		(size 0.95 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "30a7bb80-72a8-4e92-858f-51327c064623")
+	)
+	(group ""
+		(uuid "981a4f57-034c-42e7-82d7-9b5fa7ef0a6e")
+		(members "67d6cb8e-4fbf-4cda-965d-46ed9a785805" "6e4ae68d-7b99-4652-b5e9-27987eabf2a8"
+			"a214ab6b-1ab5-4c05-a8be-e77cc2822480" "c3fd8a64-8017-4841-889f-900f644127a9"
+		)
+	)
 	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z.step"
-		(offset (xyz 0.000 -0.000 -0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
