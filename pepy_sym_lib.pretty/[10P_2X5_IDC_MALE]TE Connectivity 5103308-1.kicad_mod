@@ -15,7 +15,7 @@
 		)
 	)
 	(property "Value" "[10P_2X5_IDC_MALE]TE Connectivity 5103308-1"
-		(at 0 6.8 0)
+		(at 0 9.4 0)
 		(layer "F.Fab")
 		(uuid "25e98f50-6990-4dc5-a794-44938f9582b4")
 		(effects
@@ -26,7 +26,7 @@
 		)
 	)
 	(property "Footprint" "[10P_2X5_IDC_MALE]TE Connectivity 5103308-1"
-		(at 0 9.4 0)
+		(at 0.2 12.6 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -454,7 +454,7 @@
 		(uuid "d0c3a6dd-6daf-475b-8861-1583dc13013b")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 7 0)
 		(layer "F.Fab")
 		(uuid "10ea93c9-6414-44dc-937f-8b4dd0e98536")
 		(effects

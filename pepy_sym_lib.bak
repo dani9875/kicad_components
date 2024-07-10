@@ -256,8 +256,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "CN"
-			(at 0 10.16 0)
+		(property "Reference" "J"
+			(at 0 9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -290,8 +290,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "Headers & Wire Housings HDR VERT DOUBLE 10P low profile"
+			(at -0.254 -19.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,6 +301,15 @@
 		)
 		(property "LCSC Part" "C86466"
 			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity"
+			(at 0 -22.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -508,7 +517,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "H"
+		(property "Reference" "J"
 			(at 0 10.16 0)
 			(effects
 				(font
@@ -516,7 +525,7 @@
 				)
 			)
 		)
-		(property "Value" "210S-2*5P L=11.6MMGold-plated black"
+		(property "Value" " B-2100S10P-B110"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -542,8 +551,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "Straight 2.54mm 10P 6mm -40℃~+105℃ 3mm 2.54mm 双排 Black Brass 2x5P 2.54mm Plugin,P=2.54mm Pin Headers ROHS"
+			(at 0.762 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -553,6 +562,15 @@
 		)
 		(property "LCSC Part" "C124387"
 			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Ckmtw(Shenzhen Cankemeng)"
+			(at 0 -23.368 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11140,8 +11158,8 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(property "Reference" "H"
-			(at 0 6.35 0)
+		(property "Reference" "MH"
+			(at 0 4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
