@@ -525,7 +525,7 @@
 				)
 			)
 		)
-		(property "Value" " B-2100S10P-B110"
+		(property "Value" "B-2100S10P-B110"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -12498,7 +12498,7 @@
 			)
 		)
 	)
-	(symbol "[RES_SMD]0805_2012Metric"
+	(symbol "[RES_SMD_0805_2012Metric]UNI-ROYAL(Uniroyal Elec) 0805W8F1002T5E"
 		(pin_numbers hide)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12520,7 +12520,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[RES_SMD]0805_2012Metric"
-			(at 0.254 -2.794 0)
+			(at 0.254 -4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12529,7 +12529,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_10KR-1002-1_C17414.html"
-			(at 0.254 -5.334 0)
+			(at 0.254 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12537,8 +12537,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" " 125mW Thick Film Resistors 150V ±100ppm/℃ ±1% 10kΩ 0805 Chip Resistor - Surface Mount ROHS"
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12547,7 +12547,7 @@
 			)
 		)
 		(property "LCSC Part" "C17414"
-			(at 0.254 -7.874 0)
+			(at 0.254 -9.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12555,10 +12555,36 @@
 				(hide yes)
 			)
 		)
-		(symbol "[RES_SMD]0805_2012Metric_1_1"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 -15.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Nvalue" "10k"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "[RES_SMD_0805_2012Metric]UNI-ROYAL(Uniroyal Elec) 0805W8F1002T5E_1_1"
 			(rectangle
-				(start 2.54 -1.02)
-				(end -2.54 1.02)
+				(start -2.54 1.02)
+				(end 2.54 -1.02)
 				(stroke
 					(width 0)
 					(type default)
