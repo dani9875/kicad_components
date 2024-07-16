@@ -3,6 +3,10 @@
 # How to
 Comming soon...
 
+Manually handled:
+- Test points
+- Mounting holes
+
 
 ## Release notes
 

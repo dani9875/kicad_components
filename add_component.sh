@@ -1,13 +1,20 @@
 #!/bin/bash
 
 # Check if the correct number of arguments is provided
-if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <LCSC_component_number> <new_name>"
+if [ "$#" -lt 2 ]; then
+    echo "Usage: $0 <LCSC_component_number> <new_name> [--generic <generic_name>]"
     exit 1
 fi
 
 LCSC_COMPONENT_NUMBER=$1
 NEW_NAME=$2
+GENERIC_NAME=""
+
+# Check for the --generic parameter
+if [ "$#" -eq 4 ] && [ "$3" == "--generic" ]; then
+    GENERIC_NAME=$4
+fi
+
 OUTPUT_DIR=$(pwd)
 
 # Check if easyeda2kicad is installed
@@ -36,6 +43,58 @@ else
     echo "Component conversion failed."
     exit 1
 fi 
+
+# Handle the --generic option
+if [ -n "$GENERIC_NAME" ]; then
+    GENERIC_DIR="$OUTPUT_DIR/original_components/$GENERIC_NAME"
+
+    if [ -d "$GENERIC_DIR" ]; then
+        echo "Generic directory $GENERIC_DIR found. Moving $NEW_NAME.kicad_sym to this directory."
+        mv "$OUTPUT_DIR/.kicad_sym" "$GENERIC_DIR/$NEW_NAME.kicad_sym"
+
+        # Add the new component's kicad_sym file to the pepy_sym_lib.kicad_sym file
+        if [ -f "$GENERIC_DIR/$NEW_NAME.kicad_sym" ]; then
+            echo "Adding $NEW_NAME.kicad_sym to pepy_sym_lib.kicad_sym"
+
+            # Read the new kicad_sym file and update symbol names and footprint properties
+            new_content=$(awk '/\(symbol/ {flag=1} flag {print}' "$GENERIC_DIR/$NEW_NAME.kicad_sym" | sed '$d')
+
+            new_content=$(echo "$new_content" | awk -v symbol_name="$NEW_NAME" -v counter="$COUNTER" '
+                {
+                    if ($1 == "(symbol") {
+                        if(counter % 2 == 0) {
+                            $2 = "\"" symbol_name "\""
+                        } else {
+                            $2 = "\"" symbol_name "_0_1\""
+                        }
+                        counter++
+                    }
+                    if ($1 == "\"Footprint\"") {
+                        print $1
+                        print "\"pepy_sym_lib:" symbol_name "\""
+                        getline
+                        next
+                    }
+                    print
+                }
+            ')
+
+            # Append the updated content to pepy_sym_lib.kicad_sym before the last parenthesis
+            sed -i '$d' "pepy_sym_lib.kicad_sym"  # Remove the last parenthesis
+            echo "$new_content" >> "pepy_sym_lib.kicad_sym"
+            echo ")" >> "pepy_sym_lib.kicad_sym"  # Add the last parenthesis back
+
+            # Clean up the remaining directories
+            rm -rf "$OUTPUT_DIR/.3dshapes"
+            rm -rf "$OUTPUT_DIR/.pretty"
+
+            exit 0
+        fi
+    else
+        echo "Generic directory $GENERIC_DIR not found. Exiting."
+        exit 1
+    fi
+fi
 
 # Move the .kicad_sym file with no name to the destination directory and rename it
 if [ -f "$OUTPUT_DIR/.kicad_sym" ]; then
