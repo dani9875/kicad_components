@@ -8,8 +8,8 @@ for SUBDIR in "$ROOT_DIR"/*; do
   if [ -d "$SUBDIR" ]; then
     SUBDIR_NAME=$(basename "$SUBDIR")
 
-    # Exclude specified folders
-    if [[ "$SUBDIR_NAME" == "[MOUNTING_HOLES]" || "$SUBDIR_NAME" == "[TEST_POINTS]" ]]; then
+    # Exclude specified folders and folders with names like [...]
+    if [[ "$SUBDIR_NAME" == "[MOUNTING_HOLES]" || "$SUBDIR_NAME" == "[TEST_POINTS]" || "$SUBDIR_NAME" =~ ^\[.*\]$ ]]; then
       continue
     fi
 
@@ -26,4 +26,4 @@ for SUBDIR in "$ROOT_DIR"/*; do
   fi
 done
 
-echo "Files have been renamed, excluding MOUNTING_HOLES and TEST_POINTS directories."
+echo "Files have been renamed, excluding MOUNTING_HOLES, TEST_POINTS, and [...] directories."
