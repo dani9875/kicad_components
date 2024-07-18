@@ -1,4 +1,4 @@
-(footprint "[RES_SMD0805_2012Metric]"
+(footprint "[RES_SMD_0805_2012Metric]"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -25,7 +25,7 @@
 			)
 		)
 	)
-	(property "Footprint" "[RES_SMD0805_2012Metric]"
+	(property "Footprint" "[RES_SMD_0805_2012Metric]"
 		(at 0 3.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -239,7 +239,7 @@
 			"dd1b3122-8369-43e7-94a6-ff7cbfa5435f"
 		)
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[RES_SMD0805_2012Metric]/[RES_SMD0805_2012Metric].step"
+	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[RES_SMD_0805_2012Metric]/[RES_SMD_0805_2012Metric].step"
 		(offset
 			(xyz -0 -0 -0)
 		)
