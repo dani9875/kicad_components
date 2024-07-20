@@ -10,6 +10,12 @@ Manually handled:
 
 ## Release notes
 
+### Version: v2
+Changelog:
+- Param generic resistor/capacitor compnent
+- FUSE added (generic)
+- Adding information to many components
+
 ### Version: v1
 Changelog:
 - Initial component library
