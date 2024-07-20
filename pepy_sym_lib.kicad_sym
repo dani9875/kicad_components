@@ -9076,7 +9076,7 @@
 			)
 		)
 		(property "Description" "Smallsized module supporting 2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 8 MB, optional 2 MB PSRAM in chip package 39 GPIOs, rich set of peripherals Onboard PCB antenna or external antenna connector"
-			(at 0 0 0)
+			(at 0.762 -53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9085,7 +9085,25 @@
 			)
 		)
 		(property "LCSC Part" "C2913206"
-			(at 0 0 0)
+			(at -0.762 -61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Espressif Systems"
+			(at 0 -51.054 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SMD-41P"
+			(at -0.762 -64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16303,8 +16321,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "3A Direct Insert Single Pole Double Throw (SPDT) 125V 125V 3A 10000 times Black Plugin Slide Switches ROHS"
+			(at 0.508 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16314,6 +16332,24 @@
 		)
 		(property "LCSC Part" "C319012"
 			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" " XKB Connection"
+			(at -1.016 -13.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "THT"
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)

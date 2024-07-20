@@ -1,4 +1,4 @@
-(footprint "MountingHole_2.2mm_M2_DIN965_Pad"
+(footprint "[MOUNTING_HOLE]MountingHole_2.2mm_M2_DIN965_Pad"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -8,6 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -2.9 0)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "19c946ee-b3b4-4d5b-99d8-d5acbc87409e")
 		(effects
 			(font
@@ -17,7 +18,7 @@
 		)
 	)
 	(property "Value" "MountingHole_2.2mm_M2_DIN965_Pad"
-		(at 0 2.9 0)
+		(at -0.2 6.4 0)
 		(layer "F.Fab")
 		(uuid "80ca78b8-b02b-42ac-a54f-babb0ad8a96c")
 		(effects
@@ -27,8 +28,8 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
+	(property "Footprint" "[MOUNTING_HOLE]MountingHole_2.2mm_M2_DIN965_Pad"
+		(at 0 4.6 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -87,7 +88,7 @@
 		(uuid "fca650dc-3a64-4e4f-a766-0427e1c844e6")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 8.2 0)
 		(layer "F.Fab")
 		(uuid "8565d114-bfd4-4003-9201-ff684803761c")
 		(effects

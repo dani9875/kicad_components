@@ -9076,7 +9076,7 @@
 			)
 		)
 		(property "Description" "Smallsized module supporting 2.4 GHz WiFi (802.11 b/g/n) and Bluetooth ® 5 (LE) Built around ESP32S3 series of SoCs, Xtensa ® dualcore 32bit LX7 microprocessor Flash up to 8 MB, optional 2 MB PSRAM in chip package 39 GPIOs, rich set of peripherals Onboard PCB antenna or external antenna connector"
-			(at 0 0 0)
+			(at 0.762 -53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9085,7 +9085,25 @@
 			)
 		)
 		(property "LCSC Part" "C2913206"
-			(at 0 0 0)
+			(at -0.762 -61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Espressif Systems"
+			(at 0 -51.054 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SMD-41P"
+			(at -0.762 -64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16647,7 +16665,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "SW"
+		(property "Reference" "S"
 			(at 0 5.08 0)
 			(effects
 				(font
@@ -16656,7 +16674,7 @@
 			)
 		)
 		(property "Value" "TS-1088-AR02016"
-			(at 0 -5.08 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16664,7 +16682,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[TACTILE_SWITCH]XUNPU TS-1088-AR02016"
-			(at 0 -7.62 0)
+			(at 0 -5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16673,7 +16691,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XUNPU-TS-1088-AR02016_C720477.html"
-			(at 0 -10.16 0)
+			(at 0 -7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16681,8 +16699,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "Without 50mA 4mm 100MΩ 100000 Times 12V 160gf 3mm 2mm Round Button Standing paste SPST SMD Tactile Switches ROHS"
+			(at 0.508 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16691,7 +16709,16 @@
 			)
 		)
 		(property "LCSC Part" "C720477"
-			(at 0 -12.7 0)
+			(at 0 -10.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XUNPU"
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
