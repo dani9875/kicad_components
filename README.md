@@ -25,3 +25,6 @@ Changelog:
 - [ ] Add installing steps in how to section
 - [ ] Don't run update on original_components folder when running "add_component.sh"
 - [ ] Rewiring 3D model files easily 
+- [ ] Consumpotion and other parameters for the components?
+- [ ] Bespoke inventory and generated BOM footprint interface adapation
+
