@@ -10,6 +10,12 @@ Manually handled:
 
 ## Release notes
 
+### Version: v3
+Changelog:
+- 10 nF YAGEO capacitor added
+- 100 MOhm Visay resistor added
+- Resistor with 1206 size (symbol and footprint) added
+
 ### Version: v2
 Changelog:
 - Param generic resistor/capacitor compnent
