@@ -10,6 +10,10 @@ Manually handled:
 
 ## Release notes
 
+### Version: v4
+Changelog:
+- 10P 2x5 1.27 mm pin header added to library
+
 ### Version: v3
 Changelog:
 - 10 nF YAGEO capacitor added
