@@ -5271,6 +5271,377 @@
 			)
 		)
 	)
+	(symbol "[ANTENNA]13.56MHZ_RFID_Antenna"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "ANT"
+			(at 0 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 1.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[ANTENNA]13.56MHZ_RFID_ANTENNA"
+			(at -0.254 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 1.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 1.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[ANTENNA]13.56MHZ_RFID_Antenna_0_1"
+			(polyline
+				(pts
+					(xy -3.81 -2.286) (xy 2.032 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 2.54) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 2.286) (xy -2.54 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 2.286) (xy 2.286 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 2.032) (xy -2.286 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 2.032) (xy 2.032 2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 -2.286) (xy 2.032 2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 -2.54) (xy -2.286 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 -2.54) (xy 2.286 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.794) (xy -2.54 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.794) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 -2.286) (xy -3.8117 -2.54) (xy -3.81 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[ANTENNA]13.56MHZ_RFID_Antenna_1_1"
+			(pin passive line
+				(at -6.35 2.54 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 -2.54 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "[ANTENNA]2.4GHz_WIFI/BT"
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "ANT"
+			(at 0 9.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.4GHz PCB antenna"
+			(at -0.762 7.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -0.762 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -0.762 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -0.762 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[ANTENNA]2.4GHz_WIFI/BT_0_1"
+			(polyline
+				(pts
+					(xy -5.08 -5.08) (xy 1.27 -5.08) (xy 1.524 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -2.54) (xy 1.27 -2.54) (xy 1.524 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.524 -5.08) (xy 1.524 -1.27) (xy -0.762 -1.27) (xy -0.762 0.762) (xy 1.524 0.762) (xy 1.524 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.524 2.54) (xy -0.762 2.54) (xy -0.762 4.318) (xy 1.778 4.318) (xy 1.778 5.842) (xy -1.778 5.842)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[ANTENNA]2.4GHz_WIFI/BT_1_1"
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "ANT_IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C105M4VACTU"
 		(pin_numbers hide)
 		(pin_names
@@ -13143,7 +13514,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at -7.62 7.62 0)
+			(at -0.508 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13152,7 +13523,7 @@
 			)
 		)
 		(property "Value" "TC2050-IDC-NL"
-			(at -7.62 -10.16 0)
+			(at -8.128 8.636 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13161,7 +13532,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[PLUG_OF_NAILS_10P]TC2050_IDC_NL"
-			(at 0 0 0)
+			(at -0.508 -13.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13170,8 +13541,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2050-IDC-NL_Datasheet_8.pdf"
+			(at -0.254 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13179,8 +13550,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "Plug-Of-Nails™ Cable Assembly"
+			(at 1.016 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13188,38 +13559,8 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Tag-Connect"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer recommendations"
-			(at 0 0 0)
+		(property "Manufacturer" "Tag-Connect"
+			(at 1.016 -18.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13240,10 +13581,12 @@
 					(type background)
 				)
 			)
-			(pin passive line
+		)
+		(symbol "[PLUG_OF_NAILS_10P]TC2050_IDC_NL_1_1"
+			(pin free line
 				(at -12.7 5.08 0)
 				(length 5.08)
-				(name "1"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13258,10 +13601,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at 12.7 5.08 180)
 				(length 5.08)
-				(name "10"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13276,10 +13619,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at -12.7 2.54 0)
 				(length 5.08)
-				(name "2"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13294,10 +13637,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at -12.7 0 0)
 				(length 5.08)
-				(name "3"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13312,10 +13655,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at -12.7 -2.54 0)
 				(length 5.08)
-				(name "4"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13330,10 +13673,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at -12.7 -5.08 0)
 				(length 5.08)
-				(name "5"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13348,10 +13691,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at 12.7 -5.08 180)
 				(length 5.08)
-				(name "6"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13366,10 +13709,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at 12.7 -2.54 180)
 				(length 5.08)
-				(name "7"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13384,10 +13727,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at 12.7 0 180)
 				(length 5.08)
-				(name "8"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -13402,10 +13745,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin free line
 				(at 12.7 2.54 180)
 				(length 5.08)
-				(name "9"
+				(name "~"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -17376,7 +17719,7 @@
 			(pin passive line
 				(at -7.62 0 0)
 				(length 2.54)
-				(name "1"
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17394,7 +17737,7 @@
 			(pin passive line
 				(at 7.62 0 180)
 				(length 2.54)
-				(name "2"
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -18276,6 +18619,70 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+		)
+	)
+	(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO"
+		(extends "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KOQNNNE")
+		(property "Reference" "C"
+			(at 0 5.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C0805C120J5GACAUTO"
+			(at -0.254 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2401181546_KEMET-C0805C120J5GACAUTO_C3844403.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V 12pF C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS "
+			(at 0 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at -0.254 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Nvalue" "12pF"
+			(at -0.254 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
