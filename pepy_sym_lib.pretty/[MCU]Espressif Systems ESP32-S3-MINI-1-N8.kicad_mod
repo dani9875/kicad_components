@@ -36,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -48,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +62,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -786,7 +789,7 @@
 			)
 		)
 	)
-	(model "/home/perseluspy/Documents/kicad/symbols/BULETM-SMD_ESP32-S3-MINI-1-N8/easyeda2kicad.3dshapes/BULETM-SMD_ESP32-S3-MINI-1-N8.step"
+	(model "${ORIGINAL_COMPONENTS}/[MCU]Espressif Systems ESP32-S3-MINI-1-N8/[MCU]Espressif Systems ESP32-S3-MINI-1-N8.step"
 		(offset
 			(xyz -0 2.5 0)
 		)
