@@ -188,13 +188,12 @@ if [ -f "$footprint_file" ]; then
   content=$(cat "$footprint_file")
 
   # Update the 3D model path in the file content using awk
-  content=$(echo "$content" | awk -v new="$new_model_path_abs" '{
+  content=$(echo "$content" | awk -v new="\\\${ORIGINAL_COMPONENTS}/$NEW_NAME/${footprint_name}.step" '{
     if ($1 == "(model") {
       sub(/".*"/, "\"" new "\"")
     }
     print
   }')
-
   # Write the modified content back to the file
   echo "$content" > "$footprint_file"
 

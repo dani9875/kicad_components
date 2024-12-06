@@ -2,7 +2,15 @@
 
 *Note: Libary created used and optimized on KiCAD 8.0*
 
+
 # How to start using the component library
+
+## 0. Install easyeda2kicad (prereq: python)
+
+```bash
+pip install easyeda2kicad
+```
+
 ## 1. Clone the Repository
 
 Clone the repository to your local machine using the following command:
@@ -67,13 +75,29 @@ git clone git@github.com:dani9875/kicad_components.git
 
 ![Generated files](./docs/new_files.png)
 
-## New generals components (e.g. resistors, capacitors) 
+## New general components (e.g. resistors, capacitors) 
 
+1. Search for a component on **LCSC**, for example:  
+   [https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.html](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.html).
 
+2. Look up the folder where you would like to place the component, e.g., [RES_SMD_0805_2012Metric]. If the folder does not exist, you need to download the component and manually create a general folder similar to the example folder above.
 
+3. Retrieve the **LCSC part number**, e.g., `C17673`.
 
+   ```bash
+   ./add_component.sh C17673 [RES_SMD_0805_2012Metric]4.7k_UNI-ROYAL(Uniroyal Elec)0805W8F4701T5E --generic [RES_SMD_0805_2012Metric]
+   ```
 
-Manually handled:
+4. Make some changes by hand
+   - Go to the symbol editor and select the component in question.
+   - Unify the symbol appearance with others, including the settings for data visibility.
+   - Set the correct footprint library.
+   - Remove the value from the symbol name.
+   - Add any other useful data to the fields.
+   - Save it.
+
+## Manually handled components
+
 - Test points
 - Mounting holes
 
@@ -102,9 +126,7 @@ Changelog:
 
 
 ## List of potentional improvements
-- [ ] Add installing steps in how to section
 - [ ] Don't run update on original_components folder when running "add_component.sh"
-- [ ] Rewiring 3D model files easily 
-- [ ] Consumpotion and other parameters for the components?
+- [ ] Consumpotion and other parameters for the components
 - [ ] Bespoke inventory and generated BOM footprint interface adapation
 
