@@ -31,7 +31,7 @@
   (pad "4" thru_hole circle (at 1.27 0) (size 1.7 1.7) (drill 1.100023) (layers "*.Cu" "*.Mask") (tstamp fe2b7b72-01af-4963-8850-9add2902411f))
   (pad "5" thru_hole circle (at 3.81 0) (size 1.7 1.7) (drill 1.100023) (layers "*.Cu" "*.Mask") (tstamp b97e6f58-d3b6-4be0-ba91-029f16c31079))
   (pad "6" thru_hole circle (at 6.35 0) (size 1.7 1.7) (drill 1.100023) (layers "*.Cu" "*.Mask") (tstamp f1084107-1c40-446b-b825-a035d73ba829))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[6P_HEADER_STR]XFCN PZ254V-11-06P/[6P_HEADER_STR]XFCN PZ254V-11-06P.step"
+  (model "${ORIGINAL_COMPONENTS}/[6P_HEADER_STR]XFCN PZ254V-11-06P/[6P_HEADER_STR]XFCN PZ254V-11-06P.step"
     (offset (xyz 0 -0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

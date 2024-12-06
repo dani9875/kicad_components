@@ -81,7 +81,7 @@
 	(pad "" thru_hole circle (at -2.20 0.16) (size 0.40 0.40) (drill 0.25) (layers *.Cu *.Paste *.Mask))
 	(fp_circle (center -9.00 -16.45) (end -8.97 -16.45) (layer F.Fab) (width 0.06))
 	(fp_circle (center -9.35 -8.95) (end -9.15 -8.95) (layer Cmts.User) (width 0.40))
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[MCU]Espressif Systems ESP32-S3-WROOM-1-N8/[MCU]Espressif Systems ESP32-S3-WROOM-1-N8.step"
+	(model "${ORIGINAL_COMPONENTS}/[MCU]Espressif Systems ESP32-S3-WROOM-1-N8/[MCU]Espressif Systems ESP32-S3-WROOM-1-N8.step"
 		(offset (xyz 0.000 3.700 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

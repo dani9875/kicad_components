@@ -163,7 +163,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "1f1be575-7471-45f8-ba1f-323d11539231")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[NMOS]Nexperia BSS138PW,115/[NMOS]Nexperia BSS138PW,115.step"
+	(model "${ORIGINAL_COMPONENTS}/[NMOS]Nexperia BSS138PW,115/[NMOS]Nexperia BSS138PW,115.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -239,7 +239,7 @@
 			"dd1b3122-8369-43e7-94a6-ff7cbfa5435f"
 		)
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[RES_SMD_0805_2012Metric]/[RES_SMD_0805_2012Metric].step"
+	(model "${ORIGINAL_COMPONENTS}/[RES_SMD_0805_2012Metric]/[RES_SMD_0805_2012Metric].step"
 		(offset
 			(xyz -0 -0 -0)
 		)

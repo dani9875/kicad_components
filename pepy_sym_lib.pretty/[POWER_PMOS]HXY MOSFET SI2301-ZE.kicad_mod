@@ -30,7 +30,7 @@
   (pad "1" smd rect (at 1 0.95) (size 1.25 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 10c92239-1a3b-4abf-83c3-5725ed06eefc))
   (pad "2" smd rect (at 1 -0.95) (size 1.25 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c4343a6b-46ce-49cb-ad6e-ab2919d1fe1d))
   (pad "3" smd rect (at -1 0) (size 1.25 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2e5ee657-3434-4b13-a2d8-8d45dec127ac))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[POWER_PMOS]HXY MOSFET SI2301-ZE/[POWER_PMOS]HXY MOSFET SI2301-ZE.step"
+  (model "${ORIGINAL_COMPONENTS}/[POWER_PMOS]HXY MOSFET SI2301-ZE/[POWER_PMOS]HXY MOSFET SI2301-ZE.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

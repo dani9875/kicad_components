@@ -295,7 +295,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "70107940-ecd1-4d17-a843-a0aa470542cf")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[10P_2X5_IDC_1_27MM_MALE]Amphenol ICC 20021121-00010T4LF/[10P_2X5_IDC_1_27MM_MALE]Amphenol ICC 20021121-00010T4LF.step"
+	(model "${ORIGINAL_COMPONENTS}/[10P_2X5_IDC_1_27MM_MALE]Amphenol ICC 20021121-00010T4LF/[10P_2X5_IDC_1_27MM_MALE]Amphenol ICC 20021121-00010T4LF.step"
 		(offset
 			(xyz 0 -0 -0)
 		)

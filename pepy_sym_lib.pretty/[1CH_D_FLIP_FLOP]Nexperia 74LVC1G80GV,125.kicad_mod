@@ -30,7 +30,7 @@
   (pad "3" smd rect (at 0.95 1.09) (size 0.45 1.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0fd528a1-f010-467a-8870-9cbc2c157bf6))
   (pad "4" smd rect (at 0.95 -1.09) (size 0.45 1.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 1a1f36e5-a45c-4d51-81e1-40c04fcc0d70))
   (pad "5" smd rect (at -0.95 -1.09) (size 0.45 1.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4b9569d3-d83f-42fe-87c3-106b97857bb5))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[1CH_D_FLIP_FLOP]Nexperia 74LVC1G80GV,125/[1CH_D_FLIP_FLOP]Nexperia 74LVC1G80GV,125.step"
+  (model "${ORIGINAL_COMPONENTS}/[1CH_D_FLIP_FLOP]Nexperia 74LVC1G80GV,125/[1CH_D_FLIP_FLOP]Nexperia 74LVC1G80GV,125.step"
     (offset (xyz 0 0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

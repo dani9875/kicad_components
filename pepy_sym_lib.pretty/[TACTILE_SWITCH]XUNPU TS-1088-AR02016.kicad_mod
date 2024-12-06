@@ -27,7 +27,7 @@
     (stroke (width 0.06) (type solid)) (fill none) (layer "F.Fab") (tstamp 509b71d5-ffea-419b-b14d-809908e2ac01))
   (pad "1" smd rect (at -2.18 0) (size 1.23 1.36) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 645d883a-88b0-4abc-895d-ac6a433b0b69))
   (pad "2" smd rect (at 2.18 0) (size 1.23 1.36) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d1fcbcbc-5a00-4978-905f-380af195c8cf))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[TACTILE_SWITCH]XUNPU TS-1088-AR02016/[TACTILE_SWITCH]XUNPU TS-1088-AR02016.step"
+  (model "${ORIGINAL_COMPONENTS}/[TACTILE_SWITCH]XUNPU TS-1088-AR02016/[TACTILE_SWITCH]XUNPU TS-1088-AR02016.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

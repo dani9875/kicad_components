@@ -52,7 +52,7 @@
   (pad "15" smd rect (at -1.25 -1.16) (size 0.28 0.66) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 6d3069a4-499a-4945-99b4-c85561fbb98b))
   (pad "16" smd rect (at -1.66 -0.25) (size 0.66 0.28) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp dd5bf471-6cc4-406b-9126-8ea2ecb5d64b))
   (pad "17" smd rect (at 0 0) (size 2 1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7e5d27b6-cdb8-4643-ab4f-f30e9c49bef1))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[8BIT_BINARY_COUNTER]Nexperia 74HC590BQ,115/[8BIT_BINARY_COUNTER]Nexperia 74HC590BQ,115.step"
+  (model "${ORIGINAL_COMPONENTS}/[8BIT_BINARY_COUNTER]Nexperia 74HC590BQ,115/[8BIT_BINARY_COUNTER]Nexperia 74HC590BQ,115.step"
     (offset (xyz 0 0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -245,7 +245,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "a2e29276-a70e-4fa9-a110-44134d9629f1")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[LED]Lite-On LTST-C190KRKT/[LED]Lite-On LTST-C190KRKT.step"
+	(model "${ORIGINAL_COMPONENTS}/[LED]Lite-On LTST-C190KRKT/[LED]Lite-On LTST-C190KRKT.step"
 		(offset
 			(xyz 0 -0 -0)
 		)

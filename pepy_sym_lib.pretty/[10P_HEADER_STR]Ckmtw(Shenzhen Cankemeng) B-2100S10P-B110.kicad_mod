@@ -37,7 +37,7 @@
   (pad "8" thru_hole circle (at 2.54 -1.27) (size 1.7 1.7) (drill 1.100023) (layers "*.Cu" "*.Mask") (tstamp 0901982a-7d53-4224-aea4-54a2f635963c))
   (pad "9" thru_hole circle (at 5.08 1.27) (size 1.7 1.7) (drill 1.100023) (layers "*.Cu" "*.Mask") (tstamp 45ec751f-d17c-4b5a-8e78-cc3a329f1d7e))
   (pad "10" thru_hole circle (at 5.08 -1.27) (size 1.7 1.7) (drill 1.100023) (layers "*.Cu" "*.Mask") (tstamp afd5d951-8cfd-4c3e-94fa-2e9f46956711))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110/[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110.step"
+  (model "${ORIGINAL_COMPONENTS}/[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110/[10P_HEADER_STR]Ckmtw(Shenzhen Cankemeng) B-2100S10P-B110.step"
     (offset (xyz -5 1.25 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

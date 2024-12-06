@@ -544,7 +544,7 @@
 		(remove_unused_layers no)
 		(uuid "e3536f0f-21f2-458f-a879-720fd912d26a")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1.step"
+	(model "${ORIGINAL_COMPONENTS}/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1/[10P_2X5_IDC_MALE]TE Connectivity 5103308-1.step"
 		(offset
 			(xyz 10.2 4.4 0)
 		)

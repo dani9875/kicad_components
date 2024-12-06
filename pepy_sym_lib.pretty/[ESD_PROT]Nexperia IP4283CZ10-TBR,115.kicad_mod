@@ -206,7 +206,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "875b03fe-2658-4a9f-a670-a27d25128936")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[ESD_PROT]Nexperia IP4283CZ10-TBR,115/[ESD_PROT]Nexperia IP4283CZ10-TBR,115.step"
+	(model "${ORIGINAL_COMPONENTS}/[ESD_PROT]Nexperia IP4283CZ10-TBR,115/[ESD_PROT]Nexperia IP4283CZ10-TBR,115.step"
 		(offset
 			(xyz 0 -0 -0)
 		)

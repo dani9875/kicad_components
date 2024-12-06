@@ -342,7 +342,7 @@
 			"a214ab6b-1ab5-4c05-a8be-e77cc2822480" "c3fd8a64-8017-4841-889f-900f644127a9"
 		)
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z.step"
+	(model "${ORIGINAL_COMPONENTS}/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z.step"
 		(offset
 			(xyz 0 -0 -0)
 		)

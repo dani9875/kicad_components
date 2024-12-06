@@ -42,7 +42,7 @@
   (pad "3" smd rect (at 1.3 -0.95) (size 1.1 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b738d968-ac97-4aaa-aded-0a57e5f9cf3e))
   (pad "4" smd rect (at -1.3 -0.95) (size 1.1 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 1d70b45b-eda7-4eae-898b-364324cd8ed9))
   (pad "5" smd rect (at -1.3 0.95) (size 1.1 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e86472c3-66eb-4b67-99cb-201289b66305))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[SCHMITT_TRIGGER]UMW(Youtai Semiconductor Co., Ltd.) SN74LVC1G14DBVR/[SCHMITT_TRIGGER]UMW(Youtai Semiconductor Co., Ltd.) SN74LVC1G14DBVR.step"
+  (model "${ORIGINAL_COMPONENTS}/[SCHMITT_TRIGGER]UMW(Youtai Semiconductor Co., Ltd.) SN74LVC1G14DBVR/[SCHMITT_TRIGGER]UMW(Youtai Semiconductor Co., Ltd.) SN74LVC1G14DBVR.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

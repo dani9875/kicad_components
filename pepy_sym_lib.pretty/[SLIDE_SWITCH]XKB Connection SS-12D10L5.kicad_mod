@@ -152,7 +152,7 @@
 		(remove_unused_layers no)
 		(uuid "d03f9978-91fc-4704-93a4-7d2d96b7d06c")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[SLIDE_SWITCH]XKB Connection SS-12D10L5/[SLIDE_SWITCH]XKB Connection SS-12D10L5.step"
+	(model "${ORIGINAL_COMPONENTS}/[SLIDE_SWITCH]XKB Connection SS-12D10L5/[SLIDE_SWITCH]XKB Connection SS-12D10L5.step"
 		(offset
 			(xyz 0 -0 0)
 		)

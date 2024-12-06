@@ -45,7 +45,7 @@
   (pad "9" smd rect (at -5.85 -2.35) (size 1.3 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a99f159a-539b-4a4b-9e56-38da0f48e2b2))
   (pad "10" smd rect (at 5.85 -2.35) (size 1.3 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 9ba8e92d-0c77-4432-b015-6b7d0d270960))
   (pad "11" smd rect (at 5.85 6.45) (size 1.3 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp f4fd4a1a-25e5-42fc-8e72-68159c11ee65))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[U_SIM]XUNPU SMN-305-ARP7/[U_SIM]XUNPU SMN-305-ARP7.step"
+  (model "${ORIGINAL_COMPONENTS}/[U_SIM]XUNPU SMN-305-ARP7/[U_SIM]XUNPU SMN-305-ARP7.step"
     (offset (xyz -0 -0.24 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

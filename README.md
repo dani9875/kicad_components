@@ -1,7 +1,47 @@
 # kicad_components
 
-# How to
-Comming soon...
+*Note: Libary created used and optimized on KiCAD 8.0*
+
+# How to start using the component library
+## 1. Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone git@github.com:dani9875/kicad_components.git
+```
+
+## 2. Add Symbol Libraries
+
+1. Open **KiCad**.
+2. Navigate to **Preferences** > **Manage Symbol Libraries**.
+3. In the dialog:
+   - Click the **Add Library** button (the `+` icon).
+   - Locate and select the `pepy_sim_lib.kicad_sym` file from the cloned repository.
+   - Choose **Global** or **Project** scope based on your preference.
+4. Save the changes.
+
+## 3. Add Footprint Libraries
+
+1. Open **KiCad**.
+2. Navigate to **Preferences** > **Manage Footprint Libraries**.
+3. In the dialog:
+   - Click the **Add Library** button (the `+` icon).
+   - Locate and select the `pepy_sim_lib.pretty` folder from the cloned repository.
+   - Choose **Global** or **Project** scope based on your preference.
+4. Save the changes.
+
+## 4. Configure Paths
+
+1. Open **KiCad**.
+2. Navigate to **Preferences** > **Configure Paths**.
+3. In the dialog:
+   - Click the **Add Path** button (the `+` icon).
+   - Add an environment name called **`ORIGINAL_COMPONENTS`**.
+   - Associate it with the `original_components` folder from the cloned repository.
+4. Save the changes.
+
+# How to add new components to the library
 
 Manually handled:
 - Test points

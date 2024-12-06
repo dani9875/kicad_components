@@ -218,7 +218,7 @@
 		(roundrect_rratio 0.2066115702)
 		(uuid "0a70bac2-20b0-488e-80f5-9aa229437241")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[RES_SMD_1206_3216Metric]/[RES_SMD_1206_3216Metric].step"
+	(model "${ORIGINAL_COMPONENTS}/[RES_SMD_1206_3216Metric]/[RES_SMD_1206_3216Metric].step"
 		(offset
 			(xyz 0 0 0)
 		)

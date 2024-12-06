@@ -43,7 +43,7 @@
   (pad "12" smd oval (at -1.27 -2.77) (size 0.57 2.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d30fb4ec-8dc4-4d58-a491-d5cec590ba12))
   (pad "13" smd oval (at -2.54 -2.77) (size 0.57 2.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a5eead2b-df63-47d1-940e-b2cad6a8d3cc))
   (pad "14" smd oval (at -3.81 -2.77) (size 0.57 2.04) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c4dd9d47-4d13-430e-8dde-0f93f47aaa3b))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[2CH_D_FLIP_FLOP]Nexperia HEF4013BT,653/[2CH_D_FLIP_FLOP]Nexperia HEF4013BT,653.step"
+  (model "${ORIGINAL_COMPONENTS}/[2CH_D_FLIP_FLOP]Nexperia HEF4013BT,653/[2CH_D_FLIP_FLOP]Nexperia HEF4013BT,653.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

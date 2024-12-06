@@ -49,7 +49,7 @@
   (pad "13" thru_hole oval (at -4.32 2.38) (size 1.2 1.8) (drill oval 0.599999 1.199998) (layers "*.Cu" "*.Mask") (tstamp 8180cf33-56f0-4a93-affb-86432ca63936))
   (pad "14" thru_hole oval (at 4.32 -1.83) (size 1.1 2) (drill oval 0.599999 1.500022) (layers "*.Cu" "*.Mask") (tstamp 138e5b52-0cf8-40be-a54e-5c66594b7762))
   (pad "14" thru_hole oval (at 4.32 2.38) (size 1.2 1.8) (drill oval 0.599999 1.199998) (layers "*.Cu" "*.Mask") (tstamp bbde93eb-c065-48a9-81d9-05018319ec12))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[USB_C_16P_RA_FEMALE]SHOU HAN TYPE-C 16PIN 2MD(073)/[USB_C_16P_RA_FEMALE]SHOU HAN TYPE-C 16PIN 2MD(073).step"
+  (model "${ORIGINAL_COMPONENTS}/[USB_C_16P_RA_FEMALE]SHOU HAN TYPE-C 16PIN 2MD(073)/[USB_C_16P_RA_FEMALE]SHOU HAN TYPE-C 16PIN 2MD(073).step"
     (offset (xyz 0 -1.2 0.9))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

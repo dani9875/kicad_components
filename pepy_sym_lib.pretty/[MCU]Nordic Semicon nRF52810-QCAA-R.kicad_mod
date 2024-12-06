@@ -68,7 +68,7 @@
   (pad "31" smd oval (at -2.65 1.25) (size 0.9 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 44729a60-8920-4b21-9225-689d0ec5b1a2))
   (pad "32" smd oval (at -2.65 1.75) (size 0.9 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ee947f4d-73e9-4b4e-9411-6401d8921da5))
   (pad "33" smd rect (at 0 0) (size 3.8 3.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4e487989-29ed-42e4-b2ff-f07fdb8612d3))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[MCU]Nordic Semicon nRF52810-QCAA-R/[MCU]Nordic Semicon nRF52810-QCAA-R.step"
+  (model "${ORIGINAL_COMPONENTS}/[MCU]Nordic Semicon nRF52810-QCAA-R/[MCU]Nordic Semicon nRF52810-QCAA-R.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 270))

@@ -30,7 +30,7 @@
   (pad "3" smd rect (at 1.05 -0.65 270) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b8f1327d-47f0-4d3c-bd63-01578c102de8))
   (pad "4" smd rect (at -1.05 -0.65 270) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 34bc1a8f-c45d-408a-add4-c876b430860d))
   (pad "5" smd rect (at -1.05 0.65 270) (size 0.4 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7ba0a2d7-f1af-48c9-8d68-9a3747ad17a5))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[1_CH_3_ST_BUFFER]Texas Instruments SN74LVC1G125DCKR/[1_CH_3_ST_BUFFER]Texas Instruments SN74LVC1G125DCKR.step"
+  (model "${ORIGINAL_COMPONENTS}/[1_CH_3_ST_BUFFER]Texas Instruments SN74LVC1G125DCKR/[1_CH_3_ST_BUFFER]Texas Instruments SN74LVC1G125DCKR.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

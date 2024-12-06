@@ -30,7 +30,7 @@
   (pad "3" smd rect (at 0.95 1.15) (size 0.49 1.16) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7cf51815-26c4-45f8-9e05-8a6bf18df22b))
   (pad "4" smd rect (at 0.95 -1.15) (size 0.49 1.18) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 421114a9-01d8-4ad7-a26c-93e0534850ae))
   (pad "5" smd rect (at -0.95 -1.15) (size 0.49 1.18) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d6609572-1cc1-4b15-8f48-f1283e445302))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[VOLTAGE_SUPERVISOR]Texas Instruments TPS3823-33DBVR/[VOLTAGE_SUPERVISOR]Texas Instruments TPS3823-33DBVR.step"
+  (model "${ORIGINAL_COMPONENTS}/[VOLTAGE_SUPERVISOR]Texas Instruments TPS3823-33DBVR/[VOLTAGE_SUPERVISOR]Texas Instruments TPS3823-33DBVR.step"
     (offset (xyz 0.09 -0.03 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

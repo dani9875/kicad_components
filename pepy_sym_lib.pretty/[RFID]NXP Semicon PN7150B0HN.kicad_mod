@@ -76,7 +76,7 @@
   (pad "39" smd rect (at -1.75 -2.91) (size 0.28 0.66) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 316214ab-8f40-41d6-8e6a-a007214d0b00))
   (pad "40" smd rect (at -2.25 -2.91) (size 0.28 0.66) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e527938d-53e1-4a6b-8d75-0585866bbbe6))
   (pad "41" smd rect (at 0 0) (size 4.5 4.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e2ac5c2a-216f-4295-a734-23ea3a991e34))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[RFID]NXP Semicon PN7150B0HN/[RFID]NXP Semicon PN7150B0HN.step"
+  (model "${ORIGINAL_COMPONENTS}/[RFID]NXP Semicon PN7150B0HN/[RFID]NXP Semicon PN7150B0HN.step"
     (offset (xyz 0 -0 -0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

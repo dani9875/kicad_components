@@ -159,7 +159,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "08d17c16-3496-47cd-abf2-45237a7844f4")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[LDO]Diodes Incorporated AP2114HA-3.3TRG1/[LDO]Diodes Incorporated AP2114HA-3.3TRG1.step"
+	(model "${ORIGINAL_COMPONENTS}/[LDO]Diodes Incorporated AP2114HA-3.3TRG1/[LDO]Diodes Incorporated AP2114HA-3.3TRG1.step"
 		(offset
 			(xyz 0.01 -0.08 -0)
 		)

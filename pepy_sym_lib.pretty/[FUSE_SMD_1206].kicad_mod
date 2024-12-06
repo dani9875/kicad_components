@@ -178,7 +178,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "fa335956-e8bc-4b6d-939d-87562173c8ec")
 	)
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[FUSE_SMD_1206]/[FUSE_SMD_1206].step"
+	(model "${ORIGINAL_COMPONENTS}/[FUSE_SMD_1206]/[FUSE_SMD_1206].step"
 		(offset
 			(xyz 0 -0 -0)
 		)

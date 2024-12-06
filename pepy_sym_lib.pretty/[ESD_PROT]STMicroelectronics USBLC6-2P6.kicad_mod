@@ -20,7 +20,7 @@
 	(fp_circle (center 0.80 0.83) (end 0.83 0.83) (layer F.Fab) (width 0.06))
 	(fp_circle (center 1.06 0.51) (end 1.16 0.51) (layer Cmts.User) (width 0.20))
 	(fp_arc (start 1.06 0.99) (end 1.06 0.99) (angle -359.00) (layer F.SilkS) (width 0.20))
-	(model "/home/perseluspy/Documents/source/kicad_components/original_components/[ESD_PROT]STMicroelectronics USBLC6-2P6/[ESD_PROT]STMicroelectronics USBLC6-2P6.step"
+	(model "${ORIGINAL_COMPONENTS}/[ESD_PROT]STMicroelectronics USBLC6-2P6/[ESD_PROT]STMicroelectronics USBLC6-2P6.step"
 		(offset (xyz -0.000 0.030 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 180))

@@ -58,7 +58,7 @@
   (pad "12" smd rect (at 7.75 5.3) (size 1.2 2.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7c1a3fcf-c253-43da-91ff-3f2b4a855046))
   (pad "13" smd rect (at 6.85 -4.3) (size 1.6 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 9cb1f6e4-3f57-45a4-88a0-317b4bb5388f))
   (pad "CD" smd rect (at -6.55 -5.3) (size 0.7 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0ffe185a-a201-4db4-b1f0-84cd44713fc7))
-  (model "/home/perseluspy/Documents/source/kicad_components/original_components/[MICRO_SD_PUSH]SHOU HAN TF PUSH/[MICRO_SD_PUSH]SHOU HAN TF PUSH.step"
+  (model "${ORIGINAL_COMPONENTS}/[MICRO_SD_PUSH]SHOU HAN TF PUSH/[MICRO_SD_PUSH]SHOU HAN TF PUSH.step"
     (offset (xyz 0 -2.4 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
