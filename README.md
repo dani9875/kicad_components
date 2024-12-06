@@ -1,4 +1,5 @@
-# kicad_components
+# pepy_symbol KiCAD component library
+This is a KiCAD custom component library that comes in handy for my projects. Feel free to fork it or get inspired by it. It aims to automate the component addition, primarily by using an LCSC number, but components can also be added manually by following the structure.
 
 *Note: Libary created used and optimized on KiCAD 8.0*
 
@@ -97,9 +98,7 @@ git clone git@github.com:dani9875/kicad_components.git
    - Save it.
 
 ## Manually handled components
-
-- Test points
-- Mounting holes
+Currently the test point and mounting holes are handled manually. They generally have same symbols however their footprint tend to vary. 
 
 
 ## Release notes
