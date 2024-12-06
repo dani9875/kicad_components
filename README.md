@@ -43,6 +43,36 @@ git clone git@github.com:dani9875/kicad_components.git
 
 # How to add new components to the library
 
+## New individual components 
+1. Search for a component on **LCSC**, for example:  
+   [https://www.lcsc.com/product-detail/igbt-transistors-modules_stmicroelectronics-stgp19nc60kd_C59521.html](https://www.lcsc.com/product-detail/igbt-transistors-modules_stmicroelectronics-stgp19nc60kd_C59521.html).
+
+2. Retrieve the **LCSC part number**, e.g., `C59521`.
+
+3. Assign a descriptive name to the component, using underscores (`_`) instead of spaces. For example:  
+   `[IGBT]STMicroelectronics_STGP19NC60KD`  
+   - The prefix `[IGBT]` is based on the type of component (determine the type yourself).  
+   - The rest of the name should include the manufacturer and part number.
+
+4. Run the following command to add the component:
+
+   ```bash
+   ./add_component.sh C59521 [IGBT]STMicroelectronics_STGP19NC60KD
+    ```
+
+5. The script will automatically generate files, with the following results:
+- The original files will be retained in the `original_components` folder under a subfolder named after the name you provided (this includes the symbol, 3D files, and design file).  
+- The `pepy_sym_lib.kicad_sym` file will be updated with the new symbol file descriptor.  
+- The design file will be stored in the `pepy_sym_lib.pretty` folder under the component's design.
+
+![Generated files](./docs/new_files.png)
+
+## New generals components (e.g. resistors, capacitors) 
+
+
+
+
+
 Manually handled:
 - Test points
 - Mounting holes
