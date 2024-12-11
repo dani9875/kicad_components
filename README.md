@@ -103,6 +103,11 @@ Currently the test point and mounting holes are handled manually. They generally
 
 ## Release notes
 
+### Version: v5
+Changelog:
+- Rotation change for IP428
+- Change to relative path
+
 ### Version: v4
 Changelog:
 - 10P 2x5 1.27 mm pin header added to library
