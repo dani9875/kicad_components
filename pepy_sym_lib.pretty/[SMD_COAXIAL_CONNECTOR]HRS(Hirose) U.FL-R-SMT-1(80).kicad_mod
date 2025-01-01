@@ -1,0 +1,226 @@
+(footprint "[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4.76 0)
+		(layer "F.SilkS")
+		(uuid "d95edef9-9df2-4d30-90f6-c8bb8df36473")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RF-SMD_FRF05002-JSS103M"
+		(at 0 4.76 0)
+		(layer "F.Fab")
+		(uuid "c5501621-cff3-4324-bf8a-883c8030f7f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0893bed0-15ad-4317-bf87-4912712c481b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b07a46b4-69ae-4071-aa04-854c6a9377a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d88c73e5-7ffb-4051-b770-f69934420162")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.3 -2.1)
+		(end -0.35 -2.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3958117-723f-47c5-9158-d89c1dd99fc4")
+	)
+	(fp_line
+		(start -1.3 -2.09)
+		(end -1.3 -2.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3e4f9085-c483-4ab9-a295-3f839c47925d")
+	)
+	(fp_line
+		(start -1.27 0.57)
+		(end -1.27 0.64)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c166f339-c22b-442c-8679-2adc8c5955c4")
+	)
+	(fp_line
+		(start -1.27 0.64)
+		(end -0.73 0.64)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dd28c7ce-f371-4e61-a318-a912e093dc66")
+	)
+	(fp_line
+		(start -0.35 -2.35)
+		(end 0.3 -2.35)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4de31e1-fa79-46ae-a1c8-b02e6dcb7c7c")
+	)
+	(fp_line
+		(start -0.35 -2.1)
+		(end -0.35 -2.35)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d573f638-19c5-4b3d-a931-6e3b71ba9dd8")
+	)
+	(fp_line
+		(start 0.3 -2.35)
+		(end 0.3 -2.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8309f3b0-4889-4702-9f23-18c6d3760bed")
+	)
+	(fp_line
+		(start 0.3 -2.1)
+		(end 1.3 -2.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "12a9590d-ec42-45c6-80b5-61990fb0ac6a")
+	)
+	(fp_line
+		(start 0.73 0.64)
+		(end 1.27 0.64)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3188a0f1-c531-461b-b544-5ddf5d0f6aea")
+	)
+	(fp_line
+		(start 1.27 0.64)
+		(end 1.27 0.57)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5b22f943-69f7-4497-b3c6-5c5fed3431d7")
+	)
+	(fp_line
+		(start 1.3 -2.1)
+		(end 1.3 -2.09)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c662daaa-209f-40ef-8fe1-60d47ba2d1de")
+	)
+	(fp_circle
+		(center 1.5 0.79)
+		(end 1.53 0.79)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "2e389454-15b2-4b15-af31-65ce597e2465")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "2645b4a1-40d3-445a-8b9b-c02394a18f4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0.76)
+		(size 1 1.05)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c0704ba5-48fb-4f86-9141-cbe6390551e1")
+	)
+	(pad "2" smd rect
+		(at -1.47 -0.76)
+		(size 1.05 2.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ea0d701f-a4ed-4a77-a234-d85cfbf8ca5f")
+	)
+	(pad "3" smd rect
+		(at 1.47 -0.76)
+		(size 1.05 2.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "541d5316-b446-4149-834f-bc824e573953")
+	)
+	(model "${ORIGINAL_COMPONENTS}/[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)/[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80).step"
+		(offset
+			(xyz 0 0.76 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
