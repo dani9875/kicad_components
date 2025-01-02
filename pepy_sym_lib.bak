@@ -9907,6 +9907,7 @@
 		)
 	)
 	(symbol "[IND_SMD_0402_1005Metric]TDK MLG1005S5N1ST000"
+		(pin_numbers hide)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
