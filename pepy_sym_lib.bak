@@ -9964,7 +9964,7 @@
 			)
 		)
 		(property "Nvalue" "5.1nH"
-			(at 0 -2.794 0)
+			(at 0 -2.286 0)
 			(effects
 				(font
 					(size 1.27 1.27)
