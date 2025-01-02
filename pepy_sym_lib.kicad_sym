@@ -8840,7 +8840,7 @@
 			)
 		)
 		(property "Package" "1206"
-			(at 0 0 0)
+			(at -0.254 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8995,7 +8995,7 @@
 			)
 		)
 		(property "Package" "1206"
-			(at 0 0 0)
+			(at 0.254 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9197,6 +9197,179 @@
 			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "[IND_SMD_0402_1005Metric]TDK MLG1005S0N5BT000"
+		(pin_numbers hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "L"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MLG1005S0N5BT000"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[IND_SMD_0402_1005Metric]"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/HF-Inductors_TDK_MLG1005S0N5BT000_0-5nH-0-1nH_C87528.html"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A 0.5nH 10mΩ 0402 Inductors (SMD) ROHS"
+			(at -0.508 -14.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C87528"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Nvalue" "0.5nH"
+			(at 0 -2.032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 -16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at -0.254 -18.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[IND_SMD_0402_1005Metric]TDK MLG1005S0N5BT000_0_1"
+			(arc
+				(start -2.21 0.02)
+				(mid -3.22 1.1231)
+				(end -4.23 0.02)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -0.02 0.02)
+				(mid -1.03 1.1324)
+				(end -2.04 0.02)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 2.13 0.02)
+				(mid 1.12 1.1324)
+				(end 0.11 0.02)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 4.29 0.02)
+				(mid 3.28 1.1324)
+				(end 2.27 0.02)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[IND_SMD_0402_1005Metric]TDK MLG1005S0N5BT000_1_1"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 0.762)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 0.762)
 				(name "~"
 					(effects
 						(font
