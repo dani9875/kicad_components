@@ -1,0 +1,170 @@
+(footprint "[POWER_IND]cjiang (Changjiang Microelectronics Tech) FNR3015S4R7MT"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.05 -2.8 0)
+		(layer "F.SilkS")
+		(uuid "625023c7-13af-4888-9e69-dc801bdb6b68")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND-SMD_L3.0-W3.0_FNR30XXS"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "28c11487-cdb8-4209-adb0-da40cf2f3126")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47ed58ac-03c5-4680-8dbd-96f4a77653c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c32d2a26-60b4-479e-b708-e256977015e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "924d6477-1a35-4b7f-a85e-675d33fcf7ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.58 -1.58)
+		(end 1.58 -1.58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4784b6fb-4aa0-4469-a662-e3c8eeb10c1f")
+	)
+	(fp_line
+		(start -1.58 -1.51)
+		(end -1.58 -1.58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9720fcc6-1f16-4f72-a833-0155dce7fc92")
+	)
+	(fp_line
+		(start -1.58 1.51)
+		(end -1.58 1.58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38642cf8-e2c5-41d9-96b8-dc21076a1c5f")
+	)
+	(fp_line
+		(start -1.58 1.58)
+		(end 1.58 1.58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea77de62-8765-4de1-a880-b3e6617fe1f5")
+	)
+	(fp_line
+		(start 1.58 -1.58)
+		(end 1.58 -1.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "40900832-0a09-47ab-b776-b1d9d7bf2223")
+	)
+	(fp_line
+		(start 1.58 1.58)
+		(end 1.58 1.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "74b4400a-a3d3-485c-9515-1f117b8fc6dc")
+	)
+	(fp_circle
+		(center 1.5 1.5)
+		(end 1.53 1.5)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "d5b1f2d3-34ae-4466-962e-0cfd49f1a5a7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.05 5.9 0)
+		(layer "F.Fab")
+		(uuid "46e4d461-08d0-4da0-b58a-1bdc01bdfe56")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.35 0)
+		(size 1.3 2.72)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6a50927b-3cc9-4f62-8c6e-e54f36689166")
+	)
+	(pad "2" smd rect
+		(at -1.35 0)
+		(size 1.3 2.72)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6381f7c7-f8f8-49f4-8558-e09c1276d4d9")
+	)
+	(model "${ORIGINAL_COMPONENTS}/[POWER_IND]cjiang (Changjiang Microelectronics Tech) FNR3015S4R7MT/[POWER_IND]cjiang (Changjiang Microelectronics Tech) FNR3015S4R7MT.step"
+		(offset
+			(xyz 0 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)
