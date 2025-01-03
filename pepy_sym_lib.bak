@@ -13755,24 +13755,6 @@
 				)
 			)
 			(pin unspecified line
-				(at -22.86 19.05 0)
-				(length 2.54)
-				(name "DEC1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
 				(at -22.86 -3.81 0)
 				(length 2.54)
 				(name "P0.12"
@@ -14341,6 +14323,26 @@
 					)
 				)
 				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "[MCU]Nordic Semicon nRF52810-QCAA-R_1_1"
+			(pin bidirectional line
+				(at -22.86 19.05 0)
+				(length 2.54)
+				(name "DEC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17041,7 +17043,7 @@
 				(hide yes)
 			)
 		)
-		(property "Nvalue" "0"
+		(property "Nvalue" "100"
 			(at 0 -2.54 0)
 			(effects
 				(font
@@ -20390,7 +20392,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "RF"
-			(at 0 7.62 0)
+			(at 0 5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20398,7 +20400,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1(80)"
-			(at 0 -10.16 0)
+			(at -0.254 -7.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20443,8 +20445,8 @@
 		)
 		(symbol "[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)_0_1"
 			(rectangle
-				(start -7.62 5.08)
-				(end 7.62 0)
+				(start -2.54 3.81)
+				(end 2.54 -5.08)
 				(stroke
 					(width 0)
 					(type default)
@@ -20456,7 +20458,7 @@
 		)
 		(symbol "[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)_1_1"
 			(pin input line
-				(at 0 -5.08 90)
+				(at -7.62 2.54 0)
 				(length 5.08)
 				(name "SIG"
 					(effects
@@ -20474,7 +20476,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 2.54 0)
+				(at -7.62 -1.27 0)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -20492,7 +20494,7 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 2.54 180)
+				(at -7.62 -3.81 0)
 				(length 5.08)
 				(name "GND"
 					(effects
