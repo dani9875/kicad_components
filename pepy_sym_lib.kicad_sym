@@ -6446,6 +6446,182 @@
 			)
 		)
 	)
+	(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0.002)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 5.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C0805C120J5GACAUTO"
+			(at -0.254 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410122018_KEMET-C0805C120J5GACAUTO_C3844403.pdf"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V 12pF C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 0 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3844403"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" " KEMET "
+			(at 0.508 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 0 -18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Nvalue" "12pF"
+			(at 0.254 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO_0_1"
+			(polyline
+				(pts
+					(xy -1.27 0) (xy -0.51 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.51 2.03) (xy -0.51 -2.03)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.51 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.51 2.03) (xy 0.51 -2.03)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KOQNNNE"
 		(pin_numbers hide)
 		(pin_names
@@ -8271,8 +8447,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Crystals_YXC-Crystal-Oscillators-XL7EL89CKI-111YLC-32M_C2965582.html?s_z=n_XL7EL89CKI-111YLC-32M"
+			(at -0.508 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8280,8 +8456,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "32MHz Surface Mount Crystal 8pF ±10ppm ±20ppm SMD2016-4P Crystals ROHS"
+			(at 1.016 -15.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8291,6 +8467,24 @@
 		)
 		(property "LCSC Part" "C2965582"
 			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YXC Crystal Oscillators"
+			(at 0 -20.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "SMD2016-4P"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11525,6 +11719,179 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "[LED_DRIVER]Diodes Incorporated AL8861WT-7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AL8861WT-7"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[LED_DRIVER]Diodes Incorporated AL8861WT-7"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412251127_Diodes-Incorporated-AL8861WT-7_C581338.pdf"
+			(at 0.762 -14.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "36V 1MHz Step-down 1 DC-DCVoltage Stabilizer 1A 4.5V~40V TSOT-25 LED Drivers ROHS"
+			(at 0.508 -17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C581338"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[LED_DRIVER]Diodes Incorporated AL8861WT-7_0_1"
+			(rectangle
+				(start -10.16 5.08)
+				(end 10.16 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -8.89 3.81)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[LED_DRIVER]Diodes Incorporated AL8861WT-7_1_1"
+			(pin passive line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "LX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "VSET"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "ISENSE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 2.54 180)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -15113,7 +15480,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "[OPTICAL_NAVIGATION_CHIP]PixArt PMW3360DM-T2QU_1_1"
+			(pin no_connect line
 				(at -13.97 8.89 0)
 				(length 2.54)
 				(name "NC"
@@ -15131,7 +15500,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -6.35 180)
 				(length 2.54)
 				(name "SCLK"
@@ -15149,7 +15518,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -3.81 180)
 				(length 2.54)
 				(name "MOSI"
@@ -15167,7 +15536,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -1.27 180)
 				(length 2.54)
 				(name "MISO"
@@ -15185,7 +15554,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 1.27 180)
 				(length 2.54)
 				(name "NCS"
@@ -15203,7 +15572,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin no_connect line
 				(at 13.97 3.81 180)
 				(length 2.54)
 				(name "NC"
@@ -15221,7 +15590,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 13.97 6.35 180)
 				(length 2.54)
 				(name "LED_P"
@@ -15239,7 +15608,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin no_connect line
 				(at 13.97 8.89 180)
 				(length 2.54)
 				(name "NC"
@@ -15257,7 +15626,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin no_connect line
 				(at -13.97 6.35 0)
 				(length 2.54)
 				(name "NC"
@@ -15275,7 +15644,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 3.81 0)
 				(length 2.54)
 				(name "VDDPIX"
@@ -15293,7 +15662,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -13.97 1.27 0)
 				(length 2.54)
 				(name "VDD"
@@ -15311,7 +15680,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -13.97 -1.27 0)
 				(length 2.54)
 				(name "VDDIO"
@@ -15329,7 +15698,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin no_connect line
 				(at -13.97 -3.81 0)
 				(length 2.54)
 				(name "NC"
@@ -15347,7 +15716,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -13.97 -6.35 0)
 				(length 2.54)
 				(name "NRESET"
@@ -15365,7 +15734,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -13.97 -8.89 0)
 				(length 2.54)
 				(name "GND"
@@ -15383,7 +15752,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin output line
 				(at 13.97 -8.89 180)
 				(length 2.54)
 				(name "MOTION"

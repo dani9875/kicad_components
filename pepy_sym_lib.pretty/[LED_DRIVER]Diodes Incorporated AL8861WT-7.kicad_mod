@@ -1,0 +1,209 @@
+(footprint "[LED_DRIVER]Diodes Incorporated AL8861WT-7"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.85 0)
+		(layer "F.SilkS")
+		(uuid "baa5faef-31bc-4d17-8299-f97955cb6c71")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TSOT-25_L2.9-W1.6-P0.95-LS2.8-BR"
+		(at 0 4.95 0)
+		(layer "F.Fab")
+		(uuid "d29e60fc-56e2-430f-8d5e-55b05a0ed7de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2f2c78ca-1c4e-4b28-93c4-aa64d3c147b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e0ba6584-e099-4d86-a30b-9188367c3f83")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d2704fbe-374f-463b-95c6-70f26464b0db")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.8 -1.45)
+		(end -0.8 -1.43)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5ba8786e-ce15-421b-ae45-954752198c4a")
+	)
+	(fp_line
+		(start -0.8 -0.47)
+		(end -0.8 0.47)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe929ad9-f30c-4c01-adc9-da2a07b6c4e8")
+	)
+	(fp_line
+		(start -0.8 1.43)
+		(end -0.8 1.45)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7aa70160-fab9-48b3-b52f-4801a6bf4a73")
+	)
+	(fp_line
+		(start 0.8 -1.45)
+		(end -0.8 -1.45)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "26953f57-d647-4c1e-934e-27347dc74b55")
+	)
+	(fp_line
+		(start 0.8 -1.43)
+		(end 0.8 -1.45)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ece26d54-4beb-4ff3-9b69-d146df2544d3")
+	)
+	(fp_line
+		(start 0.8 1.45)
+		(end -0.8 1.45)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe304e7b-ccf1-4841-8298-b7466b6754ea")
+	)
+	(fp_line
+		(start 0.8 1.45)
+		(end 0.8 1.43)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66a9272d-a853-49bb-9839-5cabc914537a")
+	)
+	(fp_circle
+		(center 1.2 1.6)
+		(end 1.33 1.6)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "c1ccda07-8062-4f91-b836-ac3bdc7cee74")
+	)
+	(fp_circle
+		(center 1.4 1.45)
+		(end 1.43 1.45)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "8a357a9b-64b9-4a55-96d8-5df594e523a3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 2.95 0)
+		(layer "F.Fab")
+		(uuid "dc8fa5d1-14ab-4015-b36b-ea7722d9454d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.3 0.95 90)
+		(size 0.5 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "763920c1-bca4-4ab0-9e37-7f24ce9c5516")
+	)
+	(pad "2" smd rect
+		(at 1.3 0 90)
+		(size 0.5 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "79ea3814-1eee-4a25-9488-e207eb0ebd14")
+	)
+	(pad "3" smd rect
+		(at 1.3 -0.95 90)
+		(size 0.5 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "45e3b654-eb0a-444c-9617-80eb5672184f")
+	)
+	(pad "4" smd rect
+		(at -1.3 -0.95 90)
+		(size 0.5 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "abf0f502-9c80-4b86-9ff2-1ea9cd0c2dbf")
+	)
+	(pad "5" smd rect
+		(at -1.3 0.95 90)
+		(size 0.5 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4bfa2d71-d54c-479f-a6bc-423fc1193bbd")
+	)
+	(model "${ORIGINAL_COMPONENTS}/[LED_DRIVER]Diodes Incorporated AL8861WT-7/[LED_DRIVER]Diodes Incorporated AL8861WT-7.step"
+		(offset
+			(xyz -0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)
