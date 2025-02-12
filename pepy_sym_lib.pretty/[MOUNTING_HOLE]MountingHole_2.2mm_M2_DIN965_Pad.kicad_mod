@@ -7,7 +7,7 @@
 	(tags "mounting hole 2.2mm m2 din965")
 	(property "Reference" "REF**"
 		(at 0 -2.9 0)
-		(layer "F.SilkS")
+		(layer "Cmts.User")
 		(uuid "19c946ee-b3b4-4d5b-99d8-d5acbc87409e")
 		(effects
 			(font
