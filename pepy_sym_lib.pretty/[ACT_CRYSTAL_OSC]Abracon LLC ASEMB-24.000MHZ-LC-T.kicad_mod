@@ -1,0 +1,193 @@
+(footprint "[ACT_CRYSTAL_OSC]Abracon LLC ASEMB-24.000MHZ-LC-T"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.0254 -2.667 0)
+		(layer "F.SilkS")
+		(uuid "84d3d887-c518-4921-854a-27abbdca0323")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "OSC-SMD_4P-L3.2-W2.5-BL_ABRACON_ASEMB"
+		(at 0 4.95 0)
+		(layer "F.Fab")
+		(uuid "4a2519a6-664d-467c-98a3-d57b885e8b3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ed60839-282b-44a4-893f-a089845b7c67")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8f15ee8-5c15-487c-9074-f776f869b070")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b810debc-8938-4f50-a52a-246ab6f7c46c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.78 1.14)
+		(end -1.78 1.65)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b40eb35-8b86-4146-89c2-3695104f6fbe")
+	)
+	(fp_line
+		(start -1.78 1.65)
+		(end -1.27 1.65)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b52a2d0-9425-4573-a762-8a7d3169ec04")
+	)
+	(fp_line
+		(start -1.6 -0.38)
+		(end -1.6 0.38)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7293b2f3-93c4-4a94-9398-964b6c3600c2")
+	)
+	(fp_line
+		(start -0.38 -1.25)
+		(end 0.42 -1.25)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8ab98e5-e419-44e2-963d-d23b2045d74a")
+	)
+	(fp_line
+		(start -0.38 1.25)
+		(end 0.42 1.25)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "96d15078-5242-49e6-a140-6ede8db74126")
+	)
+	(fp_line
+		(start 1.6 -0.38)
+		(end 1.6 0.38)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "010d9918-1209-4048-aa9e-07171a41422b")
+	)
+	(fp_circle
+		(center -1.15 1.01)
+		(end -1.05 1.01)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "Cmts.User")
+		(uuid "78d910ca-c530-4b82-bf20-da28a8595b86")
+	)
+	(fp_circle
+		(center -1.6 1.25)
+		(end -1.57 1.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "fe908b44-3970-4f77-9f26-845016c1ed92")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.0254 2.921 0)
+		(layer "F.Fab")
+		(uuid "3c24da68-a93b-4476-b8cc-992fbc2cf2e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.05 0.95)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "703e42e1-02b9-4434-a9a6-2443de3cb64d")
+	)
+	(pad "2" smd rect
+		(at 1.05 0.95)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "89018495-458a-4115-b197-1744dd15b3a8")
+	)
+	(pad "3" smd rect
+		(at 1.05 -0.95)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0b1cd8e8-30c8-4483-93f2-019460deec4f")
+	)
+	(pad "4" smd rect
+		(at -1.05 -0.95)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4620ae62-c2ef-4a56-9608-155016e82108")
+	)
+	(model "${ORIGINAL_COMPONENTS}/[ACT_CRYSTAL_OSC]Abracon LLC ASEMB-24.000MHZ-LC-T/[ACT_CRYSTAL_OSC]Abracon LLC ASEMB-24.000MHZ-LC-T.step"
+		(offset
+			(xyz 0 -0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
