@@ -30553,7 +30553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "pepy_sym_lib:[RES_SMD_0805_2012Metric]UNI-ROYAL(Uniroyal Elec) 0805W8F100JT5E"
+		(property "Footprint" "pepy_sym_lib:[RES_SMD_0805_2012Metric]"
 			(at 0 -5.334 0)
 			(effects
 				(font
