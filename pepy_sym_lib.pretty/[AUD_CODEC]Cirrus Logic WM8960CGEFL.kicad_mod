@@ -15,8 +15,9 @@
 		)
 	)
 	(property "Value" "QFN-32_L5.0-W5.0-P0.50-TL-EP"
-		(at 0 6.55 0)
+		(at 0.03 5.57 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "a5c01252-4191-414a-8c51-9819437e6101")
 		(effects
 			(font
@@ -166,22 +167,22 @@
 	)
 	(fp_circle
 		(center -2.5 -2.5)
-		(end -2.47 -2.5)
+		(end -2.4 -2.5)
 		(stroke
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill solid)
 		(layer "F.Fab")
 		(uuid "388c295d-2b10-4e41-bdab-077f09635cfd")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0.0254 4.6228 0)
+		(at -0.05 3.84 0)
 		(layer "F.Fab")
 		(uuid "b50b7594-3be5-4c02-8a81-ca7a9a8023ac")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.7 0.7)
 				(thickness 0.15)
 			)
 		)

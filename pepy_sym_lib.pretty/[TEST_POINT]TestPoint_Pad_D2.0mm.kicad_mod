@@ -1,14 +1,14 @@
-(footprint "[TEST_POINT]TestPoint_Pad_D1.0mm"
+(footprint "[TEST_POINT]TestPoint_Pad_D2.0mm"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(descr "SMD pad as test Point, diameter 1.0mm")
+	(descr "SMD pad as test Point, diameter 2.0mm")
 	(tags "Test point SMD pad")
 	(property "Reference" "REF**"
-		(at 0 -1.448 0)
+		(at 0.2 -2.2 0)
 		(layer "F.Fab")
-		(uuid "ed08342a-eaee-43e9-b96e-1dd00b47763e")
+		(uuid "c28ddd99-5711-44a3-a273-99758422503e")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +16,10 @@
 			)
 		)
 	)
-	(property "Value" "TestPoint_Pad_D1.0mm"
-		(at 0 1.4 0)
+	(property "Value" "TestPoint_Pad_2.0x2.0mm"
+		(at 0 2.05 0)
 		(layer "F.SilkS")
-		(uuid "a41410ba-6764-40d3-8271-3889cd1f68dc")
+		(uuid "9aa69a93-282f-4dbc-aa50-bc2d2bffe762")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -28,12 +28,12 @@
 			)
 		)
 	)
-	(property "Footprint" "[TEST_POINT]TestPoint_Pad_D1.0mm"
-		(at 0 5.2 0)
+	(property "Footprint" "[TEST_POINT]TestPoint_Pad_2.0x2.0mm"
+		(at 0 5.4 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "24dcc58f-3894-4b3a-a5b2-7f20cacec6fb")
+		(uuid "cc78c069-e953-4fb2-a9c7-8dea90fd96b4")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -46,7 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bbd00a64-0ad7-4134-9e20-451eedc76ac1")
+		(uuid "9fdb7435-a60e-4d0f-8580-b9b7947da223")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -59,7 +59,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a133e317-3bd7-4ca7-93e3-03b03f97dc95")
+		(uuid "d48451bc-d59c-4d07-81dc-563e2647e3da")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -69,31 +69,31 @@
 	)
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_circle
-		(center 0 0)
-		(end 0 0.7)
+		(center -0.0062 0)
+		(end -0.0062 1.2)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(fill none)
 		(layer "F.SilkS")
-		(uuid "232e49b3-175c-43f1-906b-a67d81adeac2")
+		(uuid "dc949e93-8256-41ae-b501-ce186d075f43")
 	)
 	(fp_circle
-		(center 0 0)
-		(end 1 0)
+		(center -0.0062 0)
+		(end 1.4938 0)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(fill none)
 		(layer "F.CrtYd")
-		(uuid "f02f025d-d308-4e0d-bc6c-e230724bf915")
+		(uuid "6cbf26ac-8d45-47af-8c9b-c1ed9acee408")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.8 0)
+		(at 0 3.6 0)
 		(layer "F.Fab")
-		(uuid "ecb9d95d-c3e5-4a80-b7be-d742b8cad331")
+		(uuid "4639fd02-057a-4b13-94ac-0df1b7fe9f0a")
 		(effects
 			(font
 				(size 1 1)
@@ -102,9 +102,9 @@
 		)
 	)
 	(pad "1" smd circle
-		(at 0 0)
-		(size 1 1)
+		(at -0.0062 0)
+		(size 2 2)
 		(layers "F.Cu" "F.Mask")
-		(uuid "bab732e9-e79a-410d-8a2b-e7d9e8d299bb")
+		(uuid "3e641422-fca6-4614-bc92-d4301f05341a")
 	)
 )

@@ -8172,6 +8172,179 @@
 			)
 		)
 	)
+	(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A105KA8NNNC"
+		(pin_numbers hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CL10A105KA8NNNC"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0603_1608Metric]"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A105KA8NNNC_1uF-105-10-25V_C5673.html"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25V 1uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 1.016 -14.224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5673"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Nvalue" "1uF"
+			(at 0 3.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 -3.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at -0.254 -16.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A105KA8NNNC_0_1"
+			(polyline
+				(pts
+					(xy -1.27 0) (xy -0.51 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.51 2.03) (xy -0.51 -2.03)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.51 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.51 2.03) (xy 0.51 -2.03)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A105KA8NNNC_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C100K5GACTU"
 		(pin_numbers hide)
 		(pin_names
@@ -9247,7 +9420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]YAGEO CC0805JRNPO9BN102"
+		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -9658,7 +9831,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KKX7RBBB103_0_1"
 			(polyline
 				(pts
-					(xy -1.2976 0.0052) (xy -0.5376 0.0052)
+					(xy -1.27 0) (xy -0.51 0)
 				)
 				(stroke
 					(width 0)
@@ -9670,7 +9843,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.5376 2.0352) (xy -0.5376 -2.0248)
+					(xy -0.51 2.03) (xy -0.51 -2.03)
 				)
 				(stroke
 					(width 0)
@@ -9682,7 +9855,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.4824 0.0052) (xy 1.2424 0.0052)
+					(xy 0.51 0) (xy 1.27 0)
 				)
 				(stroke
 					(width 0)
@@ -9694,7 +9867,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.4824 2.0352) (xy 0.4824 -2.0248)
+					(xy 0.51 2.03) (xy 0.51 -2.03)
 				)
 				(stroke
 					(width 0)
@@ -9707,7 +9880,7 @@
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KKX7RBBB103_1_1"
 			(pin passive line
-				(at -3.8376 0.0052 0)
+				(at -3.81 0 0)
 				(length 2.54)
 				(name "~"
 					(effects
@@ -9725,7 +9898,7 @@
 				)
 			)
 			(pin passive line
-				(at 3.7824 0.0052 180)
+				(at 3.81 0 180)
 				(length 2.54)
 				(name "~"
 					(effects
@@ -29544,6 +29717,140 @@
 			)
 		)
 		(symbol "[RES_SMD_0402_1005Metric]UNI-ROYAL(Uniroyal Elec) 0402WGF0000TCE_1_1"
+			(rectangle
+				(start -2.54 1.02)
+				(end 2.54 -1.02)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "[RES_SMD_0603_1608Metric]YAGEO RC0603FR-0710RL"
+		(pin_numbers hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 4.572 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RC0603FR-0710RL"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[RES_SMD_0603_1608Metric]YAGEO RC0603FR-0710RL"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10R-10R-1_C109318.html"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mW Thick Film Resistors 75V ±1% ±200ppm/℃ 10Ω 0603 Chip Resistor - Surface Mount ROHS"
+			(at 0.508 -14.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C109318"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Nvalue" "10"
+			(at 0 2.286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 0.254 -16.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[RES_SMD_0603_1608Metric]YAGEO RC0603FR-0710RL_1_1"
 			(rectangle
 				(start -2.54 1.02)
 				(end 2.54 -1.02)
