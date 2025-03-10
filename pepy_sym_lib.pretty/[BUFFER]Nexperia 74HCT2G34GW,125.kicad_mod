@@ -15,8 +15,9 @@
 		)
 	)
 	(property "Value" "SC-88-6_L2.0-W1.3-P0.65-LS2.1-BL"
-		(at 0 4.95 0)
+		(at 0.0254 2.6162 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "f81e2b36-9634-4f70-acc4-49485599fd59")
 		(effects
 			(font
@@ -104,6 +105,17 @@
 		(layer "Cmts.User")
 		(uuid "85b9d163-f998-4f9f-af0d-43b19e92ff7d")
 	)
+	(fp_rect
+		(start -1.27 -1.5494)
+		(end 1.27 1.6002)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "74f2465e-1133-4628-b5bb-b99347b242a0")
+	)
 	(fp_circle
 		(center -1 1.05)
 		(end -0.97 1.05)
@@ -116,13 +128,13 @@
 		(uuid "ae5ef90f-2c9c-46bc-86fa-56ceebf52c55")
 	)
 	(fp_text user "${REFERENCE}"
-		(at -0.0508 2.921 0)
+		(at -0.0508 -0.0254 0)
 		(layer "F.Fab")
 		(uuid "a31a7628-47cd-4843-9d15-295614621e49")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)

@@ -15,8 +15,9 @@
 		)
 	)
 	(property "Value" "L0805"
-		(at 0 4 0)
+		(at 0 2.0574 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "39973998-4844-4472-b973-b3a288e4485a")
 		(effects
 			(font
@@ -202,6 +203,17 @@
 		(layer "F.SilkS")
 		(uuid "0d165211-4c0e-4094-9ae2-bfeb752db928")
 	)
+	(fp_rect
+		(start -2.1336 -1.2192)
+		(end 2.032 1.1938)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "136e2dfe-77f4-4642-9c45-7fd51931cd7c")
+	)
 	(fp_circle
 		(center -1 0.64)
 		(end -0.97 0.64)
@@ -214,13 +226,13 @@
 		(uuid "4e536b47-6527-494c-9b20-3c758b132804")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0.2032 2.3876 0)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "33a8db3c-97b8-42e0-9254-52feabdc0f96")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)

@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "MountingHole_2.2mm_M2_DIN965_Pad"
-		(at -0.2 6.4 0)
+		(at -0.2254 5.737 0)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "80ca78b8-b02b-42ac-a54f-babb0ad8a96c")
@@ -29,7 +29,7 @@
 		)
 	)
 	(property "Footprint" "[MOUNTING_HOLE]MountingHole_2.2mm_M2_DIN965_Pad"
-		(at 0 4.6 0)
+		(at -0.0254 3.937 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -90,14 +90,25 @@
 		(layer "F.CrtYd")
 		(uuid "fca650dc-3a64-4e4f-a766-0427e1c844e6")
 	)
+	(fp_circle
+		(center 0 0)
+		(end 2.2 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "c9e9045d-f602-4bda-819a-b4753bdb8961")
+	)
 	(fp_text user "${REFERENCE}"
-		(at 0 8.2 0)
+		(at -0.0508 0.0508 0)
 		(layer "F.Fab")
 		(uuid "8565d114-bfd4-4003-9201-ff684803761c")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)

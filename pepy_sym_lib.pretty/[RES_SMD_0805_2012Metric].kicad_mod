@@ -15,7 +15,7 @@
 		)
 	)
 	(property "Value" "R_0805_2012Metric"
-		(at 0 5 0)
+		(at -0.0508 3.9116 0)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "83cd9c78-75b4-4eec-9501-2ff4a6e7a26e")
@@ -27,7 +27,7 @@
 		)
 	)
 	(property "Footprint" "[RES_SMD_0805_2012Metric]"
-		(at 0 3.2 0)
+		(at -0.0508 2.1116 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -167,47 +167,47 @@
 		(uuid "f3d9ee21-ffbd-4620-abbf-7bc99e9f4420")
 	)
 	(fp_line
-		(start -1 -0.625)
-		(end 1 -0.625)
+		(start -1.524 -0.765396)
+		(end 1.524 -0.762)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "e73c85cd-37bc-422b-91a3-e268ce9a1281")
+		(uuid "d458471d-12b0-4110-8104-556b9b31c52e")
 	)
 	(fp_line
-		(start -1 0.625)
-		(end -1 -0.625)
+		(start -1.524 0.762)
+		(end -1.524 -0.765396)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "37f98079-19ff-4dd9-ac60-76d47722b840")
+		(uuid "9e14d2a6-6548-4c20-9b9f-b20c19e913e9")
 	)
 	(fp_line
-		(start 1 -0.625)
-		(end 1 0.625)
+		(start -1.524 0.762)
+		(end 1.524 0.762)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b1a33891-38ab-48fb-8542-eb6b9260c23c")
+		(uuid "79a5ebd2-3242-4e53-820b-14443f12b065")
 	)
 	(fp_line
-		(start 1 0.625)
-		(end -1 0.625)
+		(start 1.524 0.762)
+		(end 1.524 -0.762)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b0e87530-3bac-4895-be8c-fdb50669192d")
+		(uuid "4ef1c357-3119-4cb5-ae95-d8b7bb5abe21")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 1.5 0)
+		(at -0.0254 0.0254 0)
 		(layer "F.Fab")
 		(uuid "b5354c63-16aa-4898-aa0c-eeb3d035fc5f")
 		(effects

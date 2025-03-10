@@ -1,0 +1,192 @@
+(footprint "[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.0254 -3.0734 0)
+		(layer "F.SilkS")
+		(uuid "71eac5f0-2bf6-480e-80cb-bf7701c022d0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR"
+		(at -0.0762 4.953 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1c1aeae-d7fc-4522-9f61-32bb4c883207")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -0.0356 -0.0332 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6634d43-ecb6-48c9-9c6f-04972d15a7b9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -0.0356 -0.0332 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7537557c-8450-4fef-b0f9-0fad62743fe7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -0.0356 -0.0332 -90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5720a262-af85-4735-832c-d7e79540ed7c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.5656 -0.7332)
+		(end -1.5656 0.6668)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1155344e-fcba-469b-a6b7-7d4464364b6a")
+	)
+	(fp_line
+		(start -0.4156 -0.9232)
+		(end 0.3444 -0.9232)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "566fed5d-0881-46b7-b048-3219301f2ef5")
+	)
+	(fp_line
+		(start 1.3544 -0.4532)
+		(end 1.3544 0.3868)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7ce94d75-d45b-4ec8-9b1e-90f424eae09c")
+	)
+	(fp_circle
+		(center -0.9956 1.9768)
+		(end -0.9956 2.1268)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "bacd725b-4cb9-406a-941f-93e192d5e67d")
+	)
+	(fp_circle
+		(center -1.2856 1.0768)
+		(end -1.2856 1.2268)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill none)
+		(layer "Cmts.User")
+		(uuid "2d52d53d-7809-430b-899a-8c7a86940a0d")
+	)
+	(fp_rect
+		(start -1.6612 -1.8366)
+		(end 1.463 1.7702)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "e375e703-b797-4dc0-ba81-7e596df01c84")
+	)
+	(fp_circle
+		(center -1.4856 1.3668)
+		(end -1.4856 1.3968)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "4d1ae85f-2f57-4321-80af-5e551a743b03")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.0356 -0.0332 0)
+		(layer "F.Fab")
+		(uuid "abe7bb34-2af0-4b71-b43a-4b05a36c7e72")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.9856 1.0668)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ae5ae105-3326-412d-a3d4-a7bf07163a6a")
+	)
+	(pad "2" smd rect
+		(at -0.0356 1.0668)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5c40aa23-510a-421d-9217-6561c563dd9c")
+	)
+	(pad "3" smd rect
+		(at 0.9144 1.0668)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "42d5ed42-6c30-4c88-9807-6e7239b56d05")
+	)
+	(pad "4" smd rect
+		(at 0.9144 -1.1332)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "783691b0-cea9-4059-bf13-8f91ddd9dbc4")
+	)
+	(pad "5" smd rect
+		(at -0.9856 -1.1332)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5535f9d7-9e1c-4501-9bc8-5dc562d81532")
+	)
+	(model "${ORIGINAL_COMPONENTS}/[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G/[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G.step"
+		(offset
+			(xyz 0 -0 0.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

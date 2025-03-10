@@ -15,8 +15,9 @@
 		)
 	)
 	(property "Value" "OSC-SMD_4P-L3.2-W2.5-BL_ABRACON_ASEMB"
-		(at 0 4.95 0)
+		(at -0.0762 2.5908 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "4a2519a6-664d-467c-98a3-d57b885e8b3d")
 		(effects
 			(font
@@ -133,6 +134,17 @@
 		(layer "Cmts.User")
 		(uuid "78d910ca-c530-4b82-bf20-da28a8595b86")
 	)
+	(fp_rect
+		(start -1.8034 -1.5748)
+		(end 1.8034 1.6002)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "a999350f-ff66-4634-9ebb-6c7f365a0dd2")
+	)
 	(fp_circle
 		(center -1.6 1.25)
 		(end -1.57 1.25)
@@ -145,13 +157,13 @@
 		(uuid "fe908b44-3970-4f77-9f26-845016c1ed92")
 	)
 	(fp_text user "${REFERENCE}"
-		(at -0.0254 2.921 0)
+		(at -0.0508 -0.1016 0)
 		(layer "F.Fab")
 		(uuid "3c24da68-a93b-4476-b8cc-992fbc2cf2e5")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)
