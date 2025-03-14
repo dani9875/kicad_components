@@ -103,6 +103,17 @@ Currently the test point and mounting holes are handled manually. They generally
 
 ## Release notes
 
+### Version: v6
+Changelog:
+- AM625
+- DN007 antenna
+- Low voltage boost
+- Many 0402 inductors
+- U.FL connector
+- Zero ohm and 1x2 screw terminal 
+- PMW336DM
+- Bunch of other capactiors and resistors
+
 ### Version: v5
 Changelog:
 - Rotation change for IP428
