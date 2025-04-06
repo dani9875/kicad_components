@@ -1,0 +1,166 @@
+(footprint "[STEPD_CONV]Texas Instruments TLV62595DMQR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "4119f965-8d72-460d-951a-f2d824b946c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VSON-6_L1.5-W1.5-P0.50-TL"
+		(at 0 4.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f704f874-6e32-45d3-a323-98330c6c3cdf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fdde8e3-a791-4f44-af5b-8192dd4466af")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d7b048d4-8380-442b-b6d2-fbc1dbcfd1a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.63 -0.8)
+		(end 0.87 -0.8)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4653f7c-a249-44c8-988a-2e0a0eb9dbcb")
+	)
+	(fp_line
+		(start -0.63 0.8)
+		(end 0.87 0.8)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2ae982f6-7a87-48e2-ab84-95832c8bbaf6")
+	)
+	(fp_circle
+		(center -1.1 -0.5)
+		(end -1.03 -0.5)
+		(stroke
+			(width 0.14)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7afd853f-1ba3-4aab-a929-769c80741edc")
+	)
+	(fp_rect
+		(start -1.05 -0.925)
+		(end 1.25 0.925)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d2db1252-0136-4f6a-8cf8-d3a530cbac12")
+	)
+	(fp_circle
+		(center -1.3 -0.5)
+		(end -1.23 -0.5)
+		(stroke
+			(width 0.14)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d3a58e48-211e-44ff-a422-34065a3377a7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 0 0)
+		(layer "F.Fab")
+		(uuid "7adbcab2-dd36-4851-b170-6501c8db5b18")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.58 -0.5 90)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "871de19c-7da6-4381-956d-7dcc756582a3")
+	)
+	(pad "2" smd rect
+		(at -0.58 0 90)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bd740092-19d1-4164-918e-fe5a4823efb2")
+	)
+	(pad "3" smd rect
+		(at -0.58 0.5 90)
+		(size 0.25 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0d62d662-bf41-4797-b6a4-195fbb83961d")
+	)
+	(pad "4" smd rect
+		(at 0.58 0.5 90)
+		(size 0.25 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a2dee092-b0b4-4a1e-b9ed-e30d3823f40d")
+	)
+	(pad "5" smd rect
+		(at 0.58 0 90)
+		(size 0.25 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6aa2ca96-b6c8-4c25-b384-d4ee047cfaa7")
+	)
+	(pad "6" smd rect
+		(at 0.58 -0.5 90)
+		(size 0.25 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0ef4d644-b1e5-4a4f-a11b-72af04fd12ef")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[STEPD_CONV]Texas Instruments TLV62595DMQR/[STEPD_CONV]Texas Instruments TLV62595DMQR.step"
+		(offset
+			(xyz 0.13 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

@@ -1,0 +1,172 @@
+(footprint "[ESD_PROT]Texas Instruments TVS0500DRVR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.1 0)
+		(layer "F.SilkS")
+		(uuid "75b4e1c5-5205-44f6-823d-e9d618de08a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WSON-6_L2.0-W2.0-P0.65-BL-EP"
+		(at 0 4.98 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae070865-b5c5-4b6d-a8c2-7856d56a5c19")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3873144b-c171-4eea-9fa8-16bfb52a4c69")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1538374f-7c2c-441c-816e-d4a60225621d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.05 1.05)
+		(end -1.05 -1.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec9e95aa-a084-4c4a-9efa-88588663130e")
+	)
+	(fp_line
+		(start 1.05 1.05)
+		(end 1.05 -1.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8b8b34eb-89e5-45fb-b94d-010f4513a9a5")
+	)
+	(fp_circle
+		(center -1.04 1.5)
+		(end -0.98 1.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "83359464-ff74-49a3-ae88-9332495b2809")
+	)
+	(fp_rect
+		(start -1.15 -1.25)
+		(end 1.15 1.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2ab584d6-2525-49e1-b77c-432ece41c1e1")
+	)
+	(fp_circle
+		(center -1.04 1.5)
+		(end -0.98 1.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "03740498-35b4-42f1-a152-a78ca53a4abd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0c268a2a-f71d-4160-86eb-b097dbd4de92")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.65 0.98)
+		(size 0.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "df6ae0f0-8e4a-44d0-bc8d-a0861f297e6c")
+	)
+	(pad "2" smd rect
+		(at 0 0.98)
+		(size 0.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "26a1d40e-6d3e-4a14-922c-5a62340d3ecb")
+	)
+	(pad "3" smd rect
+		(at 0.65 0.98)
+		(size 0.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cc9afdda-f007-496b-b676-af8d722fcad5")
+	)
+	(pad "4" smd rect
+		(at 0.65 -0.98)
+		(size 0.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "48995b9e-9202-476f-9f11-8c06b15e67a6")
+	)
+	(pad "5" smd rect
+		(at 0 -0.98)
+		(size 0.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "31530efb-0db8-43bc-a757-ae3f07c8e4ad")
+	)
+	(pad "6" smd rect
+		(at -0.65 -0.98)
+		(size 0.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c2426892-2711-49af-99eb-e9032785d66a")
+	)
+	(pad "7" smd rect
+		(at 0 0 90)
+		(size 1 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "60fff2ff-c189-41d2-ace5-40839ac018ea")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[ESD_PROT]Texas Instruments TVS0500DRVR/[ESD_PROT]Texas Instruments TVS0500DRVR.step"
+		(offset
+			(xyz -0 -0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 270)
+		)
+	)
+)
