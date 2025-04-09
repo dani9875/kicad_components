@@ -1,0 +1,210 @@
+(footprint "[SCHOTTKY_DIODE]onsemi RB520S30T1G"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.25 0)
+		(layer "F.SilkS")
+		(uuid "9294436a-e85e-40ba-96f0-e73b9d7b4ac1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOD-523F_L1.2-W0.8-LS1.7-RD"
+		(at 0 4.01 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07983e45-3ac5-4116-8d72-b9581738a9f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f9df50c-19b3-44dc-8635-ff3f913ca3a1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2aa0850b-bf8f-4b73-a221-5a3a905c72d1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.66 -0.43)
+		(end -0.66 -0.43)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "68223276-7318-42ba-b064-b364e4916214")
+	)
+	(fp_line
+		(start -0.66 -0.43)
+		(end 0.66 -0.43)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8427ffda-aa12-425b-b2df-5d686ef24c7a")
+	)
+	(fp_line
+		(start -0.66 0.44)
+		(end -0.66 0.44)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "57a02433-c9e3-4a29-b145-4ad24f6a3b59")
+	)
+	(fp_line
+		(start 0.66 -0.43)
+		(end 0.66 -0.33)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e5fd455-7e4c-428c-be3c-795b63b14a09")
+	)
+	(fp_line
+		(start 0.66 0.33)
+		(end 0.66 0.44)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8d05060c-1f2e-4d46-b629-997b477548a1")
+	)
+	(fp_line
+		(start 0.66 0.44)
+		(end -0.66 0.44)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2e10f218-e081-4d2d-86ae-5b344370c438")
+	)
+	(fp_circle
+		(center -0.95 -0.4)
+		(end -0.92 -0.4)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fd7b97b3-a31a-40d9-8896-ddd13f0918fa")
+	)
+	(fp_rect
+		(start -1.1 -0.5)
+		(end 1.111738 0.543458)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0be8771f-f238-46ee-95bf-f61bc7242839")
+	)
+	(fp_circle
+		(center -1.25 -0.45)
+		(end -1.22 -0.45)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "737a86c2-1639-4106-bae8-73a5836b2980")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.005869 0.021729 0)
+		(layer "F.Fab")
+		(uuid "df9c1b8b-95ba-41af-8950-0bb52dfdd798")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at -0.71 -0.01)
+		(size 0.01 0.01)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.31 -0.23) (xy 0.3 -0.23) (xy 0.3 0.25) (xy -0.31 0.25)
+				)
+				(width 0.1)
+				(fill yes)
+			)
+		)
+		(uuid "d3d100ad-6f5d-42f0-8093-7b065b391b12")
+	)
+	(pad "2" smd custom
+		(at 0.71 0.01)
+		(size 0.01 0.01)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.3 -0.24) (xy 0.31 -0.24) (xy 0.31 0.24) (xy -0.3 0.24)
+				)
+				(width 0.1)
+				(fill yes)
+			)
+		)
+		(uuid "9644c185-6047-484d-ad2b-159b271162e8")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/original_components/[SCHOTTKY_DIODE]onsemi RB520S30T1G/[SCHOTTKY_DIODE]onsemi RB520S30T1G.step"
+		(offset
+			(xyz -0 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

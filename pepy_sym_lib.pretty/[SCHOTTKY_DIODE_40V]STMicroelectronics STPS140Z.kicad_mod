@@ -1,7 +1,7 @@
 (footprint "[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -1.851913 180)
@@ -17,23 +17,12 @@
 	(property "Value" "SOD-123_L2.8-W1.8-LS3.7-RD"
 		(at 0 4 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "9d3556cf-3a84-4ba7-9c56-cd97fa65e4af")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z"
-		(at 0 6.8 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c854a087-a84f-4c9a-b04b-88b9955d25b4")
-		(effects
-			(font
-				(size 1.27 1.27)
 			)
 		)
 	)
@@ -46,6 +35,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,6 +48,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -302,6 +293,17 @@
 		(layer "F.SilkS")
 		(uuid "9131433a-4d1e-43e2-ac21-c1f3d3ab3256")
 	)
+	(fp_rect
+		(start -2.159 -1.016)
+		(end 2.222988 1.048271)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d52948c3-b9ca-4336-8700-6bb7b1d1e831")
+	)
 	(fp_circle
 		(center 1.85 -0.891913)
 		(end 1.82 -0.891913)
@@ -309,31 +311,31 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "790f6db6-c787-43c3-9ae9-32b72d214931")
 	)
 	(fp_text user "${REFERENCE}"
-		(at -0.2 2.2 0)
+		(at 0.031994 0.016135 0)
 		(layer "F.Fab")
 		(uuid "67e242e5-3423-4adf-9c1d-763294e7abdf")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)
 	(pad "1" smd rect
 		(at 1.69 0.008087 180)
 		(size 0.95 1.15)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "64be6b8c-3dff-44d2-a8df-dce12bacd40f")
 	)
 	(pad "2" smd rect
 		(at -1.69 0.008087 180)
 		(size 0.95 1.15)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "30a7bb80-72a8-4e92-858f-51327c064623")
 	)
 	(group ""
@@ -342,6 +344,7 @@
 			"a214ab6b-1ab5-4c05-a8be-e77cc2822480" "c3fd8a64-8017-4841-889f-900f644127a9"
 		)
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z.step"
 		(offset
 			(xyz 0 -0 -0)

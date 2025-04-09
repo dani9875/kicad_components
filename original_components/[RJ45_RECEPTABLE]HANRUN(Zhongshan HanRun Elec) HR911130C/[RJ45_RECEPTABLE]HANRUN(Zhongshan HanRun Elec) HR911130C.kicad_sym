@@ -1,0 +1,2255 @@
+(kicad_symbol_lib
+  (version 20211014)
+  (generator https://github.com/uPesy/easyeda2kicad.py)
+  (symbol "HR911130C"
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "L"
+      (id 0)
+      (at 0 43.18 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "HR911130C"
+      (id 1)
+      (at 0 -43.18 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Footprint"
+      ":RJ45-TH_HR911130C"
+      (id 2)
+      (at 0 -45.72 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Datasheet"
+      "https://lcsc.com/product-detail/RJ45-Transformer_HR911130C_C50933.html"
+      (id 3)
+      (at 0 -48.26 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C50933"
+      (id 5)
+      (at 0 -50.80 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (symbol "HR911130C_0_1"
+      (rectangle
+        (start 26.42 15.24)
+        (end 36.58 13.97)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 12.70)
+        (end 36.58 11.43)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 10.16)
+        (end 36.58 8.89)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 7.62)
+        (end 36.58 6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 5.08)
+        (end 36.58 3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 2.54)
+        (end 36.58 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 -0.00)
+        (end 36.58 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 26.42 -2.54)
+        (end 36.58 -3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start -29.21 34.29)
+        (end 39.37 -39.37)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (circle
+        (center -24.13 -5.08)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -24.13 5.08)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -24.13 15.24)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -24.13 -16.51)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -27.94 22.86)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -27.94 12.70)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -27.94 2.54)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -27.94 -8.89)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -27.18 -35.56)
+        (radius 0.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -27.18 -38.10)
+        (radius 0.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -25.40 -22.86)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle
+        (center -25.65 -30.48)
+        (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.13 20.57)
+        (mid 7.84 20.15)
+        (end 7.37 20.07)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.37 20.07)
+        (mid 7.63 20.14)
+        (end 6.86 20.57)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.86 20.57)
+        (mid 6.57 20.15)
+        (end 6.10 20.07)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.10 20.07)
+        (mid 6.36 20.14)
+        (end 5.59 20.57)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 22.86)
+        (mid -2.32 22.77)
+        (end -3.30 22.10)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 22.10)
+        (mid -2.53 22.53)
+        (end -2.79 21.59)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 21.59)
+        (mid -2.24 19.87)
+        (end -3.30 20.83)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 20.83)
+        (mid -2.53 21.26)
+        (end -2.79 20.32)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 20.32)
+        (mid -2.32 20.23)
+        (end -3.30 19.56)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 19.56)
+        (mid -2.53 19.99)
+        (end -2.79 19.05)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 19.05)
+        (mid -2.32 18.96)
+        (end -3.30 18.29)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 18.29)
+        (mid -2.53 18.72)
+        (end -2.79 17.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 17.78)
+        (mid -2.32 17.69)
+        (end -3.30 17.02)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 17.02)
+        (mid -2.53 17.45)
+        (end -2.79 16.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 16.51)
+        (mid -2.32 16.42)
+        (end -3.30 15.75)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 15.75)
+        (mid -2.53 16.18)
+        (end -2.79 15.24)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 15.24)
+        (mid -6.13 16.42)
+        (end -5.84 15.75)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 15.75)
+        (mid -6.20 16.40)
+        (end -6.60 16.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 16.51)
+        (mid -6.52 16.52)
+        (end -5.84 17.02)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 17.02)
+        (mid -6.20 17.67)
+        (end -6.60 17.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 17.78)
+        (mid -6.13 18.96)
+        (end -5.84 18.29)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 18.29)
+        (mid -6.20 18.94)
+        (end -6.60 19.05)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 19.05)
+        (mid -6.13 20.23)
+        (end -5.84 19.56)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 19.56)
+        (mid -6.20 20.21)
+        (end -6.60 20.32)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 20.32)
+        (mid -6.13 21.50)
+        (end -5.84 20.83)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 20.83)
+        (mid -6.20 21.48)
+        (end -6.60 21.59)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 21.59)
+        (mid -6.13 22.77)
+        (end -5.84 22.10)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 22.10)
+        (mid -6.20 22.75)
+        (end -6.60 22.86)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.40 20.57)
+        (mid 9.11 20.15)
+        (end 8.64 20.07)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.64 20.07)
+        (mid 8.90 20.14)
+        (end 8.13 20.57)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.13 18.03)
+        (mid 7.84 18.45)
+        (end 7.37 18.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.37 18.54)
+        (mid 7.63 18.47)
+        (end 6.86 18.03)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.86 18.03)
+        (mid 6.57 18.45)
+        (end 6.10 18.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.10 18.54)
+        (mid 6.36 18.47)
+        (end 5.59 18.03)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.40 18.03)
+        (mid 9.11 18.45)
+        (end 8.64 18.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.64 18.54)
+        (mid 8.90 18.47)
+        (end 8.13 18.03)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.13 10.41)
+        (mid 7.84 9.99)
+        (end 7.37 9.91)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.37 9.91)
+        (mid 7.63 9.98)
+        (end 6.86 10.41)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.86 10.41)
+        (mid 6.57 9.99)
+        (end 6.10 9.91)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.10 9.91)
+        (mid 6.36 9.98)
+        (end 5.59 10.41)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 12.70)
+        (mid -2.32 12.61)
+        (end -3.30 11.94)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 11.94)
+        (mid -2.53 12.37)
+        (end -2.79 11.43)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 11.43)
+        (mid -2.24 9.71)
+        (end -3.30 10.67)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 10.67)
+        (mid -2.53 11.10)
+        (end -2.79 10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 10.16)
+        (mid -2.32 10.07)
+        (end -3.30 9.40)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 9.40)
+        (mid -2.53 9.83)
+        (end -2.79 8.89)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 8.89)
+        (mid -2.32 8.80)
+        (end -3.30 8.13)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 8.13)
+        (mid -2.53 8.56)
+        (end -2.79 7.62)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 7.62)
+        (mid -2.32 7.53)
+        (end -3.30 6.86)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 6.86)
+        (mid -2.53 7.29)
+        (end -2.79 6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 6.35)
+        (mid -2.32 6.26)
+        (end -3.30 5.59)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 5.59)
+        (mid -2.53 6.02)
+        (end -2.79 5.08)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 5.08)
+        (mid -6.13 6.26)
+        (end -5.84 5.59)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 5.59)
+        (mid -6.20 6.24)
+        (end -6.60 6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 6.35)
+        (mid -6.52 6.36)
+        (end -5.84 6.86)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 6.86)
+        (mid -6.20 7.51)
+        (end -6.60 7.62)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 7.62)
+        (mid -6.13 8.80)
+        (end -5.84 8.13)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 8.13)
+        (mid -6.20 8.78)
+        (end -6.60 8.89)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 8.89)
+        (mid -6.13 10.07)
+        (end -5.84 9.40)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 9.40)
+        (mid -6.20 10.05)
+        (end -6.60 10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 10.16)
+        (mid -6.13 11.34)
+        (end -5.84 10.67)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 10.67)
+        (mid -6.20 11.32)
+        (end -6.60 11.43)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 11.43)
+        (mid -6.13 12.61)
+        (end -5.84 11.94)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 11.94)
+        (mid -6.20 12.59)
+        (end -6.60 12.70)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.40 10.41)
+        (mid 9.11 9.99)
+        (end 8.64 9.91)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.64 9.91)
+        (mid 8.90 9.98)
+        (end 8.13 10.41)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.13 7.87)
+        (mid 7.84 8.29)
+        (end 7.37 8.38)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.37 8.38)
+        (mid 7.63 8.31)
+        (end 6.86 7.87)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.86 7.87)
+        (mid 6.57 8.29)
+        (end 6.10 8.38)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.10 8.38)
+        (mid 6.36 8.31)
+        (end 5.59 7.87)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.40 7.87)
+        (mid 9.11 8.29)
+        (end 8.64 8.38)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.64 8.38)
+        (mid 8.90 8.31)
+        (end 8.13 7.87)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.13 0.25)
+        (mid 7.84 -0.17)
+        (end 7.37 -0.25)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.37 -0.25)
+        (mid 7.63 -0.18)
+        (end 6.86 0.25)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.86 0.25)
+        (mid 6.57 -0.17)
+        (end 6.10 -0.25)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.10 -0.25)
+        (mid 6.36 -0.18)
+        (end 5.59 0.25)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 2.54)
+        (mid -2.32 2.45)
+        (end -3.30 1.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 1.78)
+        (mid -2.53 2.21)
+        (end -2.79 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 1.27)
+        (mid -2.24 -0.45)
+        (end -3.30 0.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 0.51)
+        (mid -2.53 0.94)
+        (end -2.79 -0.00)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -0.00)
+        (mid -2.32 -0.09)
+        (end -3.30 -0.76)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -0.76)
+        (mid -2.53 -0.33)
+        (end -2.79 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -1.27)
+        (mid -2.32 -1.36)
+        (end -3.30 -2.03)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -2.03)
+        (mid -2.53 -1.60)
+        (end -2.79 -2.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -2.54)
+        (mid -2.32 -2.63)
+        (end -3.30 -3.30)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -3.30)
+        (mid -2.53 -2.87)
+        (end -2.79 -3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -3.81)
+        (mid -2.32 -3.90)
+        (end -3.30 -4.57)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -4.57)
+        (mid -2.53 -4.14)
+        (end -2.79 -5.08)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -5.08)
+        (mid -6.13 -3.90)
+        (end -5.84 -4.57)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -4.57)
+        (mid -6.20 -3.92)
+        (end -6.60 -3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -3.81)
+        (mid -6.52 -3.80)
+        (end -5.84 -3.30)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -3.30)
+        (mid -6.20 -2.65)
+        (end -6.60 -2.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -2.54)
+        (mid -6.13 -1.36)
+        (end -5.84 -2.03)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -2.03)
+        (mid -6.20 -1.38)
+        (end -6.60 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -1.27)
+        (mid -6.13 -0.09)
+        (end -5.84 -0.76)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -0.76)
+        (mid -6.20 -0.11)
+        (end -6.60 -0.00)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -0.00)
+        (mid -6.13 1.18)
+        (end -5.84 0.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 0.51)
+        (mid -6.20 1.16)
+        (end -6.60 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 1.27)
+        (mid -6.13 2.45)
+        (end -5.84 1.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 1.78)
+        (mid -6.20 2.43)
+        (end -6.60 2.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.40 0.25)
+        (mid 9.11 -0.17)
+        (end 8.64 -0.25)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.64 -0.25)
+        (mid 8.90 -0.18)
+        (end 8.13 0.25)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.13 -2.29)
+        (mid 7.84 -1.87)
+        (end 7.37 -1.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.37 -1.78)
+        (mid 7.63 -1.85)
+        (end 6.86 -2.29)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.86 -2.29)
+        (mid 6.57 -1.87)
+        (end 6.10 -1.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.10 -1.78)
+        (mid 6.36 -1.85)
+        (end 5.59 -2.29)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.40 -2.29)
+        (mid 9.11 -1.87)
+        (end 8.64 -1.78)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.64 -1.78)
+        (mid 8.90 -1.85)
+        (end 8.13 -2.29)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.38 -11.18)
+        (mid 8.09 -11.60)
+        (end 7.62 -11.68)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.62 -11.68)
+        (mid 7.89 -11.61)
+        (end 7.11 -11.18)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.11 -11.18)
+        (mid 6.82 -11.60)
+        (end 6.35 -11.68)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.35 -11.68)
+        (mid 6.62 -11.61)
+        (end 5.84 -11.18)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -8.89)
+        (mid -2.32 -8.98)
+        (end -3.30 -9.65)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -9.65)
+        (mid -2.53 -9.22)
+        (end -2.79 -10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -10.16)
+        (mid -2.24 -11.88)
+        (end -3.30 -10.92)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -10.92)
+        (mid -2.53 -10.49)
+        (end -2.79 -11.43)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -11.43)
+        (mid -2.32 -11.52)
+        (end -3.30 -12.19)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -12.19)
+        (mid -2.53 -11.76)
+        (end -2.79 -12.70)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -12.70)
+        (mid -2.32 -12.79)
+        (end -3.30 -13.46)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -13.46)
+        (mid -2.53 -13.03)
+        (end -2.79 -13.97)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -13.97)
+        (mid -2.32 -14.06)
+        (end -3.30 -14.73)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -14.73)
+        (mid -2.53 -14.30)
+        (end -2.79 -15.24)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -2.79 -15.24)
+        (mid -2.32 -15.33)
+        (end -3.30 -16.00)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -3.30 -16.00)
+        (mid -2.53 -15.57)
+        (end -2.79 -16.51)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -16.51)
+        (mid -6.13 -15.33)
+        (end -5.84 -16.00)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -16.00)
+        (mid -6.20 -15.35)
+        (end -6.60 -15.24)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -15.24)
+        (mid -6.52 -15.23)
+        (end -5.84 -14.73)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -14.73)
+        (mid -6.20 -14.08)
+        (end -6.60 -13.97)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -13.97)
+        (mid -6.13 -12.79)
+        (end -5.84 -13.46)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -13.46)
+        (mid -6.20 -12.81)
+        (end -6.60 -12.70)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -12.70)
+        (mid -6.13 -11.52)
+        (end -5.84 -12.19)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -12.19)
+        (mid -6.20 -11.54)
+        (end -6.60 -11.43)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -11.43)
+        (mid -6.13 -10.25)
+        (end -5.84 -10.92)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -10.92)
+        (mid -6.20 -10.27)
+        (end -6.60 -10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -6.60 -10.16)
+        (mid -6.13 -8.98)
+        (end -5.84 -9.65)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start -5.84 -9.65)
+        (mid -6.20 -9.00)
+        (end -6.60 -8.89)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.65 -11.18)
+        (mid 9.36 -11.60)
+        (end 8.89 -11.68)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.89 -11.68)
+        (mid 9.16 -11.61)
+        (end 8.38 -11.18)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.38 -13.72)
+        (mid 8.09 -13.30)
+        (end 7.62 -13.21)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.62 -13.21)
+        (mid 7.89 -13.28)
+        (end 7.11 -13.72)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 7.11 -13.72)
+        (mid 6.82 -13.30)
+        (end 6.35 -13.21)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 6.35 -13.21)
+        (mid 6.62 -13.28)
+        (end 5.84 -13.72)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 9.65 -13.72)
+        (mid 9.36 -13.30)
+        (end 8.89 -13.21)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc
+        (start 8.89 -13.21)
+        (mid 9.16 -13.28)
+        (end 8.38 -13.72)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 26.42 14.48) (xy 21.34 14.48) (xy 21.34 22.86) (xy 9.40 22.86) (xy 9.40 20.57)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 20.57) (xy 5.59 22.86)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 22.86) (xy -2.79 22.86)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 15.24) (xy 1.78 15.24)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.78 15.24) (xy 5.59 15.24) (xy 5.59 18.03)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.33 19.56) (xy 9.40 19.56)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.33 19.05) (xy 9.40 19.05)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -4.06 22.86) (xy -4.06 15.24)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -5.08 22.86) (xy -5.08 15.24)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 22.86) (xy -27.94 22.86)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 19.05) (xy -14.22 19.05)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 19.05) (xy 3.81 19.05) (xy 3.81 16.51) (xy 11.43 16.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -16.00 -29.21) (xy -16.00 -31.75)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 33.02) (xy -1.02 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 30.48) (xy -1.02 27.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 27.94) (xy 1.52 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 30.48) (xy 0.00 32.00)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.00 32.00) (xy -0.51 32.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.51 32.51) (xy -1.02 33.02)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 33.02) (xy 1.52 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 30.48) (xy 1.52 27.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 30.48) (xy -5.08 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 30.48) (xy 4.83 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.51 32.51) (xy 1.27 34.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.00 32.00) (xy 2.03 33.78)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 34.54) (xy 0.51 34.29)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 34.54) (xy 1.02 33.53)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.03 33.78) (xy 1.02 33.53)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.03 33.78) (xy 1.78 33.02)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -16.76 33.02) (xy -16.76 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -16.76 30.48) (xy -16.76 27.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -16.76 27.94) (xy -19.30 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.30 30.48) (xy -17.78 32.00)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -17.78 32.00) (xy -17.27 32.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -17.27 32.51) (xy -16.76 33.02)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.30 33.02) (xy -19.30 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.30 30.48) (xy -19.30 27.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -16.76 30.48) (xy -12.70 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.30 30.48) (xy -22.86 30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -17.27 32.51) (xy -19.05 34.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -17.78 32.00) (xy -19.81 33.78)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.05 34.54) (xy -18.29 34.29)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.05 34.54) (xy -18.80 33.53)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.81 33.78) (xy -18.80 33.53)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -19.81 33.78) (xy -19.56 33.02)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.40 18.03) (xy 9.40 15.24) (xy 16.51 15.24) (xy 16.51 11.94) (xy 26.42 11.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 15.24) (xy -25.40 15.24)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.40 12.70) (xy 9.40 10.41)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 10.41) (xy 5.59 12.70)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 12.70) (xy -2.79 12.70)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 5.08) (xy 1.78 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.78 5.08) (xy 5.59 5.08) (xy 5.59 7.87)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.33 9.40) (xy 9.40 9.40)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.33 8.89) (xy 9.40 8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -4.06 12.70) (xy -4.06 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -5.08 12.70) (xy -5.08 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 12.70) (xy -27.94 12.70)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 8.89) (xy -14.22 8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 8.89) (xy 3.81 8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.40 7.87) (xy 9.40 4.57) (xy 26.42 4.57)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 5.08) (xy -25.40 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.40 2.54) (xy 9.40 0.25)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 0.25) (xy 5.59 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 2.54) (xy -2.79 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 -5.08) (xy 1.78 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.78 -5.08) (xy 5.59 -5.08) (xy 5.59 -2.29)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.33 -0.76) (xy 9.40 -0.76)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.33 -1.27) (xy 9.40 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -4.06 2.54) (xy -4.06 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -5.08 2.54) (xy -5.08 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 2.54) (xy -27.94 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 -1.27) (xy -14.22 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 -1.27) (xy 1.27 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.40 -2.29) (xy 9.40 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 -5.08) (xy -25.40 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 26.42 -0.51) (xy 20.07 -0.51) (xy 20.07 -8.89) (xy 9.65 -8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.65 -8.89) (xy 9.65 -11.18)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.84 -11.18) (xy 5.84 -8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.84 -8.89) (xy -2.79 -8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.79 -16.51) (xy 5.84 -16.51) (xy 5.84 -13.72)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 -12.19) (xy 9.65 -12.19)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.59 -12.70) (xy 9.65 -12.70)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -4.06 -8.89) (xy -4.06 -16.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -5.08 -8.89) (xy -5.08 -16.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 -8.89) (xy -27.94 -8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 -12.70) (xy -14.22 -12.70)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.05 -12.70) (xy -1.52 -12.70)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.65 -13.72) (xy 9.65 -16.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.60 -16.51) (xy -25.40 -16.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 26.42 -3.05) (xy 21.59 -3.05) (xy 21.59 -16.51) (xy 9.65 -16.51)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 26.42 1.78) (xy 18.80 1.78) (xy 18.80 -5.08) (xy 9.40 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 26.42 9.40) (xy 16.51 9.40) (xy 16.51 2.54) (xy 9.40 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 9.40 12.70) (xy 13.97 12.70) (xy 13.97 6.86) (xy 26.42 6.86)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -14.22 19.05) (xy -14.22 -22.86) (xy -25.40 -22.86)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -15.24 -29.21) (xy -15.24 -31.75)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.52 -23.37) (xy -2.29 -24.13)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.29 -24.13) (xy -1.02 -24.64)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 -24.64) (xy -2.29 -25.40)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.29 -25.40) (xy -1.02 -25.91)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 -25.91) (xy -2.29 -26.67)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.29 -26.67) (xy -1.02 -27.18)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.02 -27.18) (xy -2.29 -27.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.29 -27.94) (xy -1.52 -28.45)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.52 -28.45) (xy -1.52 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.52 -12.70) (xy -1.52 -23.37)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.52 -30.48) (xy -15.24 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.56 -23.11) (xy 2.79 -23.88)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.79 -23.88) (xy 4.06 -24.38)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 4.06 -24.38) (xy 2.79 -25.15)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.79 -25.15) (xy 4.06 -25.65)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 4.06 -25.65) (xy 2.79 -26.42)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.79 -26.42) (xy 4.06 -26.92)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 4.06 -26.92) (xy 2.79 -27.69)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.79 -27.69) (xy 3.56 -28.19)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.56 -28.19) (xy 3.56 -30.23)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 8.89) (xy 3.81 -23.11)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 -30.48) (xy 1.27 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.43 -23.37) (xy 10.67 -24.13)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 10.67 -24.13) (xy 11.94 -24.64)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.94 -24.64) (xy 10.67 -25.40)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 10.67 -25.40) (xy 11.94 -25.91)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.94 -25.91) (xy 10.67 -26.67)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 10.67 -26.67) (xy 11.94 -27.18)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.94 -27.18) (xy 10.67 -27.94)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 10.67 -27.94) (xy 11.43 -28.45)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.43 -28.45) (xy 11.43 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.43 16.51) (xy 11.43 -23.37)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 11.43 -30.48) (xy 3.81 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.02 -23.11) (xy 0.25 -23.88)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.25 -23.88) (xy 1.52 -24.38)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 -24.38) (xy 0.25 -25.15)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.25 -25.15) (xy 1.52 -25.65)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 -25.65) (xy 0.25 -26.42)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.25 -26.42) (xy 1.52 -26.92)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.52 -26.92) (xy 0.25 -27.69)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.25 -27.69) (xy 1.02 -28.19)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.02 -28.19) (xy 1.02 -30.23)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -1.27) (xy 1.02 -23.11)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -30.48) (xy -1.52 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -16.00 -30.48) (xy -25.40 -30.48)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (pin unspecified line
+        (at -33.02 -16.51 0)
+        (length 7.62)
+        (name "MDI0+" (effects (font (size 1.27 1.27))))
+        (number "MDI0+" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 -8.89 0)
+        (length 5.08)
+        (name "MDI0-" (effects (font (size 1.27 1.27))))
+        (number "MDI0-" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 2.54 0)
+        (length 5.08)
+        (name "MDI1-" (effects (font (size 1.27 1.27))))
+        (number "MDI1-" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 12.70 0)
+        (length 5.08)
+        (name "MDI2-" (effects (font (size 1.27 1.27))))
+        (number "MDI2-" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 22.86 0)
+        (length 5.08)
+        (name "MDI3-" (effects (font (size 1.27 1.27))))
+        (number "MDI3-" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 -5.08 0)
+        (length 7.62)
+        (name "MDI1+" (effects (font (size 1.27 1.27))))
+        (number "MDI1+" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 5.08 0)
+        (length 7.62)
+        (name "MDI2+" (effects (font (size 1.27 1.27))))
+        (number "MDI2+" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 15.24 0)
+        (length 7.62)
+        (name "MDI3+" (effects (font (size 1.27 1.27))))
+        (number "MDI3+" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 -35.56 0)
+        (length 5.08)
+        (name "SHIELD0" (effects (font (size 1.27 1.27))))
+        (number "SHIELD0" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 -38.10 0)
+        (length 5.08)
+        (name "SHIELD1" (effects (font (size 1.27 1.27))))
+        (number "SHIELD1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -5.08 38.10 270)
+        (length 7.62)
+        (name "14" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 5.08 38.10 270)
+        (length 7.62)
+        (name "13" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -12.70 38.10 270)
+        (length 7.62)
+        (name "11" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 38.10 270)
+        (length 7.62)
+        (name "12" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 -22.86 0)
+        (length 7.62)
+        (name "P1" (effects (font (size 1.27 1.27))))
+        (number "P1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -33.02 -30.48 0)
+        (length 7.62)
+        (name "P10" (effects (font (size 1.27 1.27))))
+        (number "P10" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)

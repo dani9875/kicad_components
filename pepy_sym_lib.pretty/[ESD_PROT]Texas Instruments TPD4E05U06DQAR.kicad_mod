@@ -1,0 +1,190 @@
+(footprint "[ESD_PROT]Texas Instruments TPD4E05U06DQAR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.6 0)
+		(layer "F.SilkS")
+		(uuid "445cf84c-6392-4cf5-91b4-7fa7aafc1ef9")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USON-10_L2.5-W1.0-P0.50-BL"
+		(at 0 4.41 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c5baf40-022f-42f6-8516-9a8e12c09a1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "378a6047-98d3-4778-afa8-1100e29db8ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21b85def-2db4-46a8-aca8-a845b02517ac")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.33 0.58)
+		(end -1.33 -0.58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f6e3e0b3-cbe6-49b3-941c-56c82f6c97d3")
+	)
+	(fp_line
+		(start 1.33 -0.58)
+		(end 1.33 0.58)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "909d94fa-bfe8-4abb-859a-28fab3544207")
+	)
+	(fp_circle
+		(center -1 1.02)
+		(end -0.9 1.02)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "55f31a43-ab0f-4bda-9be9-dabe9fd9955e")
+	)
+	(fp_rect
+		(start -1.5 -0.8)
+		(end 1.5 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "42255047-e5cc-4efa-a6bd-3aa5dc607738")
+	)
+	(fp_circle
+		(center -1 1.02)
+		(end -0.9 1.02)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "64fe26ad-dab1-4f3f-b704-cf73beeee723")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ec5e3fde-0180-4f7a-a826-3c42cd358276")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1 0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "42b6f13e-9be8-476f-9b2f-2dc4170d40ab")
+	)
+	(pad "2" smd rect
+		(at -0.5 0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "148f64ea-1db8-43bc-9aed-80380461bad0")
+	)
+	(pad "3" smd rect
+		(at 0 0.41)
+		(size 0.38 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9bb3bfdf-072c-4a4c-abee-5a4722158726")
+	)
+	(pad "4" smd rect
+		(at 0.5 0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "caff43ce-e9f4-4ea3-a33a-44f11bc740cb")
+	)
+	(pad "5" smd rect
+		(at 1 0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c0f3cb23-0931-4f52-8b04-3d4da870e627")
+	)
+	(pad "6" smd rect
+		(at 1 -0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9a3879a9-2170-4b43-9113-fd1b388326c3")
+	)
+	(pad "7" smd rect
+		(at 0.5 -0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "01aec6d0-da66-467d-b59c-bac45fa2a590")
+	)
+	(pad "8" smd rect
+		(at 0 -0.41)
+		(size 0.38 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "23f456af-8a2b-4e09-b314-b4c5fb11a529")
+	)
+	(pad "9" smd rect
+		(at -0.5 -0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f2f99a94-5a25-49ca-984e-32d00a0db321")
+	)
+	(pad "10" smd rect
+		(at -1 -0.41)
+		(size 0.25 0.61)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2d01fbf2-1637-40de-93fb-539d3b115600")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[ESD_PROT]Texas Instruments TPD4E05U06DQAR/[ESD_PROT]Texas Instruments TPD4E05U06DQAR.step"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 270)
+		)
+	)
+)
