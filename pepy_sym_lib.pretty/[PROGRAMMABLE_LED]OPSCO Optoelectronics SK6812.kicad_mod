@@ -1,0 +1,213 @@
+(footprint "[PROGRAMMABLE_LED]OPSCO Optoelectronics SK6812"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.9 0)
+		(layer "F.SilkS")
+		(uuid "01a7fa21-03b0-46ff-99ac-c0bebb643ed7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED-SMD_4P-L5.0-W5.0-LS5.4-TL-1"
+		(at 0 4.064 0)
+		(layer "F.Fab")
+		(uuid "55b76082-f748-4f14-b844-5b23099c8f73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00326e18-ebe3-4809-81ec-54417607bb4b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f5af1780-6958-4098-894a-99ed40512fc7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.54 -2.54)
+		(end 2.54 -2.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "061efe18-515f-4211-a8db-9e8ff169edfa")
+	)
+	(fp_line
+		(start -2.54 -2.43)
+		(end -2.54 -2.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d4750ac9-52be-4cb4-a479-fa373c116e81")
+	)
+	(fp_line
+		(start -2.54 0.77)
+		(end -2.54 -0.77)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3bce715a-a664-4068-844c-1130d7362293")
+	)
+	(fp_line
+		(start -2.54 2.54)
+		(end -2.54 2.43)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5a5c16a7-81eb-44c3-aced-c4b8db718c25")
+	)
+	(fp_line
+		(start 2.54 -2.54)
+		(end 2.54 -2.43)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e791f47d-766a-4df4-bf73-69e042c1ce50")
+	)
+	(fp_line
+		(start 2.54 -0.77)
+		(end 2.54 0.77)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e1bdacd3-27b0-4191-b634-45afe0f83451")
+	)
+	(fp_line
+		(start 2.54 2.43)
+		(end 2.54 2.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8a302861-3b8e-437c-96c4-e2e9b7611c10")
+	)
+	(fp_line
+		(start 2.54 2.54)
+		(end -2.54 2.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9bde00b-dabb-4f70-a53a-d4b06a4b2557")
+	)
+	(fp_circle
+		(center -3.81 -2.54)
+		(end -3.61 -2.54)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "a30a3130-acbe-40bc-9e02-f1f06cec9206")
+	)
+	(fp_rect
+		(start -3.556 -2.794)
+		(end 3.522335 2.743542)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "116df81f-86ec-4585-bbb0-1139dd5e078a")
+	)
+	(fp_circle
+		(center -3.81 -2.54)
+		(end -3.61 -2.54)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "7a30fd7f-6c75-42e5-a0d8-ff58b3f93df6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "e8b89fc4-8def-4afe-9d6f-0666c3dfa9e4")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.35 -1.65)
+		(size 1.6 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "da63e5a3-4f50-4e43-a5f4-cde42c75a1b2")
+	)
+	(pad "2" smd rect
+		(at -2.35 1.65)
+		(size 1.6 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b71995bf-720a-4dde-84a9-1e4a6d2bc271")
+	)
+	(pad "3" smd rect
+		(at 2.35 1.65)
+		(size 1.6 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5ef83ef1-efc5-4496-b518-09b0bdbf6a55")
+	)
+	(pad "4" smd rect
+		(at 2.35 -1.65)
+		(size 1.6 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "21963e50-de43-4078-b3d8-15903eb6ecea")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[PROGRAMMABLE_LED]OPSCO Optoelectronics SK6812/[PROGRAMMABLE_LED]OPSCO Optoelectronics SK6812.step"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
