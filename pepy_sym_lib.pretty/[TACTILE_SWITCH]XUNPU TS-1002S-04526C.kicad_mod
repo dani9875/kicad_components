@@ -1,0 +1,229 @@
+(footprint "[TACTILE_SWITCH]XUNPU TS-1002S-04526C"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "c722488d-bb53-495b-bfca-13bf87f8411b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW-SMD_4P-L6.0-W6.0-P4.50-LS9.0-2"
+		(at 0 6.25 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9117afd7-b5e3-444b-b98c-b7d291cbfcfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4cd75abd-743d-4600-b53d-2dae190993f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f859159d-b9f5-4314-8083-274a514c5c39")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3 -3)
+		(end 3 -3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4064b490-783f-4c0b-ac92-f21ed553d4f7")
+	)
+	(fp_line
+		(start -3 3)
+		(end -3 -3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38dbd8bd-1c75-46be-acc8-e0e04b63ecc1")
+	)
+	(fp_line
+		(start 3 -3)
+		(end 3 3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ef9cc51-81c2-41df-8533-4d6342f75be0")
+	)
+	(fp_line
+		(start 3 3)
+		(end -3 3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0d8fb64-b1b9-4a92-bea1-b469bb4650e6")
+	)
+	(fp_circle
+		(center -4.5 -4.103553)
+		(end -4.25 -3.853553)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "2986baca-b6b7-44d1-85cc-4eae74358e19")
+	)
+	(fp_circle
+		(center -2.03 -2.03)
+		(end -1.52 -2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e829fa2f-8e61-4974-b561-77273d53d0f7")
+	)
+	(fp_circle
+		(center -2.03 2.03)
+		(end -1.52 2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e3a091bf-8db7-4600-86ef-82a8961a53b1")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.53 0)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c1f4dcce-0d0a-43e4-b060-2dc9b135a74b")
+	)
+	(fp_circle
+		(center 2.03 -2.03)
+		(end 2.54 -2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "86999760-4235-41af-bc6b-564f6efbd43b")
+	)
+	(fp_circle
+		(center 2.03 2.03)
+		(end 2.54 2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "d791bd09-bc73-426a-92d1-b33440a9e018")
+	)
+	(fp_rect
+		(start -6.5 -5)
+		(end 6.25 3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a47ccda8-c8e0-4778-b9ef-a493292a20a4")
+	)
+	(fp_circle
+		(center -4.5 -4.103553)
+		(end -4.25 -3.853553)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "7aef8a3d-9c26-4a18-b3be-5d9a4af25886")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1f17f668-5392-4d13-8653-c2b85b2b636b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4.55 -2.25)
+		(size 2.3 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9f61e486-6c37-495e-aa0c-4fa2c34d2c70")
+	)
+	(pad "2" smd rect
+		(at 4.55 -2.25)
+		(size 2.3 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "968aac9f-8859-47a7-b676-cb0cbc1e4427")
+	)
+	(pad "3" smd rect
+		(at -4.55 2.25)
+		(size 2.3 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8eec173e-0488-423d-b6bd-4ceaff52ea53")
+	)
+	(pad "4" smd rect
+		(at 4.55 2.25)
+		(size 2.3 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "727afcc1-f7c4-46dc-b2ea-68e4737d60e7")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[TACTILE_SWITCH]XUNPU TS-1002S-04526C/[TACTILE_SWITCH]XUNPU TS-1002S-04526C.step"
+		(offset
+			(xyz -3 0 2.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

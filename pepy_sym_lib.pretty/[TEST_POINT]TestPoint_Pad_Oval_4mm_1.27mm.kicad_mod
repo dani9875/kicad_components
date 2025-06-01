@@ -1,0 +1,66 @@
+(footprint "[TEST_POINT]TestPoint_Pad_Oval_4mm_1.27mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SMD pad as test Point, diameter 2.0mm")
+	(tags "Test point SMD pad")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(layer "F.Fab")
+		(uuid "c28ddd99-5711-44a3-a273-99758422503e")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "TestPoint_Pad_2.0x2.0mm"
+		(at 0 1.25 0)
+		(layer "F.SilkS")
+		(uuid "9aa69a93-282f-4dbc-aa50-bc2d2bffe762")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9fdb7435-a60e-4d0f-8580-b9b7947da223")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d48451bc-d59c-4d07-81dc-563e2647e3da")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(pad "1" smd oval
+		(at 0 0)
+		(size 4 1.27)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "20983fce-e4ad-492f-bded-d1999436035a")
+	)
+	(embedded_fonts no)
+)
