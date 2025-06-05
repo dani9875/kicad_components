@@ -131,10 +131,10 @@
 		(uuid "d9bde00b-dabb-4f70-a53a-d4b06a4b2557")
 	)
 	(fp_circle
-		(center -3.81 -2.54)
-		(end -3.61 -2.54)
+		(center -3.192088 -2.52555)
+		(end -2.992088 -2.52555)
 		(stroke
-			(width 0.06)
+			(width 0.01)
 			(type solid)
 		)
 		(fill yes)
@@ -153,15 +153,15 @@
 		(uuid "116df81f-86ec-4585-bbb0-1139dd5e078a")
 	)
 	(fp_circle
-		(center -3.81 -2.54)
-		(end -3.61 -2.54)
+		(center -3.192088 -2.52555)
+		(end -2.992088 -2.52555)
 		(stroke
-			(width 0.06)
+			(width 0.01)
 			(type solid)
 		)
 		(fill yes)
 		(layer "F.Fab")
-		(uuid "7a30fd7f-6c75-42e5-a0d8-ff58b3f93df6")
+		(uuid "82ac50bb-f7dc-42d8-b4d2-22ef8a4562f1")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
