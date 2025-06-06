@@ -1124,13 +1124,13 @@
 	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[2X20P_FEMALE_HEADER_STR_SMD]Liansheng FH-00369/[2X20P_FEMALE_HEADER_STR_SMD]Liansheng FH-00369.step"
 		(offset
-			(xyz 0 -0 1.2)
+			(xyz 0.1 -0 0.4)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

@@ -1,10 +1,10 @@
 (footprint "[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -0.0254 -3.0734 0)
+		(at 0 -2.5 0)
 		(layer "F.SilkS")
 		(uuid "71eac5f0-2bf6-480e-80cb-bf7701c022d0")
 		(effects
@@ -26,20 +26,8 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at -0.0356 -0.0332 -90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "b6634d43-ecb6-48c9-9c6f-04972d15a7b9")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
-		(at -0.0356 -0.0332 -90)
+		(at -0.0356 -0.0332 270)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "7537557c-8450-4fef-b0f9-0fad62743fe7")
@@ -51,7 +39,7 @@
 		)
 	)
 	(property "Description" ""
-		(at -0.0356 -0.0332 -90)
+		(at -0.0356 -0.0332 270)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "5720a262-af85-4735-832c-d7e79540ed7c")
@@ -94,46 +82,35 @@
 		(uuid "7ce94d75-d45b-4ec8-9b1e-90f424eae09c")
 	)
 	(fp_circle
-		(center -0.9956 1.9768)
-		(end -0.9956 2.1268)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill none)
-		(layer "F.SilkS")
-		(uuid "bacd725b-4cb9-406a-941f-93e192d5e67d")
-	)
-	(fp_circle
-		(center -1.2856 1.0768)
-		(end -1.2856 1.2268)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill none)
-		(layer "Cmts.User")
-		(uuid "2d52d53d-7809-430b-899a-8c7a86940a0d")
-	)
-	(fp_rect
-		(start -1.6612 -1.8366)
-		(end 1.463 1.7702)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill none)
-		(layer "F.Fab")
-		(uuid "e375e703-b797-4dc0-ba81-7e596df01c84")
-	)
-	(fp_circle
-		(center -1.4856 1.3668)
-		(end -1.4856 1.3968)
+		(center -1.568499 1.65098)
+		(end -1.368499 1.65098)
 		(stroke
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "58012b3c-4708-4fd9-a196-a19c70735c44")
+	)
+	(fp_rect
+		(start -1.871581 -1.836112)
+		(end 1.591419 2.000488)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e375e703-b797-4dc0-ba81-7e596df01c84")
+	)
+	(fp_circle
+		(center -1.567697 1.649852)
+		(end -1.367697 1.649852)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "4d1ae85f-2f57-4321-80af-5e551a743b03")
 	)
@@ -151,33 +128,34 @@
 	(pad "1" smd rect
 		(at -0.9856 1.0668)
 		(size 0.6 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "ae5ae105-3326-412d-a3d4-a7bf07163a6a")
 	)
 	(pad "2" smd rect
 		(at -0.0356 1.0668)
 		(size 0.6 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "5c40aa23-510a-421d-9217-6561c563dd9c")
 	)
 	(pad "3" smd rect
 		(at 0.9144 1.0668)
 		(size 0.6 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "42d5ed42-6c30-4c88-9807-6e7239b56d05")
 	)
 	(pad "4" smd rect
 		(at 0.9144 -1.1332)
 		(size 0.6 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "783691b0-cea9-4059-bf13-8f91ddd9dbc4")
 	)
 	(pad "5" smd rect
 		(at -0.9856 -1.1332)
 		(size 0.6 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "5535f9d7-9e1c-4501-9bc8-5dc562d81532")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G/[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G.step"
 		(offset
 			(xyz 0 -0 0.7)

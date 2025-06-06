@@ -1,0 +1,220 @@
+(footprint "[JST_1X8P_1_5MM_VERTICAL]JST B8B-ZR-SM4-TF(LF)(SN)"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "02f3a4ae-9aca-4a79-8f51-dccf803cc2e7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONN-SMD_B8B-ZR-SM4-TF-LF-SN"
+		(at 0 5.23 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7081d115-f050-4965-affc-850b1cbc757c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aad83552-1abf-4360-812f-71a73f833152")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a511af6-69a7-48ef-b703-b2cd96317a29")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -7.5 -2.67)
+		(end 7.5 -2.67)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cd3d8e74-0239-4de7-93ef-04f7451e19a1")
+	)
+	(fp_line
+		(start -7.5 1.03)
+		(end -7.5 0.33)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "45a11160-a76f-44a9-8fff-d05d0af7694f")
+	)
+	(fp_line
+		(start -6 1.03)
+		(end -7.5 1.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2e59ca6-280a-415e-afc7-179d68a7e013")
+	)
+	(fp_line
+		(start 7.5 0.03)
+		(end 7.5 1.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9f91f213-6137-468b-b2f1-c68bdd867954")
+	)
+	(fp_line
+		(start 7.5 1.03)
+		(end 6 1.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2ea8f3c9-d9e4-47cc-bcca-c975b5ea2346")
+	)
+	(fp_circle
+		(center -6 2)
+		(end -5.9 2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e9839381-63a6-4d50-887b-181e9ace0af3")
+	)
+	(fp_rect
+		(start -8.5 -3.25)
+		(end 8.5 3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b6689d03-17ad-4c35-9823-3280c0ec8d54")
+	)
+	(fp_circle
+		(center -6 2)
+		(end -5.9 2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "6940dd87-9395-4c1e-8563-5b1e2ccab295")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "53c90fc3-d409-4d0c-9c4b-d3494d462771")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -5.25 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c046442e-d5cd-4e6e-af93-6a720c2fc906")
+	)
+	(pad "2" smd rect
+		(at -3.75 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "34b57963-2d59-4b08-ae0b-c754231d73d1")
+	)
+	(pad "3" smd rect
+		(at -2.25 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9ef1caf3-8486-476d-a7c9-1c6f145ee62a")
+	)
+	(pad "4" smd rect
+		(at -0.75 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7d30824a-a802-4eac-940a-7230346f3a00")
+	)
+	(pad "5" smd rect
+		(at 0.75 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "25e4c0b1-2490-4975-baa5-a3c03a484a19")
+	)
+	(pad "6" smd rect
+		(at 2.25 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b604e713-4dbc-40e2-ab4e-1a0675a6ef8c")
+	)
+	(pad "7" smd rect
+		(at 3.75 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7a353e83-e5c9-456a-b666-44528c122a04")
+	)
+	(pad "8" smd rect
+		(at 5.25 1.23 90)
+		(size 4 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fc3514bc-63dd-4104-b49b-5d8ef8323025")
+	)
+	(pad "9" smd rect
+		(at 7.35 -1.23 90)
+		(size 2.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "af6f5d91-880d-482f-9887-dd5fe69c4980")
+	)
+	(pad "10" smd rect
+		(at -7.35 -1.23 90)
+		(size 2.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "62926fea-0c09-4de4-9df0-a73f1a267ba9")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[JST_1X8P_1_5MM_VERTICAL]JST B8B-ZR-SM4-TF(LF)(SN)/[JST_1X8P_1_5MM_VERTICAL]JST B8B-ZR-SM4-TF(LF)(SN).step"
+		(offset
+			(xyz -5.2 1.2 -0.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

@@ -1,7 +1,7 @@
 (footprint "[BUFFER]Nexperia 74HCT2G34GW,125"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -0.0254 -2.2098 0)
@@ -22,18 +22,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "13047d29-dea4-4557-9a98-1d22824dedf7")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -84,26 +72,15 @@
 		(uuid "24dc62d6-e54a-4a19-ba31-79a14794e2cc")
 	)
 	(fp_circle
-		(center -1.3 1.14)
-		(end -1.17 1.14)
+		(center -1.050573 1.054856)
+		(end -0.920573 1.054856)
 		(stroke
-			(width 0.25)
+			(width 0.07)
 			(type solid)
 		)
-		(fill none)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "c0a1cfc5-dbbc-4203-bda2-fe7ed0a52445")
-	)
-	(fp_circle
-		(center -0.64 1.22)
-		(end -0.54 1.22)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill none)
-		(layer "Cmts.User")
-		(uuid "85b9d163-f998-4f9f-af0d-43b19e92ff7d")
 	)
 	(fp_rect
 		(start -1.27 -1.5494)
@@ -112,20 +89,20 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "74f2465e-1133-4628-b5bb-b99347b242a0")
 	)
 	(fp_circle
-		(center -1 1.05)
-		(end -0.97 1.05)
+		(center -1.050573 1.054856)
+		(end -0.920573 1.054856)
 		(stroke
-			(width 0.06)
+			(width 0.07)
 			(type solid)
 		)
-		(fill none)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "ae5ef90f-2c9c-46bc-86fa-56ceebf52c55")
+		(uuid "00de87e8-c1cf-4736-9767-ae93bb14edde")
 	)
 	(fp_text user "${REFERENCE}"
 		(at -0.0508 -0.0254 0)
@@ -141,39 +118,40 @@
 	(pad "1" smd rect
 		(at -0.65 0.95)
 		(size 0.4 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "fb52f8c1-3c1a-482c-b390-3df539090f96")
 	)
 	(pad "2" smd rect
 		(at 0 0.95)
 		(size 0.4 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "a498b61e-af32-44ae-b8bf-e017de14dadf")
 	)
 	(pad "3" smd rect
 		(at 0.65 0.95)
 		(size 0.4 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "d530170c-c921-4ef9-8fa1-9f9b745c4fe9")
 	)
 	(pad "4" smd rect
 		(at 0.65 -0.95)
 		(size 0.4 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "00e5b563-efc3-44a6-addf-ccbefbe879ea")
 	)
 	(pad "5" smd rect
 		(at 0 -0.95)
 		(size 0.4 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "32d1192b-3580-44d6-b4b9-105528e625e8")
 	)
 	(pad "6" smd rect
 		(at -0.65 -0.95)
 		(size 0.4 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "bbaddad6-cbee-4138-bc0a-6cff74c75943")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[BUFFER]Nexperia 74HCT2G34GW,125/[BUFFER]Nexperia 74HCT2G34GW,125.step"
 		(offset
 			(xyz 0 -0 -0)

@@ -1,7 +1,7 @@
 (footprint "[LDO]Richtek Tech RT9193-33GB"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0.0762 -2.9258 0)
@@ -22,18 +22,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "705eb812-7215-4a2c-b4d9-72ee09a01821")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -94,66 +82,15 @@
 		(uuid "63acd72f-35c7-44fb-ba03-bc80e0fc4a6d")
 	)
 	(fp_circle
-		(center -1.65 1.14)
-		(end -1.5 1.14)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill none)
-		(layer "F.SilkS")
-		(uuid "452e1e7b-de11-4125-b46a-af99da2a35c7")
-	)
-	(fp_circle
-		(center -0.95 1.76)
-		(end -0.85 1.76)
+		(center -1.65 1.5)
+		(end -1.5 1.5)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
-		(layer "Cmts.User")
-		(uuid "7f002044-42a1-469c-9835-83e4a7c60081")
-	)
-	(fp_line
-		(start -1.524 1.905)
-		(end -1.524 -1.8542)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "5cd04e89-2303-41ce-9ffa-b67db1735e52")
-	)
-	(fp_line
-		(start 1.524 -1.8542)
-		(end -1.524 -1.8542)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "5602379d-f103-4077-88ee-68c77469edfd")
-	)
-	(fp_line
-		(start 1.524 1.905)
-		(end -1.524 1.905)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "f5f07dbe-aeae-4cca-9ea3-ea16fb71bb79")
-	)
-	(fp_line
-		(start 1.524 1.905)
-		(end 1.524 -1.8542)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "b43106fb-c83b-44f0-9cdb-8c909c2db95d")
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "452e1e7b-de11-4125-b46a-af99da2a35c7")
 	)
 	(fp_circle
 		(center -1.3208 2.2352)
@@ -162,7 +99,7 @@
 			(width 0.3)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "c792fd41-06fd-4ebc-9da2-984ba17c5c35")
 	)
@@ -180,33 +117,34 @@
 	(pad "1" smd rect
 		(at -0.95 1.15)
 		(size 0.49 1.16)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "26e832a0-5c10-42a1-b3a9-f70959aab49d")
 	)
 	(pad "2" smd rect
 		(at 0 1.15)
 		(size 0.49 1.16)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "ba8c64b4-aadb-4f9f-bc7d-202b81f6ad82")
 	)
 	(pad "3" smd rect
 		(at 0.95 1.15)
 		(size 0.49 1.16)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "c77eaf0a-cdc3-4686-8c64-ab6ffb758584")
 	)
 	(pad "4" smd rect
 		(at 0.95 -1.15)
 		(size 0.49 1.18)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "1d344b40-a284-4c0f-9bcd-c3c922c609ae")
 	)
 	(pad "5" smd rect
 		(at -0.95 -1.15)
 		(size 0.49 1.18)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "14d3cc75-2f58-4b29-a3b8-81feffba9ca2")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[LDO]Richtek Tech RT9193-33GB/[LDO]Richtek Tech RT9193-33GB.step"
 		(offset
 			(xyz 0 0 -0)
