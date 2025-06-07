@@ -6,7 +6,7 @@
 	(property "Reference" "REF**"
 		(at 0 -3.9 0)
 		(layer "F.SilkS")
-		(uuid "01a7fa21-03b0-46ff-99ac-c0bebb643ed7")
+		(uuid "b5386da8-aba8-497e-994f-aaa4dfaa2c86")
 		(effects
 			(font
 				(size 1 1)
@@ -17,7 +17,8 @@
 	(property "Value" "LED-SMD_4P-L5.0-W5.0-LS5.4-TL-1"
 		(at 0 4.064 0)
 		(layer "F.Fab")
-		(uuid "55b76082-f748-4f14-b844-5b23099c8f73")
+		(hide yes)
+		(uuid "b8055052-cad7-4ea1-b3ed-15f69e6a1927")
 		(effects
 			(font
 				(size 1 1)
@@ -26,10 +27,10 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 0)
+		(at -0.033665 -0.050459 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "00326e18-ebe3-4809-81ec-54417607bb4b")
+		(uuid "1ac699b1-5d6c-40ce-8627-bdeaf5e1df03")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38,10 +39,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at -0.033665 -0.050459 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f5af1780-6958-4098-894a-99ed40512fc7")
+		(uuid "09d74982-2e08-4458-abc6-6ce4fbef30da")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -207,7 +208,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -180)
 		)
 	)
 )
