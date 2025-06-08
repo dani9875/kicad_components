@@ -9631,7 +9631,7 @@
 				)
 			)
 		)
-		(property "Value" "CL05A475KP5NRNC"
+		(property "Value" "CL05A105KP5NNNC"
 			(at 0 -5.08 0)
 			(effects
 				(font
@@ -9649,7 +9649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05A475KP5NRNC_C368809.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05A105KP5NNNC_C14445.html"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -9658,7 +9658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V 4.7uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "10V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at -0.508 -14.478 0)
 			(effects
 				(font
@@ -9667,7 +9667,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C368809"
+		(property "LCSC Part" "C14445"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -9694,7 +9694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Nvalue" "4.7uF"
+		(property "Nvalue" "1uF"
 			(at 0 -3.048 0)
 			(effects
 				(font
