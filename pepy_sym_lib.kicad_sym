@@ -4072,10 +4072,10 @@
 				(end 2.54 -26.67)
 				(stroke
 					(width 0.254)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
 			(rectangle
@@ -7735,7 +7735,7 @@
 			)
 		)
 		(property "Value" "ASEMB-24.000MHZ-LC-T"
-			(at 0 -6.35 0)
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7778,20 +7778,18 @@
 				(hide yes)
 			)
 		)
-		(symbol "[ACT_CRYSTAL_OSC]Abracon LLC ASEMB-24.000MHZ-LC-T_0_1"
+		(symbol "[ACT_CRYSTAL_OSC]Abracon LLC ASEMB-24.000MHZ-LC-T_1_1"
 			(rectangle
 				(start -7.62 2.54)
 				(end 7.62 -2.54)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
-		)
-		(symbol "[ACT_CRYSTAL_OSC]Abracon LLC ASEMB-24.000MHZ-LC-T_1_1"
 			(pin power_in line
 				(at -10.16 1.27 0)
 				(length 2.54)
@@ -8240,17 +8238,6 @@
 			)
 		)
 		(symbol "[AUD_CODEC]Cirrus Logic WM8960CGEFL_0_1"
-			(rectangle
-				(start -20.32 22.1)
-				(end 20.32 -24.13)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
 			(circle
 				(center -19.05 20.83)
 				(radius 0.38)
@@ -8275,6 +8262,17 @@
 			)
 		)
 		(symbol "[AUD_CODEC]Cirrus Logic WM8960CGEFL_1_1"
+			(rectangle
+				(start -20.32 22.1)
+				(end 20.32 -24.13)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin output line
 				(at -22.86 19.05 0)
 				(length 2.54)
@@ -9302,17 +9300,6 @@
 			)
 		)
 		(symbol "[BUFFER]Nexperia 74HCT2G34GW,125_0_1"
-			(rectangle
-				(start -6.35 5.08)
-				(end 6.35 -5.08)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
 			(circle
 				(center -5.08 3.81)
 				(radius 0.38)
@@ -9326,6 +9313,17 @@
 			)
 		)
 		(symbol "[BUFFER]Nexperia 74HCT2G34GW,125_1_1"
+			(rectangle
+				(start -6.35 5.08)
+				(end 6.35 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin input line
 				(at -8.89 2.54 0)
 				(length 2.54)
@@ -30450,20 +30448,18 @@
 				(hide yes)
 			)
 		)
-		(symbol "[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G_0_1"
+		(symbol "[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G_1_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
-		)
-		(symbol "[LDO]MICRONE(Nanjing Micro One Elec) ME6511C33M5G_1_1"
 			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
@@ -30613,20 +30609,18 @@
 				(hide yes)
 			)
 		)
-		(symbol "[LDO]Richtek Tech RT9193-33GB_0_1"
+		(symbol "[LDO]Richtek Tech RT9193-33GB_1_1"
 			(rectangle
 				(start -6.35 6.35)
 				(end 6.35 -3.81)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
-		)
-		(symbol "[LDO]Richtek Tech RT9193-33GB_1_1"
 			(pin power_in line
 				(at -11.43 5.08 0)
 				(length 5.08)
