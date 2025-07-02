@@ -1,0 +1,202 @@
+(footprint "[LED_REV_MNT]MEIHUA MHT151UGCT"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "2d4fe342-cc54-4b8f-85ba-c0d6d362864a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED-SMD_L3.2-W1.3-RD_GREEN-MHT151UGCT"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "491faf35-6db1-4f58-920c-46f7844d6058")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68b3c404-29b2-4a71-af3a-6feef1045629")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d18f1da6-ecf7-46a5-8d25-8cd88ba796e9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.92 -0.79)
+		(end -2.92 0.81)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5497f8e6-3276-477e-9d13-46fc0c887c5f")
+	)
+	(fp_line
+		(start -2.92 0.81)
+		(end -2.51 1.22)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "15f3a198-c81b-4f51-80c9-71611addb92a")
+	)
+	(fp_line
+		(start -2.51 -1.2)
+		(end -2.92 -0.79)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1123c93e-f037-4b51-b2be-7eda49270e7a")
+	)
+	(fp_line
+		(start -2.51 1.22)
+		(end -1.21 1.22)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b0e7224-31c6-4a4f-b8cd-c396f1bdab7f")
+	)
+	(fp_line
+		(start -1.21 -1.2)
+		(end -2.51 -1.2)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2d65aebf-231c-4d61-b027-b9a9ef7d0a8a")
+	)
+	(fp_line
+		(start 1.19 1.22)
+		(end 3 1.22)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d8d8f695-9213-4bd2-9abd-e58a59f1d0e9")
+	)
+	(fp_line
+		(start 3 -1.2)
+		(end 1.19 -1.2)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4f059e8-f3ef-44ed-8f40-d02afade22b8")
+	)
+	(fp_line
+		(start 3 1.22)
+		(end 3 -1.2)
+		(stroke
+			(width 0.27)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a334f828-271d-471d-a4a7-b07979bfb3ae")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.15 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "9c2b7ea2-3fce-403d-8e53-c871869bd68b")
+	)
+	(fp_rect
+		(start -3.020731 -1.4)
+		(end 3.2 1.401352)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6205d4c9-d757-4fc6-a3ea-350e71cdf267")
+	)
+	(fp_circle
+		(center -1.61 0.62)
+		(end -1.58 0.62)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "eb4d5efd-681c-46af-af35-cfc595029226")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d6cc6ab5-0b85-4b6b-aaf1-885773435f1b")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.79 0)
+		(size 1.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2f91854e-aca6-407f-ac31-d89e709170a7")
+	)
+	(pad "2" smd rect
+		(at 1.79 0)
+		(size 1.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2910badf-a602-4cd5-80e5-262e05f7e2fd")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[LED_REV_MNT]MEIHUA MHT151UGCT/[LED_REV_MNT]MEIHUA MHT151UGCT.step"
+		(offset
+			(xyz 0 -0 0.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

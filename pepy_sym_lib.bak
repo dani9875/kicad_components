@@ -31287,18 +31287,6 @@
 		(symbol "[LED]Lite-On LTST-C190KRKT_0_1"
 			(polyline
 				(pts
-					(xy -1.27 1.52) (xy 1.27 0) (xy -1.27 -1.78) (xy -1.27 1.52)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
 					(xy 1.27 -2.03) (xy 1.27 2.03)
 				)
 				(stroke
@@ -31359,6 +31347,18 @@
 			)
 		)
 		(symbol "[LED]Lite-On LTST-C190KRKT_1_1"
+			(polyline
+				(pts
+					(xy -1.27 1.52) (xy 1.27 0) (xy -1.27 -1.78) (xy -1.27 1.52)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
 				(at -5.08 0 0)
 				(length 3.81)
@@ -31562,6 +31562,179 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "[LED_REV_MNT]MEIHUA MHT151UGCT"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MHT151UGCT"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[LED_REV_MNT]MEIHUA MHT151UGCT"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_MEIHUA-MHT151UGCT_C559120.html"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20mA Water Clear Reverse Mount -40℃~+85℃ 515nm~535nm Emerald Green 130° 95mW 1206 LED Indication - Discrete ROHS"
+			(at 0 -13.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C559120"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[LED_REV_MNT]MEIHUA MHT151UGCT_0_1"
+			(polyline
+				(pts
+					(xy 1.27 -2.03) (xy 1.27 2.03)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.3335 3.0379) (xy 3.1135 4.8179)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.3535 2.0279) (xy 4.1335 3.7979)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.1135 4.8179) (xy 2.6035 3.7979) (xy 2.1035 4.3079) (xy 3.1135 4.8179)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.1335 3.7979) (xy 3.6235 2.7879) (xy 3.1135 3.2979) (xy 4.1335 3.7979)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "[LED_REV_MNT]MEIHUA MHT151UGCT_1_1"
+			(polyline
+				(pts
+					(xy -1.27 1.52) (xy 1.27 0) (xy -1.27 -1.78) (xy -1.27 1.52)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 3.81)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
