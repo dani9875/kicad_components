@@ -25224,6 +25224,143 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "[ESD_PROT]Texas Instruments TPD1E1B04DPYR"
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 3.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E1B04DPYR"
+			(at 0 -4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[ESD_PROT]Texas Instruments TPD1E1B04DPYR"
+			(at 0 -6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/ESD-and-Surge-Protection-TVS-ESD_Texas-Instruments-TPD1E1B04DPYR_C779408.html?s_z=n_TPD1E1B04DPYR"
+			(at 0.508 -11.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8.5V 50W 6.4V 3.6V X1-SON-2(0.6x1) ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 0.508 -13.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C779408"
+			(at 0 -9.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[ESD_PROT]Texas Instruments TPD1E1B04DPYR_0_1"
+			(polyline
+				(pts
+					(xy -1.02 2.29) (xy 0 1.27) (xy 0 -1.27) (xy 1.02 -2.29)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[ESD_PROT]Texas Instruments TPD1E1B04DPYR_1_1"
+			(polyline
+				(pts
+					(xy -2.54 1.524) (xy -0.0777 0.0004) (xy -2.5399 -1.52) (xy -2.5399 1.52)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -1.524) (xy 0.0806 -0.0083) (xy 2.54 1.52) (xy 2.54 -1.52)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 3.81)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 3.81)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "[ESD_PROT]Texas Instruments TPD4E05U06DQAR"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32458,6 +32595,185 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "[LOAD_SWITCH]Texas Instruments TPS22918DBVR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS22918DBVR"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[LOAD_SWITCH]Texas Instruments TPS22918DBVR"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/PMIC-Power-Distribution-Switches_TI_TPS22918DBVR_TPS22918DBVR_C131941.html"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1V~5.5V 53mΩ Active High 2A 1 Load Switch SOT-23-6 Power Distribution Switches ROHS"
+			(at -1.524 -17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C131941"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[LOAD_SWITCH]Texas Instruments TPS22918DBVR_1_1"
+			(rectangle
+				(start -6.35 5.08)
+				(end 6.35 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at -11.43 2.54 0)
+				(length 5.08)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -11.43 0 0)
+				(length 5.08)
+				(name "ON"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -11.43 -2.54 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 11.43 2.54 180)
+				(length 5.08)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 0 180)
+				(length 5.08)
+				(name "QOD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 -2.54 180)
+				(length 5.08)
+				(name "CT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "[MCU]Espressif Systems ESP32-S3-MINI-1-N8"
 		(pin_names
 			(offset 1.016)
@@ -35306,8 +35622,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "Card"
-			(at 0 20.32 0)
+		(property "Reference" "SD"
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35340,8 +35656,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "-20℃~+90℃ 2mm Connector and Ejector MicroSD Card (TF Card) Push-Push SMD SD Card / Memory Card Connector ROHS"
+			(at -1.016 -30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35358,30 +35674,19 @@
 				(hide yes)
 			)
 		)
-		(symbol "[MICRO_SD_PUSH]SHOU HAN TF PUSH_0_1"
+		(symbol "[MICRO_SD_PUSH]SHOU HAN TF PUSH_1_1"
 			(rectangle
 				(start -7.62 12.7)
 				(end 12.7 -12.7)
 				(stroke
 					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(circle
-				(center -6.35 11.43)
-				(radius 0.38)
-				(stroke
-					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 10.16 0)
 				(length 2.54)
 				(name "DAT2"
@@ -35399,7 +35704,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "CD/DAT3"
@@ -35417,7 +35722,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "CMD"
@@ -35435,7 +35740,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "VDD"
@@ -35453,7 +35758,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "CLX"
@@ -35471,7 +35776,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "VSS"
@@ -35489,7 +35794,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "DAT0"
@@ -35507,7 +35812,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "DAT1"
@@ -35525,7 +35830,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "CD"
@@ -35543,10 +35848,10 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 15.24 270)
 				(length 2.54)
-				(name "13"
+				(name "G3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35561,10 +35866,10 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 -15.24 90)
 				(length 2.54)
-				(name "10"
+				(name "G1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35579,10 +35884,10 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 15.24 270)
 				(length 2.54)
-				(name "12"
+				(name "G4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35597,10 +35902,10 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 -15.24 90)
 				(length 2.54)
-				(name "11"
+				(name "G2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -48353,18 +48658,6 @@
 		(symbol "[SCHOTTKY_DIODE]onsemi RB520S30T1G_0_1"
 			(polyline
 				(pts
-					(xy -1.27 -1.52) (xy 1.27 0) (xy -1.27 1.78) (xy -1.27 -1.52)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
 					(xy 1.78 -1.78) (xy 1.78 -2.03) (xy 1.27 -2.03) (xy 1.27 2.03) (xy 0.76 2.03) (xy 0.76 1.78)
 				)
 				(stroke
@@ -48377,6 +48670,18 @@
 			)
 		)
 		(symbol "[SCHOTTKY_DIODE]onsemi RB520S30T1G_1_1"
+			(polyline
+				(pts
+					(xy -1.27 -1.52) (xy 1.27 0) (xy -1.27 1.78) (xy -1.27 -1.52)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
 				(at -5.08 0 0)
 				(length 3.81)

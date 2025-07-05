@@ -1,0 +1,142 @@
+(footprint "[ESD_PROT]Texas Instruments TPD1E1B04DPYR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.2 0)
+		(layer "F.SilkS")
+		(uuid "31dc7f4e-1017-4ea6-a649-5269dba1620d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "X1SON-2_L1.0-W0.6-P0.65-BI-1"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d87f709-3fef-4db0-962e-450891e69123")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b23d7661-182c-4579-bde5-f02ebbfcd5ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b46b1eca-f925-4e52-9b0c-af3609b25015")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.49 -0.5)
+		(end 0.5 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "614628d5-c8b1-4d3c-a376-fd06ff02bd26")
+	)
+	(fp_line
+		(start -0.49 0.5)
+		(end 0.5 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "991b9a09-323a-45b0-a6ac-a1824e846fd1")
+	)
+	(fp_circle
+		(center -0.7 -0.425)
+		(end -0.67 -0.425)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fc9995c0-d2d1-4d06-a226-0b205b9222a8")
+	)
+	(fp_rect
+		(start -0.87 -0.65)
+		(end 0.88 0.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8e2ce66c-c394-403c-ad4b-f1288cbfd6d4")
+	)
+	(fp_circle
+		(center -0.7 -0.425)
+		(end -0.67 -0.425)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b689e83d-57de-4fce-87fd-b041936bdf14")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d42dbb56-194a-469e-88a5-e88275e5efff")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.5 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "16a051e4-992f-46fa-9a88-0289f151a67e")
+	)
+	(pad "2" smd rect
+		(at 0.5 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8deb89ef-af87-43b3-9391-710d302273e9")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[ESD_PROT]Texas Instruments TPD1E1B04DPYR/[ESD_PROT]Texas Instruments TPD1E1B04DPYR.step"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
