@@ -1,7 +1,7 @@
-(footprint "[FERRITE_BEAD]Murata Electronics BLM21PG221SN1D"
-	(version 20240108)
+(footprint "[FERRITE_BEAD_0805_2012Metric]"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0.0762 -1.8796 0)
@@ -22,18 +22,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "4731b647-22e6-45b1-bd6d-774e3f7728f5")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -210,7 +198,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "136e2dfe-77f4-4642-9c45-7fd51931cd7c")
 	)
@@ -221,7 +209,7 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "4e536b47-6527-494c-9b20-3c758b132804")
 	)
@@ -239,16 +227,17 @@
 	(pad "1" smd rect
 		(at -0.97 0)
 		(size 1.13 1.38)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "e8a638fb-e569-4799-8f31-0dcf987ddece")
 	)
 	(pad "2" smd rect
 		(at 0.97 0)
 		(size 1.13 1.38)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "66fe6859-b8b1-48d8-87f0-73e331599e0c")
 	)
-	(model "${ORIGINAL_COMPONENTS}/[FERRITE_BEAD]Murata Electronics BLM21PG221SN1D/[FERRITE_BEAD]Murata Electronics BLM21PG221SN1D.step"
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[FERRITE_BEAD_0805_2012Metric]/[FERRITE_BEAD_0805_2012Metric].step"
 		(offset
 			(xyz 0 0 -0)
 		)

@@ -1,0 +1,139 @@
+(footprint "[Crystal]Seiko SC-20S,32.768kHz,20PPM,9pF"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "36baddf7-4db8-4c7b-a95c-e3537d4d9bbf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[Crystal]Seiko SC-20S,32.768kHz,20PPM,9pF"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "20704d48-4a52-42ec-a41b-24bdbbea2871")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ced5ce24-cbf5-4f4b-b421-0de222a521aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cddb9ac8-2006-4486-a594-fa60cc57e32b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.53 -0.88)
+		(end 1.53 -0.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7f7d7025-7adf-43fd-b941-a5a097f81ab7")
+	)
+	(fp_line
+		(start -1.53 0.88)
+		(end -1.53 -0.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e0d068c5-044f-45f2-b8ee-d7f1e9f7b35c")
+	)
+	(fp_line
+		(start 1.53 -0.88)
+		(end 1.53 0.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0764d1b7-1e8e-435f-a3df-cb9b46317262")
+	)
+	(fp_line
+		(start 1.53 0.88)
+		(end -1.53 0.88)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "527edacb-2efe-44e0-b010-0d5a1a5d4997")
+	)
+	(fp_circle
+		(center -1.02 0.6)
+		(end -0.99 0.6)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "69a49f98-162b-457f-a14d-73a59c77ddcb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d2b29c2a-6189-46e7-a2df-4e9bd0a2b209")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.85 0)
+		(size 0.9 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6c82a4ea-7b21-43f7-bfbc-bd0b4272e859")
+	)
+	(pad "2" smd rect
+		(at 0.85 0)
+		(size 0.9 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "db43ab0c-f390-45cb-8c8d-f31baabbb37b")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[Crystal]Seiko SC-20S,32.768kHz,20PPM,9pF/[Crystal]Seiko SC-20S,32.768kHz,20PPM,9pF.step"
+		(offset
+			(xyz 0 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
