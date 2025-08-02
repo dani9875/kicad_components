@@ -8850,7 +8850,7 @@
 			)
 		)
 		(property "Value" "WM8960CGEFL"
-			(at 0 -26.67 0)
+			(at 0 -24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8858,7 +8858,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[AUD_CODEC]Cirrus Logic WM8960CGEFL"
-			(at 0 -29.21 0)
+			(at 0 -27.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8867,7 +8867,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Audio-OpAmps_WOLFSON_WM8960CGEFL-RV_WM8960CGEFL-RV_C18752.html"
-			(at 0 -31.75 0)
+			(at 0 -29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8876,7 +8876,7 @@
 			)
 		)
 		(property "Description" "QFN-32-EP(5x5) Audio Interface ICs ROHS"
-			(at 0.762 -36.576 0)
+			(at 0.762 -34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8885,7 +8885,7 @@
 			)
 		)
 		(property "LCSC Part" "C18752"
-			(at 0 -34.29 0)
+			(at 0 -32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8893,34 +8893,19 @@
 				(hide yes)
 			)
 		)
-		(symbol "[AUD_CODEC]Cirrus Logic WM8960CGEFL_0_1"
-			(circle
-				(center -19.05 20.83)
-				(radius 0.38)
-				(stroke
-					(width 0)
-					(type default)
+		(property "Manufacturer" "Cirrus Logic"
+			(at -0.254 -36.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -19.05 20.83)
-				(radius 0.38)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[AUD_CODEC]Cirrus Logic WM8960CGEFL_1_1"
 			(rectangle
-				(start -20.32 22.1)
-				(end 20.32 -24.13)
+				(start -20.32 20.32)
+				(end 20.32 -22.86)
 				(stroke
 					(width 0)
 					(type solid)
@@ -9531,7 +9516,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 7.62 0)
+			(at 0 7.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9582,33 +9567,47 @@
 				(hide yes)
 			)
 		)
-		(symbol "[BOOST_CONV]Texas Instruments TPS61220DCKR_0_1"
+		(property "Manufacturer" "TI"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[BOOST_CONV]Texas Instruments TPS61220DCKR_1_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
 				(stroke
 					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(circle
-				(center -6.86 4.32)
-				(radius 0.38)
-				(stroke
-					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
 					(type none)
 				)
 			)
-		)
-		(symbol "[BOOST_CONV]Texas Instruments TPS61220DCKR_1_1"
+			(pin input line
+				(at -10.16 3.81 0)
+				(length 2.54)
+				(name "L"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at -10.16 2.54 0)
+				(at -10.16 1.27 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -9626,25 +9625,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 0 0)
-				(length 2.54)
-				(name "L"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -2.54 0)
+				(at -10.16 -1.27 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -9661,8 +9642,26 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -10.16 -3.81 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_out line
-				(at 10.16 2.54 180)
+				(at 10.16 3.81 180)
 				(length 2.54)
 				(name "VOUT"
 					(effects
@@ -9679,8 +9678,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 10.16 0 180)
+			(pin passive line
+				(at 10.16 1.27 180)
 				(length 2.54)
 				(name "FB"
 					(effects
@@ -9697,24 +9696,6 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(embedded_fonts no)
 	)
@@ -9723,7 +9704,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 10.16 0)
+			(at 0 6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9731,7 +9712,7 @@
 			)
 		)
 		(property "Value" "TPS61222DCKR"
-			(at 0 -10.16 0)
+			(at 0.508 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9739,7 +9720,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[BOOST_CONV]Texas Instruments TPS61222DCKR"
-			(at 0 -12.7 0)
+			(at 0.508 -9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9748,7 +9729,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/DC-DC-Converters_TI_TPS61222DCKR_TPS61222DCKR_C116461.html"
-			(at 0 -15.24 0)
+			(at 0.508 -11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9757,7 +9738,7 @@
 			)
 		)
 		(property "Description" "Boost type Fixed 5V 700mV~5.5V 200mA SC-70-6(SOT-363) DC-DC Converters ROHS"
-			(at 0.254 -20.574 0)
+			(at 0.762 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9766,7 +9747,7 @@
 			)
 		)
 		(property "LCSC Part" "C116461"
-			(at 0 -17.78 0)
+			(at 0.508 -14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9774,21 +9755,30 @@
 				(hide yes)
 			)
 		)
-		(symbol "[BOOST_CONV]Texas Instruments TPS61222DCKR_0_1"
+		(property "Manufacturer" "TI"
+			(at -0.254 -19.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "[BOOST_CONV]Texas Instruments TPS61222DCKR_1_1"
 			(rectangle
-				(start -7.62 7.62)
-				(end 7.62 -7.62)
+				(start -7.5766 5.2643)
+				(end 7.6634 -4.8957)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
-			(pin power_in line
-				(at -12.7 5.08 0)
-				(length 5.08)
+			(pin input line
+				(at -10.1166 3.9943 0)
+				(length 2.54)
 				(name "L"
 					(effects
 						(font
@@ -9805,8 +9795,8 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 0 0)
-				(length 5.08)
+				(at -10.1166 1.4543 0)
+				(length 2.54)
 				(name "VIN"
 					(effects
 						(font
@@ -9822,29 +9812,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 12.7 -5.08 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "[BOOST_CONV]Texas Instruments TPS61222DCKR_1_1"
 			(pin input line
-				(at -12.7 -5.08 0)
-				(length 5.08)
+				(at -10.1166 -1.0857 0)
+				(length 2.54)
 				(name "EN"
 					(effects
 						(font
@@ -9860,9 +9830,27 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -10.1166 -3.6257 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_out line
-				(at 12.7 5.08 180)
-				(length 5.08)
+				(at 10.2034 3.9943 180)
+				(length 2.54)
 				(name "VOUT"
 					(effects
 						(font
@@ -9878,9 +9866,9 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 0 180)
-				(length 5.08)
+			(pin passive line
+				(at 10.2034 1.4543 180)
+				(length 2.54)
 				(name "FB"
 					(effects
 						(font
@@ -9955,17 +9943,13 @@
 				(hide yes)
 			)
 		)
-		(symbol "[BUFFER]Nexperia 74HCT2G34GW,125_0_1"
-			(circle
-				(center -5.08 3.81)
-				(radius 0.38)
-				(stroke
-					(width 0)
-					(type default)
+		(property "Manufacturer" "Nexperia"
+			(at 0 -19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[BUFFER]Nexperia 74HCT2G34GW,125_1_1"
@@ -9980,80 +9964,8 @@
 					(type none)
 				)
 			)
-			(pin input line
-				(at -8.89 2.54 0)
-				(length 2.54)
-				(name "1A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at -8.89 0 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -8.89 -2.54 0)
-				(length 2.54)
-				(name "2A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 8.89 2.54 180)
-				(length 2.54)
-				(name "1Y"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 8.89 0 180)
+				(at -8.89 3.81 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -10070,8 +9982,80 @@
 					)
 				)
 			)
+			(pin input line
+				(at -8.89 1.27 0)
+				(length 2.54)
+				(name "1A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 -1.27 0)
+				(length 2.54)
+				(name "2A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -8.89 -3.81 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
-				(at 8.89 -2.54 180)
+				(at 8.89 3.81 180)
+				(length 2.54)
+				(name "1Y"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 8.89 1.27 180)
 				(length 2.54)
 				(name "2Y"
 					(effects
@@ -10140,6 +10124,15 @@
 		)
 		(property "LCSC Part" "C964723"
 			(at 0 -9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "MYOUNG"
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10286,60 +10279,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]Samsung Electro-Mechanics CL03A105MQ3CSNH_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20%"
+			(at 0 -20.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "6.3V"
+			(at 0.254 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]Samsung Electro-Mechanics CL03A105MQ3CSNH_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10356,8 +10341,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10462,60 +10447,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201JRNPO9BN101_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5%"
+			(at 0 -20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201JRNPO9BN101_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10532,8 +10509,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10638,60 +10615,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201KRX5R6BB104_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -20.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201KRX5R6BB104_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10708,8 +10677,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10814,60 +10783,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201KRX7R6BB102_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -20.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201KRX7R6BB102_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10884,8 +10845,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -10990,60 +10951,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H100JA01D_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5%"
+			(at 0.254 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0 -20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H100JA01D_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11060,8 +11013,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11166,60 +11119,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H470JA01D_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5%"
+			(at 0 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0.254 -20.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H470JA01D_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11236,8 +11181,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11342,60 +11287,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM033R71A103KA01D_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0.254 -20.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM033R71A103KA01D_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11412,8 +11349,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11518,60 +11455,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM035R60J475ME15D_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20%"
+			(at 0.254 -20.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "6.3V"
+			(at 0.254 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM035R60J475ME15D_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11588,8 +11517,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11697,60 +11626,52 @@
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0402_1005Metric]Samsung Electro-Mechanics CL05A105KP5NNNC_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -19.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0402_1005Metric]Samsung Electro-Mechanics CL05A105KP5NNNC_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11767,8 +11688,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11876,60 +11797,52 @@
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0402_1005Metric]Samsung Electro-Mechanics CL05A475KP5NRNC_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" " ±10%"
+			(at -0.508 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -19.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0402_1005Metric]Samsung Electro-Mechanics CL05A475KP5NRNC_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -11946,8 +11859,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12055,60 +11968,52 @@
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402KRX5R6BB225_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at -0.254 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -20.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402KRX5R6BB225_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12125,8 +12030,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12234,60 +12139,52 @@
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402KRX7R7BB104_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -19.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "16V"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402KRX7R7BB104_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12304,8 +12201,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12413,60 +12310,52 @@
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402MRX5R5BB106_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20%"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "6.3V"
+			(at 0.254 -19.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402MRX5R5BB106_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12483,8 +12372,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12592,60 +12481,52 @@
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0402_1005Metric]muRata GRM158R61A226ME15D_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20%"
+			(at 0 -20.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "10V"
+			(at 0 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0402_1005Metric]muRata GRM158R61A226ME15D_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12662,8 +12543,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12690,7 +12571,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.08 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12698,7 +12579,7 @@
 			)
 		)
 		(property "Value" "GRM188R60J476ME15D"
-			(at 0 -5.08 0)
+			(at 0.508 -6.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12707,7 +12588,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0603_1608Metric]"
-			(at 0 -7.62 0)
+			(at 0.508 -9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12716,7 +12597,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics-GRM188R60J476ME15D_C140782.html"
-			(at 0 -10.16 0)
+			(at 0.508 -11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12725,7 +12606,7 @@
 			)
 		)
 		(property "Description" "6.3V 47uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 1.016 -14.224 0)
+			(at 1.524 -16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12734,7 +12615,7 @@
 			)
 		)
 		(property "LCSC Part" "C140782"
-			(at 0 -12.7 0)
+			(at 0.508 -14.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12743,7 +12624,7 @@
 			)
 		)
 		(property "Nvalue" "47uF"
-			(at 0 3.048 0)
+			(at 0.254 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12751,7 +12632,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 0 -3.048 0)
+			(at 0.508 -4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12760,7 +12641,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at -0.254 -16.256 0)
+			(at 0.254 -18.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12768,60 +12649,34 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0603_1608Metric]Murata Electronics GRM188R60J476ME15D_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
 		(symbol "[CAP_SMD_0603_1608Metric]Murata Electronics GRM188R60J476ME15D_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12838,8 +12693,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -12866,7 +12721,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.08 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12874,7 +12729,7 @@
 			)
 		)
 		(property "Value" "CL10A105KA8NNNC"
-			(at 0 -5.08 0)
+			(at 0.254 -7.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12883,7 +12738,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0603_1608Metric]"
-			(at 0 -7.62 0)
+			(at 0.254 -9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12892,7 +12747,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL10A105KA8NNNC_1uF-105-10-25V_C5673.html"
-			(at 0 -10.16 0)
+			(at 0.254 -12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12901,7 +12756,7 @@
 			)
 		)
 		(property "Description" "25V 1uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 1.016 -14.224 0)
+			(at 1.27 -16.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12910,7 +12765,7 @@
 			)
 		)
 		(property "LCSC Part" "C5673"
-			(at 0 -12.7 0)
+			(at 0.254 -14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12919,7 +12774,7 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0 3.048 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12927,7 +12782,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 0 -3.048 0)
+			(at 0.254 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12936,7 +12791,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at -0.254 -16.256 0)
+			(at 0 -18.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12944,60 +12799,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A105KA8NNNC_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0.254 -20.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "25V"
+			(at 0.254 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A105KA8NNNC_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13014,8 +12861,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13042,7 +12889,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.08 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13050,7 +12897,7 @@
 			)
 		)
 		(property "Value" "CC0603JRNPO9BN121"
-			(at 0 -5.08 0)
+			(at 0 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13059,7 +12906,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0603_1608Metric]"
-			(at 0 -7.62 0)
+			(at 0 -9.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13068,7 +12915,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603JRNPO9BN121_C107035.html"
-			(at 0 -10.16 0)
+			(at 0 -12.446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13077,7 +12924,7 @@
 			)
 		)
 		(property "Description" "50V 120pF NP0 ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 1.016 -14.224 0)
+			(at 1.016 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13086,7 +12933,7 @@
 			)
 		)
 		(property "LCSC Part" "C107035"
-			(at 0 -12.7 0)
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13095,7 +12942,7 @@
 			)
 		)
 		(property "Nvalue" "120pF"
-			(at 0 3.048 0)
+			(at 0 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13103,7 +12950,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 -3.048 0)
+			(at 0 -5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13112,7 +12959,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at -0.254 -16.256 0)
+			(at -0.254 -18.542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13120,60 +12967,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0603_1608Metric]YAGEO CC0603JRNPO9BN121_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5%"
+			(at 0.254 -22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0603_1608Metric]YAGEO CC0603JRNPO9BN121_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13190,8 +13029,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13221,7 +13060,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13229,7 +13068,7 @@
 			)
 		)
 		(property "Value" "C0805C100K5GACTU"
-			(at -0.254 -3.81 0)
+			(at -0.254 -5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13238,7 +13077,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13247,7 +13086,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C100K5GACTU_C2181972.html?s_z=n_C0805C100K5GACTU"
-			(at 0 -8.89 0)
+			(at 0 -10.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13256,7 +13095,7 @@
 			)
 		)
 		(property "Description" "50V 10pF C0G ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13265,7 +13104,7 @@
 			)
 		)
 		(property "LCSC Part" "C2181972 "
-			(at 0 -11.43 0)
+			(at 0 -12.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13274,7 +13113,7 @@
 			)
 		)
 		(property "Manufacturer" " KEMET "
-			(at 0.508 -16.51 0)
+			(at 0.508 -18.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13283,7 +13122,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0 -20.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13292,67 +13131,59 @@
 			)
 		)
 		(property "Nvalue" "10pF"
-			(at 0.254 3.556 0)
+			(at 0 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C100K5GACTU_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0 -23.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C100K5GACTU_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13369,8 +13200,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13400,7 +13231,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13408,7 +13239,7 @@
 			)
 		)
 		(property "Value" "C0805C101K5GACTU"
-			(at -0.254 -3.81 0)
+			(at -0.254 -5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13417,7 +13248,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13426,7 +13257,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C101K5GACTU_C452752.html?s_z=n_C0805C101K5GACTU"
-			(at 0 -8.89 0)
+			(at 0 -10.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13435,7 +13266,7 @@
 			)
 		)
 		(property "Description" "50V 100pF C0G ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13444,7 +13275,7 @@
 			)
 		)
 		(property "LCSC Part" "C452752"
-			(at 0 -11.43 0)
+			(at 0 -12.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13453,7 +13284,7 @@
 			)
 		)
 		(property "Manufacturer" " KEMET "
-			(at 0.508 -16.51 0)
+			(at 0.508 -18.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13462,7 +13293,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0 -20.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13471,67 +13302,59 @@
 			)
 		)
 		(property "Nvalue" "100pF"
-			(at 0.254 3.556 0)
+			(at 0 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C101K5GACTU_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "50V"
+			(at 0.254 -23.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" " ±10%"
+			(at -0.254 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C101K5GACTU_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13548,8 +13371,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13579,7 +13402,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13587,7 +13410,7 @@
 			)
 		)
 		(property "Value" "C0805C105M4VACTU"
-			(at -0.254 -3.81 0)
+			(at -0.508 -4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13596,7 +13419,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at -0.254 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13605,7 +13428,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C105M4VACTU_C2171722.html"
-			(at 0 -8.89 0)
+			(at -0.254 -9.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13614,7 +13437,7 @@
 			)
 		)
 		(property "Description" "16V 1uF Y5V ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at -0.254 -14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13623,7 +13446,7 @@
 			)
 		)
 		(property "LCSC Part" "C2171722"
-			(at 0 -11.43 0)
+			(at -0.254 -12.446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13632,7 +13455,7 @@
 			)
 		)
 		(property "Manufacturer" " KEMET "
-			(at 0.508 -16.51 0)
+			(at 0.254 -17.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13641,7 +13464,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at -0.254 -19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13650,67 +13473,59 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0.254 3.556 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C105M4VACTU_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20% "
+			(at 0 -23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "16V"
+			(at -0.508 -21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C105M4VACTU_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13727,8 +13542,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13758,7 +13573,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13766,7 +13581,7 @@
 			)
 		)
 		(property "Value" "C0805C120J5GACAUTO"
-			(at -0.254 -3.81 0)
+			(at -0.254 -4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13775,7 +13590,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13783,8 +13598,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410122018_KEMET-C0805C120J5GACAUTO_C3844403.pdf"
-			(at 0 -8.89 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_KEMET-C0805C120J5GACAUTO_C3844403.html?s_z=n_C3844403"
+			(at 0 -9.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13793,7 +13608,7 @@
 			)
 		)
 		(property "Description" "50V 12pF C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0 -14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13802,7 +13617,7 @@
 			)
 		)
 		(property "LCSC Part" "C3844403"
-			(at 0 -11.43 0)
+			(at 0 -12.446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13811,7 +13626,7 @@
 			)
 		)
 		(property "Manufacturer" " KEMET "
-			(at 0.508 -16.51 0)
+			(at 0.508 -17.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13820,7 +13635,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0 -19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13829,67 +13644,59 @@
 			)
 		)
 		(property "Nvalue" "12pF"
-			(at 0.254 3.556 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5%"
+			(at 0 -21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0 -23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13906,8 +13713,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -13937,7 +13744,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13945,7 +13752,7 @@
 			)
 		)
 		(property "Value" "CL21A106KAYNNNE"
-			(at -0.254 -3.81 0)
+			(at -0.254 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13954,7 +13761,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13963,7 +13770,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.html"
-			(at 0 -8.89 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13972,7 +13779,7 @@
 			)
 		)
 		(property "Description" "25V 10uF X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13981,7 +13788,7 @@
 			)
 		)
 		(property "LCSC Part" "C15850"
-			(at 0 -11.43 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13990,7 +13797,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 0.508 -16.51 0)
+			(at 0.508 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13999,7 +13806,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0 -19.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14008,67 +13815,59 @@
 			)
 		)
 		(property "Nvalue" "10uF"
-			(at 0.254 3.556 0)
+			(at 0.254 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KAYNNNE_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "25V"
+			(at 0 -23.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KAYNNNE_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14085,8 +13884,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14116,7 +13915,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14124,7 +13923,7 @@
 			)
 		)
 		(property "Value" "CL21A106KOQNNNE"
-			(at -0.254 -3.81 0)
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14133,7 +13932,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0.254 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14142,7 +13941,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A106KOQNNNE_C1713.html"
-			(at 0 -8.89 0)
+			(at 0.254 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14151,7 +13950,7 @@
 			)
 		)
 		(property "Description" "16V 10uF X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0.254 -14.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14160,7 +13959,7 @@
 			)
 		)
 		(property "LCSC Part" "C1713"
-			(at 0 -11.43 0)
+			(at 0.254 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14169,7 +13968,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung"
-			(at 0.508 -16.51 0)
+			(at 0.762 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14178,7 +13977,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0.254 -19.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14187,67 +13986,59 @@
 			)
 		)
 		(property "Nvalue" "10uF"
-			(at 0.254 3.556 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KOQNNNE_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -23.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "16V"
+			(at 0.254 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KOQNNNE_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14264,8 +14055,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14295,7 +14086,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14303,7 +14094,7 @@
 			)
 		)
 		(property "Value" "CL21A226MAQNNNE"
-			(at -0.254 -3.81 0)
+			(at -0.254 -6.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14312,7 +14103,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -8.636 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14321,7 +14112,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.html"
-			(at 0 -8.89 0)
+			(at 0 -11.176 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14330,7 +14121,7 @@
 			)
 		)
 		(property "Description" "25V 22uF X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0 -16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14339,7 +14130,7 @@
 			)
 		)
 		(property "LCSC Part" "C45783"
-			(at 0 -11.43 0)
+			(at 0 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14348,7 +14139,7 @@
 			)
 		)
 		(property "Manufacturer" " KEMET "
-			(at 0.508 -16.51 0)
+			(at 0.508 -18.796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14357,7 +14148,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0 -20.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14366,67 +14157,59 @@
 			)
 		)
 		(property "Nvalue" "22uF"
-			(at 0.254 3.556 0)
+			(at 0 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A226MAQNNNE_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20%"
+			(at -0.254 -24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "25V"
+			(at 0.254 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A226MAQNNNE_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14443,8 +14226,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14549,60 +14332,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A475KAQNNNE_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "25V"
+			(at 0 -20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A475KAQNNNE_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14619,8 +14394,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14647,7 +14422,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.08 0)
+			(at 0 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14655,7 +14430,7 @@
 			)
 		)
 		(property "Value" "CC0805JRNPO9BN102"
-			(at 0 -5.08 0)
+			(at 0.254 -6.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14664,7 +14439,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -7.62 0)
+			(at 0.254 -9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14673,7 +14448,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_1nF-102-5-50V_C62774.html"
-			(at 0 -10.16 0)
+			(at 0.254 -11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14682,7 +14457,7 @@
 			)
 		)
 		(property "Description" "50V 1nF NP0 ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0.762 -14.478 0)
+			(at 1.016 -16.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14691,7 +14466,7 @@
 			)
 		)
 		(property "LCSC Part" "C62774"
-			(at 0 -12.7 0)
+			(at 0.254 -14.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14700,7 +14475,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 -3.048 0)
+			(at 0.254 -4.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14709,7 +14484,7 @@
 			)
 		)
 		(property "Nvalue" "1nF"
-			(at 0 3.302 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14717,7 +14492,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -16.256 0)
+			(at 0.254 -18.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14725,60 +14500,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805JRNPO9BN102_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5%"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0 -19.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805JRNPO9BN102_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14795,8 +14562,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14823,7 +14590,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.588 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14831,7 +14598,7 @@
 			)
 		)
 		(property "Value" "CC0805JRX7R9BB473"
-			(at 0 -3.81 0)
+			(at 0 -5.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14840,7 +14607,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -8.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14849,7 +14616,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0805JRX7R9BB473_C326712.html"
-			(at 0 -8.89 0)
+			(at 0 -10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14858,7 +14625,7 @@
 			)
 		)
 		(property "Description" "50V 47nF X7R ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at -0.508 -13.462 0)
+			(at -0.508 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14867,7 +14634,7 @@
 			)
 		)
 		(property "LCSC Part" "C326712"
-			(at 0 -11.43 0)
+			(at 0 -13.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14876,7 +14643,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0 -17.272 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14885,7 +14652,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -15.24 0)
+			(at 0 -17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14894,67 +14661,59 @@
 			)
 		)
 		(property "Nvalue" "47nF"
-			(at 0 3.302 0)
+			(at 0 -3.302 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805JRX7R9BB473_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±5% "
+			(at 0.762 -20.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0.254 -22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805JRX7R9BB473_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14971,8 +14730,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -14999,7 +14758,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.08 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15061,7 +14820,7 @@
 			)
 		)
 		(property "Nvalue" "10nF"
-			(at 0 3.302 0)
+			(at 0 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15077,60 +14836,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KKX7RBBB103_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -20.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "500V"
+			(at 0 -21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KKX7RBBB103_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -15147,8 +14898,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -15178,7 +14929,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.842 0)
+			(at 0 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15186,7 +14937,7 @@
 			)
 		)
 		(property "Value" "CC0805KRX7R9BB104"
-			(at -0.254 -3.81 0)
+			(at -0.254 -5.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15195,7 +14946,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
-			(at 0 -6.35 0)
+			(at 0 -8.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15204,7 +14955,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
-			(at 0 -8.89 0)
+			(at 0 -10.922 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15213,7 +14964,7 @@
 			)
 		)
 		(property "Description" "50V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0 -13.716 0)
+			(at 0 -15.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15222,7 +14973,7 @@
 			)
 		)
 		(property "LCSC Part" "C49678"
-			(at 0 -11.43 0)
+			(at 0 -13.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15231,7 +14982,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 0.508 -16.51 0)
+			(at 0.508 -18.542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15240,7 +14991,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 0 -18.542 0)
+			(at 0 -20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15249,67 +15000,59 @@
 			)
 		)
 		(property "Nvalue" "100nF"
-			(at 0.254 3.556 0)
+			(at 0.254 -2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KRX7R9BB104_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±10%"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "50V"
+			(at 0.254 -22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KRX7R9BB104_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -15326,8 +15069,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -15354,7 +15097,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0 5.08 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15362,15 +15105,6 @@
 			)
 		)
 		(property "Value" "CL31A107MQHNNNE"
-			(at 0 -5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "pepy_sym_lib:[CAP_SMD_1206_3216Metric]Samsung Electro-Mechanics CL31A107MQHNNNE"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -15379,7 +15113,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL31A107MQHNNNE_100uF-107-20-6-3V_C15008.html"
+		(property "Footprint" "pepy_sym_lib:[CAP_SMD_1206_3216Metric]Samsung Electro-Mechanics CL31A107MQHNNNE"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -15388,16 +15122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "6.3V 100uF X5R ±20% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 0.254 -14.986 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C15008"
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL31A107MQHNNNE_100uF-107-20-6-3V_C15008.html"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -15406,8 +15131,26 @@
 				(hide yes)
 			)
 		)
+		(property "Description" "6.3V 100uF X5R ±20% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 0.254 -17.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C15008"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at -0.254 -17.018 0)
+			(at -0.254 -19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15416,7 +15159,7 @@
 			)
 		)
 		(property "Nvalue" "100uF"
-			(at 0 3.302 0)
+			(at 0.254 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15424,7 +15167,7 @@
 			)
 		)
 		(property "Package" "1206"
-			(at 0 -3.048 0)
+			(at 0 -5.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15432,60 +15175,52 @@
 				(hide yes)
 			)
 		)
-		(symbol "[CAP_SMD_1206_3216Metric]Samsung Electro-Mechanics CL31A107MQHNNNE_0_1"
-			(polyline
-				(pts
-					(xy -1.27 0) (xy -0.51 0)
+		(property "Tolerance" "±20%"
+			(at 0 -21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
-			(polyline
-				(pts
-					(xy -0.51 2.03) (xy -0.51 -2.03)
+		)
+		(property "Voltage rating" "6.3V"
+			(at 0.254 -23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 2.03) (xy 0.51 -2.03)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.51 0) (xy 1.27 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
+				(hide yes)
 			)
 		)
 		(symbol "[CAP_SMD_1206_3216Metric]Samsung Electro-Mechanics CL31A107MQHNNNE_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -15502,8 +15237,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -15527,7 +15262,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "L"
-			(at 0 7.112 0)
+			(at 0 4.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15588,22 +15323,9 @@
 			)
 		)
 		(symbol "[COMMON_MODE_FILTER]Murata Electronics DLW21SN900SQ2L_0_1"
-			(polyline
-				(pts
-					(xy -5.08 3.81) (xy -3.81 3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -2.54) (xy -3.81 -2.54)
-				)
+			(rectangle
+				(start -4.047 2.226)
+				(end 2.6644 -3.489)
 				(stroke
 					(width 0)
 					(type default)
@@ -15613,7 +15335,7 @@
 				)
 			)
 			(circle
-				(center -4.2404 2.7055)
+				(center -3.3085 -1.4966)
 				(radius 0.25)
 				(stroke
 					(width 0)
@@ -15624,7 +15346,7 @@
 				)
 			)
 			(circle
-				(center -4.2404 -0.5945)
+				(center -3.2984 0.411)
 				(radius 0.25)
 				(stroke
 					(width 0)
@@ -15635,9 +15357,9 @@
 				)
 			)
 			(arc
-				(start -3.8592 3.7594)
-				(mid -2.5892 5.0284)
-				(end -1.3192 3.7594)
+				(start -2.54 -2.5595)
+				(mid -1.8997 -1.9416)
+				(end -1.2817 -2.5819)
 				(stroke
 					(width 0)
 					(type default)
@@ -15647,9 +15369,9 @@
 				)
 			)
 			(arc
-				(start -3.8592 -2.5249)
-				(mid -2.5892 -1.2559)
-				(end -1.3192 -2.5249)
+				(start -1.27 1.27)
+				(mid -1.905 0.6152)
+				(end -2.54 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -15659,9 +15381,9 @@
 				)
 			)
 			(arc
-				(start -1.3192 -2.5249)
-				(mid -0.0492 -1.2559)
-				(end 1.2208 -2.5249)
+				(start -1.2814 -2.5757)
+				(mid -0.6489 -1.9172)
+				(end 0 -2.5595)
 				(stroke
 					(width 0)
 					(type default)
@@ -15671,9 +15393,9 @@
 				)
 			)
 			(arc
-				(start -1.3075 3.7594)
-				(mid -0.0375 5.0284)
-				(end 1.2325 3.7594)
+				(start 0.0114 1.2862)
+				(mid -0.6211 0.6277)
+				(end -1.27 1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -15683,9 +15405,9 @@
 				)
 			)
 			(arc
-				(start 1.2208 -2.5249)
-				(mid 2.4908 -1.2559)
-				(end 3.7608 -2.5249)
+				(start 0 -2.5595)
+				(mid 0.635 -1.9047)
+				(end 1.27 -2.5595)
 				(stroke
 					(width 0)
 					(type default)
@@ -15695,9 +15417,9 @@
 				)
 			)
 			(arc
-				(start 1.2817 3.8344)
-				(mid 2.5517 5.1034)
-				(end 3.8217 3.8344)
+				(start 1.27 1.27)
+				(mid 0.6297 0.6521)
+				(end 0.0117 1.2924)
 				(stroke
 					(width 0)
 					(type default)
@@ -15708,19 +15430,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.81 3.81) (xy 5.08 3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 -2.54) (xy 5.08 -2.54)
+					(xy 1.1598 -0.2815) (xy -2.6502 -0.2815)
 				)
 				(stroke
 					(width 0)
@@ -15732,19 +15442,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.1396 1.6855) (xy -3.4804 1.6855)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.1396 0.4155) (xy -3.4804 0.4155)
+					(xy 1.1647 -0.908) (xy -2.6453 -0.908)
 				)
 				(stroke
 					(width 0)
@@ -15757,7 +15455,7 @@
 		)
 		(symbol "[COMMON_MODE_FILTER]Murata Electronics DLW21SN900SQ2L_1_1"
 			(pin passive line
-				(at -10.16 3.81 0)
+				(at -7.62 1.27 0)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -15775,7 +15473,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -2.54 0)
+				(at -7.62 -2.54 0)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -15793,7 +15491,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 3.81 180)
+				(at 6.35 1.27 180)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -15811,7 +15509,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -2.54 180)
+				(at 6.35 -2.54 180)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -15836,7 +15534,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "L"
-			(at 0 5.588 0)
+			(at -0.762 4.572 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15844,7 +15542,7 @@
 			)
 		)
 		(property "Value" "EXC14CT900U"
-			(at 0 -7.366 0)
+			(at 0 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15852,7 +15550,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[COMMON_MODE_FILTER]PANASONIC EXC14CT900U"
-			(at 0 -9.906 0)
+			(at 0 -6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15861,7 +15559,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Common-Mode-Chokes-Filters_PANASONIC-EXC14CT900U_C178762.html"
-			(at 0 -12.446 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15870,7 +15568,7 @@
 			)
 		)
 		(property "Description" "90Ω@100MHz 3.3Ω 2 0302 Common Mode Filters ROHS"
-			(at 0 -17.78 0)
+			(at 0 -13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15879,7 +15577,16 @@
 			)
 		)
 		(property "LCSC Part" "C178762"
-			(at 0 -14.986 0)
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "PANASONIC"
+			(at -0.254 -16.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15888,22 +15595,9 @@
 			)
 		)
 		(symbol "[COMMON_MODE_FILTER]PANASONIC EXC14CT900U_0_1"
-			(polyline
-				(pts
-					(xy -5.08 2.54) (xy -3.81 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 -3.81) (xy -3.81 -3.81)
-				)
+			(rectangle
+				(start -4.047 3.496)
+				(end 2.6644 -2.219)
 				(stroke
 					(width 0)
 					(type default)
@@ -15913,7 +15607,7 @@
 				)
 			)
 			(circle
-				(center -4.2404 1.4355)
+				(center -3.3085 -0.2266)
 				(radius 0.25)
 				(stroke
 					(width 0)
@@ -15924,7 +15618,7 @@
 				)
 			)
 			(circle
-				(center -4.2404 -1.8645)
+				(center -3.2984 1.681)
 				(radius 0.25)
 				(stroke
 					(width 0)
@@ -15935,9 +15629,9 @@
 				)
 			)
 			(arc
-				(start -3.8592 2.4894)
-				(mid -2.5892 3.7584)
-				(end -1.3192 2.4894)
+				(start -2.54 -1.2895)
+				(mid -1.8997 -0.6716)
+				(end -1.2817 -1.3119)
 				(stroke
 					(width 0)
 					(type default)
@@ -15947,9 +15641,9 @@
 				)
 			)
 			(arc
-				(start -3.8592 -3.7949)
-				(mid -2.5892 -2.5259)
-				(end -1.3192 -3.7949)
+				(start -1.27 2.54)
+				(mid -1.905 1.8852)
+				(end -2.54 2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -15959,9 +15653,9 @@
 				)
 			)
 			(arc
-				(start -1.3192 -3.7949)
-				(mid -0.0492 -2.5259)
-				(end 1.2208 -3.7949)
+				(start -1.2814 -1.3057)
+				(mid -0.6489 -0.6472)
+				(end 0 -1.2895)
 				(stroke
 					(width 0)
 					(type default)
@@ -15971,9 +15665,9 @@
 				)
 			)
 			(arc
-				(start -1.3075 2.4894)
-				(mid -0.0375 3.7584)
-				(end 1.2325 2.4894)
+				(start 0.0114 2.5562)
+				(mid -0.6211 1.8977)
+				(end -1.27 2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -15983,9 +15677,9 @@
 				)
 			)
 			(arc
-				(start 1.2208 -3.7949)
-				(mid 2.4908 -2.5259)
-				(end 3.7608 -3.7949)
+				(start 0 -1.2895)
+				(mid 0.635 -0.6347)
+				(end 1.27 -1.2895)
 				(stroke
 					(width 0)
 					(type default)
@@ -15995,9 +15689,9 @@
 				)
 			)
 			(arc
-				(start 1.2817 2.5644)
-				(mid 2.5517 3.8334)
-				(end 3.8217 2.5644)
+				(start 1.27 2.54)
+				(mid 0.6297 1.9221)
+				(end 0.0117 2.5624)
 				(stroke
 					(width 0)
 					(type default)
@@ -16008,19 +15702,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.81 2.54) (xy 5.08 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 -3.81) (xy 5.08 -3.81)
+					(xy 1.1598 0.9885) (xy -2.6502 0.9885)
 				)
 				(stroke
 					(width 0)
@@ -16032,19 +15714,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.1396 0.4155) (xy -3.4804 0.4155)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 4.1396 -0.8545) (xy -3.4804 -0.8545)
+					(xy 1.1647 0.362) (xy -2.6453 0.362)
 				)
 				(stroke
 					(width 0)
@@ -16057,7 +15727,7 @@
 		)
 		(symbol "[COMMON_MODE_FILTER]PANASONIC EXC14CT900U_1_1"
 			(pin passive line
-				(at -10.16 2.54 0)
+				(at -7.62 2.54 0)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -16075,7 +15745,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -3.81 0)
+				(at -7.62 -1.27 0)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -16093,7 +15763,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 2.54 180)
+				(at 6.35 2.54 180)
 				(length 5.08)
 				(name "~"
 					(effects
@@ -16111,7 +15781,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -3.81 180)
+				(at 6.35 -1.27 180)
 				(length 5.08)
 				(name "~"
 					(effects
