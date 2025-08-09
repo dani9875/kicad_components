@@ -1,4 +1,4 @@
-(footprint "[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z"
+(footprint "[SCHOTTKY_DIODE]STMicroelectronics STPS140Z"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -345,7 +345,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${ORIGINAL_COMPONENTS}/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z/[SCHOTTKY_DIODE_40V]STMicroelectronics STPS140Z.step"
+	(model "${ORIGINAL_COMPONENTS}/[SCHOTTKY_DIODE]STMicroelectronics STPS140Z/[SCHOTTKY_DIODE]STMicroelectronics STPS140Z.step"
 		(offset
 			(xyz 0 -0 -0)
 		)
