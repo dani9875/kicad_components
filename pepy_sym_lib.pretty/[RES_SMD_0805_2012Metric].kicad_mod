@@ -1,15 +1,15 @@
 (footprint "[RES_SMD_0805_2012Metric]"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -1.65 0)
+		(at 0 -1.41 0)
 		(layer "F.SilkS")
 		(uuid "effead60-2b17-4463-91cf-34792a2b459a")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.8 0.8)
 				(thickness 0.15)
 			)
 		)
@@ -22,19 +22,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "[RES_SMD_0805_2012Metric]"
-		(at -0.0508 2.1116 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "893a0b98-e609-4e22-964c-b39a4b7293f3")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -127,46 +114,6 @@
 		(uuid "dd1b3122-8369-43e7-94a6-ff7cbfa5435f")
 	)
 	(fp_line
-		(start -1.68 -0.95)
-		(end 1.68 -0.95)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "245c0818-3ccc-4969-b35b-0d4f8723400e")
-	)
-	(fp_line
-		(start -1.68 0.95)
-		(end -1.68 -0.95)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "c9825373-da58-4067-816d-465cdf887dc6")
-	)
-	(fp_line
-		(start 1.68 -0.95)
-		(end 1.68 0.95)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "5b983e02-1ada-4414-ad21-290f1424bf3d")
-	)
-	(fp_line
-		(start 1.68 0.95)
-		(end -1.68 0.95)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "f3d9ee21-ffbd-4620-abbf-7bc99e9f4420")
-	)
-	(fp_line
 		(start -1.524 -0.765396)
 		(end 1.524 -0.762)
 		(stroke
@@ -220,14 +167,14 @@
 	(pad "1" smd roundrect
 		(at -0.9125 0)
 		(size 1.025 1.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.243902)
 		(uuid "9702d628-9b91-4d58-9130-9271bd872f5b")
 	)
 	(pad "2" smd roundrect
 		(at 0.9125 0)
 		(size 1.025 1.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.243902)
 		(uuid "1ad1544b-7ba3-4927-93fd-ab9c0a8dba06")
 	)
@@ -243,6 +190,7 @@
 			"dd1b3122-8369-43e7-94a6-ff7cbfa5435f"
 		)
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[RES_SMD_0805_2012Metric]/[RES_SMD_0805_2012Metric].step"
 		(offset
 			(xyz -0 -0 -0)

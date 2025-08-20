@@ -1,10 +1,10 @@
 (footprint "[1x2_SCREW_TERMINAL_BLOCK]Ningbo Kangnex Elec WJ500V-5.08-2P"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -7 0)
+		(at 0.02 -6.72 0)
 		(layer "F.SilkS")
 		(uuid "21c09bbb-ccc1-47dd-a3e4-a1f8a7b70923")
 		(effects
@@ -17,22 +17,11 @@
 	(property "Value" "CONN-TH_2P-P5.00_WJ500V-5.08-2P"
 		(at 0 6 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "ff606343-34a1-46b4-ade6-ad6e68b50665")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c73b3365-3d5a-4c01-928b-0651c6d653e4")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -162,6 +151,17 @@
 		(layer "F.SilkS")
 		(uuid "8fe0090e-0b8a-4e02-bca0-e82b6f19532b")
 	)
+	(fp_rect
+		(start -6.035 -6.015)
+		(end 6.065 5.135)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b75782f8-20fb-4a8a-a2af-b31fa0f9f497")
+	)
 	(fp_circle
 		(center -5.21 4.5)
 		(end -5.18 4.5)
@@ -169,7 +169,7 @@
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "1c5ba379-70e7-4b93-9f97-d85a2ffcf3fc")
 	)
@@ -180,7 +180,7 @@
 			(width 0.55)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "45e74018-5f52-489b-815f-7c716315096b")
 	)
@@ -191,12 +191,12 @@
 			(width 0.55)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "bac6498c-ecc4-4559-a030-056e31131c25")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 8 0)
+		(at 0 -2.25 0)
 		(layer "F.Fab")
 		(uuid "86e114fa-e20a-48dc-8168-60c6a59b40c3")
 		(effects
@@ -222,6 +222,7 @@
 		(remove_unused_layers no)
 		(uuid "130c1e7f-1cdc-4cb6-9636-76ec46bcd4c9")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[1x2_SCREW_TERMINAL_BLOCK]Ningbo Kangnex Elec WJ500V-5.08-2P/[1x2_SCREW_TERMINAL_BLOCK]Ningbo Kangnex Elec WJ500V-5.08-2P.step"
 		(offset
 			(xyz 2.7 0 0)

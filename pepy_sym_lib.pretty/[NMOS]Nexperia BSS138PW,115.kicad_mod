@@ -1,15 +1,15 @@
 (footprint "[NMOS]Nexperia BSS138PW,115"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -2.8 0)
+		(at 0 -1.75 0)
 		(layer "F.SilkS")
 		(uuid "d836f884-cad6-4635-8379-a225ec581798")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.6 0.6)
 				(thickness 0.15)
 			)
 		)
@@ -17,23 +17,11 @@
 	(property "Value" "[NMOS]Nexperia BSS138PW,115"
 		(at 0 6.65 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "40665944-d782-4dda-8f80-6693f2500b70")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "[NMOS]Nexperia BSS138PW,115"
-		(at 0 4.8 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "399d055c-f3ed-4091-adff-e3f0078d1337")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -116,45 +104,68 @@
 		(uuid "6ee10215-f2c4-4c0f-a83c-09448a13409a")
 	)
 	(fp_circle
-		(center 1.05 1)
-		(end 1.08 1)
+		(center 1.07 1.1)
+		(end 1.04 1.08)
 		(stroke
 			(width 0.06)
 			(type solid)
 		)
-		(fill none)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "f5d5aa3c-f476-432e-b275-0c6341e305c8")
 	)
+	(fp_rect
+		(start -1.495 -1.345)
+		(end 1.495 1.345)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "001a7a9e-12a9-4336-99ea-28b8acb8331c")
+	)
+	(fp_circle
+		(center 1.07 1.1)
+		(end 1.04 1.08)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "56e0e160-bb07-4186-ab59-1c502a8578ec")
+	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.8 0)
+		(at 0 0.01 0)
 		(layer "F.Fab")
 		(uuid "3910d038-be4d-4276-b3e0-daa3cb96e57a")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)
 	(pad "1" smd rect
 		(at 0.9 0.65)
 		(size 0.94 0.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "8e605907-8d3b-466d-9bf3-b86ef240c7d9")
 	)
 	(pad "2" smd rect
 		(at 0.9 -0.65)
 		(size 0.94 0.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "b8f59367-6737-4385-9ddf-4bd1a1aafe6a")
 	)
 	(pad "3" smd rect
 		(at -0.9 0)
 		(size 0.94 0.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "1f1be575-7471-45f8-ba1f-323d11539231")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[NMOS]Nexperia BSS138PW,115/[NMOS]Nexperia BSS138PW,115.step"
 		(offset
 			(xyz 0 0 0)

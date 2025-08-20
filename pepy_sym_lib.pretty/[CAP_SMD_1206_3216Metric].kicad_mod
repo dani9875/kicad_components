@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -4 0)
+		(at 0 -1.9 0)
 		(layer "F.SilkS")
 		(uuid "26e96619-3a18-4593-94d9-3e8df529e7a5")
 		(effects
@@ -17,6 +17,7 @@
 	(property "Value" "C1206"
 		(at 0 4 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "a9669b0a-1e84-4deb-81b3-6533465e6acd")
 		(effects
 			(font
@@ -154,16 +155,16 @@
 		(layer "F.SilkS")
 		(uuid "5fd1156a-e6d7-4610-b9e9-6984eacabe8c")
 	)
-	(fp_circle
-		(center -1.6 0.8)
-		(end -1.57 0.8)
+	(fp_rect
+		(start -2.81 -1.26)
+		(end 2.81 1.29)
 		(stroke
-			(width 0.06)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "5154c0c5-7c00-4318-9a60-7acec949e0d0")
+		(uuid "ed16606f-a658-4ea8-a92b-273a71bcb621")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
