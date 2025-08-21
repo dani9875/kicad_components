@@ -64886,7 +64886,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 15.24 6.35 180)
 				(length 2.54)
 				(name "SH"
@@ -64904,7 +64904,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 15.24 3.81 180)
 				(length 2.54)
 				(name "SH"
@@ -64922,7 +64922,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 15.24 1.27 180)
 				(length 2.54)
 				(name "SH"
@@ -64940,7 +64940,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 15.24 -1.27 180)
 				(length 2.54)
 				(name "SH"

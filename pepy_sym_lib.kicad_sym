@@ -44480,14 +44480,6 @@
 					(type none)
 				)
 			)
-			(text private "A-port supply voltage. 1.1 V ≤ VCCA ≤ 5.5 V\nB-port supply voltage. 1.1 V ≤ VCCB ≤ 5.5 V\nHence the channels are interchangable.\n"
-				(at 0 -23.114 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(pin passive line
 				(at -10.16 2.54 0)
 				(length 2.54)
