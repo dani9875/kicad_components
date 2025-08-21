@@ -1,38 +1,27 @@
 (footprint "[IND_SMD_0402_1005Metric]"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0.05 -1.5 0)
+		(at 0 -0.9 0)
 		(layer "F.SilkS")
 		(uuid "413dee60-2134-4ae3-9c9c-033c0529aa6e")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)
 	(property "Value" "R_0402_1005Metric"
 		(at 0 4 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "c46fafd5-c806-4685-8377-ab48d4f76a72")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "[IND_SMD_0402_1005Metric]"
-		(at 0.3 5.75 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "024f024b-0da7-4feb-b24c-85601601709d")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -122,28 +111,39 @@
 		(layer "F.SilkS")
 		(uuid "5e4e72e9-372c-45ef-89b9-c32069204047")
 	)
+	(fp_rect
+		(start -1 -0.5)
+		(end 1 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e23c926c-e326-4ec6-81ba-dca05f76fb79")
+	)
 	(fp_text user "${REFERENCE}"
-		(at -0.15 1.95 0)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "3dc6b32e-960e-4abc-b765-5c17977acca1")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)
 	(pad "1" smd roundrect
 		(at -0.449705 0.004141)
 		(size 0.57 0.54)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "deee599f-69cc-4d05-84bd-d6f25aeb30a2")
 	)
 	(pad "2" smd roundrect
 		(at 0.410295 0.004141)
 		(size 0.57 0.54)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "bd908d69-380d-48e6-aecc-55d850595dea")
 	)
@@ -159,6 +159,7 @@
 			"5e4e72e9-372c-45ef-89b9-c32069204047"
 		)
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[IND_SMD_0402_1005Metric]/[IND_SMD_0402_1005Metric].step"
 		(offset
 			(xyz 0 0 -0)

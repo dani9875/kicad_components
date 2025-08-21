@@ -11222,7 +11222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL03A105MQ3CSNH_1uF-105-20-6-3V_C53067.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C190183.html?s_z=n_CC0201KRX5R6BB104"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -31507,7 +31507,7 @@
 		(symbol "[ESD_PROT]Texas Instruments TPD1E1B04DPYR_1_1"
 			(polyline
 				(pts
-					(xy -2.54 1.524) (xy -0.0777 0.0004) (xy -2.5399 -1.52) (xy -2.5399 1.52)
+					(xy -1.2701 1.526) (xy 0 0) (xy -1.27 -1.27) (xy -1.2699 1.52)
 				)
 				(stroke
 					(width 0)
@@ -31519,7 +31519,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 -1.524) (xy 0.0806 -0.0083) (xy 2.54 1.52) (xy 2.54 -1.52)
+					(xy 1.27 -1.3912) (xy 0.0726 0.0257) (xy 1.27 1.395) (xy 1.2699 -1.395)
 				)
 				(stroke
 					(width 0)
@@ -31530,7 +31530,7 @@
 				)
 			)
 			(pin passive line
-				(at -6.35 0 0)
+				(at -5.08 0 0)
 				(length 3.81)
 				(name "C"
 					(effects
@@ -31548,7 +31548,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 0 180)
+				(at 5.08 0 180)
 				(length 3.81)
 				(name "A"
 					(effects
@@ -44478,6 +44478,14 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(text private "A-port supply voltage. 1.1 V ≤ VCCA ≤ 5.5 V\nB-port supply voltage. 1.1 V ≤ VCCB ≤ 5.5 V\nHence the channels are interchangable.\n"
+				(at 0 -23.114 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(pin passive line
@@ -62724,8 +62732,8 @@
 				)
 			)
 		)
-		(property "Value" "U.FL-R-SMT-1(80)"
-			(at -0.254 -9.398 0)
+		(property "Value" "U.FLRSMT1"
+			(at 0.254 -9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62837,18 +62845,6 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 1.27 0) (xy 0.508 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin passive line
 				(at 0 -7.62 90)
 				(length 5.08)
@@ -62871,24 +62867,6 @@
 		(symbol "[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)_1_1"
 			(pin passive line
 				(at -7.62 0 0)
-				(length 5.08)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 6.35 0 180)
 				(length 5.08)
 				(name "1"
 					(effects

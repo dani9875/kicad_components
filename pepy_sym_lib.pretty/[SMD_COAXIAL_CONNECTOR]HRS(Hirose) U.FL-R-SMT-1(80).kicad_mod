@@ -1,15 +1,15 @@
 (footprint "[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -4.76 0)
+		(at 0 -3.1 0)
 		(layer "F.SilkS")
 		(uuid "d95edef9-9df2-4d30-90f6-c8bb8df36473")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.7 0.7)
 				(thickness 0.15)
 			)
 		)
@@ -17,22 +17,11 @@
 	(property "Value" "RF-SMD_FRF05002-JSS103M"
 		(at 0 4.76 0)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "c5501621-cff3-4324-bf8a-883c8030f7f7")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "0893bed0-15ad-4317-bf87-4912712c481b")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -172,24 +161,24 @@
 		(layer "F.SilkS")
 		(uuid "c662daaa-209f-40ef-8fe1-60d47ba2d1de")
 	)
-	(fp_circle
-		(center 1.5 0.79)
-		(end 1.53 0.79)
+	(fp_rect
+		(start -2.2 -2.6)
+		(end 2.2 1.5)
 		(stroke
-			(width 0.06)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "2e389454-15b2-4b15-af31-65ce597e2465")
+		(uuid "9b39ca84-3db5-41ea-8e1a-3bf3cd38cdee")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
+		(at 0 -0.5 0)
 		(layer "F.Fab")
 		(uuid "2645b4a1-40d3-445a-8b9b-c02394a18f4b")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.6 0.6)
 				(thickness 0.15)
 			)
 		)
@@ -197,21 +186,22 @@
 	(pad "1" smd rect
 		(at 0 0.76)
 		(size 1 1.05)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "c0704ba5-48fb-4f86-9141-cbe6390551e1")
 	)
 	(pad "2" smd rect
 		(at -1.47 -0.76)
 		(size 1.05 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "ea0d701f-a4ed-4a77-a234-d85cfbf8ca5f")
 	)
-	(pad "3" smd rect
+	(pad "2" smd rect
 		(at 1.47 -0.76)
 		(size 1.05 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "541d5316-b446-4149-834f-bc824e573953")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80)/[SMD_COAXIAL_CONNECTOR]HRS(Hirose) U.FL-R-SMT-1(80).step"
 		(offset
 			(xyz 0 0.76 -0)
