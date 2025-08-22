@@ -30882,6 +30882,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 -18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "ESD_PROTECTION"
 			(at 0 0 0)
 			(effects
@@ -64638,6 +64647,15 @@
 		)
 		(property "LCSC Part" "C720512"
 			(at 0.508 -15.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XUNPU"
+			(at 0 -19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)

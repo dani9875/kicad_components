@@ -30882,6 +30882,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 -18.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "ESD_PROTECTION"
 			(at 0 0 0)
 			(effects
@@ -44478,14 +44487,6 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(text private "A-port supply voltage. 1.1 V ≤ VCCA ≤ 5.5 V\nB-port supply voltage. 1.1 V ≤ VCCB ≤ 5.5 V\nHence the channels are interchangable.\n"
-				(at 0 -23.114 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(pin passive line
@@ -64646,6 +64647,15 @@
 		)
 		(property "LCSC Part" "C720512"
 			(at 0.508 -15.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XUNPU"
+			(at 0 -19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
