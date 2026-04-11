@@ -19168,7 +19168,7 @@
 			)
 		)
 		(property "Value" "16YXF330MFFC8X11.5"
-			(at 0 -10.16 0)
+			(at 0 -9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19177,7 +19177,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[CAP_THT]Rubycon 16YXF330MFFC8X11_5"
-			(at 0 -12.7 0)
+			(at 0 -12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19186,7 +19186,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C334324.html"
-			(at 0 -15.24 0)
+			(at 0 -14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19195,7 +19195,7 @@
 			)
 		)
 		(property "Description" "330uF 16V Aluminum Electrolytic Capacitors Through Hole,D8xL11.5mm 7000hrs@105℃"
-			(at 0 0 0)
+			(at 0.508 -20.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19204,7 +19204,7 @@
 			)
 		)
 		(property "Manufacturer" "Rubycon"
-			(at 0 -17.78 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19213,7 +19213,7 @@
 			)
 		)
 		(property "LCSC Part" "C334324"
-			(at 0 -22.86 0)
+			(at 0 -22.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19222,7 +19222,7 @@
 			)
 		)
 		(property "Nvalue" "330uF"
-			(at 0 0 0)
+			(at 0 -3.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19230,7 +19230,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 0 0 0)
+			(at -0.254 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19239,7 +19239,7 @@
 			)
 		)
 		(property "Voltage rating" "16V"
-			(at 0 0 0)
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -74482,4 +74482,131 @@
 		)
 		(embedded_fonts no)
 	)
+(symbol "[10P_1X10_CONN_HEADER_2_54MM]XFCN PM254V-11-10-H85"
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "U"
+      (id 0)
+      (at 0 16.51 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "PM254V-11-10-H85"
+      (id 1)
+      (at 0 -16.51 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+"Footprint"
+"pepy_sym_lib:[10P_1X10_CONN_HEADER_2_54MM]XFCN PM254V-11-10-H85"
+      (id 2)
+      (at 0 -19.05 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Datasheet"
+      "https://www.lcsc.com/datasheet/C46595975.pdf"
+      (id 3)
+      (at 0 -21.59 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Manufacturer"
+      "XFCN(兴飞)"
+      (id 4)
+      (at 0 -24.13 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "MPN"
+      "PM254V-11-10-H85"
+      (id 5)
+      (at 0 -26.67 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C46595975"
+      (id 6)
+      (at 0 -29.21 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+(symbol "[10P_1X10_CONN_HEADER_2_54MM]XFCN PM254V-11-10-H85_0_1"
+      (rectangle
+        (start -1.27 13.97)
+        (end 3.81 -13.97)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (circle
+        (center 0.00 12.70)
+        (radius 0.38)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line
+        (at -3.81 11.43 0)
+        (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 8.89 0)
+        (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 6.35 0)
+        (length 2.54)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 3.81 0)
+        (length 2.54)
+        (name "4" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 1.27 0)
+        (length 2.54)
+        (name "5" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -1.27 0)
+        (length 2.54)
+        (name "6" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -3.81 0)
+        (length 2.54)
+        (name "7" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -6.35 0)
+        (length 2.54)
+        (name "8" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -8.89 0)
+        (length 2.54)
+        (name "9" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -11.43 0)
+        (length 2.54)
+        (name "10" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
 )
