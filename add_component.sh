@@ -50,7 +50,7 @@ if [ -n "$GENERIC_NAME" ]; then
 
     if [ -d "$GENERIC_DIR" ]; then
         echo "Generic directory $GENERIC_DIR found. Moving $NEW_NAME.kicad_sym to this directory."
-        mv "$OUTPUT_DIR/.kicad_sym" "$GENERIC_DIR/$NEW_NAME.kicad_sym"
+        mv "$OUTPUT_DIR/easyeda2kicad.kicad_sym" "$GENERIC_DIR/$NEW_NAME.kicad_sym"
 
         # Add the new component's kicad_sym file to the pepy_sym_lib.kicad_sym file
         if [ -f "$GENERIC_DIR/$NEW_NAME.kicad_sym" ]; then
@@ -85,8 +85,8 @@ if [ -n "$GENERIC_NAME" ]; then
             echo ")" >> "pepy_sym_lib.kicad_sym"  # Add the last parenthesis back
 
             # Clean up the remaining directories
-            rm -rf "$OUTPUT_DIR/.3dshapes"
-            rm -rf "$OUTPUT_DIR/.pretty"
+            rm -rf "$OUTPUT_DIR/easyeda2kicad.3dshapes"
+            rm -rf "$OUTPUT_DIR/easyeda2kicad.pretty"
 
             exit 0
         fi
@@ -97,28 +97,28 @@ if [ -n "$GENERIC_NAME" ]; then
 fi
 
 # Move the .kicad_sym file with no name to the destination directory and rename it
-if [ -f "$OUTPUT_DIR/.kicad_sym" ]; then
-    mv "$OUTPUT_DIR/.kicad_sym" "$DEST_DIR/$NEW_NAME.kicad_sym"
+if [ -f "$OUTPUT_DIR/easyeda2kicad.kicad_sym" ]; then
+    mv "$OUTPUT_DIR/easyeda2kicad.kicad_sym" "$DEST_DIR/$NEW_NAME.kicad_sym"
 fi
 
 # Move the contents of .3dshapes directory to the destination directory
-if [ -d "$OUTPUT_DIR/.3dshapes" ]; then
-    for file in "$OUTPUT_DIR/.3dshapes"/*; do
+if [ -d "$OUTPUT_DIR/easyeda2kicad.3dshapes" ]; then
+    for file in "$OUTPUT_DIR/easyeda2kicad.3dshapes"/*; do
         mv "$file" "$DEST_DIR/"
     done
 fi
 
 # Move the contents of .pretty directory to the destination directory and rename them
-if [ -d "$OUTPUT_DIR/.pretty" ]; then
-    for file in "$OUTPUT_DIR/.pretty"/*; do
+if [ -d "$OUTPUT_DIR/easyeda2kicad.pretty" ]; then
+    for file in "$OUTPUT_DIR/easyeda2kicad.pretty"/*; do
         mv "$file" "$DEST_DIR/"
     done
-    mv "$DEST_DIR/.pretty" "$DEST_DIR/$NEW_NAME.pretty"
+    mv "$DEST_DIR/easyeda2kicad.pretty" "$DEST_DIR/$NEW_NAME.pretty"
 fi
 
 # Clean up the remaining directories
-rm -rf "$OUTPUT_DIR/.3dshapes"
-rm -rf "$OUTPUT_DIR/.pretty"
+rm -rf "$OUTPUT_DIR/easyeda2kicad.3dshapes"
+rm -rf "$OUTPUT_DIR/easyeda2kicad.pretty"
 
 source "tools/unifier.sh"
 
