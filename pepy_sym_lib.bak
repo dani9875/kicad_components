@@ -13471,7 +13471,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 10.16 2.54 180)
 				(length 5.08)
 				(name "SW"
@@ -44634,7 +44634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2869854.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2869854.html"
 			(at 0 -11.938 0)
 			(effects
 				(font
@@ -52411,11 +52411,12 @@
 			)
 		)
 		(property "Value" "~"
-			(at 0 4.445 0)
+			(at 0 -6.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[MOUNTING_HOLE]MountingHole_2.2mm_M2_DIN965_Pad"
@@ -52428,7 +52429,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 -6.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
