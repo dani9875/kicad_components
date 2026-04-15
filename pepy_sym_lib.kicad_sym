@@ -52411,11 +52411,12 @@
 			)
 		)
 		(property "Value" "~"
-			(at 0 4.445 0)
+			(at 0 -6.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[MOUNTING_HOLE]MountingHole_2.2mm_M2_DIN965_Pad"
@@ -52428,7 +52429,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 0)
+			(at 0 -6.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66871,7 +66872,7 @@
 						)
 					)
 				)
-				(number "2"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -66889,7 +66890,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
