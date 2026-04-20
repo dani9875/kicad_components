@@ -13317,7 +13317,7 @@
 			)
 		)
 		(property "Value" "AP63203WU-7"
-			(at 0 -7.62 0)
+			(at 0 -4.572 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13325,7 +13325,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[BUCK]DIODES AP63203WU-7"
-			(at 0 -10.16 0)
+			(at 0 -7.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13334,7 +13334,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C780769.pdf"
-			(at 0 -12.7 0)
+			(at 0 -9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13343,7 +13343,7 @@
 			)
 		)
 		(property "Description" "1.1MHz Buck Fixed 2A 3.3V TSOT-23-6 Voltage Regulators - DC DC Switching Regulators RoHS"
-			(at 0 0 0)
+			(at 0.762 -19.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13352,7 +13352,7 @@
 			)
 		)
 		(property "Manufacturer" "DIODES"
-			(at 0 -15.24 0)
+			(at 0 -12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13361,7 +13361,7 @@
 			)
 		)
 		(property "LCSC Part" "C780769"
-			(at 0 -20.32 0)
+			(at 0 -17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13370,7 +13370,7 @@
 			)
 		)
 		(property "Package" "TSOT-23-6"
-			(at 0 0 0)
+			(at 0 -14.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -75743,4 +75743,90 @@
 		)
 		(embedded_fonts no)
 	)
+(symbol "[JST_1X2P_2_5MM_R_ANGLE]JST S2B-XH-A-1(LF)(SN)"
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "CN"
+      (id 0)
+      (at 0 6.35 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "S2B-XH-A-1"
+      (id 1)
+      (at 0 -6.35 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+"Footprint"
+"pepy_sym_lib:[JST_1X2P_2_5MM_R_ANGLE]JST S2B-XH-A-1(LF)(SN)"
+      (id 2)
+      (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Datasheet"
+      "https://lcsc.com/product-detail/XH-Connectors_JST_S2B-XH-A-1-LF-SN_XHsocket-1-2P-pitch2-5mm-Curved-needle_C163035.html"
+      (id 3)
+      (at 0 -11.43 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Manufacturer"
+      "JST"
+      (id 4)
+      (at 0 -13.97 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "MPN"
+      "S2B-XH-A-1(LF)(SN)"
+      (id 5)
+      (at 0 -16.51 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C163035"
+      (id 6)
+      (at 0 -19.05 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "ki_keywords"
+      "Wire To Board / Wire To Wire Connector"
+      (id 8)
+      (at 0 -21.59 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+(symbol "[JST_1X2P_2_5MM_R_ANGLE]JST S2B-XH-A-1(LF)(SN)_0_1"
+      (rectangle
+        (start -3.81 3.81)
+        (end 6.35 -3.81)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (circle
+        (center -2.54 2.54)
+        (radius 0.38)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line
+        (at -6.35 1.27 0)
+        (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 -1.27 0)
+        (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
 )

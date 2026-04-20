@@ -1,15 +1,15 @@
 (footprint "[CAP_SMD_0805_2012Metric]"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0.022809 -2.142204 0)
+		(at 0.022809 -1.625 0)
 		(layer "F.SilkS")
 		(uuid "e8eb7ae3-6ccb-470f-91e4-ea2722907ffe")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.8 0.8)
 				(thickness 0.15)
 			)
 		)
@@ -22,19 +22,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "[CAP_SMD_0805_2012Metric]"
-		(at 0.022809 2.242196 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "e2335c01-9d97-45b3-ae30-31543c86a61a")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -127,46 +114,6 @@
 		(uuid "76260915-3edb-40eb-b626-2b2637018d51")
 	)
 	(fp_line
-		(start -1.711991 -0.952604)
-		(end 1.688009 -0.952604)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "dd9d2766-7b34-4964-9e8c-2c00aa1016f6")
-	)
-	(fp_line
-		(start -1.711991 1.007396)
-		(end -1.711991 -0.952604)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "d850760a-845d-404d-a7d8-a8332f452dd0")
-	)
-	(fp_line
-		(start 1.688009 -0.952604)
-		(end 1.688009 1.007396)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "506aba72-0947-4671-8199-0d454602829a")
-	)
-	(fp_line
-		(start 1.688009 1.007396)
-		(end -1.711991 1.007396)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "8c957618-465e-4c0e-8d64-d023ab910d30")
-	)
-	(fp_line
 		(start -1.57481 -0.773396)
 		(end 1.55 -0.77)
 		(stroke
@@ -240,14 +187,14 @@
 	(pad "1" smd roundrect
 		(at -0.961991 0.027396)
 		(size 1 1.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "50622701-bde0-4bf7-9ffe-c99c9e8b26f8")
 	)
 	(pad "2" smd roundrect
 		(at 0.938009 0.027396)
 		(size 1 1.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "58bee651-7be0-4ce2-bc9d-e0cccafe4bda")
 	)
@@ -263,6 +210,7 @@
 			"a581a8f2-9789-4698-9f44-0b14ef8ffebd"
 		)
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[CAP_SMD_0805_2012Metric]/[CAP_SMD_0805_2012Metric].step"
 		(offset
 			(xyz 0.022809 -0.042196 -0)
