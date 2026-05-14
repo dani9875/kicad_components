@@ -1,15 +1,15 @@
 (footprint "[LED]Lite-On LTST-C190KRKT"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -2 0)
+		(at 0 -1.5 0)
 		(layer "F.SilkS")
 		(uuid "14ae7fb6-8f4b-4a71-acb6-f81ad9221e5a")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.7 0.7)
 				(thickness 0.15)
 			)
 		)
@@ -22,19 +22,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" "[LED]Lite-On LTST-C190KRKT"
-		(at -0.0508 2.4132 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "be29cae7-2e43-4ce2-8feb-f623cfdb3a8d")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -227,18 +214,18 @@
 		(uuid "ef50c243-43db-4ac7-bbbf-8d688e8b1467")
 	)
 	(fp_rect
-		(start -1.6718 -0.77717)
-		(end 1.36 0.71)
+		(start -1.656784 -0.945846)
+		(end 1.518216 0.932154)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "16926fd0-fc0b-4d3c-a3ee-7b51c8c597ca")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0.012108 0.192815 0)
+		(at 0.012108 0 0)
 		(layer "F.Fab")
 		(uuid "0d583d9f-85e9-4e31-83ae-ba6f2c074074")
 		(effects
@@ -251,15 +238,16 @@
 	(pad "1" smd rect
 		(at 0.77 -0.01 90)
 		(size 0.8 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "4912c7ab-b204-4b98-9f6c-bfe0a0a8ce28")
 	)
 	(pad "2" smd rect
 		(at -0.83 -0.01 90)
 		(size 0.8 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "a2e29276-a70e-4fa9-a110-44134d9629f1")
 	)
+	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[LED]Lite-On LTST-C190KRKT/[LED]Lite-On LTST-C190KRKT.step"
 		(offset
 			(xyz 0 -0 -0)
