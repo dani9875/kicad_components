@@ -1,0 +1,153 @@
+(footprint "[DIODE]Comchip CDSU4148-HF"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "3595bd7b-7bb8-4627-a2d2-26729d39ef15")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOD-523F_L1.7-W0.9-LS1.7-RD"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7f1153ce-297c-43cc-bc20-8526d91e6608")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa168ec7-3488-4661-9734-a94fce773818")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0287a8a8-a349-4b24-8943-6e0c5862c608")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C2886042"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0cee822c-82d6-47e3-aa5a-a54ba4e4c132")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.89 -0.63)
+		(end 0.89 -0.63)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e9a99af7-b797-4a98-b7f6-b12e4c470dd3")
+	)
+	(fp_line
+		(start -0.89 0.63)
+		(end 0.89 0.63)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8279436c-36d5-41e2-b964-b0ce718ca6b8")
+	)
+	(fp_line
+		(start -0.31 -0.63)
+		(end -0.31 0.63)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6507cc19-7842-47ab-a3d7-b3118e85ded7")
+	)
+	(fp_circle
+		(center -0.85 0.45)
+		(end -0.82 0.45)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ff3a5a7d-08dd-440c-ae7b-15ca4f8e96e2")
+	)
+	(fp_rect
+		(start -1.1176 -0.8128)
+		(end 1.1176 0.8128)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "31693d11-3c35-4242-ab0d-992480303a71")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8f28fe71-fcdf-454a-8261-e6c156ba6af2")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.75 0)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4fec6952-e005-43ea-8954-c59951d62c16")
+	)
+	(pad "2" smd rect
+		(at 0.75 0)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dc0e06cd-96f1-4352-a29a-c7d1ca9809ce")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[DIODE]Comchip CDSU4148-HF/[DIODE]Comchip CDSU4148-HF.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
