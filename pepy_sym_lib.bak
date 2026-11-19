@@ -18813,6 +18813,206 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "[CAP_SMD_0805_2012Metric]FH 0805B222K500NT"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0 2.794 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0805B222K500NT"
+			(at 0.254 -20.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[CAP_SMD_0805_2012Metric]"
+			(at 0.508 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_2200pF-222-10-50V_C36576.html"
+			(at 0.254 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2nF ±10% 50V"
+			(at 1.524 -12.446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH"
+			(at 0.508 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C36576"
+			(at 0.508 -15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 0.762 -17.018 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Nvalue" "2.2nF"
+			(at 0.254 -2.794 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 0.508 -22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage rating" "50V"
+			(at 0.762 -18.796 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "[CAP_SMD_0805_2012Metric]FH 0805B222K500NT_1_1"
+			(polyline
+				(pts
+					(xy -0.508 -1.524) (xy -0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -1.524) (xy 0.508 1.524)
+				)
+				(stroke
+					(width 0.25)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -2.54 0 0)
+				(length 2.032)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 2.032)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C100K5GACTU"
 		(pin_numbers
 			(hide yes)
@@ -71334,6 +71534,174 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "[RES_SMD_0805_2012Metric]FOJAN FRC0805F2203TS"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 0 1.778 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FRC0805F2203TS"
+			(at 0 -3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[RES_SMD_0805_2012Metric]"
+			(at 0.254 -5.588 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2907242.html?s_z=n_q_t_resistor"
+			(at 0.254 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 220kΩ ±1% 125mW 0805"
+			(at 0 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2907242"
+			(at 0 -9.398 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Nvalue" "220k"
+			(at 0.254 -1.778 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FOJAN"
+			(at 0.254 -13.208 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 0.254 -15.494 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 -17.272 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "[RES_SMD_0805_2012Metric]FOJAN FRC0805F2203TS_1_1"
+			(rectangle
+				(start -1.778 0.762)
+				(end 1.778 -0.762)
+				(stroke
+					(width 0.15)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -2.54 0 0)
+				(length 0.762)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 0.762)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "[RES_SMD_0805_2012Metric]FOJAN FRC0805F30R0TS"
 		(pin_numbers
 			(hide yes)
@@ -80693,13 +81061,19 @@
 		(embedded_fonts no)
 	)
 	(symbol "[TVS]Littelfuse SMBJ58A"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "D"
-			(at 0 5.08 0)
+			(at 0 3.302 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -80708,8 +81082,8 @@
 				)
 			)
 		)
-		(property "Value" "SMBJ58A_C157526"
-			(at 0 -5.08 0)
+		(property "Value" "SMBJ58A"
+			(at 0 -3.556 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -80719,7 +81093,7 @@
 			)
 		)
 		(property "Footprint" "pepy_sym_lib:[TVS]Littelfuse SMBJ58A"
-			(at 0 -7.62 0)
+			(at 0 -6.096 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -80730,7 +81104,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/TVS_Littelfuse_SMBJ58A_SMBJ58A_C157526.html"
-			(at 0 -10.16 0)
+			(at 0 -8.636 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -80740,8 +81114,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "TVS DIODE 58VWM 93.6VC DO-214AA"
+			(at 0.508 -13.462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -80751,19 +81125,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Littelfuse(美国力特)"
-			(at 0 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "SMBJ58A"
-			(at 0 -15.24 0)
+		(property "Manufacturer" "Littelfuse"
+			(at 0 -11.176 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -80774,7 +81137,18 @@
 			)
 		)
 		(property "LCSC Part" "C157526"
-			(at 0 -17.78 0)
+			(at 0 -16.256 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "DO-214AA"
+			(at 0 -18.542 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -80798,7 +81172,7 @@
 		(symbol "[TVS]Littelfuse SMBJ58A_0_1"
 			(polyline
 				(pts
-					(xy -11.686 11.94) (xy -11.176 11.43) (xy -11.176 8.89) (xy -10.666 8.38)
+					(xy -2.796 1.78) (xy -2.286 1.27) (xy -2.286 -1.27) (xy -1.776 -1.78)
 				)
 				(stroke
 					(width 0)
@@ -80810,7 +81184,7 @@
 			)
 			(polyline
 				(pts
-					(xy -8.64 10.16) (xy -4.06 10.16)
+					(xy -2.54 0) (xy -2.286 0)
 				)
 				(stroke
 					(width 0)
@@ -80820,8 +81194,46 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
-				(at -16.51 10.16 0)
+			(polyline
+				(pts
+					(xy -2.286 0) (xy -2.286 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy 0.254 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "[TVS]Littelfuse SMBJ58A_1_1"
+			(polyline
+				(pts
+					(xy 0.25 1.52) (xy -2.29 0) (xy 0.25 -1.78) (xy 0.25 1.52)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
 				(length 3.81)
 				(name "K"
 					(effects
@@ -80838,8 +81250,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 0 10.16 180)
+			(pin passive line
+				(at 5.08 0 180)
 				(length 3.81)
 				(name "A"
 					(effects
@@ -80854,32 +81266,6 @@
 							(size 1.27 1.27)
 						)
 					)
-				)
-			)
-		)
-		(symbol "[TVS]Littelfuse SMBJ58A_1_1"
-			(polyline
-				(pts
-					(xy -12.7 10.16) (xy -11.176 10.16)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.64 11.68) (xy -11.18 10.16) (xy -8.64 8.38) (xy -8.64 11.68)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type none)
 				)
 			)
 		)
