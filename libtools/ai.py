@@ -1,6 +1,9 @@
 """Claude Code integration: Claude edits the library files directly.
 
-Scope (enforced by Claude Code permission rules):
+Runs either locally or in the Docker sandbox (docker/Dockerfile). In Docker the
+container sees only the three library paths below; nothing else on your PC.
+
+Scope (enforced by Claude Code permission rules, in both modes):
     edit:  pepy_sym_lib.kicad_sym, pepy_sym_lib.pretty/**, original_components/**
     read:  only inside the repository
     tools: Read, Edit, Write, Grep, Glob, WebFetch (no shell)
@@ -75,6 +78,70 @@ def claude_path() -> str | None:
 
 
 # --------------------------------------------------------------------------
+# Docker sandbox
+#   The repo is mounted at /lib. Every top-level entry except the three library
+#   paths is covered: folders by an empty read-only tmpfs, files by /dev/null.
+#   So inside the container Claude can see and change only the library files.
+#   Login and sessions live in the volume DOCKER_VOLUME, not in your home folder.
+# --------------------------------------------------------------------------
+DOCKER_IMAGE = "pepy-claude"
+DOCKER_VOLUME = "pepy-claude-home"
+VISIBLE = {SYM_LIB.name, FP_DIR.name, ORIG_DIR.name}
+
+
+def docker_path() -> str | None:
+    return shutil.which("docker")
+
+
+def docker_ready() -> tuple[bool, str]:
+    exe = docker_path()
+    if not exe:
+        return False, "Docker is not installed."
+    r = subprocess.run([exe, "image", "inspect", DOCKER_IMAGE], capture_output=True, text=True)
+    if r.returncode != 0:
+        err = r.stderr.strip()
+        if "permission denied" in err.lower() or "cannot connect" in err.lower():
+            return False, f"Docker is not reachable: {err.splitlines()[-1] if err else ''}"
+        return False, (f"Image {DOCKER_IMAGE} not built. Run: docker build -t {DOCKER_IMAGE} "
+                       f"--build-arg UID=$(id -u) --build-arg GID=$(id -g) docker/")
+    return True, "Docker"
+
+
+def docker_run(tty: bool = False, with_lib: bool = True) -> list[str]:
+    uid = getattr(os, "getuid", lambda: 1000)()
+    gid = getattr(os, "getgid", lambda: 1000)()
+    cmd = [docker_path() or "docker", "run", "--rm", "-it" if tty else "-i",
+           "--user", f"{uid}:{gid}",
+           "--cap-drop", "ALL", "--security-opt", "no-new-privileges",
+           "--read-only", "--tmpfs", "/tmp:rw,size=256m",
+           "--pids-limit", "256", "--memory", "2g",
+           "-v", f"{DOCKER_VOLUME}:/home/claude"]
+    if with_lib:
+        cmd += ["-v", f"{ROOT}:/lib:rw"]
+        for e in sorted(ROOT.iterdir()):
+            if e.name in VISIBLE or "," in e.name or ":" in e.name:
+                continue
+            if e.is_dir():
+                cmd += ["--tmpfs", f"/lib/{e.name}:ro,size=4k"]
+            else:
+                cmd += ["--mount", f"type=bind,src={os.devnull},dst=/lib/{e.name},readonly"]
+        cmd += ["-w", "/lib"]
+    return cmd + [DOCKER_IMAGE]
+
+
+def auth_status_cmd(docker: bool) -> list[str]:
+    return (docker_run(with_lib=False) if docker else [claude_path() or "claude"]) + ["auth", "status"]
+
+
+def login_cmd(docker: bool) -> list[str]:
+    return (docker_run(tty=True, with_lib=False) if docker else [claude_path() or "claude"]) + ["auth", "login"]
+
+
+def logout_cmd(docker: bool) -> list[str]:
+    return (docker_run(with_lib=False) if docker else [claude_path() or "claude"]) + ["auth", "logout"]
+
+
+# --------------------------------------------------------------------------
 # Session (one conversation per part, resumable)
 # --------------------------------------------------------------------------
 def slug(name: str) -> str:
@@ -134,25 +201,25 @@ def prepare(name: str, fields: dict, fresh: bool = False) -> Session:
     return s
 
 
-def command(s: Session, prompt: str, model: str = "") -> list[str]:
-    """Run with cwd=ROOT.
+def command(s: Session, prompt: str, model: str = "", docker: bool = False) -> list[str]:
+    """Local: run with cwd=ROOT. Docker: the container works in /lib (= ROOT, filtered).
     --tools            only these tools exist (no Bash)
     --allowedTools     pre-approves WebFetch and edits in the three library paths only
-    blockReads...      refuses reads outside the repository
+    blockReads...      refuses reads outside the working directory
     Everything else needs approval, which print mode cannot give, so it is refused."""
     allow = ["WebFetch"] + [f"Edit({p})" for p in EDIT_SCOPE]
-    cmd = [claude_path() or "claude", "-p", prompt,
-           "--output-format", "stream-json", "--verbose",
-           "--tools", TOOLS, "--allowedTools", *allow,
-           "--permission-mode", "default",
-           "--settings", json.dumps({"permissions": {"blockReadsOutsideWorkingDirectories": True}}),
-           "--append-system-prompt-file", str(s.folder / "CONTEXT.md"),
-           "--max-turns", "60"]
+    args = ["-p", prompt,
+            "--output-format", "stream-json", "--verbose",
+            "--tools", TOOLS, "--allowedTools", *allow,
+            "--permission-mode", "default",
+            "--settings", json.dumps({"permissions": {"blockReadsOutsideWorkingDirectories": True}}),
+            "--append-system-prompt", (s.folder / "CONTEXT.md").read_text(encoding="utf-8"),
+            "--max-turns", "60"]
     if s.session_id:
-        cmd += ["--resume", s.session_id]
+        args += ["--resume", s.session_id]
     if model:
-        cmd += ["--model", model]
-    return cmd
+        args += ["--model", model]
+    return (docker_run() if docker else [claude_path() or "claude"]) + args
 
 
 # --------------------------------------------------------------------------
