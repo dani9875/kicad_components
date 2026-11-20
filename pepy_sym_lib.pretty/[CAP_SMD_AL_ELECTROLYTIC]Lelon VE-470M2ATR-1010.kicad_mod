@@ -1,0 +1,287 @@
+(footprint "[CAP_SMD_AL_ELECTROLYTIC]Lelon VE-470M2ATR-1010"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "47uF ±20% 100V Aluminum Electrolytic Capacitors 2000hrs@85℃ VE-470M2ATR-1010, LCSC C249544")
+	(tags "SMD,D10xL10mm VE-470M2ATR-1010")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "8e2ef085-0bbb-48fe-ad5f-e38ea4db2106")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[CAP_SMD_AL_ELECTROLYTIC]Lelon VE-470M2ATR-1010"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "b2a83fd9-0a3f-42eb-833d-9187882e342b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0557fe75-e8a1-43c5-aef0-76b62ee0e000")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91040a46-a383-472f-9a8d-302bc5795e48")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C249544"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36caa388-a175-4b27-be63-37f3cc0ee5d8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.23 -3.09)
+		(end -5.23 -0.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1f56b7fb-993f-444a-88ca-ed8575385486")
+	)
+	(fp_line
+		(start -5.23 3.09)
+		(end -5.23 0.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "76d40c1a-0fae-4a28-b340-ab8c8c5e8be1")
+	)
+	(fp_line
+		(start -3.09 -5.23)
+		(end -5.23 -3.09)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5fb2cd28-3373-478b-8570-a48f33dcf776")
+	)
+	(fp_line
+		(start -3.09 5.23)
+		(end -5.23 3.09)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "33dd5b25-552e-4a6d-b2da-9590c55f3c36")
+	)
+	(fp_line
+		(start 5.23 -5.23)
+		(end -3.09 -5.23)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3d1eef91-5f54-408d-9a1c-fb29ca8eca03")
+	)
+	(fp_line
+		(start 5.23 -0.85)
+		(end 5.23 -5.23)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "514ba0a0-8258-4c56-88dc-45831506fb9c")
+	)
+	(fp_line
+		(start 5.23 0.85)
+		(end 5.23 5.23)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "47aac12c-14c7-4301-8148-8e377f9a7830")
+	)
+	(fp_line
+		(start 5.23 5.23)
+		(end -3.09 5.23)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d50294e9-1cbf-47d8-aa15-a53dd82c09ff")
+	)
+	(fp_circle
+		(center -5.8 5.15)
+		(end -5.77 5.15)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "14d83979-1642-4c71-bec6-16b696afcdc1")
+	)
+	(fp_poly
+		(pts
+			(xy -4.841011 2.214499) (xy -4.841011 2.52349) (xy -3.604997 2.52349) (xy -3.604997 2.214499) (xy -4.841011 2.214499)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5cc813a8-2e5a-46f3-923e-aaf201f0ea02")
+	)
+	(fp_poly
+		(pts
+			(xy -4.377512 1.339012) (xy -4.377512 3.399003) (xy -4.068496 3.399003) (xy -4.068496 1.339012) (xy -4.377512 1.339012)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "1fd47630-91f6-46ee-ae63-5e4a7f73b156")
+	)
+	(fp_poly
+		(pts
+			(xy 4.841011 2.214499) (xy 4.841011 2.52349) (xy 3.604997 2.52349) (xy 3.604997 2.214499) (xy 4.841011 2.214499)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "f741a1f6-c010-4995-87e7-11ab0fcf1c1f")
+	)
+	(fp_line
+		(start -5.15 -3.09)
+		(end -3.09 -5.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "185cc650-892a-4dc4-81b0-e11e5a09be95")
+	)
+	(fp_line
+		(start -5.15 3.09)
+		(end -5.15 -3.09)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "82e46fa9-844b-4a2f-b087-d12735a66b24")
+	)
+	(fp_line
+		(start -3.09 -5.15)
+		(end 5.15 -5.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d6f7e50-0063-416f-83da-286b54255e76")
+	)
+	(fp_line
+		(start -3.09 5.15)
+		(end -5.15 3.09)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "39476e8c-564d-4e06-bdd1-2587d0c4d9f3")
+	)
+	(fp_line
+		(start 5.15 -5.15)
+		(end 5.15 5.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "17484c92-6f51-4a1f-964c-9cb14b803c54")
+	)
+	(fp_line
+		(start 5.15 5.15)
+		(end -3.09 5.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cfa8748e-aa40-4089-87cd-c9eeee8efbf5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1512c1df-1ff7-41da-9d17-ae20a7a9a7c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4.5 0)
+		(size 4.5 1.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6bc7d11a-03c5-437e-9dc2-147af1ab6c2a")
+	)
+	(pad "2" smd rect
+		(at 4.5 0)
+		(size 4.5 1.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "03917fa9-b962-464f-be7f-62f1983173c2")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[CAP_SMD_AL_ELECTROLYTIC]Lelon VE-470M2ATR-1010/[CAP_SMD_AL_ELECTROLYTIC]Lelon VE-470M2ATR-1010.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

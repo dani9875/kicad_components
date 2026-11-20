@@ -45,13 +45,38 @@ is:error  is:warn    parts with lint findings
 
 Aliases: `ref val nv tol mfr lcsc desc fp pkg cat kw volt`.
 
+## Claude Code in the browser
+
+The **Claude** tab next to Details lets Claude change the library.
+
+Setup, once:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Then press **Log in** in the Claude tab. A terminal opens with `claude auth login`. The tab updates when you are logged in.
+
+What Claude can do:
+
+- Edit only `pepy_sym_lib.kicad_sym`, `pepy_sym_lib.pretty/` and `original_components/`. Edits anywhere else are refused.
+- Read only inside this repository. Fetch web pages (datasheets). No shell commands.
+
+Use:
+
+- Select a part. Press **Fill → none**, **Set pin types**, **Both**, or type your own request (Ctrl+Enter).
+- Claude edits the real files. When it is done, the tab lists what changed: pin types, fills, fields, files.
+- **Keep** accepts the change. **Discard** puts the files back as they were before the run. **Undo last kept** reverts the last kept run.
+- Changed symbols are re-formatted the way KiCad writes them, so KiCad shows no extra diff.
+- Each part keeps its own conversation, also after a restart. **New conversation** starts over.
+
 ## Add a part from the command line
 
 ```bash
-./add_component.py C780183 "[POWER_IND]BOURNS SRP1038A-150M"
+./add_component.py C780183 "[POWER_IND]"
 ```
 
-Name format: `[CATEGORY]Manufacturer MPN`.
+Give only the category. The name becomes `[CATEGORY]Manufacturer MPN` from the LCSC title. A custom name after the category also works.
 
 - If a part in the same `[CATEGORY]` has the same pins, the new symbol is a copy of it with the new part data.
 - If `original_components/[CATEGORY]/[CATEGORY].kicad_mod` exists, the part uses that shared footprint (resistors, capacitors).

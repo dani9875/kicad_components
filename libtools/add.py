@@ -509,19 +509,27 @@ def insert_symbol(lib_text: str, sym_text: str, name: str, overwrite: bool) -> s
 
 
 # --------------------------------------------------------------------------
+def safe_name(s: str) -> str:
+    """Characters KiCad or Windows cannot use in a footprint file name become '_'."""
+    return re.sub(r'[/\\*?<>|:"]', "_", re.sub(r"\s+", " ", s)).strip()
+
+
 def add_part(lcsc: str, name: str, generic: str | None = None, overwrite: bool = False,
              dry_run: bool = False, log: Callable[[str], None] = print,
              fetch_ee=fetch_easyeda, fetch_lc=fetch_lcsc) -> AddResult:
+    """name is "[CATEGORY]" (part name taken from LCSC) or "[CATEGORY]Custom name"."""
     name = name.strip()
     lcsc = lcsc.strip().upper()
     if not re.fullmatch(r"C\d+", lcsc):
         raise AddError("LCSC number must look like C12345.")
+    category = category_of(name)
+    if not category:
+        raise AddError('Name must start with a category, e.g. "[POWER_IND]".')
     if re.search(r'[/\\*?<>|:"]', name):
         raise AddError('Name must not contain / \\ * ? < > | : "')
 
     res = AddResult(name=name)
     warn = res.warnings.append
-    category = category_of(name)
     if not generic and (ORIG_DIR / category / f"{category}.kicad_mod").exists():
         generic = category
 
@@ -548,6 +556,13 @@ def add_part(lcsc: str, name: str, generic: str | None = None, overwrite: bool =
         if not data["description"]:
             warn("No description available. Add one in the symbol editor.")
 
+        if name == category:  # auto name: LCSC title = Manufacturer MPN
+            if not data["mpn"]:
+                raise AddError("No MPN found for this part. Give the name after the category.")
+            name = category + safe_name(f"{data['manufacturer']} {data['mpn']}")
+            res.name = name
+            log(f"Name: {name}")
+
         log("Building symbol and footprint ...")
         fp_name = generic or name
         sym, res.symbol_mode = build_symbol(ee["sym"], name, f"{LIB_NAME}:{fp_name}", data, lib_text, warn)
@@ -570,18 +585,39 @@ def add_part(lcsc: str, name: str, generic: str | None = None, overwrite: bool =
             log("Dry run: nothing written.")
             return res
 
+        log(f"Library root: {ROOT}")
         dest = ORIG_DIR / (generic or name)
         dest.mkdir(parents=True, exist_ok=True)
-        (dest / f"{name}.kicad_sym").write_text(ee["sym"], encoding="utf-8")  # raw, for provenance
+        written: list[Path] = []
+
+        def put(path: Path, content):
+            if isinstance(content, Path):
+                shutil.copy(content, path)
+            else:
+                path.write_text(content, encoding="utf-8")
+            written.append(path)
+
+        # Original EasyEDA files, unmodified
+        put(dest / f"{name}.kicad_sym", ee["sym"])
         if res.footprint_text:
-            (dest / f"{name}.kicad_mod").write_text(ee["fp"], encoding="utf-8")
+            put(dest / f"{name}.kicad_mod", ee["fp"])
             for ext, p in ee["models"].items():
-                shutil.copy(p, dest / f"{name}.{ext}")
+                put(dest / f"{name}.{ext}", p)
             fp_file = FP_DIR / f"{name}.kicad_mod"
-            fp_file.write_text(res.footprint_text, encoding="utf-8")
+            put(fp_file, res.footprint_text)
             kicad_cli_upgrade_fp(fp_file, warn)
+        elif generic:
+            log(f"Shared footprint {generic}: only the raw symbol is kept, in the {generic} folder.")
         tmp = SYM_LIB.with_suffix(".tmp")
         tmp.write_text(new_lib, encoding="utf-8")
         os.replace(tmp, SYM_LIB)
+        written.append(SYM_LIB)
+
+        log("Written:")
+        for w in written:
+            log(f"  {'OK     ' if w.exists() else 'MISSING'} {w}")
+        missing = [w for w in written if not w.exists()]
+        if missing:
+            raise AddError(f"{len(missing)} file(s) not written. See the list above.")
     log(f"Added {name}")
     return res

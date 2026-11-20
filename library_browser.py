@@ -13,13 +13,15 @@ Aliases: ref val nv tol mfr lcsc desc fp pkg cat kw volt
 """
 from __future__ import annotations
 
+import json
 import math
 import re
 import shlex
 import sys
 import webbrowser
+from pathlib import Path
 
-from PyQt6.QtCore import (QAbstractTableModel, QFileSystemWatcher, QModelIndex, QPointF, QRectF,
+from PyQt6.QtCore import (QAbstractTableModel, QFileSystemWatcher, QModelIndex, QPointF, QProcess, QRectF,
                           QSettings, QSortFilterProxyModel, Qt, QThread, QTimer, QUrl, pyqtSignal)
 from PyQt6.QtGui import (QAction, QBrush, QColor, QDesktopServices, QFont, QGuiApplication,
                          QKeySequence, QPainter, QPalette, QPen, QPolygonF)
@@ -27,9 +29,9 @@ from PyQt6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComboB
                              QFormLayout, QHBoxLayout, QLabel,
                              QLineEdit, QListWidget, QListWidgetItem, QMainWindow, QMenu,
                              QPlainTextEdit, QPushButton, QSplitter, QTableView,
-                             QTextBrowser, QToolButton, QVBoxLayout, QWidget)
+                             QTabWidget, QTextBrowser, QToolButton, QVBoxLayout, QWidget)
 
-from libtools import lint
+from libtools import ai, lint
 from libtools.add import AddError, add_part
 from libtools.library import (FP_DIR, LIB_NAME, ORIG_DIR, SYM_LIB, Part, eng_to_float,
                               footprint_primitives, load_footprint, load_parts, symbol_primitives)
@@ -46,6 +48,23 @@ ALIASES = {"ref": "Reference", "val": "Value", "nv": "Nvalue", "tol": "Tolerance
            "pkg": "Package", "cat": "Category", "kw": "Keywords", "volt": "Voltage rating"}
 ENG_COLUMNS = {"Nvalue", "Voltage rating", "Power", "Rated current"}
 ISSUES = "Issues"
+ORIGINAL = "Original"
+
+
+def original_files(p: Part):
+    """(folder, files) in original_components for this part.
+    Own folder for normal parts; for shared-footprint parts the raw symbol plus the shared files."""
+    shared = bool(p.footprint) and p.footprint != p.name and (ORIG_DIR / p.footprint).is_dir()
+    folder = ORIG_DIR / (p.footprint if shared else p.name)
+    if not folder.is_dir():
+        return folder, []
+    files = sorted(f for f in folder.iterdir() if f.is_file())
+    if shared:
+        val = p.fields.get("Value", "")
+        own = [f for f in files if f.suffix == ".kicad_sym" and (f.stem == p.name or (val and val in f.name))]
+        common = [f for f in files if f.stem == folder.name]
+        files = own + common
+    return folder, files
 
 
 def expected_columns(p: Part) -> set[str]:
@@ -68,6 +87,7 @@ class PartsModel(QAbstractTableModel):
         self.parts: list[Part] = []
         self.columns: list[str] = []
         self.issues: dict[str, list[lint.Finding]] = {}
+        self.originals: dict = {}
 
     def load(self, parts, issues):
         self.beginResetModel()
@@ -77,7 +97,8 @@ class PartsModel(QAbstractTableModel):
             for k in p.fields:
                 if k not in LEAD_COLUMNS and k not in FIELD_FOR_COLUMN.values():
                     extra[k] = extra.get(k, 0) + 1
-        self.columns = LEAD_COLUMNS + sorted(extra, key=lambda k: -extra[k]) + [ISSUES]
+        self.originals = {p.name: original_files(p) for p in parts}
+        self.columns = LEAD_COLUMNS + sorted(extra, key=lambda k: -extra[k]) + [ORIGINAL, ISSUES]
         self.endResetModel()
 
     def value(self, p: Part, col: str) -> str:
@@ -85,6 +106,9 @@ class PartsModel(QAbstractTableModel):
             return p.name[len(p.category):] or p.name
         if col == "Category":
             return p.category.strip("[]")
+        if col == ORIGINAL:
+            folder, files = self.originals.get(p.name, (None, []))
+            return " ".join(sorted({f.suffix.lstrip(".").replace("kicad_", "") for f in files}))
         if col == ISSUES:
             f = self.issues.get(p.name, [])
             e = sum(1 for x in f if x.level == lint.ERR)
@@ -113,7 +137,7 @@ class PartsModel(QAbstractTableModel):
                                  for f in self.issues.get(p.name, []))
             return v if len(v) > 30 else None
         if role == Qt.ItemDataRole.BackgroundRole:
-            if not v and col in expected_columns(p):
+            if not v and (col in expected_columns(p) or (col == ORIGINAL and not p.name.startswith(lint.VIRTUAL))):
                 return QBrush(QColor(110, 40, 40))
             if col == ISSUES and v:
                 err = any(f.level == lint.ERR for f in self.issues.get(p.name, []))
@@ -400,7 +424,7 @@ class AddDialog(QDialog):
         self.cat.addItems([""] + categories)
         self.cat.setCurrentText(category)
         self.part = QLineEdit()
-        self.part.setPlaceholderText("Manufacturer MPN")
+        self.part.setPlaceholderText("Empty = Manufacturer MPN from LCSC")
         self.overwrite = QCheckBox("Overwrite if it exists")
         self.dry = QCheckBox("Dry run (write nothing)")
         self.log = QPlainTextEdit()
@@ -438,8 +462,8 @@ class AddDialog(QDialog):
         return cat + self.part.text().strip()
 
     def start(self):
-        if not self.lcsc.text().strip() or not self.part.text().strip():
-            self.log.appendPlainText("Enter the LCSC number and the part name.")
+        if not self.lcsc.text().strip() or not self.cat.currentText().strip():
+            self.log.appendPlainText("Enter the LCSC number and the category.")
             return
         self.go.setEnabled(False)
         self.log.appendPlainText(f"--- {self.lcsc.text().strip()} -> {self.name()}")
@@ -453,13 +477,357 @@ class AddDialog(QDialog):
         if err:
             self.log.appendPlainText(f"Error: {err}")
             return
-        self.log.appendPlainText(f"symbol:    {r.symbol_mode}\nfootprint: {r.footprint}\n3D model:  {r.model}")
+        self.log.appendPlainText(f"name:      {r.name}\nsymbol:    {r.symbol_mode}\nfootprint: {r.footprint}\n3D model:  {r.model}")
         if r.warnings:
             self.log.appendPlainText("Check:\n" + "\n".join(f"  - {w}" for w in r.warnings))
         if self.dry.isChecked():
             self.log.appendPlainText("\n" + r.symbol_text)
         else:
             self.added.emit(r.name)
+
+
+
+# --------------------------------------------------------------------------
+# Claude Code panel
+# --------------------------------------------------------------------------
+QUICK_PROMPTS = {
+    "Fill → none": "Set every fill in this symbol to (fill (type none)). Change nothing else.",
+    "Set pin types": ("Set the electrical type of every pin correctly for this part. "
+                      "Check the datasheet when a pin function is not clear. Change nothing else."),
+    "Both": ("1) Set every fill in this symbol to (fill (type none)). "
+             "2) Set the electrical type of every pin correctly for this part; check the datasheet "
+             "when a pin function is not clear. Change nothing else."),
+}
+
+
+def open_terminal(cmd: list[str]) -> bool:
+    """Run cmd in a new terminal window. Returns False if no terminal was found."""
+    import shutil
+    if sys.platform == "darwin":
+        script = f'tell application "Terminal" to do script "{" ".join(cmd)}"'
+        return QProcess.startDetached("osascript", ["-e", script])[0]
+    if sys.platform.startswith("win"):
+        return QProcess.startDetached("cmd", ["/c", "start", "cmd", "/k", *cmd])[0]
+    for term, args in (("x-terminal-emulator", ["-e"]), ("gnome-terminal", ["--"]), ("konsole", ["-e"]),
+                       ("xfce4-terminal", ["-x"]), ("kitty", []), ("alacritty", ["-e"]),
+                       ("wezterm", ["start", "--"]), ("xterm", ["-e"])):
+        if shutil.which(term):
+            return QProcess.startDetached(term, args + cmd)[0]
+    return False
+
+
+class ClaudePanel(QWidget):
+    library_changed = pyqtSignal(str)   # part name
+
+    def __init__(self, settings: QSettings):
+        super().__init__()
+        self.settings = settings
+        self.part: Part | None = None
+        self.session: ai.Session | None = None
+        self.review: ai.Review | None = None
+        self.snap: ai.Snapshot | None = None        # state before the current run
+        self.undo_data: tuple | None = None          # (snapshot, review) of the last kept run
+        self.proc: QProcess | None = None
+        self.buf = b""
+
+        self.status = QLabel("Checking Claude Code …")
+        self.login_btn = QPushButton("Log in")
+        self.login_btn.clicked.connect(self.login)
+        self.model = QComboBox()
+        self.model.addItems(["default model", "sonnet", "opus", "haiku"])
+        self.model.setCurrentText(settings.value("ai_model", "default model") or "default model")
+        self.model.currentTextChanged.connect(lambda t: settings.setValue("ai_model", t))
+        top = QHBoxLayout()
+        top.addWidget(self.status, 1)
+        top.addWidget(self.model)
+        top.addWidget(self.login_btn)
+
+        self.part_lbl = QLabel("No part selected")
+        self.part_lbl.setWordWrap(True)
+        self.new_btn = QPushButton("New conversation")
+        self.new_btn.clicked.connect(self.new_conversation)
+        row = QHBoxLayout()
+        row.addWidget(self.part_lbl, 1)
+        row.addWidget(self.new_btn)
+
+        quick = QHBoxLayout()
+        self.quick_btns = []
+        for label, prompt in QUICK_PROMPTS.items():
+            b = QPushButton(label)
+            b.clicked.connect(lambda _=False, p=prompt: self.send(p))
+            quick.addWidget(b)
+            self.quick_btns.append(b)
+
+        self.prompt = QPlainTextEdit()
+        self.prompt.setPlaceholderText("Ask Claude to change this part …   (Ctrl+Enter to send)")
+        self.prompt.setFixedHeight(64)
+        self.send_btn = QPushButton("Send")
+        self.send_btn.clicked.connect(lambda: self.send(self.prompt.toPlainText()))
+        self.stop_btn = QPushButton("Stop")
+        self.stop_btn.clicked.connect(self.stop)
+        self.stop_btn.setEnabled(False)
+        a = QAction(self.prompt)
+        a.setShortcut(QKeySequence("Ctrl+Return"))
+        a.triggered.connect(lambda: self.send(self.prompt.toPlainText()))
+        self.prompt.addAction(a)
+        prow = QHBoxLayout()
+        prow.addWidget(self.prompt, 1)
+        col = QVBoxLayout()
+        col.addWidget(self.send_btn)
+        col.addWidget(self.stop_btn)
+        prow.addLayout(col)
+
+        self.log = QTextBrowser()
+        self.log.setOpenExternalLinks(True)
+
+        self.changes = QTextBrowser()
+        self.changes.setMaximumHeight(150)
+        self.apply_btn = QPushButton("Keep")
+        self.apply_btn.clicked.connect(self.apply)
+        self.discard_btn = QPushButton("Discard")
+        self.discard_btn.clicked.connect(self.discard)
+        self.undo_btn = QPushButton("Undo last kept")
+        self.undo_btn.clicked.connect(self.undo)
+        rrow = QHBoxLayout()
+        rrow.addWidget(self.apply_btn)
+        rrow.addWidget(self.discard_btn)
+        rrow.addStretch()
+        rrow.addWidget(self.undo_btn)
+
+        lay = QVBoxLayout(self)
+        lay.setContentsMargins(4, 4, 4, 4)
+        lay.addLayout(top)
+        lay.addLayout(row)
+        lay.addLayout(quick)
+        lay.addLayout(prow)
+        lay.addWidget(self.log, 1)
+        lay.addWidget(QLabel("Changes made by Claude (already in the files — Keep or Discard)"))
+        lay.addWidget(self.changes)
+        lay.addLayout(rrow)
+
+        self.logged_in = False
+        self.auth_proc: QProcess | None = None
+        self.poll = QTimer(interval=3000)
+        self.poll.timeout.connect(self.check_auth)
+        self.poll_left = 0
+        self.check_auth()
+        self.update_buttons()
+
+    # ---------------------------------------------------------------- auth
+    def check_auth(self):
+        exe = ai.claude_path()
+        if not exe:
+            self.status.setText("Claude Code not installed: npm install -g @anthropic-ai/claude-code")
+            self.logged_in = False
+            self.update_buttons()
+            return
+        if self.auth_proc and self.auth_proc.state() != QProcess.ProcessState.NotRunning:
+            return
+        self.auth_proc = QProcess(self)
+        self.auth_proc.finished.connect(self._auth_done)
+        self.auth_proc.start(exe, ["auth", "status"])
+
+    def _auth_done(self, code, _status):
+        out = bytes(self.auth_proc.readAllStandardOutput()).decode(errors="replace")
+        try:
+            d = json.loads(out)
+            ok = bool(d.get("loggedIn"))
+            who = d.get("email") or d.get("authMethod", "")
+        except json.JSONDecodeError:
+            ok, who = code == 0, ""
+        self.logged_in = ok
+        self.status.setText(f"Claude Code: logged in {('· ' + who) if who else ''}" if ok
+                            else "Claude Code: not logged in")
+        self.login_btn.setText("Log out" if ok else "Log in")
+        if ok or self.poll_left <= 0:
+            self.poll.stop()
+        self.poll_left -= 1
+        self.update_buttons()
+
+    def login(self):
+        exe = ai.claude_path()
+        if not exe:
+            return
+        if self.logged_in:
+            QProcess.execute(exe, ["auth", "logout"])
+            self.check_auth()
+            return
+        if not open_terminal([exe, "auth", "login"]):
+            self.log.append("No terminal found. Run <code>claude auth login</code> in a terminal, then press Log in again.")
+            return
+        self.log.append("Log in in the terminal window. This panel updates when you are done.")
+        self.poll_left = 60
+        self.poll.start()
+
+    # ---------------------------------------------------------------- part
+    def set_part(self, p: Part | None):
+        if self.running() or self.pending():
+            return  # finish the current run first (Keep / Discard)
+        self.part = p
+        if not self.session or not p or self.session.part != p.name:
+            self.session = None
+            self.log.clear()
+            self.changes.clear()
+        self.part_lbl.setText(f"<b>{_esc(p.name)}</b>" if p else "No part selected")
+        self.update_buttons()
+
+    def new_conversation(self):
+        if not self.part or self.running() or self.pending():
+            return
+        self.session = ai.prepare(self.part.name, self.part.fields, fresh=True)
+        self.log.clear()
+        self.changes.clear()
+        self.log.append("<i>New conversation.</i>")
+        self.update_buttons()
+
+    # ---------------------------------------------------------------- run
+    def running(self) -> bool:
+        return bool(self.proc and self.proc.state() != QProcess.ProcessState.NotRunning)
+
+    def pending(self) -> bool:
+        return bool(self.review and not self.review.empty)
+
+    def update_buttons(self):
+        can = self.logged_in and self.part is not None and not self.running() and not self.pending()
+        for b in self.quick_btns + [self.send_btn]:
+            b.setEnabled(can)
+        self.stop_btn.setEnabled(self.running())
+        self.new_btn.setEnabled(self.part is not None and not self.running() and not self.pending())
+        self.apply_btn.setEnabled(self.pending() and not self.running())
+        self.discard_btn.setEnabled(self.pending() and not self.running())
+        self.undo_btn.setEnabled(self.undo_data is not None and not self.running() and not self.pending())
+
+    def send(self, prompt: str):
+        prompt = prompt.strip()
+        if not prompt or not self.part or self.running() or self.pending():
+            return
+        self.session = ai.prepare(self.part.name, self.part.fields)
+        self.snap = ai.snapshot()
+        self.review = None
+        self.changes.clear()
+        self.prompt.clear()
+        self.log.append(f"<p style='color:#8ab4f8'><b>You:</b> {_esc(prompt)}</p>")
+        model = self.model.currentText()
+        cmd = ai.command(self.session, prompt, "" if model == "default model" else model)
+        self.proc = QProcess(self)
+        self.proc.setWorkingDirectory(str(ai.ROOT))
+        self.proc.readyReadStandardOutput.connect(self._read)
+        self.proc.readyReadStandardError.connect(self._read_err)
+        self.proc.finished.connect(self._done)
+        self.buf = b""
+        self.proc.start(cmd[0], cmd[1:])
+        self.update_buttons()
+
+    def stop(self):
+        if self.running():
+            self.proc.kill()
+            self.log.append("<i>Stopped. Check the changes below.</i>")
+
+    def _read_err(self):
+        err = bytes(self.proc.readAllStandardError()).decode(errors="replace").strip()
+        if err:
+            self.log.append(f"<span style='color:#ff8a80'>{_esc(err)}</span>")
+
+    def _read(self):
+        self.buf += bytes(self.proc.readAllStandardOutput())
+        *lines, self.buf = self.buf.split(b"\n")
+        for line in lines:
+            try:
+                ev = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            self._event(ev)
+
+    def _event(self, ev: dict):
+        t = ev.get("type")
+        if ev.get("session_id") and self.session and self.session.session_id != ev["session_id"]:
+            self.session.session_id = ev["session_id"]
+            self.session.save()
+        if t == "system" and ev.get("subtype") == "init":
+            self.log.append(f"<i style='color:#999'>Claude Code · {_esc(ev.get('model', ''))}</i>")
+        elif t == "assistant":
+            for c in ev.get("message", {}).get("content", []):
+                if c.get("type") == "text" and c.get("text", "").strip():
+                    self.log.append(f"<p><b>Claude:</b> {_esc(c['text']).replace(chr(10), '<br>')}</p>")
+                elif c.get("type") == "tool_use":
+                    inp = c.get("input", {})
+                    what = inp.get("url") or inp.get("pattern") or Path(inp.get("file_path", "")).name or ""
+                    self.log.append(f"<span style='color:#999'>→ {_esc(c.get('name', ''))} {_esc(what)}</span>")
+        elif t == "user":
+            content = ev.get("message", {}).get("content")
+            for c in content if isinstance(content, list) else []:
+                if c.get("type") == "tool_result" and c.get("is_error"):
+                    txt = c.get("content")
+                    txt = txt if isinstance(txt, str) else json.dumps(txt)
+                    self.log.append(f"<span style='color:#e6c35c'>  refused / error: {_esc(txt[:300])}</span>")
+        elif t == "result":
+            secs = ev.get("duration_ms", 0) / 1000
+            cost = ev.get("total_cost_usd")
+            tail = f" · ${cost:.3f}" if isinstance(cost, (int, float)) else ""
+            if ev.get("is_error"):
+                self.log.append(f"<span style='color:#ff8a80'>Error: {_esc(str(ev.get('result') or ev.get('subtype')))}</span>")
+            self.log.append(f"<i style='color:#999'>Done in {secs:.0f} s{tail}</i>")
+
+    def _done(self, code, _status):
+        self._read()
+        if code != 0:
+            self.log.append(f"<span style='color:#ff8a80'>claude exited with code {code}.</span>")
+        if self.snap:
+            r = ai.check(self.snap)
+            if r.symbols and r.ok:
+                ai.normalise(r.symbols)
+                r = ai.check(self.snap)
+            self.review = r
+            self.show_review()
+        self.update_buttons()
+        self.library_changed.emit(self.part.name if self.part else "")
+
+    # ---------------------------------------------------------------- review
+    def show_review(self):
+        r = self.review
+        html = "".join(f"<div style='color:#ff8a80'>✗ {_esc(e)}</div>" for e in r.errors)
+        html += "".join(f"<div>{'<b>' if c.startswith('[') else '• '}{_esc(c)}{'</b>' if c.startswith('[') else ''}</div>"
+                        for c in r.changes)
+        if r.empty:
+            html = "<i style='color:#999'>No files changed.</i>"
+        elif r.errors:
+            html = "<b style='color:#ff8a80'>Problems found — Discard is recommended.</b>" + html
+        self.changes.setHtml(html)
+
+    def apply(self):
+        if not self.pending():
+            return
+        self.undo_data = (self.snap, self.review)
+        self.log.append("<b style='color:#7c7'>Kept.</b>")
+        self.review = None
+        self.changes.clear()
+        self.update_buttons()
+
+    def discard(self):
+        if not self.pending():
+            return
+        for n in ai.restore(self.snap, self.review):
+            self.log.append(f"<span style='color:#999'>{_esc(n)}</span>")
+        self.review = None
+        self.changes.clear()
+        self.log.append("<i>Discarded. Files are back as they were before this run. "
+                        "Tell Claude in your next message if it should not repeat it.</i>")
+        self.update_buttons()
+        self.library_changed.emit(self.part.name if self.part else "")
+
+    def undo(self):
+        if not self.undo_data or self.running() or self.pending():
+            return
+        snap, review = self.undo_data
+        for n in ai.restore(snap, review):
+            self.log.append(f"<span style='color:#999'>{_esc(n)}</span>")
+        self.undo_data = None
+        self.log.append("<i>Undone.</i>")
+        self.update_buttons()
+        self.library_changed.emit(self.part.name if self.part else "")
+
+def _esc(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 # --------------------------------------------------------------------------
@@ -533,7 +901,12 @@ class Main(QMainWindow):
         right = QSplitter(Qt.Orientation.Vertical)
         right.addWidget(self.sym_view)
         right.addWidget(self.fp_view)
-        right.addWidget(self.info)
+        self.claude = ClaudePanel(self.settings)
+        self.claude.library_changed.connect(lambda name: self.reload(select=name))
+        self.tabs = QTabWidget()
+        self.tabs.addTab(self.info, "Details")
+        self.tabs.addTab(self.claude, "Claude")
+        right.addWidget(self.tabs)
         right.setSizes([260, 260, 300])
 
         self.split = QSplitter()
@@ -663,6 +1036,7 @@ class Main(QMainWindow):
         if not p:
             return
         self.sym_view.show_prims(symbol_primitives(p.node), flip=True)
+        self.claude.set_part(p)
         fp = load_footprint(p.footprint) if p.footprint else None
         self.fp_view.show_prims(footprint_primitives(fp) if fp else [], flip=False,
                                 note="Footprint not found" if p.footprint else "No pepy_sym_lib footprint")
@@ -683,9 +1057,19 @@ class Main(QMainWindow):
             f"<li><span style='color:{'#ff6b6b' if f.level == lint.ERR else '#e6c35c'}'>{f.level}</span> "
             f"{esc(f.rule)}{(' — ' + esc(f.detail)) if f.detail else ''}"
             f"{' <i>(footprint)</i>' if f.kind == 'footprint' else ''}</li>" for f in iss)
+        folder, files = self.model.originals.get(p.name, (None, []))
+        if files:
+            oh = "".join(f"<li><a href='{QUrl.fromLocalFile(str(f)).toString()}'>{esc(f.name)}</a>"
+                         f" <span style='color:#999'>{f.stat().st_size // 1024 or 1} kB</span></li>" for f in files)
+            orig = (f"<p style='margin-top:10px'><b>Original files</b> — "
+                    f"<a href='{QUrl.fromLocalFile(str(folder)).toString()}'>open folder</a></p>"
+                    f"<ul style='margin-top:0'>{oh}</ul>")
+        else:
+            orig = (f"<p style='margin-top:10px;color:#ff6b6b'><b>No original files</b> in "
+                    f"original_components/{esc(folder.name if folder else p.name)}</p>")
         return (f"<h3 style='margin:0'>{esc(p.name)}</h3>"
                 f"<p style='color:#999;margin:2px 0 8px'>{LIB_NAME}:{esc(p.name)} · {len(p.pins)} pins</p>"
-                f"<table>{''.join(rows)}</table>"
+                f"<table>{''.join(rows)}</table>" + orig
                 + (f"<p style='margin-top:10px'><b>Issues</b></p><ul style='margin-top:0'>{ih}</ul>" if ih else
                    "<p style='color:#7c7'>No issues.</p>"))
 
@@ -715,7 +1099,7 @@ class Main(QMainWindow):
                 f"https://www.lcsc.com/product-detail/{p.fields['LCSC Part']}.html"))
         if p.fields.get("Datasheet", "").startswith("http"):
             m.addAction("Open datasheet", lambda: webbrowser.open(p.fields["Datasheet"]))
-        folder = ORIG_DIR / (p.footprint or p.name)
+        folder, _ = self.model.originals.get(p.name, (ORIG_DIR / p.name, []))
         if folder.exists():
             m.addAction("Open component folder", lambda: QDesktopServices.openUrl(QUrl.fromLocalFile(str(folder))))
         m.addSeparator()

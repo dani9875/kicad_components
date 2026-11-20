@@ -8,6 +8,7 @@ class Str(str):
     """A string atom that was (or must be) quoted."""
 
 
+_UNESC = {"n": "\n", "t": "\t", "r": "\r"}
 _TOK = re.compile(r'\s*(\(|\)|"(?:\\.|[^"\\])*"|[^\s()"]+)')
 
 
@@ -27,7 +28,7 @@ def parse(text: str) -> list:
             node = stack.pop()
             stack[-1].append(node)
         elif t[0] == '"':
-            stack[-1].append(Str(re.sub(r"\\(.)", r"\1", t[1:-1])))
+            stack[-1].append(Str(re.sub(r"\\(.)", lambda m: _UNESC.get(m.group(1), m.group(1)), t[1:-1])))
         else:
             stack[-1].append(t)
     return stack[0]
@@ -35,7 +36,8 @@ def parse(text: str) -> list:
 
 def atom(a) -> str:
     if isinstance(a, Str) or a == "" or re.search(r'[\s()"]', str(a)):
-        return '"' + str(a).replace("\\", "\\\\").replace('"', '\\"') + '"'
+        return '"' + (str(a).replace("\\", "\\\\").replace('"', '\\"')
+                      .replace("\n", "\\n").replace("\t", "\\t").replace("\r", "\\r")) + '"'
     return str(a)
 
 
@@ -50,7 +52,15 @@ def dump(node, ind: int = 0) -> str:
     lines = [tab + "(" + " ".join(atom(c) for c in node[:i])]
     rest = node[i:]
     if all(isinstance(c, list) and c and c[0] == "xy" for c in rest):
-        lines.append("\t" * (ind + 1) + " ".join(dump(c) for c in rest))
+        # KiCad wraps a point list once the line reaches column 99 (tabs count as 1).
+        cur = ""
+        for c in rest:
+            cur = f"{cur} {dump(c)}" if cur else dump(c)
+            if ind + 1 + len(cur) >= 99:
+                lines.append("\t" * (ind + 1) + cur)
+                cur = ""
+        if cur:
+            lines.append("\t" * (ind + 1) + cur)
     else:
         for c in rest:
             lines.append(dump(c, ind + 1) if isinstance(c, list) else "\t" * (ind + 1) + atom(c))
