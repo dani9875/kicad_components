@@ -537,8 +537,15 @@ class ClaudePanel(QWidget):
         self.model.addItems(["default model", "sonnet", "opus", "haiku"])
         self.model.setCurrentText(settings.value("ai_model", "default model") or "default model")
         self.model.currentTextChanged.connect(lambda t: settings.setValue("ai_model", t))
+        self.mode = QComboBox()
+        self.mode.addItems(["Docker", "Local"])
+        self.mode.setToolTip("Docker: Claude runs in a container that sees only the library files.\n"
+                             "Local: Claude runs on your PC, limited by permission rules.")
+        self.mode.setCurrentText(settings.value("ai_mode", "Docker") or "Docker")
+        self.mode.currentTextChanged.connect(self._mode_changed)
         top = QHBoxLayout()
         top.addWidget(self.status, 1)
+        top.addWidget(self.mode)
         top.addWidget(self.model)
         top.addWidget(self.login_btn)
 
@@ -614,18 +621,34 @@ class ClaudePanel(QWidget):
         self.update_buttons()
 
     # ---------------------------------------------------------------- auth
+    def docker(self) -> bool:
+        return self.mode.currentText() == "Docker"
+
+    def _mode_changed(self, t):
+        self.settings.setValue("ai_mode", t)
+        self.logged_in = False
+        self.check_auth()
+
     def check_auth(self):
-        exe = ai.claude_path()
-        if not exe:
+        if self.docker():
+            ok, msg = ai.docker_ready()
+            if not ok:
+                self.status.setText(msg)
+                self.status.setToolTip(msg)
+                self.logged_in = False
+                self.update_buttons()
+                return
+        elif not ai.claude_path():
             self.status.setText("Claude Code not installed: npm install -g @anthropic-ai/claude-code")
             self.logged_in = False
             self.update_buttons()
             return
         if self.auth_proc and self.auth_proc.state() != QProcess.ProcessState.NotRunning:
             return
+        cmd = ai.auth_status_cmd(self.docker())
         self.auth_proc = QProcess(self)
         self.auth_proc.finished.connect(self._auth_done)
-        self.auth_proc.start(exe, ["auth", "status"])
+        self.auth_proc.start(cmd[0], cmd[1:])
 
     def _auth_done(self, code, _status):
         out = bytes(self.auth_proc.readAllStandardOutput()).decode(errors="replace")
@@ -636,8 +659,9 @@ class ClaudePanel(QWidget):
         except json.JSONDecodeError:
             ok, who = code == 0, ""
         self.logged_in = ok
-        self.status.setText(f"Claude Code: logged in {('· ' + who) if who else ''}" if ok
-                            else "Claude Code: not logged in")
+        where = "Docker" if self.docker() else "local"
+        self.status.setText(f"Claude Code ({where}): logged in {('· ' + who) if who else ''}" if ok
+                            else f"Claude Code ({where}): not logged in")
         self.login_btn.setText("Log out" if ok else "Log in")
         if ok or self.poll_left <= 0:
             self.poll.stop()
@@ -645,17 +669,20 @@ class ClaudePanel(QWidget):
         self.update_buttons()
 
     def login(self):
-        exe = ai.claude_path()
-        if not exe:
-            return
+        docker = self.docker()
         if self.logged_in:
-            QProcess.execute(exe, ["auth", "logout"])
+            cmd = ai.logout_cmd(docker)
+            QProcess.execute(cmd[0], cmd[1:])
             self.check_auth()
             return
-        if not open_terminal([exe, "auth", "login"]):
-            self.log.append("No terminal found. Run <code>claude auth login</code> in a terminal, then press Log in again.")
+        cmd = ai.login_cmd(docker)
+        if not open_terminal(cmd):
+            self.log.append("No terminal found. Run this in a terminal, then press Log in again:<br>"
+                            f"<code>{_esc(' '.join(cmd))}</code>")
             return
-        self.log.append("Log in in the terminal window. This panel updates when you are done.")
+        self.log.append("Log in in the terminal window. This panel updates when you are done."
+                        + (" In Docker, open the printed URL in your browser and paste the code back "
+                           "into the terminal." if docker else ""))
         self.poll_left = 60
         self.poll.start()
 
@@ -706,9 +733,10 @@ class ClaudePanel(QWidget):
         self.review = None
         self.changes.clear()
         self.prompt.clear()
-        self.log.append(f"<p style='color:#8ab4f8'><b>You:</b> {_esc(prompt)}</p>")
+        self.log.append(f"<p style='color:#8ab4f8'><b>You:</b> {_esc(prompt)}</p>"
+                        f"<i style='color:#999'>{'in Docker' if self.docker() else 'local'}</i>")
         model = self.model.currentText()
-        cmd = ai.command(self.session, prompt, "" if model == "default model" else model)
+        cmd = ai.command(self.session, prompt, "" if model == "default model" else model, docker=self.docker())
         self.proc = QProcess(self)
         self.proc.setWorkingDirectory(str(ai.ROOT))
         self.proc.readyReadStandardOutput.connect(self._read)
