@@ -1,0 +1,6 @@
+.easyeda_cache/
+*.bak
+*.tmp
+*-backups/
+fp-info-cache
+__pycache__/

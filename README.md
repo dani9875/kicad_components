@@ -1,105 +1,87 @@
-# pepy_symbol KiCAD component library
-This is a KiCAD custom component library that comes in handy for my projects. Feel free to fork it or get inspired by it. It aims to automate the component addition, primarily by using an LCSC number, but components can also be added manually by following the structure.
+# pepy_sym_lib — KiCad component library
 
-*Note: Libary created used and optimized on KiCAD 8.0*
+Personal KiCad library. Parts come from LCSC/EasyEDA and are cleaned up automatically.
+The library files are in KiCad 10 format.
 
-
-# How to start using the component library
-
-## 0. Install easyeda2kicad (prereq: python)
-
-```bash
-pip install easyeda2kicad
-```
-
-## 1. Clone the Repository
-
-Clone the repository to your local machine using the following command:
+## Setup
 
 ```bash
 git clone git@github.com:dani9875/kicad_components.git
+cd kicad_components
+pip install -r requirements.txt
 ```
 
-## 2. Add Symbol Libraries
+In KiCad:
 
-1. Open **KiCad**.
-2. Navigate to **Preferences** > **Manage Symbol Libraries**.
-3. In the dialog:
-   - Click the **Add Library** button (the `+` icon).
-   - Locate and select the `pepy_sim_lib.kicad_sym` file from the cloned repository.
-   - Choose **Global** or **Project** scope based on your preference.
-4. Save the changes.
+1. **Preferences → Manage Symbol Libraries**: add `pepy_sym_lib.kicad_sym`.
+2. **Preferences → Manage Footprint Libraries**: add the `pepy_sym_lib.pretty` folder.
+3. **Preferences → Configure Paths**: add `ORIGINAL_COMPONENTS` and point it to the `original_components` folder.
 
-## 3. Add Footprint Libraries
+## Library browser
 
-1. Open **KiCad**.
-2. Navigate to **Preferences** > **Manage Footprint Libraries**.
-3. In the dialog:
-   - Click the **Add Library** button (the `+` icon).
-   - Locate and select the `pepy_sim_lib.pretty` folder from the cloned repository.
-   - Choose **Global** or **Project** scope based on your preference.
-4. Save the changes.
+```bash
+./library_browser.py
+```
 
-## 4. Configure Paths
+- Every field is a column. Right-click the header to show or hide columns.
+- Pick one or more categories on the left (Ctrl/Shift-click).
+- Red cells are fields that a part of that type must have.
+- The right side shows the symbol, the footprint and all lint findings for the selected part.
+- Double-click a part to copy `pepy_sym_lib:<name>`. Double-click Datasheet or LCSC Part to open the page.
+- **Add part…** (Ctrl+N) adds a part from LCSC. The browser reloads when the library files change.
 
-1. Open **KiCad**.
-2. Navigate to **Preferences** > **Configure Paths**.
-3. In the dialog:
-   - Click the **Add Path** button (the `+` icon).
-   - Add an environment name called **`ORIGINAL_COMPONENTS`**.
-   - Associate it with the `original_components` folder from the cloned repository.
-4. Save the changes.
+Search syntax (all terms must match):
 
-# How to add new components to the library
+```
+10k                  text anywhere in the row
+tol:1%               field contains text (column name prefix or alias)
+nvalue>=10k          numeric compare on engineering values: > < >= <= =
+missing:tolerance    field is empty
+has:dielectric       field is filled
+is:error  is:warn    parts with lint findings
+-murata              exclude
+"two words"          phrase
+```
 
-## New individual components 
-1. Search for a component on **LCSC**, for example:  
-   [https://www.lcsc.com/product-detail/igbt-transistors-modules_stmicroelectronics-stgp19nc60kd_C59521.html](https://www.lcsc.com/product-detail/igbt-transistors-modules_stmicroelectronics-stgp19nc60kd_C59521.html).
+Aliases: `ref val nv tol mfr lcsc desc fp pkg cat kw volt`.
 
-2. Retrieve the **LCSC part number**, e.g., `C59521`.
+## Add a part from the command line
 
-3. Assign a descriptive name to the component, using underscores (`_`) instead of spaces. For example:  
-   `[IGBT]STMicroelectronics_STGP19NC60KD`  
-   - The prefix `[IGBT]` is based on the type of component (determine the type yourself).  
-   - The rest of the name should include the manufacturer and part number.
+```bash
+./add_component.py C780183 "[POWER_IND]BOURNS SRP1038A-150M"
+```
 
-4. Run the following command to add the component:
+Name format: `[CATEGORY]Manufacturer MPN`.
 
-   ```bash
-   ./add_component.sh C59521 [IGBT]STMicroelectronics_STGP19NC60KD
-    ```
+- If a part in the same `[CATEGORY]` has the same pins, the new symbol is a copy of it with the new part data.
+- If `original_components/[CATEGORY]/[CATEGORY].kicad_mod` exists, the part uses that shared footprint (resistors, capacitors).
+- Otherwise the EasyEDA symbol and footprint are cleaned: standard fields, hidden data fields, pin types, footprint attribute, courtyard, `${REFERENCE}` on F.Fab, 3D path through `${ORIGINAL_COMPONENTS}`.
+- The script prints a **Check** list at the end. If the list is empty, the part is ready.
 
-5. The script will automatically generate files, with the following results:
-- The original files will be retained in the `original_components` folder under a subfolder named after the name you provided (this includes the symbol, 3D files, and design file).  
-- The `pepy_sym_lib.kicad_sym` file will be updated with the new symbol file descriptor.  
-- The design file will be stored in the `pepy_sym_lib.pretty` folder under the component's design.
+Options: `--dry-run` (write nothing), `--overwrite` (replace a part), `--generic "[CAT]"` (force a shared footprint).
 
-![Generated files](./docs/new_files.png)
+EasyEDA and LCSC responses are cached in `.easyeda_cache/`.
 
-## New general components (e.g. resistors, capacitors) 
+## Fields
 
-1. Search for a component on **LCSC**, for example:  
-   [https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.html](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.html).
+- **Value**: manufacturer part number.
+- **Nvalue**: the value shown on the schematic for R, C, L, FB (`10k`, `100nF`, `15uH`).
+- **Tolerance** (`±1%`), **Voltage rating**, **Power**, **Dielectric**, **Rated current**: filled from LCSC data when available. A field without data is left out.
+- **Manufacturer**: without the Chinese brand suffix.
+- **Description**, **Datasheet**, **LCSC Part**, **Package**, **ki_keywords**.
 
-2. Look up the folder where you would like to place the component, e.g., [RES_SMD_0805_2012Metric]. If the folder does not exist, you need to download the component and manually create a general folder similar to the example folder above.
+## Library check
 
-3. Retrieve the **LCSC part number**, e.g., `C17673`.
+```bash
+./lint_library.py        # summary, exit code 1 on errors
+./lint_library.py -v     # every finding
+```
 
-   ```bash
-   ./add_component.sh C17673 [RES_SMD_0805_2012Metric]4.7k_UNI-ROYAL(Uniroyal Elec)0805W8F4701T5E --generic [RES_SMD_0805_2012Metric]
-   ```
-
-4. Make some changes by hand
-   - Go to the symbol editor and select the component in question.
-   - Unify the symbol appearance with others, including the settings for data visibility.
-   - Set the correct footprint library.
-   - Remove the value from the symbol name.
-   - Add any other useful data to the fields.
-   - Save it.
+GitHub Actions runs the same check on every push.
 
 ## Manually handled components
-Currently the test point and mounting holes are handled manually. They generally have same symbols however their footprint tend to vary. 
 
+Test points and mounting holes are handled manually. Their symbols are the same, but the footprints vary.
 
 ## Release notes
 
