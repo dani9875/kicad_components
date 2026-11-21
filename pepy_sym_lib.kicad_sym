@@ -20975,8 +20975,8 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 0 0 0)
+		(property "Dielectric" "X7R"
+			(at 0 -26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -20986,8 +20986,8 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
-			(at 0 -26.67 0)
+		(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -24275,8 +24275,8 @@
 				)
 			)
 		)
-		(property "ki_keywords" "CAP SMD 1206 3216Metric Multilayer Ceramic Capacitors MLCC - SMD/SMT Ceramic Capacitors"
-			(at 0 0 0)
+		(property "Dielectric" "X7R"
+			(at 0 -26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -24286,8 +24286,8 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
-			(at 0 -26.67 0)
+		(property "ki_keywords" "CAP SMD 1206 3216Metric Multilayer Ceramic Capacitors MLCC - SMD/SMT Ceramic Capacitors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -24692,8 +24692,8 @@
 				)
 			)
 		)
-		(property "ki_keywords" "CAP SMD AL ELECTROLYTIC Aluminum Electrolytic Capacitors - SMD Aluminum Electrolytic Capacitors"
-			(at 0 0 0)
+		(property "Dielectric" "Aluminum Electrolytic"
+			(at 0 -26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -24703,8 +24703,8 @@
 				)
 			)
 		)
-		(property "Dielectric" "Aluminum Electrolytic"
-			(at 0 -26.67 0)
+		(property "ki_keywords" "CAP SMD AL ELECTROLYTIC Aluminum Electrolytic Capacitors - SMD Aluminum Electrolytic Capacitors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -25403,17 +25403,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Aluminum Electrolytic Capacitors - Leaded"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Dielectric" "Aluminum Electrolytic"
 			(at 0 -26.67 0)
 			(show_name no)
@@ -25427,6 +25416,17 @@
 		)
 		(property "Package" "Through Hole,D8xL11.5mm"
 			(at 0 -24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Aluminum Electrolytic Capacitors - Leaded"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -40785,17 +40785,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "ESD_PROTECTION"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Standoff voltage" "5.25V"
 			(at 0 -21.082 0)
 			(show_name no)
@@ -40864,6 +40853,17 @@
 		)
 		(property "Polarity" "Unidirectional"
 			(at 0 -36.322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "ESD_PROTECTION"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -41582,17 +41582,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "ESD PROT TVS TVS Diodes CAN bidirectional 24V"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Standoff voltage" "24V"
 			(at 0.508 -24.638 0)
 			(show_name no)
@@ -41661,6 +41650,17 @@
 		)
 		(property "Polarity" "Bidirectional"
 			(at 0.508 -39.878 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "ESD PROT TVS TVS Diodes CAN bidirectional 24V"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -69664,17 +69664,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Power Inductors"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Rated current" "1.9A"
 			(at 0 -17.78 0)
 			(show_name no)
@@ -69699,6 +69688,17 @@
 		)
 		(property "DC resistance" "84mΩ"
 			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Power Inductors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -69915,17 +69915,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Power Inductors"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Rated current" "6.25A"
 			(at 0 -17.78 0)
 			(show_name no)
@@ -69950,6 +69939,17 @@
 		)
 		(property "DC resistance" "45mΩ"
 			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Power Inductors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -70166,17 +70166,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Power Inductors"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Rated current" "6.5A"
 			(at 0 -17.78 0)
 			(show_name no)
@@ -70201,6 +70190,17 @@
 		)
 		(property "DC resistance" "90mΩ"
 			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Power Inductors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -70417,17 +70417,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Power Inductors"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Rated current" "2A"
 			(at 0 -17.78 0)
 			(show_name no)
@@ -70452,6 +70441,17 @@
 		)
 		(property "DC resistance" "102mΩ"
 			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Power Inductors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -70668,17 +70668,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "Power Inductors"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Rated current" "1.3A"
 			(at 0 -17.78 0)
 			(show_name no)
@@ -70703,6 +70692,17 @@
 		)
 		(property "DC resistance" "163mΩ"
 			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Power Inductors"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -72464,12 +72464,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -72540,12 +72540,12 @@
 			)
 		)
 		(property "Nvalue" "10k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -72665,12 +72665,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -72741,12 +72741,12 @@
 			)
 		)
 		(property "Nvalue" "1M"
-			(at 0 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -72866,12 +72866,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -72942,12 +72942,12 @@
 			)
 		)
 		(property "Nvalue" "33R"
-			(at 0 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -73067,12 +73067,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73143,12 +73143,12 @@
 			)
 		)
 		(property "Nvalue" "470R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -73268,12 +73268,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73344,12 +73344,12 @@
 			)
 		)
 		(property "Nvalue" "4.7k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -73469,12 +73469,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73534,12 +73534,12 @@
 			)
 		)
 		(property "Nvalue" "10m"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -73670,12 +73670,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73735,12 +73735,12 @@
 			)
 		)
 		(property "Nvalue" "11k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -73936,12 +73936,12 @@
 			)
 		)
 		(property "Nvalue" "47k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -74072,12 +74072,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74137,12 +74137,12 @@
 			)
 		)
 		(property "Nvalue" "0R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -74273,12 +74273,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74338,12 +74338,12 @@
 			)
 		)
 		(property "Nvalue" "20k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -74474,12 +74474,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74539,12 +74539,12 @@
 			)
 		)
 		(property "Nvalue" "2.2k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -74675,12 +74675,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74740,12 +74740,12 @@
 			)
 		)
 		(property "Nvalue" "100k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -74876,12 +74876,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74941,12 +74941,12 @@
 			)
 		)
 		(property "Nvalue" "10R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -75077,12 +75077,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75142,12 +75142,12 @@
 			)
 		)
 		(property "Nvalue" "120k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -75278,12 +75278,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75343,12 +75343,12 @@
 			)
 		)
 		(property "Nvalue" "180k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -75479,12 +75479,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75544,12 +75544,12 @@
 			)
 		)
 		(property "Nvalue" "1k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -75680,12 +75680,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75745,12 +75745,12 @@
 			)
 		)
 		(property "Nvalue" "1M"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -75881,12 +75881,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75946,12 +75946,12 @@
 			)
 		)
 		(property "Nvalue" "240R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -76082,12 +76082,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76147,12 +76147,12 @@
 			)
 		)
 		(property "Nvalue" "270k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -76283,12 +76283,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76348,12 +76348,12 @@
 			)
 		)
 		(property "Nvalue" "2.49k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -76484,12 +76484,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76549,12 +76549,12 @@
 			)
 		)
 		(property "Nvalue" "499R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -76685,12 +76685,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76750,12 +76750,12 @@
 			)
 		)
 		(property "Nvalue" "49.9k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -76886,12 +76886,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76951,12 +76951,12 @@
 			)
 		)
 		(property "Nvalue" "10R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -77087,12 +77087,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77152,12 +77152,12 @@
 			)
 		)
 		(property "Nvalue" "12k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -77288,12 +77288,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77353,12 +77353,12 @@
 			)
 		)
 		(property "Nvalue" "220k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -77489,12 +77489,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77554,12 +77554,12 @@
 			)
 		)
 		(property "Nvalue" "30R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -77690,12 +77690,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77755,12 +77755,12 @@
 			)
 		)
 		(property "Nvalue" "357k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -77891,12 +77891,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77956,12 +77956,12 @@
 			)
 		)
 		(property "Nvalue" "15k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -78092,12 +78092,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78157,12 +78157,12 @@
 			)
 		)
 		(property "Nvalue" "120R"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -78210,17 +78210,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "RES SMD 0805 2012Metric Resistors Chip Resistor - Surface Mount"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage rating" "150V"
 			(at 0 -22.352 0)
 			(show_name no)
@@ -78234,6 +78223,17 @@
 		)
 		(property "TCR" "±100ppm/℃"
 			(at 0 -24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "RES SMD 0805 2012Metric Resistors Chip Resistor - Surface Mount"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -78304,12 +78304,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78369,12 +78369,12 @@
 			)
 		)
 		(property "Nvalue" "3.3k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -78505,12 +78505,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78570,12 +78570,12 @@
 			)
 		)
 		(property "Nvalue" "0R"
-			(at 0 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -78706,12 +78706,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78771,12 +78771,12 @@
 			)
 		)
 		(property "Nvalue" "100R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -78907,12 +78907,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78972,12 +78972,12 @@
 			)
 		)
 		(property "Nvalue" "1k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -79108,12 +79108,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79195,12 +79195,12 @@
 			)
 		)
 		(property "Nvalue" "10k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -79309,12 +79309,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79374,12 +79374,12 @@
 			)
 		)
 		(property "Nvalue" "100k"
-			(at 0.254 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -79510,12 +79510,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79575,12 +79575,12 @@
 			)
 		)
 		(property "Nvalue" "1M"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -79711,12 +79711,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79787,12 +79787,12 @@
 			)
 		)
 		(property "Nvalue" "10R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -79912,12 +79912,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79977,12 +79977,12 @@
 			)
 		)
 		(property "Nvalue" "150k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -80113,12 +80113,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80189,12 +80189,12 @@
 			)
 		)
 		(property "Nvalue" "2.2k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -80314,12 +80314,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80401,12 +80401,12 @@
 			)
 		)
 		(property "Nvalue" "30k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -80515,12 +80515,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80602,12 +80602,12 @@
 			)
 		)
 		(property "Nvalue" "470R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -80716,12 +80716,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80781,12 +80781,12 @@
 			)
 		)
 		(property "Nvalue" "5.1k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -80917,12 +80917,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80982,12 +80982,12 @@
 			)
 		)
 		(property "Nvalue" "20k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -81118,12 +81118,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -81194,12 +81194,12 @@
 			)
 		)
 		(property "Nvalue" "100M"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.6 0.6)
 				)
 			)
 		)
@@ -88309,17 +88309,6 @@
 				)
 			)
 		)
-		(property "ki_keywords" "TVS"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Standoff voltage" "58V"
 			(at 0 -21.082 0)
 			(show_name no)
@@ -88388,6 +88377,17 @@
 		)
 		(property "Polarity" "Unidirectional"
 			(at 0 -36.322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "TVS"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
