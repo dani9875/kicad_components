@@ -16365,12 +16365,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16441,12 +16441,12 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -16497,7 +16497,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]Samsung Electro-Mechanics CL03A105MQ3CSNH_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -16509,7 +16509,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -16568,12 +16568,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16644,12 +16644,12 @@
 			)
 		)
 		(property "Nvalue" "27pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -16700,7 +16700,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201FRNPO9BN270_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -16712,7 +16712,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -16771,12 +16771,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -16847,12 +16847,12 @@
 			)
 		)
 		(property "Nvalue" "100pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -16903,7 +16903,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201JRNPO9BN101_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -16915,7 +16915,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -16974,12 +16974,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -17050,12 +17050,12 @@
 			)
 		)
 		(property "Nvalue" "100nF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -17106,7 +17106,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201KRX5R6BB104_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17118,7 +17118,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17177,12 +17177,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -17253,12 +17253,12 @@
 			)
 		)
 		(property "Nvalue" "1nF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -17309,7 +17309,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]YAGEO CC0201KRX7R6BB102_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17321,7 +17321,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17380,12 +17380,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -17456,12 +17456,12 @@
 			)
 		)
 		(property "Nvalue" "10pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -17512,7 +17512,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H100JA01D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17524,7 +17524,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17583,12 +17583,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -17659,12 +17659,12 @@
 			)
 		)
 		(property "Nvalue" "33pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -17715,7 +17715,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H330JA01D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17727,7 +17727,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17786,12 +17786,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -17862,12 +17862,12 @@
 			)
 		)
 		(property "Nvalue" "47pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -17918,7 +17918,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM0335C1H470JA01D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17930,7 +17930,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -17989,12 +17989,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -18065,12 +18065,12 @@
 			)
 		)
 		(property "Nvalue" "10nF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -18121,7 +18121,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM033R71A103KA01D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18133,7 +18133,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18192,12 +18192,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.556 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -18268,12 +18268,12 @@
 			)
 		)
 		(property "Nvalue" "4.7uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -18324,7 +18324,7 @@
 		(symbol "[CAP_SMD_0201_0603Metric]muRata GRM035R60J475ME15D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18336,7 +18336,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18398,12 +18398,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -18485,12 +18485,12 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -18530,7 +18530,7 @@
 		(symbol "[CAP_SMD_0402_1005Metric]Samsung Electro-Mechanics CL05A105KP5NNNC_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18542,7 +18542,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18604,12 +18604,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -18691,12 +18691,12 @@
 			)
 		)
 		(property "Nvalue" "4.7uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -18736,7 +18736,7 @@
 		(symbol "[CAP_SMD_0402_1005Metric]Samsung Electro-Mechanics CL05A475KP5NRNC_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18748,7 +18748,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18810,12 +18810,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -18897,12 +18897,12 @@
 			)
 		)
 		(property "Nvalue" "2.2uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -18942,7 +18942,7 @@
 		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402KRX5R6BB225_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -18954,7 +18954,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19016,12 +19016,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -19103,12 +19103,12 @@
 			)
 		)
 		(property "Nvalue" "100nF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -19148,7 +19148,7 @@
 		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402KRX7R7BB104_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19160,7 +19160,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19222,12 +19222,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -19309,12 +19309,12 @@
 			)
 		)
 		(property "Nvalue" "10uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -19354,7 +19354,7 @@
 		(symbol "[CAP_SMD_0402_1005Metric]YAGEO CC0402MRX5R5BB106_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19366,7 +19366,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19428,12 +19428,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -19515,12 +19515,12 @@
 			)
 		)
 		(property "Nvalue" "22uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -19560,7 +19560,7 @@
 		(symbol "[CAP_SMD_0402_1005Metric]muRata GRM158R61A226ME15D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19572,7 +19572,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19631,12 +19631,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -19696,12 +19696,12 @@
 			)
 		)
 		(property "Nvalue" "150pF"
-			(at 0.254 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -19763,7 +19763,7 @@
 		(symbol "[CAP_SMD_0603_1608Metric]FH 0603CG151J500NT_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19775,7 +19775,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19834,12 +19834,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -19899,12 +19899,12 @@
 			)
 		)
 		(property "Nvalue" "47uF"
-			(at 0.254 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -19966,7 +19966,7 @@
 		(symbol "[CAP_SMD_0603_1608Metric]Murata Electronics GRM188R60J476ME15D_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -19978,7 +19978,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20037,12 +20037,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20102,12 +20102,12 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -20169,7 +20169,7 @@
 		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A105KA8NNNC_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20181,7 +20181,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20240,12 +20240,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20305,12 +20305,12 @@
 			)
 		)
 		(property "Nvalue" "10uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -20383,7 +20383,7 @@
 		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10A106KP8NNNC_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20395,7 +20395,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20454,12 +20454,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20519,12 +20519,12 @@
 			)
 		)
 		(property "Nvalue" "3.3nF"
-			(at 0.254 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -20586,7 +20586,7 @@
 		(symbol "[CAP_SMD_0603_1608Metric]Samsung Electro-Mechanics CL10B332KB8NNNC_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20598,7 +20598,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20657,12 +20657,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20722,12 +20722,12 @@
 			)
 		)
 		(property "Nvalue" "120pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -20789,7 +20789,7 @@
 		(symbol "[CAP_SMD_0603_1608Metric]YAGEO CC0603JRNPO9BN121_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20801,7 +20801,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -20851,18 +20851,21 @@
 		(embedded_fonts no)
 	)
 	(symbol "[CAP_SMD_0805_2012Metric]FH 0805B222K500NT"
+		(pin_numbers
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -20944,12 +20947,12 @@
 			)
 		)
 		(property "Nvalue" "2.2nF"
-			(at 0.254 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -21000,7 +21003,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]FH 0805B222K500NT_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21012,7 +21015,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21074,12 +21077,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.54 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21161,12 +21164,12 @@
 			)
 		)
 		(property "Nvalue" "10pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -21206,7 +21209,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C100K5GACTU_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21218,7 +21221,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21280,12 +21283,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21367,12 +21370,12 @@
 			)
 		)
 		(property "Nvalue" "100pF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -21412,7 +21415,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C101K5GACTU_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21424,7 +21427,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21486,12 +21489,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21573,12 +21576,12 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -21618,7 +21621,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C105M4VACTU_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21630,7 +21633,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21692,12 +21695,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.54 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21779,12 +21782,12 @@
 			)
 		)
 		(property "Nvalue" "12pF"
-			(at 0 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -21824,7 +21827,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]KEMET C0805C120J5GACAUTO_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21836,7 +21839,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -21898,12 +21901,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -21985,12 +21988,12 @@
 			)
 		)
 		(property "Nvalue" "10uF"
-			(at 0.254 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -22030,7 +22033,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KAYNNNE_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22042,7 +22045,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22104,12 +22107,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -22191,12 +22194,12 @@
 			)
 		)
 		(property "Nvalue" "10uF"
-			(at 0 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -22236,7 +22239,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A106KOQNNNE_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22248,7 +22251,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22310,12 +22313,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -22397,12 +22400,12 @@
 			)
 		)
 		(property "Nvalue" "22uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -22442,7 +22445,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A226MAQNNNE_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22454,7 +22457,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22513,12 +22516,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 3.302 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -22578,12 +22581,12 @@
 			)
 		)
 		(property "Nvalue" "4.7uF"
-			(at 0.254 -3.302 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -22645,7 +22648,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]Samsung Electro-Mechanics CL21A475KAQNNNE_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22657,7 +22660,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22716,12 +22719,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.54 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -22792,12 +22795,12 @@
 			)
 		)
 		(property "Nvalue" "1nF"
-			(at 0 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -22848,7 +22851,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805JRNPO9BN102_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22860,7 +22863,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -22919,12 +22922,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -23006,12 +23009,12 @@
 			)
 		)
 		(property "Nvalue" "47nF"
-			(at 0 -3.302 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -23051,7 +23054,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805JRX7R9BB473_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23063,7 +23066,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23122,12 +23125,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -23198,12 +23201,12 @@
 			)
 		)
 		(property "Nvalue" "10nF"
-			(at 0 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -23254,7 +23257,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KKX7RBBB103_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23266,7 +23269,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23328,12 +23331,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.54 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -23415,12 +23418,12 @@
 			)
 		)
 		(property "Nvalue" "100nF"
-			(at 0.254 -2.794 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -23460,7 +23463,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]YAGEO CC0805KRX7R9BB104_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23472,7 +23475,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23534,12 +23537,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.54 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -23621,12 +23624,12 @@
 			)
 		)
 		(property "Nvalue" "100uF"
-			(at 0 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -23666,7 +23669,7 @@
 		(symbol "[CAP_SMD_0805_2012Metric]muRata GRM21BR60J107ME15L_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23678,7 +23681,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23737,12 +23740,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -23813,12 +23816,12 @@
 			)
 		)
 		(property "Nvalue" "100uF"
-			(at 0.254 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -23869,7 +23872,7 @@
 		(symbol "[CAP_SMD_1206_3216Metric]Samsung Electro-Mechanics CL31A107MQHNNNE_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23881,7 +23884,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -23940,12 +23943,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -24016,12 +24019,12 @@
 			)
 		)
 		(property "Nvalue" "1uF"
-			(at 0.254 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -24083,7 +24086,7 @@
 		(symbol "[CAP_SMD_1206_3216Metric]Samsung Electro-Mechanics CL31B105KCHNNNE_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -24095,7 +24098,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -24157,12 +24160,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -24233,12 +24236,12 @@
 			)
 		)
 		(property "Nvalue" "2.2uF"
-			(at 0.254 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -24300,7 +24303,7 @@
 		(symbol "[CAP_SMD_1206_3216Metric]YAGEO CC1206KKX7R0BB225_0_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -24312,7 +24315,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -24371,12 +24374,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "C"
-			(at 0 2.794 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -24447,12 +24450,12 @@
 			)
 		)
 		(property "Nvalue" "1nF"
-			(at 0.254 -3.048 0)
+			(at 0.254 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -24503,7 +24506,7 @@
 		(symbol "[CAP_SMD_1206_3216Metric]YAGEO CC1206KKX7RDBB102_1_1"
 			(polyline
 				(pts
-					(xy -0.508 -1.524) (xy -0.508 1.524)
+					(xy -0.508 -0.762) (xy -0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -24515,7 +24518,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 -1.524) (xy 0.508 1.524)
+					(xy 0.508 -0.762) (xy 0.508 0.762)
 				)
 				(stroke
 					(width 0.25)
@@ -36195,6 +36198,342 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "[Crystal]YXC Crystal Oscillators X322516MLB4SI"
+		(pin_names
+			(offset 0.002)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "X"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "X322516MLB4SI"
+			(at 0 -6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "pepy_sym_lib:[Crystal]YXC Crystal Oscillators X322516MLB4SI"
+			(at 0 -9.906 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/a84bd8d530dd46e4b0f6d0ee59d8a89c.pdf?productCode=C13738"
+			(at 0 -12.446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Crystal 16MHz ±10ppm 9pF SMD3225-4P"
+			(at 0 -14.986 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YXC Crystal Oscillators"
+			(at 0 -17.526 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C13738"
+			(at 0 -20.066 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SMD3225-4P"
+			(at 0 -22.606 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Frequency" "16MHz"
+			(at 0 -27.686 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Frequency tolerance" "±10ppm"
+			(at 0 -30.226 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Load capacitance" "9pF"
+			(at 0 -32.766 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Crystal Crystals"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "[Crystal]YXC Crystal Oscillators X322516MLB4SI_0_1"
+			(polyline
+				(pts
+					(xy -5.08 -2.54) (xy -2.54 -2.54) (xy -2.54 0) (xy -1.52 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.02) (xy -1.27 1.02)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.78) (xy -1.27 1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.76 -1.78) (xy -0.76 1.78) (xy 0.76 1.78) (xy 0.76 -1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.76 -1.78) (xy -0.76 -1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.02) (xy 1.27 1.02)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.78) (xy 1.27 1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 2.54) (xy 2.54 2.54) (xy 2.54 0) (xy 1.52 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "[Crystal]YXC Crystal Oscillators X322516MLB4SI_1_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.76 1.78) (xy 0.76 -1.78) (xy -0.76 -1.78) (xy -0.76 1.78) (xy 0.76 1.78)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -7.62 -3.81 0)
+				(length 2.54)
+				(name "OSC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 3.81 180)
+				(length 2.54)
+				(name "OSC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -66315,7 +66654,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C177235.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C177235.html?s_z=n_q_C177235&globalKeyword=C177235"
 			(at 0 -11.938 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66711,6 +67050,50 @@
 				)
 			)
 		)
+		(property "Vds" "20V"
+			(at 0 -22.098 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "630mA"
+			(at 0 -24.638 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rds(on)" "300mΩ@4.5V"
+			(at 0 -27.178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vgs(th)" "1V"
+			(at 0 -29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "[NMOS]DIODES DMG1012T-7_0_1"
 			(polyline
 				(pts
@@ -66964,13 +67347,19 @@
 		(embedded_fonts no)
 	)
 	(symbol "[NMOS]Nexperia BSS138PW,115"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Q"
-			(at 1.27 3.81 0)
+			(at -3.302 4.064 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -67046,6 +67435,50 @@
 		)
 		(property "Manufacturer" "Nexperia"
 			(at 0 -20.828 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vds" "60V"
+			(at 0 -23.368 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "320mA"
+			(at 0 -25.908 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rds(on)" "1.6Ω@10V"
+			(at 0 -28.448 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vgs(th)" "1.5V"
+			(at 0 -30.988 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -67188,6 +67621,30 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(text "G"
+				(at -6.35 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "D"
+				(at -1.016 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "S"
+				(at -1.016 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(pin input line
@@ -69331,6 +69788,50 @@
 				)
 			)
 		)
+		(property "Vds" "20V"
+			(at 0 -23.622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "2.3A"
+			(at 0 -26.162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rds(on)" "112mΩ@4.5V"
+			(at 0 -28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vgs(th)" "1V"
+			(at 0 -31.242 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "[PMOS]Jiangsu Changjing Electronics Technology Co., Ltd. CJ2301 S1_0_1"
 			(polyline
 				(pts
@@ -70808,7 +71309,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
+		(property "Reference" "Q"
 			(at -6.35 -2.032 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70885,6 +71386,50 @@
 		)
 		(property "Package" "SOT-23"
 			(at -0.254 -23.622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vds" "20V"
+			(at 0 -26.162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "2.3A"
+			(at 0 -28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rds(on)" "140mΩ@4.5V"
+			(at 0 -31.242 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vgs(th)" "700mV"
+			(at 0 -33.782 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -72464,12 +73009,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -72540,12 +73085,12 @@
 			)
 		)
 		(property "Nvalue" "10k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -72665,12 +73210,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -72741,12 +73286,12 @@
 			)
 		)
 		(property "Nvalue" "1M"
-			(at 0 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -72866,12 +73411,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -72942,12 +73487,12 @@
 			)
 		)
 		(property "Nvalue" "33R"
-			(at 0 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -73067,12 +73612,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73143,12 +73688,12 @@
 			)
 		)
 		(property "Nvalue" "470R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -73268,12 +73813,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73344,12 +73889,12 @@
 			)
 		)
 		(property "Nvalue" "4.7k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -73469,12 +74014,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73534,12 +74079,12 @@
 			)
 		)
 		(property "Nvalue" "10m"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -73670,12 +74215,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -73735,12 +74280,12 @@
 			)
 		)
 		(property "Nvalue" "11k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -73936,12 +74481,12 @@
 			)
 		)
 		(property "Nvalue" "47k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -74072,12 +74617,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74137,12 +74682,12 @@
 			)
 		)
 		(property "Nvalue" "0R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -74273,12 +74818,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74338,12 +74883,12 @@
 			)
 		)
 		(property "Nvalue" "20k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -74474,12 +75019,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74539,12 +75084,12 @@
 			)
 		)
 		(property "Nvalue" "2.2k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -74675,12 +75220,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74740,12 +75285,12 @@
 			)
 		)
 		(property "Nvalue" "100k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -74876,12 +75421,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -74941,12 +75486,12 @@
 			)
 		)
 		(property "Nvalue" "10R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -75077,12 +75622,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75142,12 +75687,12 @@
 			)
 		)
 		(property "Nvalue" "120k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -75278,12 +75823,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75343,12 +75888,12 @@
 			)
 		)
 		(property "Nvalue" "180k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -75479,12 +76024,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75544,12 +76089,12 @@
 			)
 		)
 		(property "Nvalue" "1k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -75680,12 +76225,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75745,12 +76290,12 @@
 			)
 		)
 		(property "Nvalue" "1M"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -75881,12 +76426,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -75946,12 +76491,12 @@
 			)
 		)
 		(property "Nvalue" "240R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -76082,12 +76627,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76147,12 +76692,12 @@
 			)
 		)
 		(property "Nvalue" "270k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -76283,12 +76828,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76348,12 +76893,12 @@
 			)
 		)
 		(property "Nvalue" "2.49k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -76484,12 +77029,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76549,12 +77094,12 @@
 			)
 		)
 		(property "Nvalue" "499R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -76685,12 +77230,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76750,12 +77295,12 @@
 			)
 		)
 		(property "Nvalue" "49.9k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -76886,12 +77431,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -76951,12 +77496,12 @@
 			)
 		)
 		(property "Nvalue" "10R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -77087,12 +77632,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77152,12 +77697,12 @@
 			)
 		)
 		(property "Nvalue" "12k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -77288,12 +77833,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77353,12 +77898,12 @@
 			)
 		)
 		(property "Nvalue" "220k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -77489,12 +78034,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77554,12 +78099,12 @@
 			)
 		)
 		(property "Nvalue" "30R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -77690,12 +78235,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77755,12 +78300,12 @@
 			)
 		)
 		(property "Nvalue" "357k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -77891,12 +78436,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -77956,12 +78501,12 @@
 			)
 		)
 		(property "Nvalue" "15k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -78092,12 +78637,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78157,12 +78702,12 @@
 			)
 		)
 		(property "Nvalue" "120R"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -78304,12 +78849,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78369,12 +78914,12 @@
 			)
 		)
 		(property "Nvalue" "3.3k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -78505,12 +79050,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78570,12 +79115,12 @@
 			)
 		)
 		(property "Nvalue" "0R"
-			(at 0 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -78706,12 +79251,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78771,12 +79316,12 @@
 			)
 		)
 		(property "Nvalue" "100R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -78907,12 +79452,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -78972,12 +79517,12 @@
 			)
 		)
 		(property "Nvalue" "1k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -79200,7 +79745,7 @@
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.6 0.6)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -79309,12 +79854,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79374,12 +79919,12 @@
 			)
 		)
 		(property "Nvalue" "100k"
-			(at 0.254 -2.032 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -79510,12 +80055,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79575,12 +80120,12 @@
 			)
 		)
 		(property "Nvalue" "1M"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -79711,12 +80256,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79787,12 +80332,12 @@
 			)
 		)
 		(property "Nvalue" "10R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -79912,12 +80457,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -79977,12 +80522,12 @@
 			)
 		)
 		(property "Nvalue" "150k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -80113,12 +80658,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80189,12 +80734,12 @@
 			)
 		)
 		(property "Nvalue" "2.2k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -80314,12 +80859,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80401,12 +80946,12 @@
 			)
 		)
 		(property "Nvalue" "30k"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -80515,12 +81060,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80602,12 +81147,12 @@
 			)
 		)
 		(property "Nvalue" "470R"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -80716,12 +81261,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80781,12 +81326,12 @@
 			)
 		)
 		(property "Nvalue" "5.1k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -80917,12 +81462,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -80982,12 +81527,12 @@
 			)
 		)
 		(property "Nvalue" "20k"
-			(at 0.254 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)
@@ -81118,12 +81663,12 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 1.778 0)
+			(at 0 1.524 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.8 0.8)
 				)
 			)
 		)
@@ -81194,12 +81739,12 @@
 			)
 		)
 		(property "Nvalue" "100M"
-			(at 0 -1.778 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.7 0.7)
 				)
 			)
 		)

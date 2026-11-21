@@ -5,3 +5,5 @@
 fp-info-cache
 __pycache__/
 .ai_work/
+Inventory.xlsx
+.~lock.Inventory.xlsx#
