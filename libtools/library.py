@@ -19,6 +19,42 @@ PASSIVE_REFS = ("R", "C", "L", "FB", "F")
 INTERNAL_FIELDS = {"ki_locked", "ki_fp_filters"}
 
 
+# Group = coarse filter above [CATEGORY]. First matching pattern wins.
+GROUP_RULES = [
+    (r"FERRITE", "Ferrite beads"),
+    (r"(^|_)RES(_|$)", "Resistors"),
+    (r"(^|_)CAP(_|$)", "Capacitors"),
+    (r"POWER_IND|P_IND|(^|_)IND(_|$)", "Inductors"),
+    (r"COMMON_MODE|EMI_FILTER", "Filters"),
+    (r"LED_DRIVER", "Power ICs & protection"),
+    (r"(^|_)LED|7SEG", "LEDs & displays"),
+    (r"TVS|ESD", "ESD / TVS"),
+    (r"DIODE|SCHOTTKY|ZENER|RECT", "Diodes"),
+    (r"NMOS|PMOS|MOSFET|BJT|TRANSISTOR", "Transistors"),
+    (r"BUCK|BOOST|STEPD|DCDC|DC_DC", "DC/DC converters"),
+    (r"LDO", "LDOs"),
+    (r"PMIC|LOAD_SWITCH|EFUSE|SUPERVISOR|FUSE", "Power ICs & protection"),
+    (r"MCU|CPU|FPGA|SOC", "MCUs / CPUs / FPGAs"),
+    (r"DDR|EMMC|FLASH|EEPROM|SRAM", "Memory"),
+    (r"FLIP|BUFFER|COUNTER|GATE|ADDER|COMPARATOR|SHIFT|DEMUX|SCHMITT|LINE_DRIVER", "Logic"),
+    (r"CRYSTAL|XTAL|OSC(_|$)|RTC", "Crystals & timing"),
+    (r"OPAMP|CODEC|AMPLIFIER", "Analog & audio"),
+    (r"ETHERNET|HDMI|USB_CONV|GSM|LTE|RFID|ANTENNA|NAVIGATION|TRANSC", "Interface & RF"),
+    (r"SWITCH|BUTTON(?!_CELL)", "Switches"),
+    (r"MOUNTING|TEST_POINT|NUT|PLUG_OF_NAILS", "Mechanical & test"),
+    (r"HEADER|DIL|IDC|JST|HCTL|MOLEX|USB|RJ45|R45|FPC|SMA|COAX|SD_PUSH|SIM|TERMINAL|CELL_HOLDER|CONN",
+     "Connectors"),
+]
+
+
+def group_of(category: str) -> str:
+    c = category.strip("[]").upper()
+    for rx, g in GROUP_RULES:
+        if re.search(rx, c):
+            return g
+    return "Other"
+
+
 def category_of(name: str) -> str:
     return name[: name.index("]") + 1] if name.startswith("[") and "]" in name else ""
 

@@ -27,26 +27,36 @@ from PyQt6.QtGui import (QAction, QBrush, QColor, QDesktopServices, QFont, QGuiA
                          QKeySequence, QPainter, QPalette, QPen, QPolygonF)
 from PyQt6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComboBox, QDialog,
                              QFormLayout, QHBoxLayout, QLabel,
-                             QLineEdit, QListWidget, QListWidgetItem, QMainWindow, QMenu,
+                             QLineEdit, QMainWindow, QMenu,
                              QPlainTextEdit, QPushButton, QSplitter, QTableView,
                              QTabWidget, QTextBrowser, QToolButton, QVBoxLayout, QWidget)
 
 from libtools import ai, lint
+from libtools.inventory import Inventory
 from libtools.add import AddError, add_part
+from libtools import profiles
+from libtools.library import group_of
 from libtools.library import (FP_DIR, LIB_NAME, ORIG_DIR, SYM_LIB, Part, eng_to_float,
                               footprint_primitives, load_footprint, load_parts, symbol_primitives)
 
 # --------------------------------------------------------------------------
 # Columns
 # --------------------------------------------------------------------------
-LEAD_COLUMNS = ["Part", "Category", "Reference", "Value", "Nvalue", "Tolerance", "Voltage rating",
-                "Power", "Dielectric", "Rated current", "Package", "Manufacturer", "LCSC Part",
-                "Description", "Footprint", "Datasheet", "Keywords"]
+STOCK = "Stock"
+INV_NUM = "#"
+GROUP = "Group"
+SPECS = profiles.SPECS
+COMMON_HEAD = [INV_NUM, "Part", GROUP, "Category", STOCK]
+COMMON_TAIL = ["Reference", "Value", "Package", "Manufacturer", "LCSC Part", "Description",
+               "Footprint", "Datasheet", "Keywords"]
+PROFILE_FIELDS = profiles.all_fields()
+LEAD_COLUMNS = COMMON_HEAD + [SPECS] + PROFILE_FIELDS + COMMON_TAIL   # every known column
 FIELD_FOR_COLUMN = {"Keywords": "ki_keywords"}
 ALIASES = {"ref": "Reference", "val": "Value", "nv": "Nvalue", "tol": "Tolerance",
            "mfr": "Manufacturer", "lcsc": "LCSC Part", "desc": "Description", "fp": "Footprint",
-           "pkg": "Package", "cat": "Category", "kw": "Keywords", "volt": "Voltage rating"}
-ENG_COLUMNS = {"Nvalue", "Voltage rating", "Power", "Rated current"}
+           "pkg": "Package", "cat": "Category", "kw": "Keywords", "volt": "Voltage rating",
+           "stock": STOCK, "pcs": STOCK, "num": INV_NUM, "inv": INV_NUM, "group": GROUP, "grp": GROUP}
+ENG_COLUMNS = profiles.numeric_fields() | {STOCK, INV_NUM}
 ISSUES = "Issues"
 ORIGINAL = "Original"
 
@@ -72,10 +82,9 @@ def expected_columns(p: Part) -> set[str]:
     if p.name.startswith(lint.VIRTUAL):
         return set()
     need = {"Description", "Manufacturer", "LCSC Part", "Datasheet", "Footprint"}
-    if p.ref in ("R", "C", "L", "FB"):
-        need |= {"Nvalue", "Tolerance"}
-    if p.ref == "C":
-        need |= {"Voltage rating"}
+    prof = profiles.profile(group_of(p.category))
+    if prof:
+        need |= {s.field for s in prof} | {SPECS}
     return need
 
 
@@ -88,6 +97,14 @@ class PartsModel(QAbstractTableModel):
         self.columns: list[str] = []
         self.issues: dict[str, list[lint.Finding]] = {}
         self.originals: dict = {}
+        self.extra: list[str] = []
+        self.group = ""
+        self.inventory = Inventory()
+
+    def stock(self, p: Part):
+        if not self.inventory.loaded:
+            return None
+        return self.inventory.find(p.fields.get("LCSC Part", ""), p.fields.get("Value", ""))
 
     def load(self, parts, issues):
         self.beginResetModel()
@@ -98,7 +115,21 @@ class PartsModel(QAbstractTableModel):
                 if k not in LEAD_COLUMNS and k not in FIELD_FOR_COLUMN.values():
                     extra[k] = extra.get(k, 0) + 1
         self.originals = {p.name: original_files(p) for p in parts}
-        self.columns = LEAD_COLUMNS + sorted(extra, key=lambda k: -extra[k]) + [ORIGINAL, ISSUES]
+        self.extra = sorted(extra, key=lambda k: -extra[k])
+        self.columns = self.columns_for(self.group)
+        self.endResetModel()
+
+    def columns_for(self, group: str) -> list[str]:
+        """Common columns + the group's own profile columns (or one Specs column)."""
+        prof = [s.field for s in profiles.profile(group)]
+        return COMMON_HEAD + (prof or [SPECS]) + COMMON_TAIL + self.extra + [ORIGINAL, ISSUES]
+
+    def set_group(self, group: str):
+        if group == self.group and self.columns:
+            return
+        self.beginResetModel()
+        self.group = group
+        self.columns = self.columns_for(group)
         self.endResetModel()
 
     def value(self, p: Part, col: str) -> str:
@@ -106,6 +137,18 @@ class PartsModel(QAbstractTableModel):
             return p.name[len(p.category):] or p.name
         if col == "Category":
             return p.category.strip("[]")
+        if col == GROUP:
+            return group_of(p.category)
+        if col == SPECS:
+            return profiles.specs_text(group_of(p.category), p.fields)
+        if col == INV_NUM:
+            st = self.stock(p)
+            return ", ".join(st.numbers) if st else ""
+        if col == STOCK:
+            st = self.stock(p)
+            if not st:
+                return ""
+            return f"{st.pcs:g}" if st.counted else "?"
         if col == ORIGINAL:
             folder, files = self.originals.get(p.name, (None, []))
             return " ".join(sorted({f.suffix.lstrip(".").replace("kicad_", "") for f in files}))
@@ -132,6 +175,13 @@ class PartsModel(QAbstractTableModel):
         if role == Qt.ItemDataRole.DisplayRole:
             return v
         if role == Qt.ItemDataRole.ToolTipRole:
+            if col in (STOCK, INV_NUM) and self.inventory.loaded:
+                st = self.stock(p)
+                if not st:
+                    return "Not in the inventory"
+                where = ", ".join(f"row {r}" for r in st.rows)
+                nums = f" · #{', #'.join(st.numbers)}" if st.numbers else " · no # yet"
+                return ("Not counted yet" if not st.counted else f"{st.pcs:g} pcs") + f" ({where}{nums})"
             if col == ISSUES:
                 return "\n".join(f"{f.level}: {f.rule}" + (f" ({f.detail})" if f.detail else "")
                                  for f in self.issues.get(p.name, []))
@@ -139,6 +189,11 @@ class PartsModel(QAbstractTableModel):
         if role == Qt.ItemDataRole.BackgroundRole:
             if not v and (col in expected_columns(p) or (col == ORIGINAL and not p.name.startswith(lint.VIRTUAL))):
                 return QBrush(QColor(110, 40, 40))
+            if self.inventory.loaded and not p.name.startswith(lint.VIRTUAL):
+                if col == INV_NUM and not v:
+                    return QBrush(QColor(110, 40, 40))       # no inventory number = not in the inventory
+                if col == STOCK and v in ("0", "?"):
+                    return QBrush(QColor(95, 80, 30))        # not counted / none left
             if col == ISSUES and v:
                 err = any(f.level == lint.ERR for f in self.issues.get(p.name, []))
                 return QBrush(QColor(130, 35, 35) if err else QColor(95, 80, 30))
@@ -146,7 +201,7 @@ class PartsModel(QAbstractTableModel):
             return QBrush(QColor(110, 170, 255))
         if role == self.SORT_ROLE:
             if col in ENG_COLUMNS:
-                f = eng_to_float(v)
+                f = eng_to_float(v.lstrip("±"))
                 return f if f is not None else math.inf
             if col == ISSUES:
                 f = self.issues.get(p.name, [])
@@ -161,7 +216,8 @@ class PartsModel(QAbstractTableModel):
 class PartsFilter(QSortFilterProxyModel):
     def __init__(self):
         super().__init__()
-        self.categories: set[str] = set()
+        self.group = ""
+        self.category = ""
         self.terms: list = []
         self.issues_only = False
         self.setSortRole(PartsModel.SORT_ROLE)
@@ -208,7 +264,9 @@ class PartsFilter(QSortFilterProxyModel):
     def filterAcceptsRow(self, row, parent):
         m: PartsModel = self.sourceModel()
         p = m.parts[row]
-        if self.categories and p.category not in self.categories:
+        if self.category and p.category != self.category:
+            return False
+        if self.group and group_of(p.category) != self.group:
             return False
         issues = m.issues.get(p.name, [])
         if self.issues_only and not issues:
@@ -736,7 +794,13 @@ class ClaudePanel(QWidget):
         self.log.append(f"<p style='color:#8ab4f8'><b>You:</b> {_esc(prompt)}</p>"
                         f"<i style='color:#999'>{'in Docker' if self.docker() else 'local'}</i>")
         model = self.model.currentText()
-        cmd = ai.command(self.session, prompt, "" if model == "default model" else model, docker=self.docker())
+        try:
+            cmd = ai.command(self.session, prompt, "" if model == "default model" else model, docker=self.docker())
+        except RuntimeError as e:
+            self.log.append(f"<span style='color:#ff8a80'>Not started: {_esc(str(e))}</span>")
+            self.snap = None
+            self.update_buttons()
+            return
         self.proc = QProcess(self)
         self.proc.setWorkingDirectory(str(ai.ROOT))
         self.proc.readyReadStandardOutput.connect(self._read)
@@ -889,17 +953,26 @@ class Main(QMainWindow):
         add_btn.clicked.connect(self.open_add)
         reload_btn = QPushButton("Reload")
         reload_btn.clicked.connect(self.reload)
+        self.inv_btn = QPushButton("Inventory…")
+        self.inv_btn.setToolTip("Choose Inventory.xlsx. The Stock column reads the PCS column of its Inventory sheet.")
+        self.inv_btn.clicked.connect(self.choose_inventory)
+        self.group_box = QComboBox()
+        self.group_box.setMinimumWidth(190)
+        self.group_box.currentIndexChanged.connect(self.group_changed)
+        self.cat_box = QComboBox()
+        self.cat_box.setMinimumWidth(240)
+        self.cat_box.setMaxVisibleItems(30)
+        self.cat_box.currentIndexChanged.connect(self.cat_changed)
         top = QHBoxLayout()
+        top.addWidget(self.group_box)
+        top.addWidget(self.cat_box)
         top.addWidget(self.search, 1)
         top.addWidget(self.issues_only)
         top.addWidget(cols)
+        top.addWidget(self.inv_btn)
         top.addWidget(reload_btn)
         top.addWidget(add_btn)
 
-        # categories
-        self.cats = QListWidget()
-        self.cats.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
-        self.cats.itemSelectionChanged.connect(self.cat_changed)
 
         # table
         self.table = QTableView()
@@ -938,10 +1011,9 @@ class Main(QMainWindow):
         right.setSizes([260, 260, 300])
 
         self.split = QSplitter()
-        self.split.addWidget(self.cats)
         self.split.addWidget(self.table)
         self.split.addWidget(right)
-        self.split.setSizes([200, 1000, 380])
+        self.split.setSizes([1200, 420])
         self.right = right
 
         central = QWidget()
@@ -967,6 +1039,13 @@ class Main(QMainWindow):
         self.watcher.fileChanged.connect(lambda *_: self.reload_timer.start(600))
         self.watcher.directoryChanged.connect(lambda *_: self.reload_timer.start(600))
 
+        self._hidden: set[str] = set()
+        try:
+            self.col_widths = json.loads(self.settings.value("col_widths", "{}") or "{}")
+        except (TypeError, json.JSONDecodeError):
+            self.col_widths = {}
+        self.sort_col = (self.settings.value("sort_col", "Category") or "Category",
+                         Qt.SortOrder(int(self.settings.value("sort_order", 0) or 0)))
         self.reload()
         self.restore()
 
@@ -978,35 +1057,119 @@ class Main(QMainWindow):
         self.n_err = sum(1 for f in findings if f.level == lint.ERR)
         self.n_warn = len(findings) - self.n_err
         hidden = self.hidden_columns()
+        inv = self.settings.value("inventory", "") or ""
+        if inv and Path(inv).exists():
+            self.model.inventory.load(Path(inv))
+            if inv not in self.watcher.files():
+                self.watcher.addPath(inv)
+        self.inv_btn.setText(f"Inventory: {Path(inv).name}" if self.model.inventory.loaded else "Inventory…")
+        if self.model.inventory.error:
+            self.statusBar().showMessage(self.model.inventory.error, 8000)
+        self.remember_columns()
+        self.model.group = self.group_box.currentData() or ""
         self.model.load(parts, lint.findings_by_part(parts, findings))
-        self.build_cols_menu(hidden)
         self.build_categories()
+        self.model.set_group(self.proxy.group)
+        self.after_columns_changed(hidden)
         if str(SYM_LIB) not in self.watcher.files():
             self.watcher.addPath(str(SYM_LIB))
         self.proxy.set_query(self.search.text())
         self.select(cur)
         self.update_status()
 
+    def choose_inventory(self):
+        from PyQt6.QtWidgets import QFileDialog
+        start = self.settings.value("inventory", "") or str(Path.home())
+        path, _ = QFileDialog.getOpenFileName(self, "Inventory.xlsx", start, "Excel (*.xlsx)")
+        if path:
+            old = self.settings.value("inventory", "")
+            if old and old in self.watcher.files():
+                self.watcher.removePath(old)
+            self.settings.setValue("inventory", path)
+            self.reload()
+
     def build_categories(self):
-        selected = {i.data(Qt.ItemDataRole.UserRole) for i in self.cats.selectedItems()}
+        """Fill the Group box; the Category box follows the chosen group."""
+        cur = self.group_box.currentData() or ""
         counts: dict[str, int] = {}
         for p in self.model.parts:
-            counts[p.category] = counts.get(p.category, 0) + 1
-        self.cats.blockSignals(True)
-        self.cats.clear()
+            g = group_of(p.category)
+            counts[g] = counts.get(g, 0) + 1
+        self.group_box.blockSignals(True)
+        self.group_box.clear()
+        self.group_box.addItem(f"All groups   {len(self.model.parts)}", "")
+        for g in sorted(counts):
+            self.group_box.addItem(f"{g}   {counts[g]}", g)
+        i = self.group_box.findData(cur)
+        self.group_box.setCurrentIndex(max(i, 0))
+        self.group_box.blockSignals(False)
+        self.proxy.group = self.group_box.currentData() or ""
+        self.fill_cat_box()
+
+    def fill_cat_box(self):
+        cur = self.cat_box.currentData() or ""
+        g = self.proxy.group
+        counts: dict[str, int] = {}
+        for p in self.model.parts:
+            if not g or group_of(p.category) == g:
+                counts[p.category] = counts.get(p.category, 0) + 1
+        self.cat_box.blockSignals(True)
+        self.cat_box.clear()
+        self.cat_box.addItem(f"All categories   {sum(counts.values())}", "")
         for c in sorted(counts, key=str.lower):
-            it = QListWidgetItem(f"{c.strip('[]') or '(none)'}   {counts[c]}")
-            it.setData(Qt.ItemDataRole.UserRole, c)
-            self.cats.addItem(it)
-            if c in selected:
-                it.setSelected(True)
-        self.cats.blockSignals(False)
-        self.proxy.categories = {c for c in selected if c in counts}
+            self.cat_box.addItem(f"{c.strip('[]') or '(none)'}   {counts[c]}", c)
+        i = self.cat_box.findData(cur)
+        self.cat_box.setCurrentIndex(max(i, 0))
+        self.cat_box.blockSignals(False)
+        self.proxy.category = self.cat_box.currentData() or ""
+
+    def group_changed(self):
+        self.proxy.group = self.group_box.currentData() or ""
+        self.fill_cat_box()
+        self.apply_group()
+        self.proxy.invalidateFilter()
+        self.update_status()
+
+    def remember_columns(self):
+        if not self.model.columns:
+            return
+        for i, c in enumerate(self.model.columns):
+            if not self.table.isColumnHidden(i) and self.table.columnWidth(i) > 0:
+                self.col_widths[c] = self.table.columnWidth(i)
+        hh = self.table.horizontalHeader()
+        if 0 <= hh.sortIndicatorSection() < len(self.model.columns):
+            self.sort_col = (self.model.columns[hh.sortIndicatorSection()], hh.sortIndicatorOrder())
+
+    def apply_group(self):
+        """Switch the table to the selected group's columns."""
+        cur = self.current_name()
+        hidden = self.hidden_columns()
+        self.remember_columns()
+        self.model.set_group(self.proxy.group)
+        self.after_columns_changed(hidden)
+        self.select(cur)
+
+    def after_columns_changed(self, hidden: set[str]):
+        self.build_cols_menu(hidden)
+        for i, c in enumerate(self.model.columns):
+            if c in self.col_widths:
+                self.table.setColumnWidth(i, self.col_widths[c])
+            else:
+                self.table.resizeColumnToContents(i)
+                self.table.setColumnWidth(i, min(max(self.table.columnWidth(i), 60), 260))
+        name, order = self.sort_col
+        if name in self.model.columns:
+            self.table.sortByColumn(self.model.columns.index(name), order)
 
     def hidden_columns(self) -> set[str]:
+        """Hidden columns by name. Columns not shown in the current group keep their old state."""
         if self.model.columns:
-            return {c for i, c in enumerate(self.model.columns) if self.table.isColumnHidden(i)}
-        return set(self.settings.value("hidden", ["Keywords"]) or [])
+            now = {c for i, c in enumerate(self.model.columns) if self.table.isColumnHidden(i)}
+            shown = {c for i, c in enumerate(self.model.columns) if not self.table.isColumnHidden(i)}
+            self._hidden = (self._hidden - shown) | now
+            return set(self._hidden)
+        self._hidden = set(self.settings.value("hidden", ["Keywords"]) or [])
+        return set(self._hidden)
 
     def build_cols_menu(self, hidden: set[str]):
         self.cols_menu.clear()
@@ -1031,13 +1194,20 @@ class Main(QMainWindow):
         self.update_status()
 
     def cat_changed(self):
-        self.proxy.categories = {i.data(Qt.ItemDataRole.UserRole) for i in self.cats.selectedItems()}
+        self.proxy.category = self.cat_box.currentData() or ""
         self.proxy.invalidateFilter()
         self.update_status()
 
     def update_status(self):
         self.status.setText(f"{self.proxy.rowCount()} of {self.model.rowCount()} parts    "
-                            f"library: {self.n_err} errors, {self.n_warn} warnings")
+                            f"library: {self.n_err} errors, {self.n_warn} warnings" + self.stock_status())
+
+    def stock_status(self) -> str:
+        if not self.model.inventory.loaded:
+            return ""
+        parts = [p for p in self.model.parts if not p.name.startswith(lint.VIRTUAL)]
+        no_num = sum(1 for p in parts if not (self.model.stock(p) and self.model.stock(p).numbers))
+        return f"    inventory: {no_num} of {len(parts)} parts without #"
 
     def part_at(self, proxy_idx) -> Part | None:
         if not proxy_idx.isValid():
@@ -1095,8 +1265,21 @@ class Main(QMainWindow):
         else:
             orig = (f"<p style='margin-top:10px;color:#ff6b6b'><b>No original files</b> in "
                     f"original_components/{esc(folder.name if folder else p.name)}</p>")
+        stock = ""
+        if self.model.inventory.loaded:
+            st = self.model.stock(p)
+            if not st or not st.numbers:
+                stock = ("<p style='color:#ff6b6b;margin:2px 0'><b>Not in the inventory</b>"
+                         + (f" <span style='color:#999'>(listed in row {', '.join(map(str, st.rows))} "
+                            f"without #)</span>" if st else "") + "</p>")
+            else:
+                nums = f" · #{', #'.join(st.numbers)}" if st.numbers else " · no # yet"
+                cnt = f"{st.pcs:g} pcs" if st.counted else "not counted yet"
+                color = "#7c7" if st.counted and st.pcs > 0 else "#e6c35c"
+                stock = (f"<p style='margin:2px 0'><b style='color:{color}'>Stock: {cnt}</b>"
+                         f" <span style='color:#999'>(Inventory row {', '.join(map(str, st.rows))}{nums})</span></p>")
         return (f"<h3 style='margin:0'>{esc(p.name)}</h3>"
-                f"<p style='color:#999;margin:2px 0 8px'>{LIB_NAME}:{esc(p.name)} · {len(p.pins)} pins</p>"
+                f"<p style='color:#999;margin:2px 0 8px'>{LIB_NAME}:{esc(p.name)} · {len(p.pins)} pins</p>" + stock + 
                 f"<table>{''.join(rows)}</table>" + orig
                 + (f"<p style='margin-top:10px'><b>Issues</b></p><ul style='margin-top:0'>{ih}</ul>" if ih else
                    "<p style='color:#7c7'>No issues.</p>"))
@@ -1156,23 +1339,20 @@ class Main(QMainWindow):
             self.restoreGeometry(g)
         else:
             self.resize(1600, 900)
-        for key, w in (("split", self.split), ("right", self.right)):
+        for key, w in (("split2", self.split), ("right", self.right)):
             v = self.settings.value(key)
             if v:
                 w.restoreState(v)
-        h = self.settings.value("header")
-        if h:
-            self.table.horizontalHeader().restoreState(h)
-        else:
-            self.fit_columns()
-            self.table.sortByColumn(self.model.columns.index("Category"), Qt.SortOrder.AscendingOrder)
         self.search.setText(self.settings.value("search", "") or "")
 
     def closeEvent(self, e):
         self.settings.setValue("geometry", self.saveGeometry())
-        self.settings.setValue("split", self.split.saveState())
+        self.settings.setValue("split2", self.split.saveState())
         self.settings.setValue("right", self.right.saveState())
-        self.settings.setValue("header", self.table.horizontalHeader().saveState())
+        self.remember_columns()
+        self.settings.setValue("col_widths", json.dumps(self.col_widths))
+        self.settings.setValue("sort_col", self.sort_col[0])
+        self.settings.setValue("sort_order", int(self.sort_col[1].value))
         self.settings.setValue("hidden", sorted(self.hidden_columns()))
         self.settings.setValue("search", self.search.text())
         super().closeEvent(e)

@@ -60,6 +60,11 @@ def lint_symbols(parts: list[Part]) -> list[Finding]:
                     add(WARN, "Tolerance not written as ±x%", p, f["Tolerance"])
                 if p.ref == "C" and not f.get("Voltage rating", "").strip():
                     add(WARN, "capacitor without Voltage rating", p)
+        tol, vr = f.get("Tolerance", "").strip(), f.get("Voltage rating", "").strip()
+        if tol and "%" not in tol and "ppm" not in tol:
+            add(WARN, "Tolerance is not a percentage (swapped fields?)", p, tol)
+        if vr and not re.search(r"\dk?V$", vr):
+            add(WARN, "Voltage rating is not a voltage (swapped fields?)", p, vr)
         mfr = f.get("Manufacturer", "")
         if re.search(r"[　-鿿]", mfr):
             add(WARN, "Chinese brand suffix in Manufacturer", p, mfr)

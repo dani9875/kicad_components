@@ -14,8 +14,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable
 
+from . import profiles
 from .library import (CACHE_DIR, FP_DIR, LIB_NAME, ORIG_DIR, PASSIVE_REFS, ROOT, SYM_LIB,
-                      category_of)
+                      category_of, group_of)
 from .sexp import Str, dump, kid, kids, num, parse, walk
 
 
@@ -216,12 +217,44 @@ def pins_of(sym) -> list:
 
 
 def pin_sig(sym) -> dict:
+    """pin number -> pin name. A name that only repeats the number, or '~', counts as no name."""
     out = {}
     for p in pins_of(sym):
         n = kid(p, "number")
         if n:
-            out[n[1]] = ((kid(p, "name") or ["", ""])[1]).strip().upper()
+            nm = ((kid(p, "name") or ["", ""])[1]).strip().upper()
+            out[n[1]] = "" if nm in ("~", n[1].upper()) else nm
     return out
+
+
+# Reference prefix for simple parts. EasyEDA often says "U" for inductors, crystals, etc.
+# Checked in order against the LCSC category, then against the [CATEGORY] name.
+REF_RULES = [
+    (r"ferrite|\bbead|\bFB\b", "FB"),
+    (r"crystal|oscillator|resonator|\bxtal|\bOSC\b", "Y"),
+    (r"inductor|\bIND\b|choke", "L"),
+    (r"resistor|\bRES\b|thermistor|\bNTC\b|varistor", "R"),
+    (r"capacitor|\bCAP\b|MLCC", "C"),
+    (r"fuse|\bPTC\b|polyfuse", "F"),
+    (r"diode|\bTVS\b|zener|schottky|rectifier|\bLED\b|ESD", "D"),
+    (r"transistor|mosfet|\bFET\b|\bBJT\b|\bNPN\b|\bPNP\b", "Q"),
+    (r"switch|button|tactile", "SW"),
+    (r"connector|header|\bUSB\b|\bJST\b|terminal", "J"),
+]
+
+
+def guess_ref(raw_ref: str, category: str, lcsc_category: str, pin_count: int) -> str:
+    """Prefix from LCSC category / [CATEGORY] for parts with 4 pins or fewer; else EasyEDA's."""
+    if pin_count > 4:
+        return raw_ref
+    cat = category.strip("[]").replace("_", " ")
+    for text in (lcsc_category, cat):
+        if not text or re.search(r"driver|controller|regulator|converter|\bIC\b", text, re.I):
+            continue
+        for rx, ref in REF_RULES:
+            if re.search(rx, text, re.I):
+                return ref
+    return raw_ref
 
 
 def rename_units(sym, old: str, new: str) -> None:
@@ -309,9 +342,12 @@ def check_symbol(sym, ref: str, warn) -> None:
 def build_symbol(raw_text: str, name: str, footprint: str, data: dict, lib_text: str, warn):
     raw = kids(parse(raw_text)[0], "symbol")[0]
     raw_props = {p[1]: p[2] for p in kids(raw, "property")}
-    ref = raw_props.get("Reference", "U").rstrip("?") or "U"
     category = category_of(name)
     sig = pin_sig(raw)
+    raw_ref = raw_props.get("Reference", "U").rstrip("?") or "U"
+    ref = guess_ref(raw_ref, category, data.get("category", ""), len(sig))
+    if ref != raw_ref:
+        warn(f"EasyEDA reference was {raw_ref}. Set to {ref} from the part category.")
 
     tmpl = find_template(lib_text, category, sig, ref)
     if tmpl is not None:
@@ -341,8 +377,6 @@ def build_symbol(raw_text: str, name: str, footprint: str, data: dict, lib_text:
     }
     if passive:
         values["Nvalue"] = eng_value(desc, params, ref) or "?"
-        if values["Nvalue"] == "?":
-            warn("Could not read the component value. Set Nvalue by hand.")
         values["Tolerance"] = tolerance(desc, params)
         if ref in ("C",) or "Voltage rating" in tprops:
             values["Voltage rating"] = voltage(desc, params)
@@ -356,6 +390,15 @@ def build_symbol(raw_text: str, name: str, footprint: str, data: dict, lib_text:
             if k in values and not values[k]:
                 warn(f"{k} not found in LCSC data. Field left out.")
 
+    # Profile fields of this part's group (libtools/profiles.py): LCSC parameters, then description.
+    group = group_of(category)
+    prof = {**profiles.from_description(group, desc), **profiles.extract(group, params)}
+    for k, v in prof.items():
+        if not values.get(k) or values.get(k) == "?":
+            values[k] = v
+    if values.get("Nvalue") == "?":
+        warn("Could not read the component value. Set Nvalue by hand.")
+
     # Drop template fields with no data for this part (no stale values from the template).
     for k, p in list(tprops.items()):
         if not values.get(k) and k not in ALWAYS_FIELDS and k != "ki_locked":
@@ -365,7 +408,7 @@ def build_symbol(raw_text: str, name: str, footprint: str, data: dict, lib_text:
     y = -6.35
     insert_at = next(i for i, c in enumerate(sym) if isinstance(c, list) and c[0] == "symbol")
     visible = {"Reference", "Nvalue"} | (set() if passive else {"Value"})
-    for k in FIELD_ORDER:
+    for k in FIELD_ORDER + [k for k in values if k not in FIELD_ORDER]:
         v = values.get(k, "")
         if not v and k not in ALWAYS_FIELDS:
             continue

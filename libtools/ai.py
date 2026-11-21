@@ -79,7 +79,7 @@ def claude_path() -> str | None:
 
 # --------------------------------------------------------------------------
 # Docker sandbox
-#   The repo is mounted at /lib. Every top-level entry except the three library
+#   The repo is mounted at /work. Every top-level entry except the three library
 #   paths is covered: folders by an empty read-only tmpfs, files by /dev/null.
 #   So inside the container Claude can see and change only the library files.
 #   Login and sessions live in the volume DOCKER_VOLUME, not in your home folder.
@@ -117,15 +117,20 @@ def docker_run(tty: bool = False, with_lib: bool = True) -> list[str]:
            "--pids-limit", "256", "--memory", "2g",
            "-v", f"{DOCKER_VOLUME}:/home/claude"]
     if with_lib:
-        cmd += ["-v", f"{ROOT}:/lib:rw"]
+        cmd += ["-v", f"{ROOT}:/work:rw"]
         for e in sorted(ROOT.iterdir()):
-            if e.name in VISIBLE or "," in e.name or ":" in e.name:
+            if e.name in VISIBLE:
                 continue
+            if "," in e.name or ":" in e.name:
+                # Docker's mount syntax cannot express these names, so the entry
+                # cannot be hidden. Refuse to run instead of leaving it visible.
+                raise RuntimeError(f"Cannot hide '{e.name}' in the container (',' or ':' in the name). "
+                                   f"Rename or move it out of {ROOT}.")
             if e.is_dir():
-                cmd += ["--tmpfs", f"/lib/{e.name}:ro,size=4k"]
+                cmd += ["--tmpfs", f"/work/{e.name}:ro,size=4k"]
             else:
-                cmd += ["--mount", f"type=bind,src={os.devnull},dst=/lib/{e.name},readonly"]
-        cmd += ["-w", "/lib"]
+                cmd += ["--mount", f"type=bind,src={os.devnull},dst=/work/{e.name},readonly"]
+        cmd += ["-w", "/work"]
     return cmd + [DOCKER_IMAGE]
 
 
@@ -202,7 +207,7 @@ def prepare(name: str, fields: dict, fresh: bool = False) -> Session:
 
 
 def command(s: Session, prompt: str, model: str = "", docker: bool = False) -> list[str]:
-    """Local: run with cwd=ROOT. Docker: the container works in /lib (= ROOT, filtered).
+    """Local: run with cwd=ROOT. Docker: the container works in /work (= ROOT, filtered).
     --tools            only these tools exist (no Bash)
     --allowedTools     pre-approves WebFetch and edits in the three library paths only
     blockReads...      refuses reads outside the working directory

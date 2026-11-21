@@ -3,7 +3,7 @@
 # Build once, from the repo root:
 #   docker build -t pepy-claude --build-arg UID=$(id -u) --build-arg GID=$(id -g) docker/
 #
-# At run time the browser mounts the repo at /lib and hides every entry except
+# At run time the browser mounts the repo at /work and hides every entry except
 #   pepy_sym_lib.kicad_sym, pepy_sym_lib.pretty/, original_components/
 # Login and sessions live in the Docker volume "pepy-claude-home", not in your home folder.
 FROM node:22-slim
@@ -24,7 +24,7 @@ RUN set -eux; \
     else \
         useradd -m -u "${UID}" -g "${GID}" -d /home/claude claude; \
     fi; \
-    mkdir -p /lib /home/claude/.claude; \
+    mkdir -p /work /home/claude/.claude; \
     chown -R "${UID}:${GID}" /home/claude
 
 ENV HOME=/home/claude \
@@ -32,5 +32,5 @@ ENV HOME=/home/claude \
     DISABLE_TELEMETRY=1
 
 USER ${UID}:${GID}
-WORKDIR /lib
+WORKDIR /work
 ENTRYPOINT ["claude"]
