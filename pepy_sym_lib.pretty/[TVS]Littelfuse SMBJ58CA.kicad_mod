@@ -1,0 +1,243 @@
+(footprint "[TVS]Littelfuse SMBJ58CA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "93.6VC Clamp 6.5A@10/1000us Ipp TVS DIODE DO-214AA SMBJ58CA, LCSC C151267")
+	(tags "DO-214AA SMBJ58CA")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "a25cde9c-261f-4c52-848d-de615919f15e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[TVS]Littelfuse SMBJ58CA"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "42f37009-6331-4c80-bffe-3c9e7d43aa85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccc496c0-d92b-465a-b82c-e03329209841")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d1129f4-84d7-4471-80b9-8970ceb83e27")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C151267"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f0819d4-a541-426a-805e-d498f36d61d1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 2.66 -1.9)
+		(end -2.59 -1.89)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a9f4dd1a-5899-4823-85b2-74ea071a5914")
+	)
+	(fp_line
+		(start 2.67 1.9)
+		(end -2.6 1.89)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c78db108-7098-4268-b68f-bf6cce711d62")
+	)
+	(fp_circle
+		(center -2.7 1.81)
+		(end -2.67 1.81)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6b6f0135-1733-4388-8c75-65e1ee53e93c")
+	)
+	(fp_poly
+		(pts
+			(xy -0.762 0.762) (xy -0.762 -0.762) (xy 0 0) (xy -0.762 0.762)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "734830ed-845c-47a2-a4ef-a687cd03fda6")
+	)
+	(fp_poly
+		(pts
+			(xy 0.762 0.762) (xy 0 0) (xy 0.762 -0.762) (xy 0.762 0.762)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "2f589de0-c34e-41f4-890c-6c554d2eed46")
+	)
+	(fp_poly
+		(pts
+			(xy -2.667 -1.905) (xy -2.667 -1.215492) (xy -2.2098 -1.215492) (xy -2.2098 -1.905) (xy -2.667 -1.905)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "a1979138-755f-45ef-afcc-4104c7d2c04f")
+	)
+	(fp_poly
+		(pts
+			(xy -2.667 1.905) (xy -2.667 1.215492) (xy -2.2098 1.215492) (xy -2.2098 1.905) (xy -2.667 1.905)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e07f2604-e6f0-46ce-a1c5-01a8d4a53ec7")
+	)
+	(fp_poly
+		(pts
+			(xy 2.286 -1.905) (xy 2.286 -1.215492) (xy 2.7432 -1.215492) (xy 2.7432 -1.905) (xy 2.286 -1.905)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "b9a50c0e-5f93-4ddb-814e-2a0f962efec5")
+	)
+	(fp_poly
+		(pts
+			(xy 2.286 1.905) (xy 2.286 1.215492) (xy 2.7432 1.215492) (xy 2.7432 1.905) (xy 2.286 1.905)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "d09937b9-e5d6-48a9-8778-681a73c81129")
+	)
+	(fp_line
+		(start -2.25 -1.81)
+		(end 2.35 -1.81)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5f55db3f-abb3-4cf6-82c1-416f761e6ba5")
+	)
+	(fp_line
+		(start -2.25 1.81)
+		(end -2.25 -1.81)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0e8466d0-68ea-4ad4-a461-7e6e2a0776d5")
+	)
+	(fp_line
+		(start 2.35 -1.81)
+		(end 2.35 1.81)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1a96aff2-a087-483e-b950-1edd3373c581")
+	)
+	(fp_line
+		(start 2.35 1.81)
+		(end -2.25 1.81)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8c3b611f-2632-4b7c-ac9d-06c86c3155ff")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "2be46c10-39b8-4d8c-91c1-9044e5497081")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.39 0)
+		(size 2.047 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "24c4f423-ec12-4b05-a1ca-3eaa6c0cda10")
+	)
+	(pad "2" smd rect
+		(at 2.39 0)
+		(size 2.047 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "796dff6b-8466-4ec7-8e51-672db9d32f0f")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[TVS]Littelfuse SMBJ58CA/[TVS]Littelfuse SMBJ58CA.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
