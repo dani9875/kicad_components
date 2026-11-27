@@ -1,0 +1,226 @@
+(footprint "[ZENER]MDD(Microdiode Semiconductor) BZT52C12"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Zener Diode Independent 12V 500mW Surface Mount SOD-123 BZT52C12, LCSC C173429")
+	(tags "SOD-123 BZT52C12")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "4cb7dc21-3a25-41e8-b560-8c6d7d04f7ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[ZENER]MDD(Microdiode Semiconductor) BZT52C12"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "33536207-1ad3-40a9-b867-be76cfa8f6e7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c27892d-7d60-4b12-9b8a-7e5b0d38b5fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e79d8785-9aa8-4282-876a-4b006416a987")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C173429"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e5236707-7aae-47f4-bb02-7aa2641638df")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.38 -0.93)
+		(end 1.38 -0.93)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9d450e93-f134-47d0-a50a-c50891d3a174")
+	)
+	(fp_line
+		(start -1.38 0.93)
+		(end 1.38 0.93)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "336f05d8-a837-4efd-9d91-09019a99d5b5")
+	)
+	(fp_line
+		(start -0.97 -0.93)
+		(end -0.97 0.93)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c6bd4bb7-5753-458c-ac15-17288b880e8f")
+	)
+	(fp_line
+		(start 1.38 -0.93)
+		(end 1.38 -0.68)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c783eb38-2918-4d5e-9371-d61456623c03")
+	)
+	(fp_line
+		(start 1.38 0.93)
+		(end 1.38 0.68)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d9f773d-2356-4176-9d7a-1550cf4ec87c")
+	)
+	(fp_circle
+		(center -1.85 0.8)
+		(end -1.82 0.8)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "51fef554-872b-40d5-98f0-900dd6b27e8f")
+	)
+	(fp_poly
+		(pts
+			(xy -1.299997 -1.002411) (xy -1.299997 -0.632409) (xy -1.604797 -0.632409) (xy -1.604797 -1.002411)
+			(xy -1.299997 -1.002411)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "a1d80047-e56a-4c68-86c4-dbefdcae622e")
+	)
+	(fp_poly
+		(pts
+			(xy -1.299997 1.002411) (xy -1.299997 0.632409) (xy -1.604797 0.632409) (xy -1.604797 1.002411) (xy -1.299997 1.002411)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "25b167ed-94ec-4d45-844b-277fd42f4aef")
+	)
+	(fp_line
+		(start -1.35 -0.8)
+		(end 1.35 -0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "31f78825-a98f-4b9a-9f92-41d4cbc80d1f")
+	)
+	(fp_line
+		(start -1.35 0.8)
+		(end -1.35 -0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d8360692-2589-4a1a-9d58-c182656623a3")
+	)
+	(fp_line
+		(start 1.35 -0.8)
+		(end 1.35 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "98093d15-356b-45e8-85f7-775354dca1f4")
+	)
+	(fp_line
+		(start 1.35 0.8)
+		(end -1.35 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5b0ddb94-7200-4438-baf9-fce87b6cab11")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1210bc48-79fb-45c1-97d9-bc3780d1051c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.64 0)
+		(size 0.91 1.22)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d1624bdf-bc06-459a-968b-b6e39da472ed")
+	)
+	(pad "2" smd rect
+		(at 1.64 0)
+		(size 0.91 1.22)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "23302c2b-b658-426f-8015-6be2d8d3f9f6")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[ZENER]MDD(Microdiode Semiconductor) BZT52C12/[ZENER]MDD(Microdiode Semiconductor) BZT52C12.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
