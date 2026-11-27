@@ -24593,7 +24593,7 @@
 			)
 		)
 		(property "ki_keywords" "CAP SMD 1206 3216Metric Multilayer Ceramic Capacitors MLCC - SMD/SMT Ceramic Capacitors"
-			(at 0 -6.35 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -55855,24 +55855,6 @@
 				)
 			)
 			(pin output line
-				(at 15.24 6.35 180)
-				(length 5.08)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
 				(at 15.24 8.89 180)
 				(length 5.08)
 				(name "GATE"
@@ -55901,6 +55883,24 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(pin power_out line
+				(at 15.24 6.35 180)
+				(length 5.08)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
@@ -84033,7 +84033,7 @@
 			)
 		)
 		(property "ki_keywords" "RES SMD 0805 2012Metric Resistors Chip Resistor - Surface Mount"
-			(at 0 -6.35 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -84223,7 +84223,7 @@
 			)
 		)
 		(property "ki_keywords" "RES SMD 1206 3216Metric Current Sense Resistors/Shunt Resistors Chip Resistor - Surface Mount"
-			(at 0 -6.35 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
