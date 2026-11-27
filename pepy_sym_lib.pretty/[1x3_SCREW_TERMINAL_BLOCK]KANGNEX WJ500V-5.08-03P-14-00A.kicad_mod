@@ -1,0 +1,339 @@
+(footprint "[1x3_SCREW_TERMINAL_BLOCK]KANGNEX WJ500V-5.08-03P-14-00A"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "3 Position Wire to Board Terminal Block Through Hole 5.08mm WJ500V-5.08-03P-14-00A, LCSC C72334")
+	(tags "Through Hole,P=5.08mm WJ500V-5.08-03P-14-00A")
+	(property "Reference" "REF**"
+		(at 0.03 -5.588 0)
+		(layer "F.SilkS")
+		(uuid "35c1d2c3-874b-4af5-ae43-610c323b5161")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[1x3_SCREW_TERMINAL_BLOCK]KANGNEX WJ500V-5.08-03P-14-00A"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c42902f-78fc-4551-b74c-e1ea4808058e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c63988e4-932b-4a1b-8a42-6df88d3554e8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07efa66b-2d16-457b-8e0b-4322c556a66e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C72334"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d08f6485-2aec-4b3f-b7f8-17f7fbf16bc5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -7.59 5.53)
+		(end -7.59 -4.47)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11b5813b-a343-4e3e-9c71-3503b465fe01")
+	)
+	(fp_line
+		(start -6.22 2.53)
+		(end -6.22 5.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f09085ff-6574-4188-8c5c-e5e38c7584bb")
+	)
+	(fp_line
+		(start -4.16 2.53)
+		(end -6.22 2.53)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "608abd5f-8243-453f-9670-305a6ed5cbc0")
+	)
+	(fp_line
+		(start -4.16 5.5)
+		(end -4.16 2.53)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7d4acc1-4325-4e6f-a11a-b589d8518b31")
+	)
+	(fp_line
+		(start -1.16 2.53)
+		(end -1.16 5.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1476a9dc-cf49-40dd-bb4d-e24661a8b4a2")
+	)
+	(fp_line
+		(start 0.9 2.53)
+		(end -1.16 2.53)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "22dd4c2c-d19d-44f2-b9bc-ac1fc2601e59")
+	)
+	(fp_line
+		(start 0.9 5.5)
+		(end 0.9 2.53)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e33c2e27-d929-47cc-86e3-46ca50027c7f")
+	)
+	(fp_line
+		(start 3.97 2.53)
+		(end 3.97 5.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c318081-7121-4418-a7c6-c304bf66f1cb")
+	)
+	(fp_line
+		(start 6.03 2.53)
+		(end 3.97 2.53)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "58ededa6-79ff-4004-925b-15b74be26716")
+	)
+	(fp_line
+		(start 6.03 5.5)
+		(end 6.03 2.53)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7a66b996-2990-4de1-ac9d-9efbfea59631")
+	)
+	(fp_line
+		(start 7.6 -3.1)
+		(end -7.64 -3.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f3667ac5-d4a6-40c3-9ed7-e1a3805ff809")
+	)
+	(fp_line
+		(start 7.65 -4.5)
+		(end -7.59 -4.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8c547caa-1431-4477-ba8a-1a2464414585")
+	)
+	(fp_line
+		(start 7.65 5.5)
+		(end -7.59 5.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e877606c-b211-4288-a244-cc8f4075194a")
+	)
+	(fp_line
+		(start 7.65 5.52)
+		(end 7.65 -4.48)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "482072ca-9610-42b8-b587-f483f8cd0709")
+	)
+	(fp_circle
+		(center -7.62 5.5)
+		(end -7.59 5.5)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7b070a8e-da4f-4e3e-b7e7-67b295839d18")
+	)
+	(fp_poly
+		(pts
+			(xy 7.599985 -3.099994) (xy 8.099984 -3.299993) (xy 8.099984 -2.399995) (xy 7.599985 -2.599995) (xy 7.599985 -3.099994)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5d289b2f-d9e1-4fd0-9e60-2be8006c29b2")
+	)
+	(fp_poly
+		(pts
+			(xy 7.64761 4.107256) (xy 8.147609 3.907257) (xy 8.147609 4.807255) (xy 7.64761 4.607255) (xy 7.64761 4.107256)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "de959b9d-c300-4e07-8c03-a823fed1b466")
+	)
+	(fp_line
+		(start -7.62 -4.5)
+		(end 7.62 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "42d488c7-3156-4695-8ebd-4edc5d430d4c")
+	)
+	(fp_line
+		(start -7.62 5.5)
+		(end -7.62 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "04f9f3e2-7d0d-40f4-b254-fafc6b7a8024")
+	)
+	(fp_line
+		(start 7.62 -4.5)
+		(end 7.62 5.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "01dc6e48-a492-47d7-9981-6b577248ff9c")
+	)
+	(fp_line
+		(start 7.62 5.5)
+		(end -7.62 5.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a6ab9f00-c320-4fc8-be85-3705fb69b1b1")
+	)
+	(fp_rect
+		(start -8.001 -4.826)
+		(end 8.382 5.969)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b11787a7-afc5-45a1-92e4-427a7dfe3202")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "130696ba-bbcd-451e-b593-f7c5e6c69411")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 5.08 0 180)
+		(size 2 2)
+		(drill 1.300022)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e55015f8-0a2b-4cf7-9666-5358a0831134")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0 180)
+		(size 2 2)
+		(drill 1.300022)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "473374ea-4501-4ee8-81b1-ad29a4c14133")
+	)
+	(pad "3" thru_hole circle
+		(at -5.08 0 180)
+		(size 2 2)
+		(drill 1.300022)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "217461cb-a40e-495a-93e1-bb606b7029aa")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[1x3_SCREW_TERMINAL_BLOCK]KANGNEX WJ500V-5.08-03P-14-00A/[1x3_SCREW_TERMINAL_BLOCK]KANGNEX WJ500V-5.08-03P-14-00A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
