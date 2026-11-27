@@ -1,0 +1,192 @@
+(footprint "[RES_SMD_2512_6432Metric]"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "5.6kΩ ±1% 1W 2512 Thick Film Resistor FRC2512F5601TS, LCSC C5154003")
+	(tags "2512 FRC2512F5601TS")
+	(property "Reference" "REF**"
+		(at -0.0254 -2.8194 0)
+		(layer "F.SilkS")
+		(uuid "8e764a71-20ee-45c4-80a2-029253229b4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[RES_SMD_2512_6432Metric]"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a7bdfc7-b20e-4167-93ab-9fcf864bc4df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6de003bc-dfef-4965-bde9-6c112f63887e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "683be1d7-cb60-43f0-b974-4d1454609d1a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C5154003"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55d8d6ca-2ec7-479b-a6bf-42022df6f78d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.94 -1.96)
+		(end -2.5 -1.96)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bde00a5b-b73a-4181-8390-d3cc28119657")
+	)
+	(fp_line
+		(start -3.94 1.96)
+		(end -3.94 -1.96)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c4c38750-0ba6-4180-96d8-9e2a603d11fe")
+	)
+	(fp_line
+		(start -2.5 1.96)
+		(end -3.94 1.96)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "13cf1350-f240-41b4-912c-9000ba50bda3")
+	)
+	(fp_line
+		(start 2.5 1.96)
+		(end 3.94 1.96)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b1e36311-090f-4675-9fa6-afaed445f754")
+	)
+	(fp_line
+		(start 3.94 -1.96)
+		(end 2.5 -1.96)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9901132c-57e2-4f2c-89b5-4947a3cfcf5c")
+	)
+	(fp_line
+		(start 3.94 1.96)
+		(end 3.94 -1.96)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c8e36422-30b1-4a7e-b303-b5ae642d8be4")
+	)
+	(fp_line
+		(start -3.15 1.6)
+		(end -3.15 -1.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "01f3e180-63fc-42e1-a81e-055ea15a75e1")
+	)
+	(fp_line
+		(start 3.15 -1.6)
+		(end 3.15 1.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1aadf784-3dff-4269-a309-f7c789a5bb52")
+	)
+	(fp_rect
+		(start -4.2164 -2.2352)
+		(end 4.191 2.1844)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e049f240-6702-4945-a3a1-1d3e9429c1d0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "01f5cd90-89bb-433a-8e4b-25c1abfd9bbb")
+		(effects
+			(font
+				(size 0.6 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.07 0)
+		(size 1.283 3.456)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4599f3fc-ed0c-4ced-abc6-de86a713b172")
+	)
+	(pad "2" smd rect
+		(at 3.07 0)
+		(size 1.283 3.456)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5c01d44f-6dce-408e-b483-127b39e5b5be")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[RES_SMD_2512_6432Metric]/[RES_SMD_2512_6432Metric].step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
