@@ -1,0 +1,194 @@
+(footprint "[FUSE_SMD_2410]"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "1.5A 125V Fuse Surface Mount 2410 045201.5MRL, LCSC C151122")
+	(tags "2410 045201.5MRL")
+	(property "Reference" "REF**"
+		(at 0 -2.921 0)
+		(layer "F.SilkS")
+		(uuid "0e352729-43a7-4cd5-8499-a56c80d5e1c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "[FUSE_SMD_2410]"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8bf9ad0b-0048-41cd-b038-561b63afb5ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a221d45-b3ca-4243-83a0-065e206d5a68")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ce75d48-a3e6-46a8-a8a5-5b6d7482adef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C151122"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80e24129-fbe9-44b4-908d-ba89ea290b33")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.06 -1.4)
+		(end -4.06 1.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8af1bd8b-6b79-479c-b1da-c794bb092f6e")
+	)
+	(fp_line
+		(start -3.68 -1.78)
+		(end -1 -1.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e08919e-e8e4-4c34-a5d0-9f42e19269f3")
+	)
+	(fp_line
+		(start -0.89 1.78)
+		(end -3.68 1.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e479cbdb-4c25-4820-a805-c924acb6950f")
+	)
+	(fp_line
+		(start 1.02 1.78)
+		(end 3.68 1.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f758e52a-0153-4854-94f1-83a140ee767c")
+	)
+	(fp_line
+		(start 3.68 -1.78)
+		(end 1 -1.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "52d4b408-647f-450d-b0b2-e49910e33495")
+	)
+	(fp_line
+		(start 4.06 -1.4)
+		(end 4.06 1.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fb70d4dc-b339-49f3-8ee9-ff8d9e6a6dc9")
+	)
+	(fp_arc
+		(start 0.01 -0.06)
+		(mid 0.246953 0.384585)
+		(end 0.0023 0.82498)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d39bb330-ca5b-4860-958d-e3a29113fafc")
+	)
+	(fp_arc
+		(start 0.01 -0.06)
+		(mid -0.186154 -0.440161)
+		(end 0.010263 -0.820186)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6eb4710-8cd1-4166-abe5-97f857fa3441")
+	)
+	(fp_rect
+		(start -4.318 -2.032)
+		(end 4.3434 2.0828)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "46a67722-4d7e-4ff6-92e0-aa4f22a316bf")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5630f5d1-fbe7-40c9-bb27-309b29939e24")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.33 0)
+		(size 2.91 2.905)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "329c00eb-c12c-42a3-abb4-02b2e5afcf6c")
+	)
+	(pad "2" smd rect
+		(at 2.33 0)
+		(size 2.91 2.905)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d7cfb5c4-5a29-4a68-9e5a-712d1e1b4c8e")
+	)
+	(embedded_fonts no)
+	(model "${ORIGINAL_COMPONENTS}/[FUSE_SMD_2410]/[FUSE_SMD_2410].step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
