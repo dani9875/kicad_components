@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -6.273 0)
 		(layer "F.SilkS")
-		(uuid "bd9a96fe-a84c-4ddf-9701-743e9ce37a23")
+		(uuid "e7d22294-5458-4e0d-bd00-daa877ef803a")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,8 @@
 	(property "Value" "[POWER_PMOS]NCE NCE01P18K"
 		(at 0 6.273 0)
 		(layer "F.Fab")
-		(uuid "abe92670-7682-485b-96f1-7db045b2c3bc")
+		(hide yes)
+		(uuid "56d230be-fcee-4b4d-be3e-5a0156cab319")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "469532af-72be-4add-928e-1c15691ec758")
+		(uuid "ed365e76-8f89-4c56-aa66-fa7cade1cc0e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a6b76071-4997-450a-a878-b163d46b2e91")
+		(uuid "9fbb338f-94dd-43fc-9403-9b3c29cf5f3f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "293d524b-36f5-4eb7-84a2-827c5f4f03fa")
+		(uuid "76f0f2c3-eabf-404f-8624-fd70c6aca8e6")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -70,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "2ff43f8d-8d0f-4239-9dea-c40e0068fbe0")
+		(uuid "cf5ec8f2-42e2-4822-93c7-7091cd5606ba")
 	)
 	(fp_line
 		(start 4.51 -3.34)
@@ -80,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "5dccc9b2-575e-4887-86f6-1cc2dac87e35")
+		(uuid "d0f793ed-a71b-4e79-a1ee-d908eef84587")
 	)
 	(fp_line
 		(start 4.51 3.35)
@@ -90,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8ad76578-1116-4d5b-95a2-fbce27b00e12")
+		(uuid "7d8e46df-d689-4dfd-9a2e-ffac9b43be31")
 	)
 	(fp_circle
 		(center -4 -3.3)
@@ -101,7 +102,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "458c1c8f-ac92-4d37-a1c6-30fd00f4f7d3")
+		(uuid "a8cc732f-2dbd-4968-83e6-2d339fb6904f")
 	)
 	(fp_circle
 		(center -3.96 -2.29)
@@ -112,7 +113,7 @@
 		)
 		(fill no)
 		(layer "Cmts.User")
-		(uuid "2d207852-127e-46b7-adc0-bc2b1ce243db")
+		(uuid "f1720fe0-636b-4074-b8d6-1f836b66794c")
 	)
 	(fp_line
 		(start -1.23 -3.3)
@@ -122,7 +123,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "c382768a-15ee-4e35-bce6-baee14540aca")
+		(uuid "6b5e52ca-eb58-4035-beea-7776afcae10b")
 	)
 	(fp_line
 		(start -1.23 3.3)
@@ -132,7 +133,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "2a6859b9-0a5e-433a-a095-2ddfb710f351")
+		(uuid "c94b7d97-bb5d-4025-83cd-760715d96c4d")
 	)
 	(fp_line
 		(start 4.87 -3.3)
@@ -142,7 +143,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "dc4779d1-310e-48b0-8124-06bc3a7d5345")
+		(uuid "2bdd72ca-7357-405e-bfb0-28d997a2e0d9")
 	)
 	(fp_line
 		(start 4.87 3.3)
@@ -152,12 +153,12 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "708405eb-763e-44e5-8da7-7b2caa5c9106")
+		(uuid "33bbaeef-d7a5-443e-b510-c20ee2281679")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "a32f8ec0-5e98-49fb-8af7-28b47cef0308")
+		(uuid "0228cdfb-6d6a-4423-9d77-b4f081446d80")
 		(effects
 			(font
 				(size 1 1)
@@ -169,30 +170,30 @@
 		(at -3.29 -2.27)
 		(size 2.8 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "169c0e7d-8807-4249-965d-a665e0dcad10")
+		(uuid "c4f4b18d-f116-4359-97ff-3f04b8c7154d")
 	)
 	(pad "2" smd rect
 		(at 3.29 0)
 		(size 6.5 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "b3a675c2-f26c-4639-b109-8e102c61647f")
+		(uuid "172459f2-1acb-404f-882c-532cf94df6e8")
 	)
 	(pad "3" smd rect
 		(at -3.29 2.27)
 		(size 2.8 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "6953797c-a7a5-47a1-9bc3-7f84fc4f8ffc")
+		(uuid "6d503d5a-f6c3-4f9a-8d37-4bfda64d69f0")
 	)
 	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[POWER_PMOS]NCE NCE01P18K/[POWER_PMOS]NCE NCE01P18K.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz -4 2.3 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 90)
 		)
 	)
 )
