@@ -6,9 +6,9 @@
 	(descr "P-Channel 100V 18A 70W Surface Mount TO-252-2L NCE01P18K, LCSC C115990")
 	(tags "TO-252-2L NCE01P18K")
 	(property "Reference" "REF**"
-		(at 0 -6.273 0)
+		(at 0 -4.2418 0)
 		(layer "F.SilkS")
-		(uuid "e7d22294-5458-4e0d-bd00-daa877ef803a")
+		(uuid "b679cced-4e5b-44e6-928d-54228fa1296e")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 6.273 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "56d230be-fcee-4b4d-be3e-5a0156cab319")
+		(uuid "86522742-2cdc-4d8c-b338-0007d7500ad2")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ed365e76-8f89-4c56-aa66-fa7cade1cc0e")
+		(uuid "be3f77e6-13f0-4982-abeb-24377d6dd601")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9fbb338f-94dd-43fc-9403-9b3c29cf5f3f")
+		(uuid "324ed895-2207-40e1-94c2-9c071b223f29")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "76f0f2c3-eabf-404f-8624-fd70c6aca8e6")
+		(uuid "36333590-e2d9-4258-99ea-56e6b1bbfff1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -71,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "cf5ec8f2-42e2-4822-93c7-7091cd5606ba")
+		(uuid "062d9890-8bec-4f6e-bc4f-010910f81a12")
 	)
 	(fp_line
 		(start 4.51 -3.34)
@@ -81,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d0f793ed-a71b-4e79-a1ee-d908eef84587")
+		(uuid "49849dcd-cbf4-4de8-bf13-980a63d747f3")
 	)
 	(fp_line
 		(start 4.51 3.35)
@@ -91,77 +91,37 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "7d8e46df-d689-4dfd-9a2e-ffac9b43be31")
+		(uuid "fe5e7f23-7646-4944-8ceb-1fc06cfc46e1")
 	)
 	(fp_circle
-		(center -4 -3.3)
-		(end -3.97 -3.3)
+		(center -4.4958 -3.3528)
+		(end -4.1958 -3.3528)
 		(stroke
 			(width 0.06)
 			(type solid)
 		)
-		(fill no)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "a8cc732f-2dbd-4968-83e6-2d339fb6904f")
+		(uuid "945faf87-d2f4-4c6a-ad6a-ad977f7baa24")
 	)
-	(fp_circle
-		(center -3.96 -2.29)
-		(end -3.66 -2.29)
+	(fp_rect
+		(start -5.2832 -3.8862)
+		(end 6.6802 3.9878)
 		(stroke
-			(width 0.6)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
 		(fill no)
-		(layer "Cmts.User")
-		(uuid "f1720fe0-636b-4074-b8d6-1f836b66794c")
-	)
-	(fp_line
-		(start -1.23 -3.3)
-		(end 4.87 -3.3)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "6b5e52ca-eb58-4035-beea-7776afcae10b")
-	)
-	(fp_line
-		(start -1.23 3.3)
-		(end -1.23 -3.3)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "c94b7d97-bb5d-4025-83cd-760715d96c4d")
-	)
-	(fp_line
-		(start 4.87 -3.3)
-		(end 4.87 3.3)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "2bdd72ca-7357-405e-bfb0-28d997a2e0d9")
-	)
-	(fp_line
-		(start 4.87 3.3)
-		(end -1.23 3.3)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "33bbaeef-d7a5-443e-b510-c20ee2281679")
+		(layer "F.Fab")
+		(uuid "3ceb9a4c-089f-4b49-892d-3c0256cc1cfc")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "0228cdfb-6d6a-4423-9d77-b4f081446d80")
+		(uuid "432828b5-fbc6-4ba9-b8a9-93124a5e56f0")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.8 0.8)
 				(thickness 0.15)
 			)
 		)
@@ -170,19 +130,19 @@
 		(at -3.29 -2.27)
 		(size 2.8 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "c4f4b18d-f116-4359-97ff-3f04b8c7154d")
+		(uuid "c6fece7e-82c1-477a-b837-0f358d6e4936")
 	)
 	(pad "2" smd rect
 		(at 3.29 0)
 		(size 6.5 6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "172459f2-1acb-404f-882c-532cf94df6e8")
+		(uuid "fc842e58-c4d7-4e31-b1a1-6a6eb4ee8581")
 	)
 	(pad "3" smd rect
 		(at -3.29 2.27)
 		(size 2.8 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "6d503d5a-f6c3-4f9a-8d37-4bfda64d69f0")
+		(uuid "b45bdf50-7322-4a0a-8056-30732e9e530d")
 	)
 	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[POWER_PMOS]NCE NCE01P18K/[POWER_PMOS]NCE NCE01P18K.step"

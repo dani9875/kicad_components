@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -4.95 0)
 		(layer "F.SilkS")
-		(uuid "be7b92ef-6f58-41c7-a7d9-7c62d15ccbb8")
+		(uuid "79766aac-c503-4b43-8f9d-4dff132ac930")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,8 @@
 	(property "Value" "[ESD_PROT]TECH PUBLIC SM24CANB-02HTG"
 		(at 0 4.95 0)
 		(layer "F.Fab")
-		(uuid "d99b5e99-14b8-47ef-ac02-43dd328c1212")
+		(hide yes)
+		(uuid "db73634c-1a81-4a82-a315-e71c87cd6bb8")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "868e8c36-044c-44d6-90b5-60bff1a1de58")
+		(uuid "ff44b3a1-1cfc-485f-be8b-f804d6c942ef")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f87547c1-8f85-464e-8a1e-950b991a858e")
+		(uuid "e32e1e82-0493-421d-9dd8-286fc44a263f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e69fc2d7-fef7-428a-b2e6-5fc333177208")
+		(uuid "b4302c70-01fe-4b86-beb2-7a494490287d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -70,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "44a9f420-f42c-4b82-a544-0d4e3dfbcea6")
+		(uuid "ce2cf0a3-82b6-4301-a487-0300463e5111")
 	)
 	(fp_line
 		(start -0.73 1.53)
@@ -80,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "49d17916-9cdd-4073-9c48-1ccba9a3aecb")
+		(uuid "71133455-ec43-47fd-989c-404b31635d7d")
 	)
 	(fp_line
 		(start 0.73 -1.53)
@@ -90,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b9b66834-1496-428f-b257-46678c636844")
+		(uuid "bb380f28-8def-4c42-a790-d74bd6d47880")
 	)
 	(fp_line
 		(start 0.73 -0.46)
@@ -100,7 +101,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "9d8f22d6-a046-47da-ae59-3ff05aeeb0c3")
+		(uuid "e4ef2a31-669e-4bef-9e3f-6543c6545eef")
 	)
 	(fp_line
 		(start 0.73 1.53)
@@ -110,78 +111,38 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f554d1e6-2611-4317-ba11-e7cfa7c4e79c")
+		(uuid "a8f1d86f-007e-42af-ad33-e63fe163ef8c")
 	)
 	(fp_circle
-		(center 1.2 1.45)
-		(end 1.23 1.45)
+		(center 1.2 1.6256)
+		(end 1.4 1.6256)
 		(stroke
 			(width 0.06)
 			(type solid)
 		)
-		(fill no)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "7bbc00bf-5267-4b59-940d-134f1a98e511")
+		(uuid "72566b6c-3c84-4558-a0e3-f4b670455137")
 	)
-	(fp_circle
-		(center 1.46 1.1)
-		(end 1.56 1.1)
+	(fp_rect
+		(start -1.6002 -1.778)
+		(end 1.7272 2.032)
 		(stroke
-			(width 0.2)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
 		(fill no)
-		(layer "Cmts.User")
-		(uuid "30582fd7-a360-4f47-93e7-67fd34dc8482")
-	)
-	(fp_line
-		(start -0.65 -1.45)
-		(end 0.65 -1.45)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "4350623c-d5fe-4ca0-a5c8-bbaa1b843e0b")
-	)
-	(fp_line
-		(start -0.65 1.45)
-		(end -0.65 -1.45)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "94579406-4996-40a9-aa68-b4fb4f886b94")
-	)
-	(fp_line
-		(start 0.65 -1.45)
-		(end 0.65 1.45)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "5226a507-e70b-4547-9d19-23eb677c79a4")
-	)
-	(fp_line
-		(start 0.65 1.45)
-		(end -0.65 1.45)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "7cf72c02-7c28-4855-87f3-53113c5ec497")
+		(layer "F.Fab")
+		(uuid "565779ae-f32e-485d-bddc-e1f2513abdaf")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "bdcb6255-e9bd-4a96-97b6-55445e059c1b")
+		(uuid "eeefed47-e8ed-4439-bd8c-5e393d5529aa")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.4 0.4)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -189,19 +150,19 @@
 		(at 1 0.95)
 		(size 1 0.65)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "897fb65d-c733-4ed5-b5fd-8e3ca0a46e3b")
+		(uuid "4494fdb3-a05d-4363-91ba-09b9cacb864a")
 	)
 	(pad "2" smd rect
 		(at 1 -0.95)
 		(size 1 0.65)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "da307982-238f-42e3-a413-d3e9b37198ed")
+		(uuid "239608c6-2c02-4f56-8af9-383ea5e5fff7")
 	)
 	(pad "3" smd rect
 		(at -1 0)
 		(size 1 0.65)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "c78b94e8-ae57-4e69-80fa-43084620cece")
+		(uuid "94235d55-e471-44a2-b4b4-2e2f45a029d7")
 	)
 	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[ESD_PROT]TECH PUBLIC SM24CANB-02HTG/[ESD_PROT]TECH PUBLIC SM24CANB-02HTG.step"
@@ -212,7 +173,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -180)
 		)
 	)
 )

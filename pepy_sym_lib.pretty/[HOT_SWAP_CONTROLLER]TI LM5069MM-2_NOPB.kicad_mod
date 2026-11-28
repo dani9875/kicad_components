@@ -6,12 +6,12 @@
 	(descr "1 9V~80V VSSOP-10-0.5mm Hot Swap Controllers RoHS LM5069MM-2/NOPB, LCSC C111822")
 	(tags "VSSOP-10-0.5mm LM5069MM-2/NOPB")
 	(property "Reference" "REF**"
-		(at 0 -6.35 0)
+		(at 0 -3.7338 0)
 		(layer "F.SilkS")
-		(uuid "0bf28edc-8020-414d-a204-8960551f0b41")
+		(uuid "40238484-2680-4dfc-9bec-a8c8dd7a5d66")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.7 0.7)
 				(thickness 0.15)
 			)
 		)
@@ -19,7 +19,8 @@
 	(property "Value" "[HOT_SWAP_CONTROLLER]TI LM5069MM-2_NOPB"
 		(at 0 6.35 0)
 		(layer "F.Fab")
-		(uuid "bdbcfea7-05f2-4f28-8a34-77a7a10a1b8e")
+		(hide yes)
+		(uuid "a9d54440-b3bd-4734-ae74-f4c1dc17a37b")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "81966907-e254-4d92-bad4-84115e3426ac")
+		(uuid "1ffc65e0-4a83-405c-b727-65f02ddcb6db")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2a0fddd0-a1c2-40dd-942f-50a44c997f0e")
+		(uuid "06f888f6-90bd-4c67-97ad-ccf90551082f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6405baea-bee3-4901-b495-786d506c8ead")
+		(uuid "8ab0b2bf-9d93-4b9a-b556-4d74883a6148")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -70,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e3f04402-44cc-4d1b-b43d-b7d6281079a3")
+		(uuid "e5c670bc-fbbd-459b-9a19-c0df763138d0")
 	)
 	(fp_line
 		(start -1.6 0.72)
@@ -80,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d506286e-3f15-434a-801f-f9be5175fcb4")
+		(uuid "740bb826-4044-4cd0-8517-2af40b9de322")
 	)
 	(fp_line
 		(start -1.58 -1.54)
@@ -90,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0f966791-e293-4f3d-93ff-5d2e4264bece")
+		(uuid "330893dd-c1b6-4ad8-8d65-1a125ff6c25e")
 	)
 	(fp_line
 		(start -1.58 1.56)
@@ -100,7 +101,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "52a387a4-e89f-44cf-9edb-523cbf68287c")
+		(uuid "4f626572-23ee-4dea-a34a-b41407deb16d")
 	)
 	(fp_line
 		(start 1.52 1.56)
@@ -110,7 +111,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8f70af7f-b561-4896-944a-9450ea2528fd")
+		(uuid "f8678493-2334-4aa4-a5dc-538e053f303b")
 	)
 	(fp_arc
 		(start -1.609762 -0.663037)
@@ -121,7 +122,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "38ea0e52-1f4d-4b7e-b9d9-c0a695557ac8")
+		(uuid "8b8afbb2-5cd6-41d8-b436-dd269d62f0f4")
 	)
 	(fp_circle
 		(center -1.52 1.98)
@@ -132,78 +133,27 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "763d9f60-4176-47fc-a261-df298a8647a8")
+		(uuid "950b1abd-fb95-456f-b7a8-8bc9d4024589")
 	)
-	(fp_circle
-		(center -1.5 2.45)
-		(end -1.47 2.45)
+	(fp_rect
+		(start -2.032 -3.0734)
+		(end 1.8288 3.0988)
 		(stroke
-			(width 0.06)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
 		(fill no)
-		(layer "F.SilkS")
-		(uuid "b3ce9479-8cf1-4a3c-8ad9-baca1d84d92a")
-	)
-	(fp_circle
-		(center -0.99 2.72)
-		(end -0.89 2.72)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "Cmts.User")
-		(uuid "dec1ead3-d8f5-4032-8edd-79438144ef05")
-	)
-	(fp_line
-		(start -1.5 -1.5)
-		(end 1.5 -1.5)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "f510c7df-c8d3-43bd-a6a8-0558091c279a")
-	)
-	(fp_line
-		(start -1.5 1.5)
-		(end -1.5 -1.5)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "754f9243-c32c-420f-be27-2cdb52923bd5")
-	)
-	(fp_line
-		(start 1.5 -1.5)
-		(end 1.5 1.5)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "2e3aec6e-7109-48d8-bdeb-4992c08639af")
-	)
-	(fp_line
-		(start 1.5 1.5)
-		(end -1.5 1.5)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "620d0f07-a50e-4579-a654-c364550c6d4f")
+		(layer "F.Fab")
+		(uuid "1bff6cf6-dfa3-4f12-b995-cb36abb38f11")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "707248bb-be77-49d9-9507-57c2e13ad06b")
+		(uuid "e3751d9f-8f96-4c73-b0be-b5c9c48c4a18")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.125)
 			)
 		)
 	)
@@ -211,61 +161,61 @@
 		(at -1 2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "ff10cc7e-17b4-4292-bf11-a3c478c20d87")
+		(uuid "13a6d4a5-5398-4af3-bc3d-4e7d7a63a4fd")
 	)
 	(pad "2" smd rect
 		(at -0.5 2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "1bec2aed-b3b6-4618-a390-04ecb990d680")
+		(uuid "8742f1f3-bc73-4bcd-bb72-f0d51d0ad3a1")
 	)
 	(pad "3" smd rect
 		(at 0 2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "2edccafb-4453-4577-9c6a-a2264001297e")
+		(uuid "d874a8aa-fea3-440c-beee-222ae69111d4")
 	)
 	(pad "4" smd rect
 		(at 0.5 2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "71ce40f5-c2b8-424f-9300-972df3aaf93d")
+		(uuid "98f25f96-593e-4269-99c6-5df61326fd49")
 	)
 	(pad "5" smd rect
 		(at 1 2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "ae15dc8f-cbf5-44aa-ab02-17600d8b9166")
+		(uuid "930706da-0ab0-4b23-a499-322537aa08d9")
 	)
 	(pad "6" smd rect
 		(at 1 -2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "f3a95cf4-bfda-4f66-813e-346a98c90a51")
+		(uuid "cbbf2093-a36c-4d86-9f0d-d677d475992c")
 	)
 	(pad "7" smd rect
 		(at 0.5 -2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "e027d7e6-5d06-41f0-b331-a3856997b88f")
+		(uuid "c7536651-4748-4f32-a328-f462535bc1f0")
 	)
 	(pad "8" smd rect
 		(at 0 -2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "af50d4f0-0c7e-42d0-82ee-9f69d2eed43c")
+		(uuid "19e2e52b-e3b5-4e77-9098-b68aa1b70bb0")
 	)
 	(pad "9" smd rect
 		(at -0.5 -2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "9ce73ebf-453f-45ec-afb5-5ece0350c7b4")
+		(uuid "0def8a3c-a78f-475e-9613-e9b8b3e4c20b")
 	)
 	(pad "10" smd rect
 		(at -1 -2.35)
 		(size 0.3 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "056ba3e1-ef82-4d98-aca7-d0946d079237")
+		(uuid "ffc51f13-3551-4e54-ab4a-4d16da1b2f14")
 	)
 	(embedded_fonts no)
 	(model "${ORIGINAL_COMPONENTS}/[HOT_SWAP_CONTROLLER]TI LM5069MM-2_NOPB/[HOT_SWAP_CONTROLLER]TI LM5069MM-2_NOPB.step"
@@ -276,7 +226,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -90)
 		)
 	)
 )
